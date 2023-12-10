@@ -422,10 +422,25 @@ public class ModItemGroups {
             new Identifier(OresMod.MOD_ID, "ores_mod_liquids"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ores_mod_liquids"))
                     .icon(() -> new ItemStack(ModBlocks.WATER_TANK)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.WATER_TANK);
                         entries.add(ModBlocks.LAVA_TANK);
                         entries.add(ModBlocks.MILK_TANK);
-                        entries.add(ModBlocks.WATER_TANK);
                         entries.add(ModBlocks.AWKWARD_WATER_TANK);
+                        entries.add(ModBlocks.NIGHT_VISION_POTION_TANK);
+                        entries.add(ModBlocks.INVISIBILITY_POTION_TANK);
+                        entries.add(ModBlocks.FIRE_RESISTANCE_POTION_TANK);
+                        entries.add(ModBlocks.SWIFTNESS_POTION_TANK);
+                        entries.add(ModBlocks.HEALING_POTION_TANK);
+                        entries.add(ModBlocks.REGENERATION_POTION_TANK);
+                        entries.add(ModBlocks.STRENGTH_POTION_TANK);
+                        entries.add(ModBlocks.WATER_BREATHING_POTION_TANK);
+                        entries.add(ModBlocks.LEAPING_POTION_TANK);
+                        entries.add(ModBlocks.SLOW_FALLING_POTION_TANK);
+                        entries.add(ModBlocks.POISON_POTION_TANK);
+                        entries.add(ModBlocks.WEAKNESS_POTION_TANK);
+                        entries.add(ModBlocks.HARMING_POTION_TANK);
+                        entries.add(ModBlocks.SLOWNESS_POTION_TANK);
+                        entries.add(ModBlocks.TURTLE_MASTER_POTION_TANK);
                     }).build());
     public static void registerItemGroups(){
         OresMod.LOGGER.info("Registering Item Groups for " + OresMod.MOD_ID);

@@ -1532,7 +1532,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_STEEL_SLAB, ModBlocks.SMOOTH_STEEL_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_STEEL_SLAB, ModBlocks.CUT_STEEL,2);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_INGOT)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_APPLE)
                 .pattern("SSS")
                 .pattern("SAS")
                 .pattern("SSS")
@@ -2169,7 +2169,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', ModItems.DUEL_HANDLED_POWER_DRIVE)
                 .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
                 .criterion(hasItem(ModBlocks.COBALT_BLOCK), conditionsFromItem(ModBlocks.COBALT_BLOCK))
-                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .criterion(hasItem(ModItems.DUEL_HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.DUEL_HANDLED_POWER_DRIVE))
                 .offerTo(exporter, new Identifier("cobalt_drill"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.COBALT_CHAINSAW)
                 .pattern("  P")
@@ -2354,10 +2354,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("TGT")
                 .pattern("GBG")
                 .pattern("TGT")
-                .input('T', ModItems.TUNGSTEN_INGOT)
+                .input('T', ModBlocks.TUNGSTEN_BLOCK)
                 .input('G', Items.GLASS)
                 .input('B', Items.LAVA_BUCKET)
-                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .criterion(hasItem(ModBlocks.TUNGSTEN_BLOCK), conditionsFromItem(ModBlocks.TUNGSTEN_BLOCK))
                 .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
                 .criterion(hasItem(Items.LAVA_BUCKET), conditionsFromItem(Items.LAVA_BUCKET))
                 .offerTo(exporter, new Identifier("lava_tank"));
@@ -2366,10 +2366,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("TGT")
                 .pattern("GBG")
                 .pattern("TGT")
-                .input('T', ModItems.TUNGSTEN_INGOT)
+                .input('T', ModBlocks.TUNGSTEN_BLOCK)
                 .input('G', Items.GLASS)
                 .input('B', Items.WATER_BUCKET)
-                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .criterion(hasItem(ModBlocks.TUNGSTEN_BLOCK), conditionsFromItem(ModBlocks.TUNGSTEN_BLOCK))
                 .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
                 .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier("water_tank"));
@@ -2378,10 +2378,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("TGT")
                 .pattern("GBG")
                 .pattern("TGT")
-                .input('T', ModItems.TUNGSTEN_INGOT)
+                .input('T', ModBlocks.TUNGSTEN_BLOCK)
                 .input('G', Items.GLASS)
                 .input('B', Items.MILK_BUCKET)
-                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .criterion(hasItem(ModBlocks.TUNGSTEN_BLOCK), conditionsFromItem(ModBlocks.TUNGSTEN_BLOCK))
                 .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
                 .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
                 .offerTo(exporter, new Identifier("milk_tank"));
@@ -2395,5 +2395,175 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHER_WART), conditionsFromItem(Items.NETHER_WART))
                 .criterion(hasItem(ModBlocks.WATER_TANK), conditionsFromItem(ModBlocks.WATER_TANK))
                 .offerTo(exporter, new Identifier("awkward_water_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.HEALING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.GLISTERING_MELON_SLICE)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.GLISTERING_MELON_SLICE), conditionsFromItem(Items.GLISTERING_MELON_SLICE))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("healing_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.FIRE_RESISTANCE_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.MAGMA_CREAM)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.MAGMA_CREAM), conditionsFromItem(Items.MAGMA_CREAM))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("fire_resistance_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.REGENERATION_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.GHAST_TEAR)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.GHAST_TEAR), conditionsFromItem(Items.GHAST_TEAR))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("regeneration_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.STRENGTH_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.BLAZE_POWDER)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.BLAZE_POWDER), conditionsFromItem(Items.BLAZE_POWDER))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("strength_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.SWIFTNESS_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.SUGAR)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("swiftness_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.NIGHT_VISION_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.GOLDEN_CARROT)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.GOLDEN_CARROT), conditionsFromItem(Items.GOLDEN_CARROT))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("night_vision_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.INVISIBILITY_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.FERMENTED_SPIDER_EYE)
+                .input('T', ModBlocks.NIGHT_VISION_POTION_TANK)
+                .criterion(hasItem(Items.FERMENTED_SPIDER_EYE), conditionsFromItem(Items.FERMENTED_SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.NIGHT_VISION_POTION_TANK), conditionsFromItem(ModBlocks.NIGHT_VISION_POTION_TANK))
+                .offerTo(exporter, new Identifier("invisibility_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.WATER_BREATHING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.PUFFERFISH)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.PUFFERFISH), conditionsFromItem(Items.PUFFERFISH))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("water_breathing_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.LEAPING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.RABBIT_FOOT)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.RABBIT_FOOT), conditionsFromItem(Items.RABBIT_FOOT))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("leaping_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.SLOW_FALLING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.PHANTOM_MEMBRANE)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("slow_falling_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.POISON_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.SPIDER_EYE)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.SPIDER_EYE), conditionsFromItem(Items.SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("poison_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.WEAKNESS_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.FERMENTED_SPIDER_EYE)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.FERMENTED_SPIDER_EYE), conditionsFromItem(Items.FERMENTED_SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("weakness_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.HARMING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.FERMENTED_SPIDER_EYE)
+                .input('T', ModBlocks.HEALING_POTION_TANK)
+                .criterion(hasItem(Items.FERMENTED_SPIDER_EYE), conditionsFromItem(Items.FERMENTED_SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.HEALING_POTION_TANK), conditionsFromItem(ModBlocks.HEALING_POTION_TANK))
+                .offerTo(exporter, new Identifier("harming_potion_tank_from_healing_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.HARMING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.FERMENTED_SPIDER_EYE)
+                .input('T', ModBlocks.POISON_POTION_TANK)
+                .criterion(hasItem(Items.FERMENTED_SPIDER_EYE), conditionsFromItem(Items.FERMENTED_SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.POISON_POTION_TANK), conditionsFromItem(ModBlocks.POISON_POTION_TANK))
+                .offerTo(exporter, new Identifier("harming_potion_tank_from_poison_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.SLOWNESS_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.FERMENTED_SPIDER_EYE)
+                .input('T', ModBlocks.SWIFTNESS_POTION_TANK)
+                .criterion(hasItem(Items.FERMENTED_SPIDER_EYE), conditionsFromItem(Items.FERMENTED_SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.SWIFTNESS_POTION_TANK), conditionsFromItem(ModBlocks.SWIFTNESS_POTION_TANK))
+                .offerTo(exporter, new Identifier("slowness_potion_tank_from_swiftness_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.HARMING_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.FERMENTED_SPIDER_EYE)
+                .input('T', ModBlocks.LEAPING_POTION_TANK)
+                .criterion(hasItem(Items.FERMENTED_SPIDER_EYE), conditionsFromItem(Items.FERMENTED_SPIDER_EYE))
+                .criterion(hasItem(ModBlocks.LEAPING_POTION_TANK), conditionsFromItem(ModBlocks.LEAPING_POTION_TANK))
+                .offerTo(exporter, new Identifier("slowness_potion_tank_from_leaping_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.TURTLE_MASTER_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.TURTLE_HELMET)
+                .input('T', ModBlocks.AWKWARD_WATER_TANK)
+                .criterion(hasItem(Items.TURTLE_HELMET), conditionsFromItem(Items.TURTLE_HELMET))
+                .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
+                .offerTo(exporter, new Identifier("turtle_master_potion_tank"));
     }
 }

@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass": {
+    "has_awkward_water_tank": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:glass"
+              "oresmod:awkward_water_tank"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_lava_bucket": {
+    "has_golden_carrot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:lava_bucket"
+              "minecraft:golden_carrot"
             ]
           }
         ]
@@ -27,34 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lava_tank"
+        "recipe": "minecraft:night_vision_potion_tank"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_tungsten_ingot": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "oresmod:tungsten_ingot"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_tungsten_ingot",
-      "has_glass",
-      "has_lava_bucket"
+      "has_golden_carrot",
+      "has_awkward_water_tank"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lava_tank"
+      "minecraft:night_vision_potion_tank"
     ]
   },
   "sends_telemetry_event": false

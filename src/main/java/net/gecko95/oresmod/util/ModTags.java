@@ -19,6 +19,9 @@ public class ModTags {
         public static final TagKey<Block> DEEPBARK_PLACEABLE =
                 createTag("deepbark_placeable");
 
+        public static final TagKey<Block> POTION_TANKS =
+                createTag("potion_tanks");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(OresMod.MOD_ID, name));
         }

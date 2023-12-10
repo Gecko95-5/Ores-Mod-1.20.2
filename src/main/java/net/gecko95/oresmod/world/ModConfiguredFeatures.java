@@ -132,11 +132,11 @@ public class ModConfiguredFeatures {
 
         register(context, TERRACOTTA_GOLD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTerracottaGoldOres, 9));
 
-        register(context, GRAVEL_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldGravelCoalOres, 17));
+        register(context, GRAVEL_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldGravelCoalOres, 8));
 
-        register(context, DRIPSTONE_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDripstoneCopperOres, 15));
+        register(context, DRIPSTONE_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDripstoneCopperOres, 7));
 
-        register(context, TUFF_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTuffIronOres, 9));
+        register(context, TUFF_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTuffIronOres, 4));
 
         register(context, STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.STONEBARK_LOG),

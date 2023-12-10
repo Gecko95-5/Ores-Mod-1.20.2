@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass": {
+    "has_awkward_water_tank": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:glass"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_milk_bucket": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:milk_bucket"
+              "oresmod:awkward_water_tank"
             ]
           }
         ]
@@ -27,16 +15,16 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:milk_tank"
+        "recipe": "minecraft:turtle_master_potion_tank"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tungsten_ingot": {
+    "has_turtle_helmet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:tungsten_ingot"
+              "minecraft:turtle_helmet"
             ]
           }
         ]
@@ -47,14 +35,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_tungsten_ingot",
-      "has_glass",
-      "has_milk_bucket"
+      "has_turtle_helmet",
+      "has_awkward_water_tank"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:milk_tank"
+      "minecraft:turtle_master_potion_tank"
     ]
   },
   "sends_telemetry_event": false

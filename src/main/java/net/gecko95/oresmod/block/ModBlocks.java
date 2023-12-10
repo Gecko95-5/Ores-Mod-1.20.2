@@ -7,10 +7,7 @@ import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko95.oresmod.OresMod;
-import net.gecko95.oresmod.block.custom.DeepbarkSaplingBlock;
-import net.gecko95.oresmod.block.custom.LavaTankBlock;
-import net.gecko95.oresmod.block.custom.MilkTankBlock;
-import net.gecko95.oresmod.block.custom.StonebarkSaplingBlock;
+import net.gecko95.oresmod.block.custom.*;
 import net.gecko95.oresmod.world.ModConfiguredFeatures;
 import net.gecko95.oresmod.world.tree.DeepbarkSaplingGenerator;
 import net.gecko95.oresmod.world.tree.StonebarkSaplingGenerator;
@@ -386,6 +383,40 @@ public class ModBlocks {
 
     public static final Block AWKWARD_WATER_TANK = registerBlock("awkward_water_tank",
             new Block(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+
+    public static final Block HEALING_POTION_TANK = registerBlock("healing_potion_tank",
+            new HealingPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block FIRE_RESISTANCE_POTION_TANK = registerBlock("fire_resistance_potion_tank",
+            new FireResPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block REGENERATION_POTION_TANK = registerBlock("regeneration_potion_tank",
+            new RegenerationPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block STRENGTH_POTION_TANK = registerBlock("strength_potion_tank",
+            new StrengthPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block SWIFTNESS_POTION_TANK = registerBlock("swiftness_potion_tank",
+            new SwiftnessPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block NIGHT_VISION_POTION_TANK = registerBlock("night_vision_potion_tank",
+            new NightVisionPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block INVISIBILITY_POTION_TANK = registerBlock("invisibility_potion_tank",
+            new InvisibilityPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block WATER_BREATHING_POTION_TANK = registerBlock("water_breathing_potion_tank",
+            new WaterBreathingPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block LEAPING_POTION_TANK = registerBlock("leaping_potion_tank",
+            new LeapingPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block SLOW_FALLING_POTION_TANK = registerBlock("slow_falling_potion_tank",
+            new SlowFallingPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+
+    public static final Block POISON_POTION_TANK = registerBlock("poison_potion_tank",
+            new PoisonPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block WEAKNESS_POTION_TANK = registerBlock("weakness_potion_tank",
+            new WeaknessPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block HARMING_POTION_TANK = registerBlock("harming_potion_tank",
+            new HarmingPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block SLOWNESS_POTION_TANK = registerBlock("slowness_potion_tank",
+            new SlownessPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+
+    public static final Block TURTLE_MASTER_POTION_TANK = registerBlock("turtle_master_potion_tank",
+            new TurtleMasterPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -74,6 +74,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LAVA_TANK)
                 .add(ModBlocks.WATER_TANK)
                 .add(ModBlocks.AWKWARD_WATER_TANK)
+                .forceAddTag(ModTags.Blocks.POTION_TANKS)
                 .add(ModBlocks.MILK_TANK)
                 .add(ModBlocks.TITANIUM_ALLOY_BLOCK)
                 .add(ModBlocks.NETHER_COBALT_ORE)
@@ -187,6 +188,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LAVA_TANK)
                 .add(ModBlocks.WATER_TANK)
                 .add(ModBlocks.AWKWARD_WATER_TANK)
+                .forceAddTag(ModTags.Blocks.POTION_TANKS)
                 .add(ModBlocks.MILK_TANK)
                 .add(ModBlocks.NETHER_COBALT_ORE)
                 .add(ModBlocks.COBALT_BLOCK)
@@ -237,6 +239,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.TUFF)
                 .add(Blocks.SCULK)
                 .add(Blocks.DRIPSTONE_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.POTION_TANKS)
+                .add(ModBlocks.FIRE_RESISTANCE_POTION_TANK)
+                .add(ModBlocks.HEALING_POTION_TANK)
+                .add(ModBlocks.REGENERATION_POTION_TANK)
+                .add(ModBlocks.STRENGTH_POTION_TANK)
+                .add(ModBlocks.SWIFTNESS_POTION_TANK)
+                .add(ModBlocks.NIGHT_VISION_POTION_TANK)
+                .add(ModBlocks.INVISIBILITY_POTION_TANK)
+                .add(ModBlocks.WATER_BREATHING_POTION_TANK)
+                .add(ModBlocks.LEAPING_POTION_TANK)
+                .add(ModBlocks.SLOW_FALLING_POTION_TANK)
+                .add(ModBlocks.POISON_POTION_TANK)
+                .add(ModBlocks.WEAKNESS_POTION_TANK)
+                .add(ModBlocks.HARMING_POTION_TANK)
+                .add(ModBlocks.SLOWNESS_POTION_TANK)
+                .add(ModBlocks.TURTLE_MASTER_POTION_TANK);
+
 
         getOrCreateTagBuilder(BlockTags.SAND)
                 .add(ModBlocks.WHITE_SAND)

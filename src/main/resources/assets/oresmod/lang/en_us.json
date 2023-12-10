@@ -300,9 +300,27 @@
 
   "block.oresmod.lava_tank": "Lava Tank",
   "block.oresmod.water_tank": "Water Tank",
-  "block.oresmod.milk_tank": "Milk Tank",
+  "block.oresmod.milk_tank": "Tank of Milk",
 
-  "block.oresmod.awkward_water_tank": "Awkward Potion Tank",
+  "block.oresmod.awkward_water_tank": "Tank of Awkwardness",
+
+  "block.oresmod.healing_potion_tank": "Tank of Healing",
+  "block.oresmod.fire_resistance_potion_tank": "Tank of Fire Resistance",
+  "block.oresmod.regeneration_potion_tank": "Tank of Regeneration",
+  "block.oresmod.strength_potion_tank": "Tank of Strength",
+  "block.oresmod.swiftness_potion_tank": "Tank of Swiftness",
+  "block.oresmod.night_vision_potion_tank": "Tank of Night Vision",
+  "block.oresmod.invisibility_potion_tank": "Tank of Invisibility",
+  "block.oresmod.water_breathing_potion_tank": "Tank of Water Breathing",
+  "block.oresmod.leaping_potion_tank": "Tank of Leaping",
+  "block.oresmod.slow_falling_potion_tank": "Tank of Slow Falling",
+
+  "block.oresmod.poison_potion_tank": "Tank of Poison",
+  "block.oresmod.weakness_potion_tank": "Tank of Weakness",
+  "block.oresmod.harming_potion_tank": "Tank of Water Harming",
+  "block.oresmod.slowness_potion_tank": "Tank of Slowness",
+
+  "block.oresmod.turtle_master_potion_tank": "Tank of Turtle Master",
 
   "block.oresmod.titanium_alloy_block": "Block of Titanium Alloy",
 
@@ -316,6 +334,7 @@
   "block.oresmod.white_sandstone_stairs": "White Sandstone Stairs",
   "block.oresmod.white_sandstone_slab": "White Sandstone Slab",
   "block.oresmod.white_sandstone_wall": "White Sandstone Wall",
+  "block.oresmod.white_sandstone_texture": "White Cobbled Sandstone",
   "block.oresmod.chiseled_white_sandstone": "Chiseled White Sandstone",
   "block.oresmod.cut_white_sandstone": "Cut White Sandstone",
   "block.oresmod.cut_white_sandstone_slab": "Cut White Sandstone Slab",
@@ -327,6 +346,7 @@
   "block.oresmod.black_sandstone_stairs": "Black Sandstone Stairs",
   "block.oresmod.black_sandstone_slab": "Black Sandstone Slab",
   "block.oresmod.black_sandstone_wall": "Black Sandstone Wall",
+  "block.oresmod.black_sandstone_texture": "Black Cobbled Sandstone",
   "block.oresmod.chiseled_black_sandstone": "Chiseled Black Sandstone",
   "block.oresmod.cut_black_sandstone": "Cut Black Sandstone",
   "block.oresmod.cut_black_sandstone_slab": "Cut Black Sandstone Slab",

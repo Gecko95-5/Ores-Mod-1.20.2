@@ -100,7 +100,22 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.LAVA_TANK,tankBlockDrops(ModBlocks.LAVA_TANK));
         addDrop(ModBlocks.WATER_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
-        addDrop(ModBlocks.AWKWARD_WATER_TANK,tankBlockDrops(ModBlocks.AWKWARD_WATER_TANK));
+        addDrop(ModBlocks.AWKWARD_WATER_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.HEALING_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.REGENERATION_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.FIRE_RESISTANCE_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.STRENGTH_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.SWIFTNESS_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.NIGHT_VISION_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.INVISIBILITY_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.WATER_BREATHING_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.LEAPING_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.SLOW_FALLING_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.POISON_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.WEAKNESS_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.HARMING_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.SLOWNESS_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
+        addDrop(ModBlocks.TURTLE_MASTER_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
         addDrop(ModBlocks.MILK_TANK,tankBlockDrops(ModBlocks.MILK_TANK));
 
         addDrop(ModBlocks.FROSITE_ORE,oreDrops(ModBlocks.FROSITE_ORE, ModItems.FROSITE));
@@ -117,7 +132,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.TERRACOTTA_GOLD_ORE,oreDrops(ModBlocks.TERRACOTTA_GOLD_ORE, Items.RAW_GOLD));
         addDrop(ModBlocks.GRAVEL_COAL_ORE,oreDrops(ModBlocks.GRAVEL_COAL_ORE, Items.COAL));
-        addDrop(ModBlocks.DRIPSTONE_COPPER_ORE,oreDrops(ModBlocks.DRIPSTONE_COPPER_ORE, Items.RAW_COPPER));
+        addDrop(ModBlocks.DRIPSTONE_COPPER_ORE,copperLikeOreDrops(ModBlocks.DRIPSTONE_COPPER_ORE, Items.RAW_COPPER));
         addDrop(ModBlocks.TUFF_IRON_ORE,oreDrops(ModBlocks.TUFF_IRON_ORE, Items.RAW_IRON));
 
         addDrop(ModBlocks.NETHER_TUNGSTEN_ORE,copperLikeOreDrops(ModBlocks.NETHER_TUNGSTEN_ORE, ModItems.TUNGSTEN_NUGGET));

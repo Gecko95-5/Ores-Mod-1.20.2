@@ -91,15 +91,15 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(42), YOffset.fixed(117))));
 
         register(context, GRAVEL_COAL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GRAVEL_COAL_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(20,
+                ModOrePlacement.modifiersWithCount(10,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(192))));
 
         register(context, DRIPSTONE_COPPER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DRIPSTONE_COPPER_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(16,
+                ModOrePlacement.modifiersWithCount(8,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-16), YOffset.fixed(112))));
 
         register(context, TUFF_IRON_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TUFF_IRON_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(10,
+                ModOrePlacement.modifiersWithCount(5,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-24), YOffset.fixed(56))));
     }
 
