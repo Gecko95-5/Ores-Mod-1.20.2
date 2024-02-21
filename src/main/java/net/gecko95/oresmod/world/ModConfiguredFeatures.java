@@ -33,6 +33,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> NICKEL_ORE_KEY = registerKey("nickel_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NICKEL_ORE_CHUNKS_KEY = registerKey("nickel_ore_chunks");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TITANIUM_ORE_KEY = registerKey("titanium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BEDROCK_ORE_KEY = registerKey("bedrock_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TUNGSTEN_ORE_KEY = registerKey("tungsten_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBALT_ORE_KEY = registerKey("cobalt_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_SAND_KEY = registerKey("white_sand");
@@ -88,6 +89,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> netherCobaltOres =
                 List.of(OreFeatureConfig.createTarget(netherReplacebles, ModBlocks.NETHER_COBALT_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldBedrockOres =
+                List.of(OreFeatureConfig.createTarget(deepslateReplacebles, ModBlocks.CRACKED_BEDROCK.getDefaultState()));
+
         List<OreFeatureConfig.Target> overworldWhiteSand =
                 List.of(OreFeatureConfig.createTarget(sandReplacebles, ModBlocks.WHITE_SAND.getDefaultState()));
 
@@ -125,6 +129,8 @@ public class ModConfiguredFeatures {
         register(context, TUNGSTEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTungstenOres, 7));
 
         register(context, COBALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherCobaltOres, 9));
+
+        register(context, BEDROCK_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBedrockOres, 4));
 
         register(context, WHITE_SAND_KEY, Feature.ORE, new OreFeatureConfig(overworldWhiteSand, 16));
 

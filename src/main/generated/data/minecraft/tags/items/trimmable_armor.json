@@ -36,6 +36,10 @@
     "oresmod:cobalt_helmet",
     "oresmod:cobalt_chestplate",
     "oresmod:cobalt_leggings",
-    "oresmod:cobalt_boots"
+    "oresmod:cobalt_boots",
+    "oresmod:bedrock_helmet",
+    "oresmod:bedrock_chestplate",
+    "oresmod:bedrock_leggings",
+    "oresmod:bedrock_boots"
   ]
 }

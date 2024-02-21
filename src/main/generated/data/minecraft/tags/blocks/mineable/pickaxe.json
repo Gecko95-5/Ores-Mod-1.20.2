@@ -75,6 +75,8 @@
     "oresmod:chiseled_black_sandstone",
     "oresmod:terracotta_gold_ore",
     "oresmod:dripstone_copper_ore",
-    "oresmod:tuff_iron_ore"
+    "oresmod:tuff_iron_ore",
+    "oresmod:fake_bedrock",
+    "oresmod:cracked_bedrock"
   ]
 }

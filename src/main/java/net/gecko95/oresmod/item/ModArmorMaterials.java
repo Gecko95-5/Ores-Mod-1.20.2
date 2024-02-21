@@ -28,7 +28,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
     TITANIUM_ALLOY("titanium_alloy", 31, new int[] { 3, 8, 6, 3}, 14,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1f, 0.05f, () -> Ingredient.ofItems(ModItems.TITANIUM_ALLOY_INGOT)),
     COBALT("cobalt", 22, new int[] { 2, 6, 5, 3}, 17,
-    SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0.1f, () -> Ingredient.ofItems(ModItems.COBALT_INGOT));
+    SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0.1f, () -> Ingredient.ofItems(ModItems.COBALT_INGOT)),
+    BEDROCK("bedrock", 2, new int[] { 3, 8, 6, 3}, 1,
+            SoundEvents.BLOCK_STONE_PLACE, 0f, 1f, () -> Ingredient.ofItems(ModItems.BEDROCK_SHARD));
 
 private final String name;
 private final int durabilityMultiplier;

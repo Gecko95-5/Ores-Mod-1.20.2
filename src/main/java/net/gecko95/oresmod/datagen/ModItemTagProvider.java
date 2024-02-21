@@ -25,7 +25,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.TITANIUM_HELMET, ModItems.TITANIUM_CHESTPLATE, ModItems.TITANIUM_LEGGINGS, ModItems.TITANIUM_BOOTS)
                 .add(ModItems.TUNGSTEN_HELMET, ModItems.TUNGSTEN_CHESTPLATE, ModItems.TUNGSTEN_LEGGINGS, ModItems.TUNGSTEN_BOOTS)
                 .add(ModItems.TITANIUM_ALLOY_HELMET, ModItems.TITANIUM_ALLOY_CHESTPLATE, ModItems.TITANIUM_ALLOY_LEGGINGS, ModItems.TITANIUM_ALLOY_BOOTS)
-                .add(ModItems.COBALT_HELMET, ModItems.COBALT_CHESTPLATE, ModItems.COBALT_LEGGINGS, ModItems.COBALT_BOOTS);
+                .add(ModItems.COBALT_HELMET, ModItems.COBALT_CHESTPLATE, ModItems.COBALT_LEGGINGS, ModItems.COBALT_BOOTS)
+                .add(ModItems.BEDROCK_HELMET, ModItems.BEDROCK_CHESTPLATE, ModItems.BEDROCK_LEGGINGS, ModItems.BEDROCK_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.STONEBARK_PLANKS.asItem())

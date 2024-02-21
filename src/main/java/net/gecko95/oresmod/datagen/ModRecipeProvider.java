@@ -2565,5 +2565,81 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.TURTLE_HELMET), conditionsFromItem(Items.TURTLE_HELMET))
                 .criterion(hasItem(ModBlocks.AWKWARD_WATER_TANK), conditionsFromItem(ModBlocks.AWKWARD_WATER_TANK))
                 .offerTo(exporter, new Identifier("turtle_master_potion_tank"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.BEDROCK_SHARD,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.FAKE_BEDROCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BEDROCK_SWORD)
+                .pattern("B")
+                .pattern("B")
+                .pattern("S")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("bedrock_sword"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BEDROCK_PICKAXE)
+                .pattern("BBB")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("bedrock_pickaxe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BEDROCK_AXE)
+                .pattern("BB")
+                .pattern("BS")
+                .pattern(" S")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("bedrock_axe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BEDROCK_SHOVEL)
+                .pattern("B")
+                .pattern("S")
+                .pattern("S")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("bedrock_shovel"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BEDROCK_HOE)
+                .pattern("BB")
+                .pattern(" S")
+                .pattern(" S")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("bedrock_hoe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BEDROCK_HELMET)
+                .pattern("BBB")
+                .pattern("B B")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .offerTo(exporter, new Identifier("bedrock_helmet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BEDROCK_CHESTPLATE)
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .offerTo(exporter, new Identifier("bedrock_chestplate"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BEDROCK_LEGGINGS)
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .offerTo(exporter, new Identifier("bedrock_leggings"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BEDROCK_BOOTS)
+                .pattern("B B")
+                .pattern("B B")
+                .input('B', ModItems.BEDROCK_SHARD)
+                .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
+                .offerTo(exporter, new Identifier("bedrock_boots"));
     }
 }

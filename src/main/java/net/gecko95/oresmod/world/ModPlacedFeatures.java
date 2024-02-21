@@ -28,6 +28,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> TITANIUM_ORE_PLACED_KEY = registerKey("titanium_ore_placed");
     public static final RegistryKey<PlacedFeature> TUNGSTEN_ORE_PLACED_KEY = registerKey("tungsten_ore_placed");
     public static final RegistryKey<PlacedFeature> COBALT_ORE_PLACED_KEY = registerKey("cobalt_ore_placed");
+    public static final RegistryKey<PlacedFeature> BEDROCK_ORE_PLACED_KEY = registerKey("bedrock_ore_placed");
     public static final RegistryKey<PlacedFeature> WHITE_SAND_PLACED_KEY = registerKey("white_sand_placed");
     public static final RegistryKey<PlacedFeature> SUSPICIOUS_WHITE_SAND_PLACED_KEY = registerKey("suspicious_white_sand_placed");
     public static final RegistryKey<PlacedFeature> TERRACOTTA_GOLD_ORE_PLACED_KEY = registerKey("terracotta_gold_ore_placed");
@@ -77,6 +78,10 @@ public class ModPlacedFeatures {
         register(context, COBALT_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.COBALT_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(7), YOffset.fixed(113))));
+
+        register(context, BEDROCK_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BEDROCK_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(-60))));
 
         register(context, WHITE_SAND_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WHITE_SAND_KEY),
                 ModOrePlacement.modifiersWithCount(1,

@@ -95,8 +95,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_BLACK_SANDSTONE);
         addDrop(ModBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS);
         addDrop(ModBlocks.CHISELED_BLACK_SANDSTONE);
+        addDrop(ModBlocks.FAKE_BEDROCK);
+        addDrop(ModBlocks.POLISHED_BEDROCK);
+        addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS);
+        addDrop(ModBlocks.CHISELED_POLISHED_BEDROCK);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
+
+        addDrop(ModBlocks.CRACKED_BEDROCK,copperLikeOreDrops(ModBlocks.CRACKED_BEDROCK, ModItems.BEDROCK_SHARD));
 
         addDrop(ModBlocks.LAVA_TANK,tankBlockDrops(ModBlocks.LAVA_TANK));
         addDrop(ModBlocks.WATER_TANK,tankBlockDrops(ModBlocks.WATER_TANK));

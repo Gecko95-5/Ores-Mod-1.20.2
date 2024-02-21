@@ -5,8 +5,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.util.ModTags;
 import net.minecraft.block.Blocks;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -101,7 +104,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CHISELED_BLACK_SANDSTONE)
                 .add(ModBlocks.TERRACOTTA_GOLD_ORE)
                 .add(ModBlocks.DRIPSTONE_COPPER_ORE)
-                .add(ModBlocks.TUFF_IRON_ORE);
+                .add(ModBlocks.TUFF_IRON_ORE)
+                .add(ModBlocks.FAKE_BEDROCK)
+                .add(ModBlocks.CRACKED_BEDROCK);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -208,6 +213,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STEEL_PRESSURE_PLATE)
                 .add(ModBlocks.STEEL_LAMP)
                 .add(ModBlocks.TITANIUM_ALLOY_BLOCK);
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+                .add(ModBlocks.FAKE_BEDROCK)
+                .add(ModBlocks.CRACKED_BEDROCK)
+                .add(ModBlocks.POLISHED_BEDROCK)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS)
+                .add(ModBlocks.CHISELED_POLISHED_BEDROCK);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.FROSITE_BRICK_WALL)

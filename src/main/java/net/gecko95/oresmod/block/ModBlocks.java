@@ -309,6 +309,19 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.BLUE).instrument(Instrument.XYLOPHONE)
                     .requiresTool().sounds(BlockSoundGroup.METAL)));
 
+    public static final Block FAKE_BEDROCK = registerBlock("fake_bedrock",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).requiresTool()
+                    .strength(75.0f, 600.0f).sounds(BlockSoundGroup.STONE)));
+    public static final Block CRACKED_BEDROCK = registerBlock("cracked_bedrock",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).requiresTool()
+                    .strength(50.0f, 600.0f).sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_BEDROCK = registerBlock("polished_bedrock",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
+    public static final Block POLISHED_BEDROCK_BRICKS = registerBlock("polished_bedrock_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
+    public static final Block CHISELED_POLISHED_BEDROCK = registerBlock("chiseled_polished_bedrock",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
+
     public static final Block WHITE_SAND = registerBlock("white_sand",
             new GravelBlock(FabricBlockSettings.copyOf(Blocks.SAND).mapColor(MapColor.WHITE)));
     public static final Block SUSPICIOUS_WHITE_SAND = registerBlock("suspicious_white_sand",

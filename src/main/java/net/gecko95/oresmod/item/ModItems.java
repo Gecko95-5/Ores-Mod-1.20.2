@@ -275,6 +275,28 @@ public class ModItems {
     public static final Item COBALT_BOOTS = registerItem("cobalt_boots",
             new ArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item BEDROCK_SHARD = registerItem("bedrock_shard", new Item(new FabricItemSettings()));
+
+    public static final Item BEDROCK_SWORD = registerItem("bedrock_sword",
+            new SwordItem(ModToolMaterial.BEDROCK, 3, -3.2f, new FabricItemSettings()));
+    public static final Item BEDROCK_PICKAXE = registerItem("bedrock_pickaxe",
+            new PickaxeItem(ModToolMaterial.BEDROCK, 1, -3.6f, new FabricItemSettings()));
+    public static final Item BEDROCK_AXE = registerItem("bedrock_axe",
+            new AxeItem(ModToolMaterial.BEDROCK, 5.0f, -3.8f, new FabricItemSettings()));
+    public static final Item BEDROCK_SHOVEL = registerItem("bedrock_shovel",
+            new ShovelItem(ModToolMaterial.BEDROCK, 1.5f, -3.8f, new FabricItemSettings()));
+    public static final Item BEDROCK_HOE = registerItem("bedrock_hoe",
+            new HoeItem(ModToolMaterial.BEDROCK, -5, -2.0f, new FabricItemSettings()));
+
+    public static final Item BEDROCK_HELMET = registerItem("bedrock_helmet",
+            new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BEDROCK_CHESTPLATE = registerItem("bedrock_chestplate",
+            new ModArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BEDROCK_LEGGINGS = registerItem("bedrock_leggings",
+            new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BEDROCK_BOOTS = registerItem("bedrock_boots",
+            new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
     public static final Item COPPER_DRIVE = registerItem("copper_drive", new Item(new FabricItemSettings()));

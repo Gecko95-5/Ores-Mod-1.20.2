@@ -21,6 +21,8 @@ public class ModArmorItem extends ArmorItem {
                         .put(ModArmorMaterials.TUNGSTEN, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
                                 false, false, false))
                         .put(ModArmorMaterials.TITANIUM_ALLOY, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
+                                false, false, false))
+                        .put(ModArmorMaterials.BEDROCK, new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3,
                                 false, false, false)).build();
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);

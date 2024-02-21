@@ -195,6 +195,19 @@
   "item.oresmod.cobalt_leggings": "Cobalt Leggings",
   "item.oresmod.cobalt_boots": "Cobalt Boots",
 
+  "item.oresmod.bedrock_shard": "Bedrock Shard",
+
+  "item.oresmod.bedrock_sword": "Bedrock Sword",
+  "item.oresmod.bedrock_pickaxe": "Bedrock Pickaxe",
+  "item.oresmod.bedrock_axe": "Bedrock Axe",
+  "item.oresmod.bedrock_shovel": "Bedrock Shovel",
+  "item.oresmod.bedrock_hoe": "Bedrock Hoe",
+
+  "item.oresmod.bedrock_helmet": "Bedrock Helmet",
+  "item.oresmod.bedrock_chestplate": "Bedrock Chestplate",
+  "item.oresmod.bedrock_leggings": "Bedrock Leggings",
+  "item.oresmod.bedrock_boots": "Bedrock Boots",
+
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
   "block.oresmod.raw_salt_block": "Block of Raw Salt",
@@ -353,6 +366,13 @@
   "block.oresmod.smooth_black_sandstone": "Smooth Black Sandstone",
   "block.oresmod.smooth_black_sandstone_stairs": "Smooth Black Sandstone Stairs",
   "block.oresmod.smooth_black_sandstone_slab": "Smooth Black Sandstone Slab",
+
+  "block.oresmod.fake_bedrock": "Fake Bedrock",
+  "block.oresmod.cracked_bedrock": "Cracked Bedrock",
+
+  "block.oresmod.polished_bedrock": "Polished-Fake Bedrock",
+  "block.oresmod.polished_bedrock_bricks": "Polished-Fake Bedrock Bricks",
+  "block.oresmod.chiseled_polished_bedrock": "Chiseled Polished-Fake Bedrock",
 
   "block.oresmod.suspicious_white_sand": "Suspicious White Sand",
   "block.oresmod.terracotta_gold_ore": "Terracotta Gold Ore",

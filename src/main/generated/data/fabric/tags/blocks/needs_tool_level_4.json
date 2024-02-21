@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "oresmod:fake_bedrock",
+    "oresmod:cracked_bedrock",
+    "oresmod:polished_bedrock",
+    "oresmod:polished_bedrock_bricks",
+    "oresmod:chiseled_polished_bedrock"
+  ]
+}

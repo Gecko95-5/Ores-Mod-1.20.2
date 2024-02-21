@@ -79,6 +79,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TUFF_IRON_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRIPSTONE_COPPER_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_SAND);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FAKE_BEDROCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_BEDROCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_BEDROCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_BEDROCK_BRICKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_POLISHED_BEDROCK, TexturedModel.CUBE_BOTTOM_TOP);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -315,5 +320,19 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.COBALT_HANDLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DUEL_POWER_DRIVE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BEDROCK_SHARD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BEDROCK_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BEDROCK_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BEDROCK_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BEDROCK_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BEDROCK_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BEDROCK_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BEDROCK_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BEDROCK_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BEDROCK_BOOTS));
+
     }
 }
