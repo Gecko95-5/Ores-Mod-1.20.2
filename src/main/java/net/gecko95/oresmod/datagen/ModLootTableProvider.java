@@ -97,7 +97,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHISELED_BLACK_SANDSTONE);
         addDrop(ModBlocks.FAKE_BEDROCK);
         addDrop(ModBlocks.POLISHED_BEDROCK);
+        addDrop(ModBlocks.POLISHED_BEDROCK_STAIRS);
+        addDrop(ModBlocks.POLISHED_BEDROCK_WALL);
         addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS);
+        addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS);
+        addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_POLISHED_BEDROCK);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
@@ -165,6 +169,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLACK_SANDSTONE_SLAB, slabDrops(ModBlocks.BLACK_SANDSTONE_SLAB));
         addDrop(ModBlocks.CUT_BLACK_SANDSTONE_SLAB, slabDrops(ModBlocks.CUT_BLACK_SANDSTONE_SLAB));
         addDrop(ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB, slabDrops(ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB));
+
+        addDrop(ModBlocks.POLISHED_BEDROCK_SLAB, slabDrops(ModBlocks.POLISHED_BEDROCK_SLAB));
+        addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB, slabDrops(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB));
 
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));

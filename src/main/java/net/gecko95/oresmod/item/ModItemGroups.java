@@ -87,6 +87,8 @@ public class ModItemGroups {
                         entries.add(ModItems.COBALT_NUGGET);
                         entries.add(ModBlocks.CRACKED_BEDROCK);
                         entries.add(ModItems.BEDROCK_SHARD);
+                        entries.add(Items.GRAVEL);
+                        entries.add(Items.FLINT);
                     }).build());
     public static final ItemGroup ORES_MOD_COMPOUND_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_compounds"),
@@ -237,6 +239,10 @@ public class ModItemGroups {
                         entries.add(ModItems.BEDROCK_AXE);
                         entries.add(ModItems.BEDROCK_SHOVEL);
                         entries.add(ModItems.BEDROCK_HOE);
+                        entries.add(ModItems.FLINT_PICKAXE);
+                        entries.add(ModItems.FLINT_AXE);
+                        entries.add(ModItems.FLINT_SHOVEL);
+                        entries.add(ModItems.FLINT_HOE);
                     }).build());
     public static final ItemGroup ORES_MOD_WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_weapons"),
@@ -326,6 +332,8 @@ public class ModItemGroups {
                         entries.add(ModItems.BEDROCK_CHESTPLATE);
                         entries.add(ModItems.BEDROCK_LEGGINGS);
                         entries.add(ModItems.BEDROCK_BOOTS);
+                        entries.add(ModItems.FLINT_SWORD);
+                        entries.add(ModItems.FLINT_AXE);
                     }).build());
     public static final ItemGroup ORES_MOD_OTHER_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_other"),
@@ -430,7 +438,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB);
                         entries.add(ModBlocks.CHISELED_BLACK_SANDSTONE);
                         entries.add(ModBlocks.POLISHED_BEDROCK);
+                        entries.add(ModBlocks.POLISHED_BEDROCK_STAIRS);
+                        entries.add(ModBlocks.POLISHED_BEDROCK_SLAB);
+                        entries.add(ModBlocks.POLISHED_BEDROCK_WALL);
                         entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS);
+                        entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS);
+                        entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB);
+                        entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
                         entries.add(ModBlocks.CHISELED_POLISHED_BEDROCK);
                     }).build());
 

@@ -81,8 +81,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FAKE_BEDROCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_BEDROCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_BEDROCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_BEDROCK_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool polibedrockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BEDROCK);
+        BlockStateModelGenerator.BlockTexturePool brickbedrockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BEDROCK_BRICKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_POLISHED_BEDROCK, TexturedModel.CUBE_BOTTOM_TOP);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
@@ -105,6 +105,14 @@ public class ModModelProvider extends FabricModelProvider {
         frosttilePool.stairs(ModBlocks.FROSITE_TILE_STAIRS);
         frosttilePool.slab(ModBlocks.FROSITE_TILE_SLAB);
         frosttilePool.wall(ModBlocks.FROSITE_TILE_WALL);
+
+        polibedrockPool.stairs(ModBlocks.POLISHED_BEDROCK_STAIRS);
+        polibedrockPool.slab(ModBlocks.POLISHED_BEDROCK_SLAB);
+        polibedrockPool.wall(ModBlocks.POLISHED_BEDROCK_WALL);
+
+        brickbedrockPool.stairs(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS);
+        brickbedrockPool.slab(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB);
+        brickbedrockPool.wall(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
 
         smoothsteelPool.slab(ModBlocks.SMOOTH_STEEL_SLAB);
 
@@ -334,5 +342,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.BEDROCK_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.BEDROCK_BOOTS));
 
+        itemModelGenerator.register(ModItems.FLINT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FLINT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FLINT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FLINT_HOE, Models.HANDHELD);
     }
 }

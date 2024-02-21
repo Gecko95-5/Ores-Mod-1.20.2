@@ -2641,5 +2641,94 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', ModItems.BEDROCK_SHARD)
                 .criterion(hasItem(ModItems.BEDROCK_SHARD), conditionsFromItem(ModItems.BEDROCK_SHARD))
                 .offerTo(exporter, new Identifier("bedrock_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK,4)
+                .pattern("FF")
+                .pattern("FF")
+                .input('F', ModBlocks.FAKE_BEDROCK)
+                .criterion(hasItem(ModBlocks.FAKE_BEDROCK), conditionsFromItem(ModBlocks.FAKE_BEDROCK))
+                .offerTo(exporter, new Identifier("polished_bedrock"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK, ModBlocks.FAKE_BEDROCK);
+
+        createStairsRecipe(ModBlocks.POLISHED_BEDROCK_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_BEDROCK))
+                .criterion(hasItem(ModBlocks.POLISHED_BEDROCK),conditionsFromItem(ModBlocks.POLISHED_BEDROCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_BEDROCK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_STAIRS, ModBlocks.FAKE_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_STAIRS, ModBlocks.POLISHED_BEDROCK);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_SLAB, ModBlocks.POLISHED_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_SLAB, ModBlocks.FAKE_BEDROCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_SLAB, ModBlocks.POLISHED_BEDROCK,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_WALL, ModBlocks.POLISHED_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_WALL, ModBlocks.FAKE_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_WALL, ModBlocks.POLISHED_BEDROCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS,4)
+                .pattern("FF")
+                .pattern("FF")
+                .input('F', ModBlocks.POLISHED_BEDROCK)
+                .criterion(hasItem(ModBlocks.POLISHED_BEDROCK), conditionsFromItem(ModBlocks.POLISHED_BEDROCK))
+                .offerTo(exporter, new Identifier("polished_bedrock_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS, ModBlocks.FAKE_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS, ModBlocks.POLISHED_BEDROCK);
+
+        createStairsRecipe(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_BEDROCK_BRICKS))
+                .criterion(hasItem(ModBlocks.POLISHED_BEDROCK_BRICKS),conditionsFromItem(ModBlocks.POLISHED_BEDROCK_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS, ModBlocks.FAKE_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS, ModBlocks.POLISHED_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB, ModBlocks.FAKE_BEDROCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB, ModBlocks.POLISHED_BEDROCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB, ModBlocks.POLISHED_BEDROCK_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_BRICKS_WALL, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_BRICKS_WALL, ModBlocks.FAKE_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_BRICKS_WALL, ModBlocks.POLISHED_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_BRICKS_WALL, ModBlocks.POLISHED_BEDROCK_BRICKS);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_POLISHED_BEDROCK, ModBlocks.POLISHED_BEDROCK_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_POLISHED_BEDROCK, ModBlocks.FAKE_BEDROCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_POLISHED_BEDROCK, ModBlocks.POLISHED_BEDROCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FLINT_SWORD)
+                .pattern(" F")
+                .pattern("S ")
+                .input('F', Items.FLINT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("flint_sword"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_PICKAXE)
+                .pattern("FS")
+                .pattern("FF")
+                .input('F', Items.FLINT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("flint_pickaxe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_AXE)
+                .pattern("FF")
+                .pattern("FS")
+                .input('F', Items.FLINT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("flint_axe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_SHOVEL)
+                .pattern("F")
+                .pattern("S")
+                .input('F', Items.FLINT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("flint_shovel"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_HOE)
+                .pattern("FF")
+                .pattern(" S")
+                .input('F', Items.FLINT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("flint_hoe"));
     }
 }

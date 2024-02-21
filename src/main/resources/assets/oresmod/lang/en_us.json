@@ -208,6 +208,12 @@
   "item.oresmod.bedrock_leggings": "Bedrock Leggings",
   "item.oresmod.bedrock_boots": "Bedrock Boots",
 
+  "item.oresmod.flint_sword": "Flint Sword",
+  "item.oresmod.flint_pickaxe": "Flint Pickaxe",
+  "item.oresmod.flint_axe": "Flint Axe",
+  "item.oresmod.flint_shovel": "Flint Shovel",
+  "item.oresmod.flint_hoe": "Flint Hoe",
+
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
   "block.oresmod.raw_salt_block": "Block of Raw Salt",
@@ -371,7 +377,13 @@
   "block.oresmod.cracked_bedrock": "Cracked Bedrock",
 
   "block.oresmod.polished_bedrock": "Polished-Fake Bedrock",
+  "block.oresmod.polished_bedrock_stairs": "Polished-Fake Bedrock Stairs",
+  "block.oresmod.polished_bedrock_slab": "Polished-Fake Bedrock Slab",
+  "block.oresmod.polished_bedrock_wall": "Polished-Fake Bedrock Wall",
   "block.oresmod.polished_bedrock_bricks": "Polished-Fake Bedrock Bricks",
+  "block.oresmod.polished_bedrock_bricks_stairs": "Polished-Fake Bedrock Brick Stairs",
+  "block.oresmod.polished_bedrock_bricks_slab": "Polished-Fake Bedrock Brick Slab",
+  "block.oresmod.polished_bedrock_bricks_wall": "Polished-Fake Bedrock Brick Wall",
   "block.oresmod.chiseled_polished_bedrock": "Chiseled Polished-Fake Bedrock",
 
   "block.oresmod.suspicious_white_sand": "Suspicious White Sand",

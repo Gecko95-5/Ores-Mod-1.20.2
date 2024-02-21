@@ -297,6 +297,17 @@ public class ModItems {
     public static final Item BEDROCK_BOOTS = registerItem("bedrock_boots",
             new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item FLINT_SWORD = registerItem("flint_sword",
+            new SwordItem(ModToolMaterial.FLINT, 3, -1.6f, new FabricItemSettings()));
+    public static final Item FLINT_PICKAXE = registerItem("flint_pickaxe",
+            new PickaxeItem(ModToolMaterial.FLINT, 1, -2.0f, new FabricItemSettings()));
+    public static final Item FLINT_AXE = registerItem("flint_axe",
+            new AxeItem(ModToolMaterial.FLINT, 5.5f, -2.4f, new FabricItemSettings()));
+    public static final Item FLINT_SHOVEL = registerItem("flint_shovel",
+            new ShovelItem(ModToolMaterial.FLINT, 1.5f, -2.2f, new FabricItemSettings()));
+    public static final Item FLINT_HOE = registerItem("flint_hoe",
+            new HoeItem(ModToolMaterial.FLINT, -1, -2.0f, new FabricItemSettings()));
+
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
     public static final Item COPPER_DRIVE = registerItem("copper_drive", new Item(new FabricItemSettings()));

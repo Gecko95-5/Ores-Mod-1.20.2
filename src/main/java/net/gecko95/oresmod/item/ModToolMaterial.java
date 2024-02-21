@@ -27,6 +27,8 @@ public enum ModToolMaterial implements ToolMaterial {
             () -> Ingredient.ofItems(ModItems.COBALT_INGOT)),
     BEDROCK (1, 65, 0.5f, 5.0f, 1,
             () -> Ingredient.ofItems(ModItems.BEDROCK_SHARD)),
+    FLINT (1, 29, 5.0f, 0.5f, 7,
+            () -> Ingredient.ofItems(Items.FLINT)),
     POWER_IRON (2, 500, 12f, 1.0f, 7,
             () -> Ingredient.ofItems(Items.REDSTONE)),
     POWER_DIAMOND (3, 3122, 16f, 1.5f, 5,

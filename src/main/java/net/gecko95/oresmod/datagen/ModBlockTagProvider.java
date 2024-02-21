@@ -106,7 +106,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRIPSTONE_COPPER_ORE)
                 .add(ModBlocks.TUFF_IRON_ORE)
                 .add(ModBlocks.FAKE_BEDROCK)
-                .add(ModBlocks.CRACKED_BEDROCK);
+                .add(ModBlocks.CRACKED_BEDROCK)
+                .add(ModBlocks.POLISHED_BEDROCK)
+                .add(ModBlocks.POLISHED_BEDROCK_STAIRS)
+                .add(ModBlocks.POLISHED_BEDROCK_SLAB)
+                .add(ModBlocks.POLISHED_BEDROCK_WALL)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL)
+                .add(ModBlocks.CHISELED_POLISHED_BEDROCK);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -218,14 +227,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FAKE_BEDROCK)
                 .add(ModBlocks.CRACKED_BEDROCK)
                 .add(ModBlocks.POLISHED_BEDROCK)
+                .add(ModBlocks.POLISHED_BEDROCK_STAIRS)
+                .add(ModBlocks.POLISHED_BEDROCK_SLAB)
+                .add(ModBlocks.POLISHED_BEDROCK_WALL)
                 .add(ModBlocks.POLISHED_BEDROCK_BRICKS)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL)
                 .add(ModBlocks.CHISELED_POLISHED_BEDROCK);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.FROSITE_BRICK_WALL)
                 .add(ModBlocks.FROSITE_TILE_WALL)
                 .add(ModBlocks.WHITE_SANDSTONE_WALL)
-                .add(ModBlocks.BLACK_SANDSTONE_WALL);
+                .add(ModBlocks.BLACK_SANDSTONE_WALL)
+                .add(ModBlocks.POLISHED_BEDROCK_WALL)
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
+
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.STONEBARK_FENCE)

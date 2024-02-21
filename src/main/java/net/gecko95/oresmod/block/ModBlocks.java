@@ -317,8 +317,20 @@ public class ModBlocks {
                     .strength(50.0f, 600.0f).sounds(BlockSoundGroup.STONE)));
     public static final Block POLISHED_BEDROCK = registerBlock("polished_bedrock",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
+    public static final Block POLISHED_BEDROCK_STAIRS = registerBlock("polished_bedrock_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BEDROCK.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK)));
+    public static final Block POLISHED_BEDROCK_SLAB = registerBlock("polished_bedrock_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK)));
+    public static final Block POLISHED_BEDROCK_WALL = registerBlock("polished_bedrock_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK)));
     public static final Block POLISHED_BEDROCK_BRICKS = registerBlock("polished_bedrock_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
+    public static final Block POLISHED_BEDROCK_BRICKS_STAIRS = registerBlock("polished_bedrock_bricks_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BEDROCK_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_BRICKS)));
+    public static final Block POLISHED_BEDROCK_BRICKS_SLAB = registerBlock("polished_bedrock_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_BRICKS)));
+    public static final Block POLISHED_BEDROCK_BRICKS_WALL = registerBlock("polished_bedrock_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_BRICKS)));
     public static final Block CHISELED_POLISHED_BEDROCK = registerBlock("chiseled_polished_bedrock",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
 
