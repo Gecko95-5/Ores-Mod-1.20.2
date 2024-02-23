@@ -103,6 +103,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS);
         addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_POLISHED_BEDROCK);
+        addDrop(ModBlocks.FLINT_SPIKES);
+        addDrop(ModBlocks.IRON_SPIKES);
+        addDrop(ModBlocks.ALUMINUM_SPIKES);
+        addDrop(ModBlocks.STEEL_SPIKES);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 

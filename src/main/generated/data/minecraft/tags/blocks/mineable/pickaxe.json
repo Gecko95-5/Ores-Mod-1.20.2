@@ -86,6 +86,9 @@
     "oresmod:polished_bedrock_bricks_stairs",
     "oresmod:polished_bedrock_bricks_slab",
     "oresmod:polished_bedrock_bricks_wall",
-    "oresmod:chiseled_polished_bedrock"
+    "oresmod:chiseled_polished_bedrock",
+    "oresmod:iron_spikes",
+    "oresmod:aluminum_spikes",
+    "oresmod:steel_spikes"
   ]
 }

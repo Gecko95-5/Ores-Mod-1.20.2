@@ -115,7 +115,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS)
                 .add(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB)
                 .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL)
-                .add(ModBlocks.CHISELED_POLISHED_BEDROCK);
+                .add(ModBlocks.CHISELED_POLISHED_BEDROCK)
+                .add(ModBlocks.IRON_SPIKES)
+                .add(ModBlocks.ALUMINUM_SPIKES)
+                .add(ModBlocks.STEEL_SPIKES);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -156,7 +159,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STANDING_DEEPBARK_SIGN)
                 .add(ModBlocks.WALL_DEEPBARK_SIGN)
                 .add(ModBlocks.HANGING_DEEPBARK_SIGN)
-                .add(ModBlocks.WALL_HANGING_DEEPBARK_SIGN);
+                .add(ModBlocks.WALL_HANGING_DEEPBARK_SIGN)
+                .add(ModBlocks.FLINT_SPIKES);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.WHITE_SAND)
@@ -179,7 +183,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NICKEL_ORE)
                 .add(ModBlocks.DEEPSLATE_NICKEL_ORE)
                 .add(ModBlocks.DRIPSTONE_COPPER_ORE)
-                .add(ModBlocks.TUFF_IRON_ORE);
+                .add(ModBlocks.TUFF_IRON_ORE)
+                .add(ModBlocks.IRON_SPIKES)
+                .add(ModBlocks.ALUMINUM_SPIKES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.FROSITE_ORE)
@@ -221,7 +227,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STEEL_BARS)
                 .add(ModBlocks.STEEL_PRESSURE_PLATE)
                 .add(ModBlocks.STEEL_LAMP)
-                .add(ModBlocks.TITANIUM_ALLOY_BLOCK);
+                .add(ModBlocks.TITANIUM_ALLOY_BLOCK)
+                .add(ModBlocks.STEEL_SPIKES);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.FAKE_BEDROCK)

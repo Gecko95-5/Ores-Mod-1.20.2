@@ -392,6 +392,11 @@
   "block.oresmod.dripstone_copper_ore": "Dripstone Copper Ore",
   "block.oresmod.tuff_iron_ore": "Tuff Iron Ore",
 
+  "block.oresmod.flint_spikes": "Flint Spikes",
+  "block.oresmod.iron_spikes": "Iron Spikes",
+  "block.oresmod.aluminum_spikes": "Aluminum Spikes",
+  "block.oresmod.steel_spikes": "Steel Spikes",
+
   "itemgroup.ores_mod_ores": "Ores & Materials",
   "itemgroup.ores_mod_compounds": "Compounds of Materials",
   "itemgroup.ores_mod_blocks": "Block of Materials",

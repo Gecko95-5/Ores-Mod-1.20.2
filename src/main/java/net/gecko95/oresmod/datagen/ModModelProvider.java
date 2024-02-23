@@ -156,6 +156,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.DEEPBARK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.DEEPBARK_TRAPDOOR);
+
+        blockStateModelGenerator.registerSimpleState(ModBlocks.FLINT_SPIKES);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.IRON_SPIKES);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.ALUMINUM_SPIKES);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.STEEL_SPIKES);
     }
 
     @Override

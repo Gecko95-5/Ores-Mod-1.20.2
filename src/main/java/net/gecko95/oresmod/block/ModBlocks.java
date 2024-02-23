@@ -442,6 +442,16 @@ public class ModBlocks {
     public static final Block TURTLE_MASTER_POTION_TANK = registerBlock("turtle_master_potion_tank",
             new TurtleMasterPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
 
+    public static final Block FLINT_SPIKES = registerBlock("flint_spikes",
+            new FlintSpikeBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.BLACK).nonOpaque().strength(1.0f, 3.0f)));
+
+    public static final Block IRON_SPIKES = registerBlock("iron_spikes",
+            new IronSpikeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque().strength(1.0f, 3.0f)));
+    public static final Block ALUMINUM_SPIKES = registerBlock("aluminum_spikes",
+            new IronSpikeBlock(FabricBlockSettings.copyOf(ModBlocks.ALUMINUM_BLOCK).nonOpaque().strength(1.0f, 3.0f)));
+    public static final Block STEEL_SPIKES = registerBlock("steel_spikes",
+            new SteelSpikeBlock(FabricBlockSettings.copyOf(ModBlocks.STEEL_BLOCK).nonOpaque().strength(1.0f, 3.0f)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,4 +1,4 @@
-// 1.20.2	2024-02-21T15:43:18.8417781	Ores Mod/Block Loot Tables
+// 1.20.2	2024-02-23T13:38:58.2351367	Ores Mod/Block Loot Tables
 5b2d728d32410b648a8b78fa03e8e9590787e048 data\oresmod\loot_tables\blocks\steel_trapdoor.json
 762ec1b68d91ac9538078811a92d80986ad9daf5 data\oresmod\loot_tables\blocks\stonebark_stairs.json
 afa718338eb974cc0067428164905834e692ede9 data\oresmod\loot_tables\blocks\smooth_white_sandstone_stairs.json
@@ -32,6 +32,7 @@ b170833df7dcf8684eb63af4ef233c3ccee9999c data\oresmod\loot_tables\blocks\frosite
 5b81546a057d2fec29ecac4b18b79ad4dba48d9f data\oresmod\loot_tables\blocks\aluminum_block.json
 9a548edcaab74bfbb849c0ada3204e75b33089b9 data\oresmod\loot_tables\blocks\chiseled_frosite.json
 d7480434a71a4dd57737ec6b7f07253ceba5ca57 data\oresmod\loot_tables\blocks\smooth_black_sandstone_stairs.json
+778c838aa571c419079d049d88bc1679a6426034 data\oresmod\loot_tables\blocks\steel_spikes.json
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\water_breathing_potion_tank.json
 fbaa6d004acd9a9c91ae2d04a3bff4110ba9c832 data\oresmod\loot_tables\blocks\white_sandstone.json
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\strength_potion_tank.json
@@ -43,6 +44,7 @@ d44ed1301fe84606e9cbd0cf4c2bc92dcdb26057 data\oresmod\loot_tables\blocks\strippe
 eb90319b1ebe44f80910662584d9d4ec6768a1c7 data\oresmod\loot_tables\blocks\black_sand.json
 988b803dd84184194bac131e9b1f8267316a4fa1 data\oresmod\loot_tables\blocks\polished_bedrock_bricks_slab.json
 299457e7e1e22778095cfb0580c1fe2ff73eb165 data\oresmod\loot_tables\blocks\deepbark_slab.json
+6519ca5d65b01d655f08ba632411e842f75dd22b data\oresmod\loot_tables\blocks\aluminum_spikes.json
 a15a6b30111f19a1db46c0298e876605646078c1 data\oresmod\loot_tables\blocks\deepslate_wood.json
 7f344ec0a9090415fca677468dc5d17da974da46 data\oresmod\loot_tables\blocks\polished_bedrock.json
 cf7eae265ffde903a1976650de963989ba4f9030 data\oresmod\loot_tables\blocks\deepbark_pressure_plate.json
@@ -72,6 +74,7 @@ fd4b8b84da2f70901d95f2abe117a1384383ee0b data\oresmod\loot_tables\blocks\smooth_
 b4a9e3831f22a9820690e0e4d523e4813cffd7e1 data\oresmod\loot_tables\blocks\polished_bedrock_wall.json
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\awkward_water_tank.json
 8e00ae7a38fe88a78626bef74988bac19e85b9c6 data\oresmod\loot_tables\blocks\tuff_iron_ore.json
+6b307d3868e70fa9ad765e12666d7cc7ee96d7d9 data\oresmod\loot_tables\blocks\iron_spikes.json
 98383bf246ab2094e3e5569abc1ed0e6fe3c0307 data\oresmod\loot_tables\blocks\chiseled_white_sandstone.json
 179cf9d6ed9d40cdea733ab9c3112ae80bf11ec7 data\oresmod\loot_tables\blocks\steel_pressure_plate.json
 f4f7ba12cd8ccd3057d9d46ddc0489c127f44427 data\oresmod\loot_tables\blocks\aluminum_ore.json
@@ -136,3 +139,4 @@ bc1ef8917a2abd1e1ce53975720313b150a85b6b data\oresmod\loot_tables\blocks\deepsla
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\regeneration_potion_tank.json
 113a0543036c37549976461288891a0a0583b396 data\oresmod\loot_tables\blocks\raw_steel_block.json
 1ea529f1e0b93713031214466e6c0bb517317e00 data\oresmod\loot_tables\blocks\deepbark_button.json
+a4790ace5e14f90f31c61bd674894708fc055c71 data\oresmod\loot_tables\blocks\flint_spikes.json

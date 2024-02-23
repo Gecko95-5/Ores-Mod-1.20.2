@@ -446,6 +446,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB);
                         entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
                         entries.add(ModBlocks.CHISELED_POLISHED_BEDROCK);
+                        entries.add(ModBlocks.FLINT_SPIKES);
+                        entries.add(ModBlocks.IRON_SPIKES);
+                        entries.add(ModBlocks.ALUMINUM_SPIKES);
+                        entries.add(ModBlocks.STEEL_SPIKES);
                     }).build());
 
     public static final ItemGroup ORES_MOD_LIQUIDS_GROUP = Registry.register(Registries.ITEM_GROUP,

@@ -1,4 +1,4 @@
-// 1.20.2	2024-02-21T15:43:18.8637224	Ores Mod/World Gen
+// 1.20.2	2024-02-23T13:38:58.2730342	Ores Mod/World Gen
 8bbde45f41663b193537340e5c4e66398ec3a73c data\oresmod\worldgen\configured_feature\dripstone_copper_ore.json
 cba64dc63d312dd09b4623917d3ab44b07b8346e data\oresmod\worldgen\configured_feature\titanium_ore.json
 ceb1fcfb967f9cced64fe9b40e6ca9da52b976a8 data\oresmod\worldgen\placed_feature\aluminum_ore_placed.json
@@ -25,8 +25,8 @@ a2ad89038e7568a2e32b335332d3fbb4fa174d1c data\oresmod\worldgen\configured_featur
 c12d06b021ffb58a5e52775e8e5d68b5d7403bb2 data\oresmod\worldgen\configured_feature\terracotta_gold_ore.json
 f9c72adf3333719bd93d98757804e4832ca3bc61 data\oresmod\worldgen\placed_feature\bedrock_ore_placed.json
 11058292420f7fecca5ca309eddbf335e079a98a data\oresmod\worldgen\configured_feature\frosite_ore_icy.json
-b4d6a4f70cf2f7c2a9d1e9657319b7f4ee3f8c0e data\oresmod\worldgen\placed_feature\dripstone_copper_ore_placed.json
 f524f739df8ec8c924915aeff903e6557baf995f data\oresmod\worldgen\placed_feature\terracotta_gold_ore_placed.json
+b4d6a4f70cf2f7c2a9d1e9657319b7f4ee3f8c0e data\oresmod\worldgen\placed_feature\dripstone_copper_ore_placed.json
 67013f285cb8dcf18460700288b1636e58e11083 data\oresmod\worldgen\placed_feature\nickel_ore_placed.json
 f60e51dbf939d60140e515ab877b81efa2ab9da9 data\oresmod\worldgen\placed_feature\frosite_ore_icy_placed.json
 5a46942711621b083ea704679b2eb0855a164608 data\oresmod\worldgen\placed_feature\cobalt_ore_placed.json
