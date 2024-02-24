@@ -334,6 +334,14 @@ public class ModItemGroups {
                         entries.add(ModItems.BEDROCK_BOOTS);
                         entries.add(ModItems.FLINT_SWORD);
                         entries.add(ModItems.FLINT_AXE);
+                        entries.add(ModItems.CLAY_HELMET);
+                        entries.add(ModItems.CLAY_CHESTPLATE);
+                        entries.add(ModItems.CLAY_LEGGINGS);
+                        entries.add(ModItems.CLAY_BOOTS);
+                        entries.add(ModItems.TERRACOTTA_HELMET);
+                        entries.add(ModItems.TERRACOTTA_CHESTPLATE);
+                        entries.add(ModItems.TERRACOTTA_LEGGINGS);
+                        entries.add(ModItems.TERRACOTTA_BOOTS);
                     }).build());
     public static final ItemGroup ORES_MOD_OTHER_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_other"),

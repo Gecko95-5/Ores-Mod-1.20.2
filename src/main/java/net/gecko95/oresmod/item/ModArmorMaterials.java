@@ -30,7 +30,11 @@ public enum ModArmorMaterials implements ArmorMaterial {
     COBALT("cobalt", 22, new int[] { 2, 6, 5, 3}, 17,
     SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0.1f, () -> Ingredient.ofItems(ModItems.COBALT_INGOT)),
     BEDROCK("bedrock", 2, new int[] { 3, 8, 6, 3}, 1,
-            SoundEvents.BLOCK_STONE_PLACE, 0f, 1f, () -> Ingredient.ofItems(ModItems.BEDROCK_SHARD));
+            SoundEvents.BLOCK_STONE_PLACE, 0f, 0.5f, () -> Ingredient.ofItems(ModItems.BEDROCK_SHARD)),
+    CLAY("clay", 7, new int[] { 1, 2, 2, 1}, 6,
+    SoundEvents.BLOCK_GRAVEL_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.CLAY)),
+    TERRACOTTA("terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
+    SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA));
 
 private final String name;
 private final int durabilityMultiplier;

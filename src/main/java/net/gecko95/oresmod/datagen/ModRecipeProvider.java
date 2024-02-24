@@ -2798,5 +2798,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', Items.IRON_NUGGET)
                 .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
                 .offerTo(exporter, new Identifier("chainmail_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_HELMET)
+                .pattern("CCC")
+                .pattern("C C")
+                .input('C', Items.CLAY_BALL)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(exporter, new Identifier("clay_helmet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_CHESTPLATE)
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .input('C', Items.CLAY_BALL)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(exporter, new Identifier("clay_chestplate"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_LEGGINGS)
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.CLAY_BALL)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(exporter, new Identifier("clay_leggings"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CLAY_BOOTS)
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.CLAY_BALL)
+                .criterion(hasItem(Items.CLAY_BALL), conditionsFromItem(Items.CLAY_BALL))
+                .offerTo(exporter, new Identifier("clay_boots"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
+                        (ModItems.CLAY_HELMET), RecipeCategory.MISC, ModItems.TERRACOTTA_HELMET,0.7f, 250)
+                .criterion(hasItem(ModItems.CLAY_HELMET), conditionsFromItem(ModItems.CLAY_HELMET))
+                .offerTo(exporter, new Identifier("terracotta_helmet_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
+                        (ModItems.CLAY_CHESTPLATE), RecipeCategory.MISC, ModItems.TERRACOTTA_CHESTPLATE,0.7f, 250)
+                .criterion(hasItem(ModItems.CLAY_CHESTPLATE), conditionsFromItem(ModItems.CLAY_CHESTPLATE))
+                .offerTo(exporter, new Identifier("terracotta_chestplate_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
+                        (ModItems.CLAY_LEGGINGS), RecipeCategory.MISC, ModItems.TERRACOTTA_LEGGINGS,0.7f, 250)
+                .criterion(hasItem(ModItems.CLAY_LEGGINGS), conditionsFromItem(ModItems.CLAY_LEGGINGS))
+                .offerTo(exporter, new Identifier("terracotta_leggings_from_smelting"));
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
+                        (ModItems.CLAY_BOOTS), RecipeCategory.MISC, ModItems.TERRACOTTA_BOOTS,0.7f, 250)
+                .criterion(hasItem(ModItems.CLAY_BOOTS), conditionsFromItem(ModItems.CLAY_BOOTS))
+                .offerTo(exporter, new Identifier("terracotta_boots_from_smelting"));
     }
 }

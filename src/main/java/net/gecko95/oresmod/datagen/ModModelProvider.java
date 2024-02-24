@@ -352,5 +352,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FLINT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FLINT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FLINT_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CLAY_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CLAY_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CLAY_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CLAY_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_BOOTS));
     }
 }

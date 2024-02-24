@@ -308,6 +308,24 @@ public class ModItems {
     public static final Item FLINT_HOE = registerItem("flint_hoe",
             new HoeItem(ModToolMaterial.FLINT, -1, -2.0f, new FabricItemSettings()));
 
+    public static final Item CLAY_HELMET = registerItem("clay_helmet",
+            new ArmorItem(ModArmorMaterials.CLAY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item CLAY_CHESTPLATE = registerItem("clay_chestplate",
+            new ModArmorItem(ModArmorMaterials.CLAY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item CLAY_LEGGINGS = registerItem("clay_leggings",
+            new ArmorItem(ModArmorMaterials.CLAY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item CLAY_BOOTS = registerItem("clay_boots",
+            new ArmorItem(ModArmorMaterials.CLAY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item TERRACOTTA_HELMET = registerItem("terracotta_helmet",
+            new ArmorItem(ModArmorMaterials.TERRACOTTA, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item TERRACOTTA_CHESTPLATE = registerItem("terracotta_chestplate",
+            new ModArmorItem(ModArmorMaterials.TERRACOTTA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item TERRACOTTA_LEGGINGS = registerItem("terracotta_leggings",
+            new ArmorItem(ModArmorMaterials.TERRACOTTA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item TERRACOTTA_BOOTS = registerItem("terracotta_boots",
+            new ArmorItem(ModArmorMaterials.TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
     public static final Item COPPER_DRIVE = registerItem("copper_drive", new Item(new FabricItemSettings()));

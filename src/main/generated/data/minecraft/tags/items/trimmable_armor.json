@@ -40,6 +40,14 @@
     "oresmod:bedrock_helmet",
     "oresmod:bedrock_chestplate",
     "oresmod:bedrock_leggings",
-    "oresmod:bedrock_boots"
+    "oresmod:bedrock_boots",
+    "oresmod:clay_helmet",
+    "oresmod:clay_chestplate",
+    "oresmod:clay_leggings",
+    "oresmod:clay_boots",
+    "oresmod:terracotta_helmet",
+    "oresmod:terracotta_chestplate",
+    "oresmod:terracotta_leggings",
+    "oresmod:terracotta_boots"
   ]
 }

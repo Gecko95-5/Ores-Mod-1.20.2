@@ -214,6 +214,16 @@
   "item.oresmod.flint_shovel": "Flint Shovel",
   "item.oresmod.flint_hoe": "Flint Hoe",
 
+  "item.oresmod.clay_helmet": "Clay Helmet",
+  "item.oresmod.clay_chestplate": "Clay Chestplate",
+  "item.oresmod.clay_leggings": "Clay Leggings",
+  "item.oresmod.clay_boots": "Clay Boots",
+
+  "item.oresmod.terracotta_helmet": "Terracotta Helmet",
+  "item.oresmod.terracotta_chestplate": "Terracotta Chestplate",
+  "item.oresmod.terracotta_leggings": "Terracotta Leggings",
+  "item.oresmod.terracotta_boots": "Terracotta Boots",
+
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
   "block.oresmod.raw_salt_block": "Block of Raw Salt",
