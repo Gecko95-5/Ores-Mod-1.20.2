@@ -80,11 +80,11 @@ public class ModItems {
     public static final Item NICKEL_PICKAXE = registerItem("nickel_pickaxe",
             new PickaxeItem(ModToolMaterial.NICKEL, 1, -2.8f, new FabricItemSettings()));
     public static final Item NICKEL_AXE = registerItem("nickel_axe",
-            new AxeItem(ModToolMaterial.NICKEL, 6.0f, -3.2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.NICKEL, 6.0f, -3.0f, new FabricItemSettings()));
     public static final Item NICKEL_SHOVEL = registerItem("nickel_shovel",
             new ShovelItem(ModToolMaterial.NICKEL, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item NICKEL_HOE = registerItem("nickel_hoe",
-            new HoeItem(ModToolMaterial.NICKEL, -2, -2.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.NICKEL, -2, -0.8f, new FabricItemSettings()));
 
     public static final Item NICKEL_HELMET = registerItem("nickel_helmet",
             new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -96,13 +96,13 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.NICKEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item COPPER_SWORD = registerItem("copper_sword",
-            new SwordItem(ModToolMaterial.COPPER, 3, -2.4f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.COPPER, 3, -2.2f, new FabricItemSettings()));
     public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
-            new PickaxeItem(ModToolMaterial.COPPER, 1, -2.8f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterial.COPPER, 1, -2.6f, new FabricItemSettings()));
     public static final Item COPPER_AXE = registerItem("copper_axe",
-            new AxeItem(ModToolMaterial.COPPER, 7.0f, -3.2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.COPPER, 7.0f, -2.8f, new FabricItemSettings()));
     public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
-            new ShovelItem(ModToolMaterial.COPPER, 1.5f, -3.0f, new FabricItemSettings()));
+            new ShovelItem(ModToolMaterial.COPPER, 1.5f, -2.8f, new FabricItemSettings()));
     public static final Item COPPER_HOE = registerItem("copper_hoe",
             new HoeItem(ModToolMaterial.COPPER, -1, -2.0f, new FabricItemSettings()));
 
