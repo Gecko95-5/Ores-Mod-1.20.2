@@ -34,7 +34,17 @@ public enum ModArmorMaterials implements ArmorMaterial {
     CLAY("clay", 7, new int[] { 1, 2, 2, 1}, 6,
     SoundEvents.BLOCK_GRAVEL_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.CLAY)),
     TERRACOTTA("terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
-    SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA));
+    SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA)),
+    BLACK_TERRACOTTA("black_terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
+            SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA)),
+    BLUE_TERRACOTTA("black_terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
+            SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA)),
+    BROWN_TERRACOTTA("brown_terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
+            SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA)),
+    CYAN_TERRACOTTA("cyan_terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
+            SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA)),
+    GRAY_TERRACOTTA("gray_terracotta", 12, new int[] { 2, 4, 4, 2}, 3,
+            SoundEvents.BLOCK_DECORATED_POT_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.TERRACOTTA));
 
 private final String name;
 private final int durabilityMultiplier;

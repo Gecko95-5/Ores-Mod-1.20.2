@@ -326,6 +326,51 @@ public class ModItems {
     public static final Item TERRACOTTA_BOOTS = registerItem("terracotta_boots",
             new ArmorItem(ModArmorMaterials.TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item BLACK_TERRACOTTA_HELMET = registerItem("black_terracotta_helmet",
+            new ArmorItem(ModArmorMaterials.BLACK_TERRACOTTA, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BLACK_TERRACOTTA_CHESTPLATE = registerItem("black_terracotta_chestplate",
+            new ModArmorItem(ModArmorMaterials.BLACK_TERRACOTTA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BLACK_TERRACOTTA_LEGGINGS = registerItem("black_terracotta_leggings",
+            new ArmorItem(ModArmorMaterials.BLACK_TERRACOTTA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BLACK_TERRACOTTA_BOOTS = registerItem("black_terracotta_boots",
+            new ArmorItem(ModArmorMaterials.BLACK_TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item BLUE_TERRACOTTA_HELMET = registerItem("blue_terracotta_helmet",
+            new ArmorItem(ModArmorMaterials.BLUE_TERRACOTTA, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BLUE_TERRACOTTA_CHESTPLATE = registerItem("blue_terracotta_chestplate",
+            new ModArmorItem(ModArmorMaterials.BLUE_TERRACOTTA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BLUE_TERRACOTTA_LEGGINGS = registerItem("blue_terracotta_leggings",
+            new ArmorItem(ModArmorMaterials.BLUE_TERRACOTTA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BLUE_TERRACOTTA_BOOTS = registerItem("blue_terracotta_boots",
+            new ArmorItem(ModArmorMaterials.BLUE_TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item BROWN_TERRACOTTA_HELMET = registerItem("brown_terracotta_helmet",
+            new ArmorItem(ModArmorMaterials.BROWN_TERRACOTTA, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BROWN_TERRACOTTA_CHESTPLATE = registerItem("brown_terracotta_chestplate",
+            new ModArmorItem(ModArmorMaterials.BROWN_TERRACOTTA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BROWN_TERRACOTTA_LEGGINGS = registerItem("brown_terracotta_leggings",
+            new ArmorItem(ModArmorMaterials.BROWN_TERRACOTTA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BROWN_TERRACOTTA_BOOTS = registerItem("brown_terracotta_boots",
+            new ArmorItem(ModArmorMaterials.BROWN_TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item CYAN_TERRACOTTA_HELMET = registerItem("cyan_terracotta_helmet",
+            new ArmorItem(ModArmorMaterials.CYAN_TERRACOTTA, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item CYAN_TERRACOTTA_CHESTPLATE = registerItem("cyan_terracotta_chestplate",
+            new ModArmorItem(ModArmorMaterials.CYAN_TERRACOTTA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item CYAN_TERRACOTTA_LEGGINGS = registerItem("cyan_terracotta_leggings",
+            new ArmorItem(ModArmorMaterials.CYAN_TERRACOTTA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item CYAN_TERRACOTTA_BOOTS = registerItem("cyan_terracotta_boots",
+            new ArmorItem(ModArmorMaterials.CYAN_TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item GRAY_TERRACOTTA_HELMET = registerItem("gray_terracotta_helmet",
+            new ArmorItem(ModArmorMaterials.GRAY_TERRACOTTA, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item GRAY_TERRACOTTA_CHESTPLATE = registerItem("gray_terracotta_chestplate",
+            new ModArmorItem(ModArmorMaterials.GRAY_TERRACOTTA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item GRAY_TERRACOTTA_LEGGINGS = registerItem("gray_terracotta_leggings",
+            new ArmorItem(ModArmorMaterials.GRAY_TERRACOTTA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item GRAY_TERRACOTTA_BOOTS = registerItem("gray_terracotta_boots",
+            new ArmorItem(ModArmorMaterials.GRAY_TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
     public static final Item COPPER_DRIVE = registerItem("copper_drive", new Item(new FabricItemSettings()));
