@@ -362,5 +362,85 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLACK_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLACK_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLACK_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLACK_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLUE_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLUE_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLUE_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BLUE_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BROWN_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BROWN_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BROWN_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.BROWN_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CYAN_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CYAN_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CYAN_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.CYAN_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GRAY_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GRAY_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GRAY_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GRAY_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GREEN_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GREEN_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GREEN_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.GREEN_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_BLUE_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_BLUE_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_BLUE_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_BLUE_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_GRAY_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_GRAY_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_GRAY_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIGHT_GRAY_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIME_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIME_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIME_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LIME_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.MAGENTA_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.MAGENTA_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.MAGENTA_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.MAGENTA_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.ORANGE_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.ORANGE_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.ORANGE_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.ORANGE_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PINK_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PINK_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PINK_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PINK_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PURPLE_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PURPLE_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PURPLE_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PURPLE_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.RED_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.RED_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.RED_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.RED_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.WHITE_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.WHITE_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.WHITE_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.WHITE_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_BOOTS));
     }
 }

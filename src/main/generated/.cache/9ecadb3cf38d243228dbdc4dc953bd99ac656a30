@@ -1,11 +1,11 @@
-// 1.20.2	2024-02-23T20:11:50.3944328	Ores Mod/Block Loot Tables
+// 1.20.2	2024-04-17T16:15:20.4823961	Ores Mod/Block Loot Tables
 5b2d728d32410b648a8b78fa03e8e9590787e048 data\oresmod\loot_tables\blocks\steel_trapdoor.json
 762ec1b68d91ac9538078811a92d80986ad9daf5 data\oresmod\loot_tables\blocks\stonebark_stairs.json
 afa718338eb974cc0067428164905834e692ede9 data\oresmod\loot_tables\blocks\smooth_white_sandstone_stairs.json
 28e754cb919d5fd01be8dda49e410302cc862438 data\oresmod\loot_tables\blocks\cut_black_sandstone.json
 e8ef0ea3571dbcf7a91b8c9ff25af78e61eed6ec data\oresmod\loot_tables\blocks\aluminum_door.json
-bfac2703350e758b1fc816dccf652f629325e0e9 data\oresmod\loot_tables\blocks\potted_stonebark_sapling.json
 53a6e1020b933624d7913a58d09852e7b8fb02d4 data\oresmod\loot_tables\blocks\cut_steel_stairs.json
+bfac2703350e758b1fc816dccf652f629325e0e9 data\oresmod\loot_tables\blocks\potted_stonebark_sapling.json
 4b8b821ee71bb3ea173c0748d9045a0fae659aff data\oresmod\loot_tables\blocks\suspicious_white_sand.json
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\slowness_potion_tank.json
 18ad3d57229e3b20b2eb7e68d897b17eaa4fe4b7 data\oresmod\loot_tables\blocks\stripped_deepslate_wood.json
@@ -42,8 +42,8 @@ e1d7267d3acaf36a7c9dd700789b0ad07f12cf3f data\oresmod\loot_tables\blocks\smooth_
 ae371abc163678304d5b323dcb1f1b7feb2b309a data\oresmod\loot_tables\blocks\stonebark_log.json
 d44ed1301fe84606e9cbd0cf4c2bc92dcdb26057 data\oresmod\loot_tables\blocks\stripped_deepslate_log.json
 eb90319b1ebe44f80910662584d9d4ec6768a1c7 data\oresmod\loot_tables\blocks\black_sand.json
-988b803dd84184194bac131e9b1f8267316a4fa1 data\oresmod\loot_tables\blocks\polished_bedrock_bricks_slab.json
 299457e7e1e22778095cfb0580c1fe2ff73eb165 data\oresmod\loot_tables\blocks\deepbark_slab.json
+988b803dd84184194bac131e9b1f8267316a4fa1 data\oresmod\loot_tables\blocks\polished_bedrock_bricks_slab.json
 6519ca5d65b01d655f08ba632411e842f75dd22b data\oresmod\loot_tables\blocks\aluminum_spikes.json
 a15a6b30111f19a1db46c0298e876605646078c1 data\oresmod\loot_tables\blocks\deepslate_wood.json
 7f344ec0a9090415fca677468dc5d17da974da46 data\oresmod\loot_tables\blocks\polished_bedrock.json
