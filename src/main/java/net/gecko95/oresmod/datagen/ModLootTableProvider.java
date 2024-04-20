@@ -115,6 +115,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.IRON_SPIKES);
         addDrop(ModBlocks.ALUMINUM_SPIKES);
         addDrop(ModBlocks.STEEL_SPIKES);
+        addDrop(ModBlocks.MARBLE);
+        addDrop(ModBlocks.MARBLE_STAIRS);
+        addDrop(ModBlocks.MARBLE_WALL);
+        addDrop(ModBlocks.MARBLE_BRICKS);
+        addDrop(ModBlocks.MARBLE_BRICK_STAIRS);
+        addDrop(ModBlocks.MARBLE_BRICK_WALL);
+        addDrop(ModBlocks.CHISELED_MARBLE);
+        addDrop(ModBlocks.GILDED_MARBLE);
+        addDrop(ModBlocks.GILDED_MARBLE_BRICKS);
+        addDrop(ModBlocks.POLISHED_ANDESITE_BRICKS);
+        addDrop(ModBlocks.POLISHED_ANDESITE_BRICK_STAIRS);
+        addDrop(ModBlocks.POLISHED_ANDESITE_BRICK_WALL);
+        addDrop(ModBlocks.POLISHED_DIORITE_BRICKS);
+        addDrop(ModBlocks.POLISHED_DIORITE_BRICK_STAIRS);
+        addDrop(ModBlocks.POLISHED_DIORITE_BRICK_WALL);
+        addDrop(ModBlocks.POLISHED_GRANITE_BRICKS);
+        addDrop(ModBlocks.POLISHED_GRANITE_BRICK_STAIRS);
+        addDrop(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 
@@ -205,6 +223,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SANDITE_BRICK_SLAB, slabDrops(ModBlocks.SANDITE_BRICK_SLAB));
         addDrop(ModBlocks.SANDITE_TILE_SLAB, slabDrops(ModBlocks.SANDITE_TILE_SLAB));
+
+        addDrop(ModBlocks.MARBLE_SLAB, slabDrops(ModBlocks.MARBLE_SLAB));
+        addDrop(ModBlocks.MARBLE_BRICK_SLAB, slabDrops(ModBlocks.MARBLE_BRICK_SLAB));
+
+        addDrop(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB));
+        addDrop(ModBlocks.POLISHED_DIORITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_DIORITE_BRICK_SLAB));
+        addDrop(ModBlocks.POLISHED_GRANITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_GRANITE_BRICK_SLAB));
 
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));

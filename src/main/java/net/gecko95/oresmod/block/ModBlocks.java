@@ -497,6 +497,53 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
     public static final Block COBBLESTONE_QUARTZ_ORE = registerBlock("cobblestone_quartz_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
+    public static final Block MARBLE = registerBlock("marble",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.WHITE_GRAY)));
+    public static final Block MARBLE_STAIRS = registerBlock("marble_stairs",
+            new StairsBlock(ModBlocks.MARBLE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MARBLE)));
+    public static final Block MARBLE_SLAB = registerBlock("marble_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE)));
+    public static final Block MARBLE_WALL = registerBlock("marble_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE)));
+    public static final Block MARBLE_BRICKS = registerBlock("marble_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE)));
+    public static final Block MARBLE_BRICK_STAIRS = registerBlock("marble_brick_stairs",
+            new StairsBlock(ModBlocks.MARBLE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block MARBLE_BRICK_SLAB = registerBlock("marble_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block MARBLE_BRICK_WALL = registerBlock("marble_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block CHISELED_MARBLE = registerBlock("chiseled_marble",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE)));
+    public static final Block GILDED_MARBLE = registerBlock("gilded_marble",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE).instrument(Instrument.CHIME)));
+    public static final Block GILDED_MARBLE_BRICKS = registerBlock("gilded_marble_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS).instrument(Instrument.CHIME)));
+
+    public static final Block POLISHED_ANDESITE_BRICKS = registerBlock("polished_andesite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_ANDESITE)));
+    public static final Block POLISHED_ANDESITE_BRICK_STAIRS = registerBlock("polished_andesite_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_ANDESITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_BRICKS)));
+    public static final Block POLISHED_ANDESITE_BRICK_SLAB = registerBlock("polished_andesite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_BRICKS)));
+    public static final Block POLISHED_ANDESITE_BRICK_WALL = registerBlock("polished_andesite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_BRICKS)));
+    public static final Block POLISHED_DIORITE_BRICKS = registerBlock("polished_diorite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_DIORITE)));
+    public static final Block POLISHED_DIORITE_BRICK_STAIRS = registerBlock("polished_diorite_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DIORITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_BRICKS)));
+    public static final Block POLISHED_DIORITE_BRICK_SLAB = registerBlock("polished_diorite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_BRICKS)));
+    public static final Block POLISHED_DIORITE_BRICK_WALL = registerBlock("polished_diorite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_BRICKS)));
+    public static final Block POLISHED_GRANITE_BRICKS = registerBlock("polished_granite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_GRANITE)));
+    public static final Block POLISHED_GRANITE_BRICK_STAIRS = registerBlock("polished_granite_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_GRANITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_BRICKS)));
+    public static final Block POLISHED_GRANITE_BRICK_SLAB = registerBlock("polished_granite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_BRICKS)));
+    public static final Block POLISHED_GRANITE_BRICK_WALL = registerBlock("polished_granite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_BRICKS)));
 
     public static final Block FLINT_SPIKES = registerBlock("flint_spikes",
             new FlintSpikeBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.BLACK).nonOpaque().strength(1.0f, 3.0f)));

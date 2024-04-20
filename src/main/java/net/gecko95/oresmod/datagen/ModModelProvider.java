@@ -102,6 +102,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_NICKEL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_TITANIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_QUARTZ_ORE);
+        BlockStateModelGenerator.BlockTexturePool marblePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MARBLE);
+        BlockStateModelGenerator.BlockTexturePool marblebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MARBLE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_MARBLE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_MARBLE_BRICKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_MARBLE, TexturedModel.CUBE_BOTTOM_TOP);
+        BlockStateModelGenerator.BlockTexturePool andesitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_ANDESITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool dioritebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DIORITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool granitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRANITE_BRICKS);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -170,6 +178,26 @@ public class ModModelProvider extends FabricModelProvider {
         blacksandstonePool.wall(ModBlocks.BLACK_SANDSTONE_WALL);
         smoothblacksandstonePool.stairs(ModBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS);
         smoothblacksandstonePool.slab(ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB);
+
+        marblePool.stairs(ModBlocks.MARBLE_STAIRS);
+        marblePool.slab(ModBlocks.MARBLE_SLAB);
+        marblePool.wall(ModBlocks.MARBLE_WALL);
+
+        marblebrickPool.stairs(ModBlocks.MARBLE_BRICK_STAIRS);
+        marblebrickPool.slab(ModBlocks.MARBLE_BRICK_SLAB);
+        marblebrickPool.wall(ModBlocks.MARBLE_BRICK_WALL);
+
+        andesitebrickPool.stairs(ModBlocks.POLISHED_ANDESITE_BRICK_STAIRS);
+        andesitebrickPool.slab(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB);
+        andesitebrickPool.wall(ModBlocks.POLISHED_ANDESITE_BRICK_WALL);
+
+        dioritebrickPool.stairs(ModBlocks.POLISHED_DIORITE_BRICK_STAIRS);
+        dioritebrickPool.slab(ModBlocks.POLISHED_DIORITE_BRICK_SLAB);
+        dioritebrickPool.wall(ModBlocks.POLISHED_DIORITE_BRICK_WALL);
+
+        granitebrickPool.stairs(ModBlocks.POLISHED_GRANITE_BRICK_STAIRS);
+        granitebrickPool.slab(ModBlocks.POLISHED_GRANITE_BRICK_SLAB);
+        granitebrickPool.wall(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
 
         blockStateModelGenerator.registerDoor(ModBlocks.ALUMINUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ALUMINUM_TRAPDOOR);

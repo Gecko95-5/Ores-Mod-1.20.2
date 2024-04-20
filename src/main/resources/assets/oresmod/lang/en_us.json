@@ -513,6 +513,36 @@
   "block.oresmod.cobblestone_titanium_ore": "Cobblestone Titanium Ore",
   "block.oresmod.cobblestone_quartz_ore": "Cobblestone Quartz Ore",
 
+  "block.oresmod.marble": "Marble",
+  "block.oresmod.marble_stairs": "Marble Stairs",
+  "block.oresmod.marble_slab": "Marble Slab",
+  "block.oresmod.marble_wall": "Marble Wall",
+
+  "block.oresmod.marble_bricks": "Marble Bricks",
+  "block.oresmod.marble_brick_stairs": "Marble Brick Stairs",
+  "block.oresmod.marble_brick_slab": "Marble Brick Slab",
+  "block.oresmod.marble_brick_wall": "Marble Brick Wall",
+
+  "block.oresmod.gilded_marble": "Gilded Marble",
+  "block.oresmod.gilded_marble_bricks": "Gilded Marble Bricks",
+
+  "block.oresmod.chiseled_marble": "Chiseled Marble",
+
+  "block.oresmod.polished_andesite_bricks": "Polished Andesite Bricks",
+  "block.oresmod.polished_andesite_brick_stairs": "Polished Andesite Brick Stairs",
+  "block.oresmod.polished_andesite_brick_slab": "Polished Andesite Brick Slab",
+  "block.oresmod.polished_andesite_brick_wall": "Polished Andesite Brick Wall",
+
+  "block.oresmod.polished_diorite_bricks": "Polished Diorite Bricks",
+  "block.oresmod.polished_diorite_brick_stairs": "Polished Diorite Brick Stairs",
+  "block.oresmod.polished_diorite_brick_slab": "Polished Diorite Brick Slab",
+  "block.oresmod.polished_diorite_brick_wall": "Polished Diorite Brick Wall",
+
+  "block.oresmod.polished_granite_bricks": "Polished Granite Bricks",
+  "block.oresmod.polished_granite_brick_stairs": "Polished Granite Brick Stairs",
+  "block.oresmod.polished_granite_brick_slab": "Polished Granite Brick Slab",
+  "block.oresmod.polished_granite_brick_wall": "Polished Granite Brick Wall",
+
   "block.oresmod.flint_spikes": "Flint Spikes",
   "block.oresmod.iron_spikes": "Iron Spikes",
   "block.oresmod.aluminum_spikes": "Aluminum Spikes",

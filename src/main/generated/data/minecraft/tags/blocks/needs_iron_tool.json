@@ -43,6 +43,8 @@
     "oresmod:cobblestone_redstone_ore",
     "oresmod:cobblestone_diamond_ore",
     "oresmod:cobblestone_emerald_ore",
-    "oresmod:cobblestone_titanium_ore"
+    "oresmod:cobblestone_titanium_ore",
+    "oresmod:gilded_marble",
+    "oresmod:gilded_marble_bricks"
   ]
 }

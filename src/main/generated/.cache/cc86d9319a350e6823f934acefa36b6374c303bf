@@ -1,13 +1,13 @@
-// 1.20.2	2024-04-20T01:03:40.1956567	Ores Mod/Tags for minecraft:block
+// 1.20.2	2024-04-20T17:08:18.6341646	Ores Mod/Tags for minecraft:block
 3bc9fbf77611d3241fd22fa7da1001a269a692d6 data\minecraft\tags\blocks\fences.json
 a059a9c8ada7271b1764597f9c093a94e21a03fb data\minecraft\tags\blocks\fence_gates.json
-55c878478de01239328807307b43f853c657c193 data\minecraft\tags\blocks\mineable\pickaxe.json
+374844391b625fa067ebb484c1cb1440a863eb35 data\minecraft\tags\blocks\mineable\pickaxe.json
 f6a5e1b96e33d657c471f57d4b80595c0ceae092 data\oresmod\tags\blocks\potion_tanks.json
-ebead77f1d262bd334d6340d6372acb9c515c1d4 data\minecraft\tags\blocks\walls.json
+69dbc70686eeaabd325fa71f4a1f17f6723fa918 data\minecraft\tags\blocks\walls.json
 0abee4e8c156427f52d0e1475f21cccde2f9fcb2 data\oresmod\tags\blocks\chainsaw_mineable.json
 25af1e6a77f71ebfe69eef52cd29198a720115d8 data\fabric\tags\blocks\needs_tool_level_4.json
 d09fd133daae41057f5bf566c87bde38e3535327 data\minecraft\tags\blocks\sand.json
-1be346ad6118a266adc4f102e26883348b198006 data\minecraft\tags\blocks\needs_iron_tool.json
+220b41bf01732657702e314f5eb177e600e581cd data\minecraft\tags\blocks\needs_iron_tool.json
 8fcde37833bea5310394b05110bfd0e83514c8c0 data\oresmod\tags\blocks\deepbark_placeable.json
 6692e97304264c5d0e223f4c5de97f361ccbf437 data\minecraft\tags\blocks\mineable\shovel.json
 b5b01e8e3a73190e9864e89a8f957cd27b81b3b3 data\minecraft\tags\blocks\needs_diamond_tool.json

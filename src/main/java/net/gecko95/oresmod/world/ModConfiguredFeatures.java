@@ -55,6 +55,13 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_TITANIUM_ORE_KEY = registerKey("cobblestone_titanium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_QUARTZ_ORE_KEY = registerKey("cobblestone_quartz_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> INFESTED_COBBLESTONE_KEY = registerKey("infested_cobblestone_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_MARBLE_ORE_KEY = registerKey("quarry_marble_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_GRANITE_ORE_KEY = registerKey("quarry_granite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_DIORITE_ORE_KEY = registerKey("quarry_diorite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_ANDESITE_ORE_KEY = registerKey("quarry_andsite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_DIRT_ORE_KEY = registerKey("quarry_dirt_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_GRAVEL_ORE_KEY = registerKey("quarry_gravel_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_BLACKSTONE_ORE_KEY = registerKey("quarry_blackstone_ore");
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
@@ -173,6 +180,27 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldInfestedCobblestoneOres =
                 List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.INFESTED_COBBLESTONE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldQuarryMarbleOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.MARBLE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldQuarryGraniteOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.GRANITE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldQuarryDioriteOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.DIORITE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldQuarryAndesiteOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.ANDESITE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldQuarryDirtOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.DIRT.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldQuarryGravelOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.GRAVEL.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldQuarryBlackstoneOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.BLACKSTONE.getDefaultState()));
+
 
         register(context, SALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSaltOres, 12));
 
@@ -238,6 +266,19 @@ public class ModConfiguredFeatures {
 
         register(context, INFESTED_COBBLESTONE_KEY, Feature.ORE, new OreFeatureConfig(overworldInfestedCobblestoneOres, 10));
 
+        register(context, QUARRY_MARBLE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryMarbleOres, 32));
+
+        register(context, QUARRY_GRANITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryGraniteOres, 64));
+
+        register(context, QUARRY_ANDESITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryAndesiteOres, 64));
+
+        register(context, QUARRY_DIORITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryDioriteOres, 64));
+
+        register(context, QUARRY_DIRT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryDirtOres, 33));
+
+        register(context, QUARRY_GRAVEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryGravelOres, 33));
+
+        register(context, QUARRY_BLACKSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryBlackstoneOres, 33));
 
         register(context, STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.STONEBARK_LOG),

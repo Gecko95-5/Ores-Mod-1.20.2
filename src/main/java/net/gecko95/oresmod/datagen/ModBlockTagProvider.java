@@ -143,7 +143,30 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBBLESTONE_ALUMINUM_ORE)
                 .add(ModBlocks.COBBLESTONE_NICKEL_ORE)
                 .add(ModBlocks.COBBLESTONE_TITANIUM_ORE)
-                .add(ModBlocks.COBBLESTONE_QUARTZ_ORE);
+                .add(ModBlocks.COBBLESTONE_QUARTZ_ORE)
+                .add(ModBlocks.MARBLE)
+                .add(ModBlocks.MARBLE_STAIRS)
+                .add(ModBlocks.MARBLE_SLAB)
+                .add(ModBlocks.MARBLE_WALL)
+                .add(ModBlocks.MARBLE_BRICKS)
+                .add(ModBlocks.MARBLE_BRICK_STAIRS)
+                .add(ModBlocks.MARBLE_BRICK_SLAB)
+                .add(ModBlocks.MARBLE_BRICK_WALL)
+                .add(ModBlocks.CHISELED_MARBLE)
+                .add(ModBlocks.GILDED_MARBLE)
+                .add(ModBlocks.GILDED_MARBLE_BRICKS)
+                .add(ModBlocks.POLISHED_ANDESITE_BRICKS)
+                .add(ModBlocks.POLISHED_ANDESITE_BRICK_STAIRS)
+                .add(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB)
+                .add(ModBlocks.POLISHED_ANDESITE_BRICK_WALL)
+                .add(ModBlocks.POLISHED_DIORITE_BRICKS)
+                .add(ModBlocks.POLISHED_DIORITE_BRICK_STAIRS)
+                .add(ModBlocks.POLISHED_DIORITE_BRICK_SLAB)
+                .add(ModBlocks.POLISHED_DIORITE_BRICK_WALL)
+                .add(ModBlocks.POLISHED_GRANITE_BRICKS)
+                .add(ModBlocks.POLISHED_GRANITE_BRICK_STAIRS)
+                .add(ModBlocks.POLISHED_GRANITE_BRICK_SLAB)
+                .add(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
 
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
@@ -261,7 +284,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBBLESTONE_REDSTONE_ORE)
                 .add(ModBlocks.COBBLESTONE_DIAMOND_ORE)
                 .add(ModBlocks.COBBLESTONE_EMERALD_ORE)
-                .add(ModBlocks.COBBLESTONE_TITANIUM_ORE);
+                .add(ModBlocks.COBBLESTONE_TITANIUM_ORE)
+                .add(ModBlocks.GILDED_MARBLE)
+                .add(ModBlocks.GILDED_MARBLE_BRICKS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STEEL_BLOCK)
@@ -300,7 +325,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_BEDROCK_WALL)
                 .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL)
                 .add(ModBlocks.SANDITE_BRICK_WALL)
-                .add(ModBlocks.SANDITE_TILE_WALL);
+                .add(ModBlocks.SANDITE_TILE_WALL)
+                .add(ModBlocks.MARBLE_WALL)
+                .add(ModBlocks.MARBLE_BRICK_WALL)
+                .add(ModBlocks.POLISHED_ANDESITE_BRICK_WALL)
+                .add(ModBlocks.POLISHED_DIORITE_BRICK_WALL)
+                .add(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
 
 
         getOrCreateTagBuilder(BlockTags.FENCES)

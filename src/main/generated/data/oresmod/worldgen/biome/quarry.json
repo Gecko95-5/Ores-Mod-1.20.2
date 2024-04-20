@@ -104,7 +104,7 @@
         "type": "minecraft:silverfish",
         "maxCount": 5,
         "minCount": 2,
-        "weight": 15
+        "weight": 20
       }
     ],
     "misc": [],

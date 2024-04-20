@@ -50,6 +50,13 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> COBBLESTONE_TITANIUM_ORE_PLACED_KEY = registerKey("cobblestone_titanium_ore_placed");
     public static final RegistryKey<PlacedFeature> COBBLESTONE_QUARTZ_ORE_PLACED_KEY = registerKey("cobblestone_quartz_ore_placed");
     public static final RegistryKey<PlacedFeature> INFESTED_COBBLESTONE_PLACED_KEY = registerKey("infested_cobblestone_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_MARBLE_ORE_PLACED_KEY = registerKey("quarry_marble_ore_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_GRANITE_ORE_PLACED_KEY = registerKey("quarry_granite_ore_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_DIORITE_ORE_PLACED_KEY = registerKey("quarry_diorite_ore_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_ANDESITE_ORE_PLACED_KEY = registerKey("quarry_andesite_ore_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_DIRT_ORE_PLACED_KEY = registerKey("quarry_dirt_ore_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_GRAVEL_ORE_PLACED_KEY = registerKey("quarry_gravel_ore_placed");
+    public static final RegistryKey<PlacedFeature> QUARRY_BLACKSTONE_ORE_PLACED_KEY = registerKey("quarry_blackstone_ore_placed");
 
     public static final RegistryKey<PlacedFeature> STONEBARK_PLACED_KEY = registerKey("stonebark_placed");
 
@@ -183,6 +190,34 @@ public class ModPlacedFeatures {
         register(context, INFESTED_COBBLESTONE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.INFESTED_COBBLESTONE_KEY),
                 ModOrePlacement.modifiersWithCount(12,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(174))));
+
+        register(context, QUARRY_MARBLE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_MARBLE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, QUARRY_GRANITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_GRANITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, QUARRY_DIORITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_DIORITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, QUARRY_ANDESITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_ANDESITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, QUARRY_DIRT_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_DIRT_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(3,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, QUARRY_GRAVEL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_GRAVEL_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(3,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, QUARRY_BLACKSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_BLACKSTONE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
 
 
         register(context, STONEBARK_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.STONEBARK_KEY),
