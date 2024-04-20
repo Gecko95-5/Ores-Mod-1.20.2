@@ -54,6 +54,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_NICKEL_ORE_KEY = registerKey("cobblestone_nickel_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_TITANIUM_ORE_KEY = registerKey("cobblestone_titanium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_QUARTZ_ORE_KEY = registerKey("cobblestone_quartz_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> INFESTED_COBBLESTONE_KEY = registerKey("infested_cobblestone_ore");
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
@@ -169,6 +170,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldCobbleQuartzOres =
                 List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_QUARTZ_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldInfestedCobblestoneOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.INFESTED_COBBLESTONE.getDefaultState()));
+
 
         register(context, SALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSaltOres, 12));
 
@@ -231,6 +235,8 @@ public class ModConfiguredFeatures {
         register(context, COBBLESTONE_TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleTitaniumOres, 6));
 
         register(context, COBBLESTONE_QUARTZ_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleQuartzOres, 14));
+
+        register(context, INFESTED_COBBLESTONE_KEY, Feature.ORE, new OreFeatureConfig(overworldInfestedCobblestoneOres, 10));
 
 
         register(context, STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(

@@ -104,5 +104,8 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY_BIOME),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_QUARTZ_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY_BIOME),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INFESTED_COBBLESTONE_PLACED_KEY);
     }
 }
