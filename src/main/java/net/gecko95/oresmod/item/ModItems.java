@@ -470,6 +470,8 @@ public class ModItems {
     public static final Item YELLOW_TERRACOTTA_BOOTS = registerItem("yellow_terracotta_boots",
             new ArmorItem(ModArmorMaterials.YELLOW_TERRACOTTA, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item SANDITE = registerItem("sandite", new Item(new FabricItemSettings()));
+
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
     public static final Item COPPER_DRIVE = registerItem("copper_drive", new Item(new FabricItemSettings()));

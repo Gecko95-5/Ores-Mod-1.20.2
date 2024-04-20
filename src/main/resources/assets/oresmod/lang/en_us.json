@@ -304,6 +304,8 @@
   "item.oresmod.yellow_terracotta_leggings": "Yellow Terracotta Leggings",
   "item.oresmod.yellow_terracotta_boots": "Yellow Terracotta Boots",
 
+  "item.oresmod.sandite": "Sandite",
+
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
   "block.oresmod.raw_salt_block": "Block of Raw Salt",
@@ -476,11 +478,40 @@
   "block.oresmod.polished_bedrock_bricks_wall": "Polished-Fake Bedrock Brick Wall",
   "block.oresmod.chiseled_polished_bedrock": "Chiseled Polished-Fake Bedrock",
 
+  "block.oresmod.sandite_block": "Block of Sandite",
+  "block.oresmod.sandite_ore": "Sandite Ore",
+  "block.oresmod.sandstone_sandite_ore": "Sandstone Sandite Ore",
+  "block.oresmod.red_sandstone_sandite_ore": "Red Sandstone Sandite Ore",
+
+  "block.oresmod.sandite_bricks": "Sandite Bricks",
+  "block.oresmod.sandite_tiles": "Sandite Tiles",
+  "block.oresmod.chiseled_sandite": "Chiseled Sandite",
+
+  "block.oresmod.sandite_brick_stairs": "Sandite Brick Stairs",
+  "block.oresmod.sandite_brick_slab": "Sandite Brick Slab",
+  "block.oresmod.sandite_brick_wall": "Sandite Brick Wall",
+  "block.oresmod.sandite_tile_stairs": "Sandite Tile Stairs",
+  "block.oresmod.sandite_tile_slab": "Sandite Tile Slab",
+  "block.oresmod.sandite_tile_wall": "Sandite Tile Wall",
+
   "block.oresmod.suspicious_white_sand": "Suspicious White Sand",
   "block.oresmod.terracotta_gold_ore": "Terracotta Gold Ore",
   "block.oresmod.gravel_coal_ore": "Gravel Coal Ore",
   "block.oresmod.dripstone_copper_ore": "Dripstone Copper Ore",
   "block.oresmod.tuff_iron_ore": "Tuff Iron Ore",
+
+  "block.oresmod.cobblestone_coal_ore": "Cobblestone Coal Ore",
+  "block.oresmod.cobblestone_iron_ore": "Cobblestone Iron Ore",
+  "block.oresmod.cobblestone_copper_ore": "Cobblestone Copper Ore",
+  "block.oresmod.cobblestone_gold_ore": "Cobblestone Gold Ore",
+  "block.oresmod.cobblestone_redstone_ore": "Cobblestone Redstone Ore",
+  "block.oresmod.cobblestone_lapis_ore": "Cobblestone Lapis Lazuli Ore",
+  "block.oresmod.cobblestone_diamond_ore": "Cobblestone Diamond Ore",
+  "block.oresmod.cobblestone_emerald_ore": "Cobblestone Emerald Ore",
+  "block.oresmod.cobblestone_aluminum_ore": "Cobblestone Aluminum Ore",
+  "block.oresmod.cobblestone_nickel_ore": "Cobblestone Nickel Ore",
+  "block.oresmod.cobblestone_titanium_ore": "Cobblestone Titanium Ore",
+  "block.oresmod.cobblestone_quartz_ore": "Cobblestone Quartz Ore",
 
   "block.oresmod.flint_spikes": "Flint Spikes",
   "block.oresmod.iron_spikes": "Iron Spikes",

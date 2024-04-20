@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.block.custom.*;
-import net.gecko95.oresmod.world.ModConfiguredFeatures;
 import net.gecko95.oresmod.world.tree.DeepbarkSaplingGenerator;
 import net.gecko95.oresmod.world.tree.StonebarkSaplingGenerator;
 import net.minecraft.block.*;
@@ -334,6 +333,38 @@ public class ModBlocks {
     public static final Block CHISELED_POLISHED_BEDROCK = registerBlock("chiseled_polished_bedrock",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FAKE_BEDROCK)));
 
+    public static final Block SANDITE_BLOCK = registerBlock("sandite_block",
+            new Block(FabricBlockSettings.create()
+                    .strength(5.0f, 6.0f).sounds(BlockSoundGroup.STONE)
+                    .mapColor(MapColor.YELLOW).instrument(Instrument.SNARE)));
+    public static final Block SANDITE_ORE = registerBlock("sandite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+    public static final Block SANDSTONE_SANDITE_ORE = registerBlock("sandstone_sandite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+    public static final Block RED_SANDSTONE_SANDITE_ORE = registerBlock("red_sandstone_sandite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+
+    public static final Block SANDITE_BRICKS = registerBlock("sandite_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BLOCK)));
+    public static final Block SANDITE_TILES = registerBlock("sandite_tiles",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BLOCK)));
+    public static final Block CHISELED_SANDITE = registerBlock("chiseled_sandite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BLOCK)));
+
+    public static final Block SANDITE_BRICK_STAIRS = registerBlock("sandite_brick_stairs",
+            new StairsBlock(ModBlocks.SANDITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.SANDITE_BRICKS)));
+    public static final Block SANDITE_BRICK_SLAB = registerBlock("sandite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BRICKS)));
+    public static final Block SANDITE_BRICK_WALL = registerBlock("sandite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BRICKS)));
+
+    public static final Block SANDITE_TILE_STAIRS = registerBlock("sandite_tile_stairs",
+            new StairsBlock(ModBlocks.SANDITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
+    public static final Block SANDITE_TILE_SLAB = registerBlock("sandite_tile_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
+    public static final Block SANDITE_TILE_WALL = registerBlock("sandite_tile_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
+
     public static final Block WHITE_SAND = registerBlock("white_sand",
             new GravelBlock(FabricBlockSettings.copyOf(Blocks.SAND).mapColor(MapColor.WHITE)));
     public static final Block SUSPICIOUS_WHITE_SAND = registerBlock("suspicious_white_sand",
@@ -441,6 +472,31 @@ public class ModBlocks {
 
     public static final Block TURTLE_MASTER_POTION_TANK = registerBlock("turtle_master_potion_tank",
             new TurtleMasterPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+
+    public static final Block COBBLESTONE_COAL_ORE = registerBlock("cobblestone_coal_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
+    public static final Block COBBLESTONE_IRON_ORE = registerBlock("cobblestone_iron_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+    public static final Block COBBLESTONE_COPPER_ORE = registerBlock("cobblestone_copper_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.COPPER_ORE)));
+    public static final Block COBBLESTONE_GOLD_ORE = registerBlock("cobblestone_gold_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE)));
+    public static final Block COBBLESTONE_REDSTONE_ORE = registerBlock("cobblestone_redstone_ore",
+            new RedstoneOreBlock(FabricBlockSettings.copyOf(Blocks.REDSTONE_ORE)));
+    public static final Block COBBLESTONE_LAPIS_ORE = registerBlock("cobblestone_lapis_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_ORE)));
+    public static final Block COBBLESTONE_DIAMOND_ORE = registerBlock("cobblestone_diamond_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block COBBLESTONE_EMERALD_ORE = registerBlock("cobblestone_emerald_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE)));
+    public static final Block COBBLESTONE_ALUMINUM_ORE = registerBlock("cobblestone_aluminum_ore",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.ALUMINUM_ORE)));
+    public static final Block COBBLESTONE_NICKEL_ORE = registerBlock("cobblestone_nickel_ore",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.NICKEL_ORE)));
+    public static final Block COBBLESTONE_TITANIUM_ORE = registerBlock("cobblestone_titanium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block COBBLESTONE_QUARTZ_ORE = registerBlock("cobblestone_quartz_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
 
     public static final Block FLINT_SPIKES = registerBlock("flint_spikes",
             new FlintSpikeBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.BLACK).nonOpaque().strength(1.0f, 3.0f)));

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.item.ModItems;
+import net.gecko95.oresmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -57,5 +58,77 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SMELTS_TO_GLASS)
                 .add(ModBlocks.WHITE_SAND.asItem())
                 .add(ModBlocks.BLACK_SAND.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.TERRACOTTA_HELMETS)
+                .add(ModItems.BLACK_TERRACOTTA_HELMET)
+                .add(ModItems.BLUE_TERRACOTTA_HELMET)
+                .add(ModItems.BROWN_TERRACOTTA_HELMET)
+                .add(ModItems.CYAN_TERRACOTTA_HELMET)
+                .add(ModItems.GRAY_TERRACOTTA_HELMET)
+                .add(ModItems.GREEN_TERRACOTTA_HELMET)
+                .add(ModItems.LIGHT_BLUE_TERRACOTTA_HELMET)
+                .add(ModItems.LIGHT_GRAY_TERRACOTTA_HELMET)
+                .add(ModItems.LIME_TERRACOTTA_HELMET)
+                .add(ModItems.MAGENTA_TERRACOTTA_HELMET)
+                .add(ModItems.ORANGE_TERRACOTTA_HELMET)
+                .add(ModItems.PINK_TERRACOTTA_HELMET)
+                .add(ModItems.PURPLE_TERRACOTTA_HELMET)
+                .add(ModItems.RED_TERRACOTTA_HELMET)
+                .add(ModItems.WHITE_TERRACOTTA_HELMET)
+                .add(ModItems.YELLOW_TERRACOTTA_HELMET);
+
+        getOrCreateTagBuilder(ModTags.Items.TERRACOTTA_CHESTPLATES)
+                .add(ModItems.BLACK_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.BLUE_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.BROWN_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.CYAN_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.GRAY_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.GREEN_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.LIGHT_BLUE_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.LIGHT_GRAY_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.LIME_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.MAGENTA_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.ORANGE_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.PINK_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.PURPLE_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.RED_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.WHITE_TERRACOTTA_CHESTPLATE)
+                .add(ModItems.YELLOW_TERRACOTTA_CHESTPLATE);
+
+        getOrCreateTagBuilder(ModTags.Items.TERRACOTTA_LEGGINGS)
+                .add(ModItems.BLACK_TERRACOTTA_LEGGINGS)
+                .add(ModItems.BLUE_TERRACOTTA_LEGGINGS)
+                .add(ModItems.BROWN_TERRACOTTA_LEGGINGS)
+                .add(ModItems.CYAN_TERRACOTTA_LEGGINGS)
+                .add(ModItems.GRAY_TERRACOTTA_LEGGINGS)
+                .add(ModItems.GREEN_TERRACOTTA_LEGGINGS)
+                .add(ModItems.LIGHT_BLUE_TERRACOTTA_LEGGINGS)
+                .add(ModItems.LIGHT_GRAY_TERRACOTTA_LEGGINGS)
+                .add(ModItems.LIME_TERRACOTTA_LEGGINGS)
+                .add(ModItems.MAGENTA_TERRACOTTA_LEGGINGS)
+                .add(ModItems.ORANGE_TERRACOTTA_LEGGINGS)
+                .add(ModItems.PINK_TERRACOTTA_LEGGINGS)
+                .add(ModItems.PURPLE_TERRACOTTA_LEGGINGS)
+                .add(ModItems.RED_TERRACOTTA_LEGGINGS)
+                .add(ModItems.WHITE_TERRACOTTA_LEGGINGS)
+                .add(ModItems.YELLOW_TERRACOTTA_LEGGINGS);
+
+        getOrCreateTagBuilder(ModTags.Items.TERRACOTTA_BOOTS)
+                .add(ModItems.BLACK_TERRACOTTA_BOOTS)
+                .add(ModItems.BLUE_TERRACOTTA_BOOTS)
+                .add(ModItems.BROWN_TERRACOTTA_BOOTS)
+                .add(ModItems.CYAN_TERRACOTTA_BOOTS)
+                .add(ModItems.GRAY_TERRACOTTA_BOOTS)
+                .add(ModItems.GREEN_TERRACOTTA_BOOTS)
+                .add(ModItems.LIGHT_BLUE_TERRACOTTA_BOOTS)
+                .add(ModItems.LIGHT_GRAY_TERRACOTTA_BOOTS)
+                .add(ModItems.LIME_TERRACOTTA_BOOTS)
+                .add(ModItems.MAGENTA_TERRACOTTA_BOOTS)
+                .add(ModItems.ORANGE_TERRACOTTA_BOOTS)
+                .add(ModItems.PINK_TERRACOTTA_BOOTS)
+                .add(ModItems.PURPLE_TERRACOTTA_BOOTS)
+                .add(ModItems.RED_TERRACOTTA_BOOTS)
+                .add(ModItems.WHITE_TERRACOTTA_BOOTS)
+                .add(ModItems.YELLOW_TERRACOTTA_BOOTS);
     }
 }

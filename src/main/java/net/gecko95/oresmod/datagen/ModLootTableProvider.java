@@ -103,6 +103,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS);
         addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
         addDrop(ModBlocks.CHISELED_POLISHED_BEDROCK);
+        addDrop(ModBlocks.SANDITE_BLOCK);
+        addDrop(ModBlocks.SANDITE_BRICKS);
+        addDrop(ModBlocks.SANDITE_BRICK_STAIRS);
+        addDrop(ModBlocks.SANDITE_BRICK_WALL);
+        addDrop(ModBlocks.SANDITE_TILES);
+        addDrop(ModBlocks.SANDITE_TILE_STAIRS);
+        addDrop(ModBlocks.SANDITE_TILE_WALL);
+        addDrop(ModBlocks.CHISELED_SANDITE);
         addDrop(ModBlocks.FLINT_SPIKES);
         addDrop(ModBlocks.IRON_SPIKES);
         addDrop(ModBlocks.ALUMINUM_SPIKES);
@@ -134,13 +142,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.FROSITE_ORE,oreDrops(ModBlocks.FROSITE_ORE, ModItems.FROSITE));
 
+        addDrop(ModBlocks.SANDITE_ORE,oreDrops(ModBlocks.SANDITE_ORE, ModItems.SANDITE));
+
         addDrop(ModBlocks.ALUMINUM_ORE,oreDrops(ModBlocks.ALUMINUM_ORE, ModItems.RAW_ALUMINUM));
         addDrop(ModBlocks.DEEPSLATE_ALUMINUM_ORE,oreDrops(ModBlocks.DEEPSLATE_ALUMINUM_ORE, ModItems.RAW_ALUMINUM));
 
         addDrop(ModBlocks.NICKEL_ORE,oreDrops(ModBlocks.NICKEL_ORE, ModItems.RAW_NICKEL));
         addDrop(ModBlocks.DEEPSLATE_NICKEL_ORE,oreDrops(ModBlocks.DEEPSLATE_NICKEL_ORE, ModItems.RAW_NICKEL));
 
-        addDrop(ModBlocks.ICE_FROSITE_ORE,iceOreDrops(ModBlocks.ICE_FROSITE_ORE, ModItems.FROSITE));
+        addDrop(ModBlocks.ICE_FROSITE_ORE,specialOreDrops(ModBlocks.ICE_FROSITE_ORE, ModItems.FROSITE));
+        addDrop(ModBlocks.SANDSTONE_SANDITE_ORE,specialOreDrops(ModBlocks.SANDSTONE_SANDITE_ORE, ModItems.SANDITE));
+        addDrop(ModBlocks.RED_SANDSTONE_SANDITE_ORE,specialOreDrops(ModBlocks.RED_SANDSTONE_SANDITE_ORE, ModItems.SANDITE));
 
         addDrop(ModBlocks.DEEPSLATE_TITANIUM_ORE,oreDrops(ModBlocks.DEEPSLATE_TITANIUM_ORE, ModItems.RAW_TITANIUM));
 
@@ -152,6 +164,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHER_TUNGSTEN_ORE,copperLikeOreDrops(ModBlocks.NETHER_TUNGSTEN_ORE, ModItems.TUNGSTEN_NUGGET));
 
         addDrop(ModBlocks.NETHER_COBALT_ORE,nuggetLikeOreDrops(ModBlocks.NETHER_COBALT_ORE, ModItems.COBALT_NUGGET));
+
+        addDrop(ModBlocks.COBBLESTONE_COAL_ORE,oreDrops(ModBlocks.COBBLESTONE_COAL_ORE, Items.COAL));
+        addDrop(ModBlocks.COBBLESTONE_IRON_ORE,oreDrops(ModBlocks.COBBLESTONE_IRON_ORE, Items.RAW_IRON));
+        addDrop(ModBlocks.COBBLESTONE_COPPER_ORE,copperOreDrops(ModBlocks.COBBLESTONE_COPPER_ORE));
+        addDrop(ModBlocks.COBBLESTONE_GOLD_ORE,oreDrops(ModBlocks.COBBLESTONE_GOLD_ORE, Items.RAW_GOLD));
+        addDrop(ModBlocks.COBBLESTONE_LAPIS_ORE,lapisOreDrops(ModBlocks.COBBLESTONE_LAPIS_ORE));
+        addDrop(ModBlocks.COBBLESTONE_REDSTONE_ORE,redstoneOreDrops(ModBlocks.COBBLESTONE_REDSTONE_ORE));
+        addDrop(ModBlocks.COBBLESTONE_DIAMOND_ORE,oreDrops(ModBlocks.COBBLESTONE_DIAMOND_ORE, Items.DIAMOND));
+        addDrop(ModBlocks.COBBLESTONE_EMERALD_ORE,oreDrops(ModBlocks.COBBLESTONE_EMERALD_ORE, Items.EMERALD));
+        addDrop(ModBlocks.COBBLESTONE_QUARTZ_ORE,oreDrops(ModBlocks.COBBLESTONE_QUARTZ_ORE, Items.QUARTZ));
+
+        addDrop(ModBlocks.COBBLESTONE_ALUMINUM_ORE,oreDrops(ModBlocks.COBBLESTONE_ALUMINUM_ORE, ModItems.RAW_ALUMINUM));
+        addDrop(ModBlocks.COBBLESTONE_NICKEL_ORE,oreDrops(ModBlocks.COBBLESTONE_NICKEL_ORE, ModItems.RAW_NICKEL));
+        addDrop(ModBlocks.COBBLESTONE_TITANIUM_ORE,oreDrops(ModBlocks.COBBLESTONE_TITANIUM_ORE, ModItems.RAW_TITANIUM));
 
         addDrop(ModBlocks.SUSPICIOUS_WHITE_SAND,saltBlockDrops(ModBlocks.SUSPICIOUS_WHITE_SAND));
 
@@ -176,6 +202,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.POLISHED_BEDROCK_SLAB, slabDrops(ModBlocks.POLISHED_BEDROCK_SLAB));
         addDrop(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB, slabDrops(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB));
+
+        addDrop(ModBlocks.SANDITE_BRICK_SLAB, slabDrops(ModBlocks.SANDITE_BRICK_SLAB));
+        addDrop(ModBlocks.SANDITE_TILE_SLAB, slabDrops(ModBlocks.SANDITE_TILE_SLAB));
 
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));
@@ -219,7 +248,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                         ((LeafEntry.Builder)ItemEntry.builder(ModItems.POWDERED_SALT).apply(SetCountLootFunction.builder
                                 (UniformLootNumberProvider.create(4.0f, 9.0f))))));
     }
-    public LootTable.Builder iceOreDrops(Block drop, Item item) {
+    public LootTable.Builder specialOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
                         ItemEntry.builder(item)

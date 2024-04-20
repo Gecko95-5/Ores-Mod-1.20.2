@@ -8,6 +8,7 @@ import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.datagen.*;
 import net.gecko95.oresmod.world.ModConfiguredFeatures;
 import net.gecko95.oresmod.world.ModPlacedFeatures;
+import net.gecko95.oresmod.world.biome.ModBiomes;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -28,5 +29,6 @@ public class OresModDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
 	}
 }

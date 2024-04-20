@@ -118,7 +118,33 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CHISELED_POLISHED_BEDROCK)
                 .add(ModBlocks.IRON_SPIKES)
                 .add(ModBlocks.ALUMINUM_SPIKES)
-                .add(ModBlocks.STEEL_SPIKES);
+                .add(ModBlocks.STEEL_SPIKES)
+                .add(ModBlocks.SANDITE_BLOCK)
+                .add(ModBlocks.SANDITE_BRICKS)
+                .add(ModBlocks.SANDITE_BRICK_STAIRS)
+                .add(ModBlocks.SANDITE_BRICK_SLAB)
+                .add(ModBlocks.SANDITE_BRICK_WALL)
+                .add(ModBlocks.SANDITE_TILES)
+                .add(ModBlocks.SANDITE_TILE_STAIRS)
+                .add(ModBlocks.SANDITE_TILE_SLAB)
+                .add(ModBlocks.SANDITE_TILE_WALL)
+                .add(ModBlocks.CHISELED_SANDITE)
+                .add(ModBlocks.SANDITE_ORE)
+                .add(ModBlocks.SANDSTONE_SANDITE_ORE)
+                .add(ModBlocks.RED_SANDSTONE_SANDITE_ORE)
+                .add(ModBlocks.COBBLESTONE_COAL_ORE)
+                .add(ModBlocks.COBBLESTONE_IRON_ORE)
+                .add(ModBlocks.COBBLESTONE_COPPER_ORE)
+                .add(ModBlocks.COBBLESTONE_LAPIS_ORE)
+                .add(ModBlocks.COBBLESTONE_GOLD_ORE)
+                .add(ModBlocks.COBBLESTONE_REDSTONE_ORE)
+                .add(ModBlocks.COBBLESTONE_DIAMOND_ORE)
+                .add(ModBlocks.COBBLESTONE_EMERALD_ORE)
+                .add(ModBlocks.COBBLESTONE_ALUMINUM_ORE)
+                .add(ModBlocks.COBBLESTONE_NICKEL_ORE)
+                .add(ModBlocks.COBBLESTONE_TITANIUM_ORE)
+                .add(ModBlocks.COBBLESTONE_QUARTZ_ORE);
+
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -185,7 +211,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRIPSTONE_COPPER_ORE)
                 .add(ModBlocks.TUFF_IRON_ORE)
                 .add(ModBlocks.IRON_SPIKES)
-                .add(ModBlocks.ALUMINUM_SPIKES);
+                .add(ModBlocks.ALUMINUM_SPIKES)
+                .add(ModBlocks.COBBLESTONE_IRON_ORE)
+                .add(ModBlocks.COBBLESTONE_COPPER_ORE)
+                .add(ModBlocks.COBBLESTONE_LAPIS_ORE)
+                .add(ModBlocks.COBBLESTONE_ALUMINUM_ORE)
+                .add(ModBlocks.COBBLESTONE_NICKEL_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.FROSITE_ORE)
@@ -212,7 +243,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MILK_TANK)
                 .add(ModBlocks.NETHER_COBALT_ORE)
                 .add(ModBlocks.COBALT_BLOCK)
-                .add(ModBlocks.TERRACOTTA_GOLD_ORE);
+                .add(ModBlocks.TERRACOTTA_GOLD_ORE)
+                .add(ModBlocks.SANDITE_BLOCK)
+                .add(ModBlocks.SANDITE_BRICKS)
+                .add(ModBlocks.SANDITE_BRICK_STAIRS)
+                .add(ModBlocks.SANDITE_BRICK_SLAB)
+                .add(ModBlocks.SANDITE_BRICK_WALL)
+                .add(ModBlocks.SANDITE_TILES)
+                .add(ModBlocks.SANDITE_TILE_STAIRS)
+                .add(ModBlocks.SANDITE_TILE_SLAB)
+                .add(ModBlocks.SANDITE_TILE_WALL)
+                .add(ModBlocks.CHISELED_SANDITE)
+                .add(ModBlocks.SANDITE_ORE)
+                .add(ModBlocks.SANDSTONE_SANDITE_ORE)
+                .add(ModBlocks.RED_SANDSTONE_SANDITE_ORE)
+                .add(ModBlocks.COBBLESTONE_GOLD_ORE)
+                .add(ModBlocks.COBBLESTONE_REDSTONE_ORE)
+                .add(ModBlocks.COBBLESTONE_DIAMOND_ORE)
+                .add(ModBlocks.COBBLESTONE_EMERALD_ORE)
+                .add(ModBlocks.COBBLESTONE_TITANIUM_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STEEL_BLOCK)
@@ -249,7 +298,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WHITE_SANDSTONE_WALL)
                 .add(ModBlocks.BLACK_SANDSTONE_WALL)
                 .add(ModBlocks.POLISHED_BEDROCK_WALL)
-                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
+                .add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL)
+                .add(ModBlocks.SANDITE_BRICK_WALL)
+                .add(ModBlocks.SANDITE_TILE_WALL);
 
 
         getOrCreateTagBuilder(BlockTags.FENCES)

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_frosite_block": {
+    "has_cobblestone_redstone_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:frosite_block"
+              "oresmod:cobblestone_redstone_ore"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:chiseled_frosite_from_frosite_block_stonecutting"
+        "recipe": "minecraft:redstone_from_blasting_cobblestone_redstone_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_frosite_block"
+      "has_cobblestone_redstone_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:chiseled_frosite_from_frosite_block_stonecutting"
+      "minecraft:redstone_from_blasting_cobblestone_redstone_ore"
     ]
   },
   "sends_telemetry_event": false

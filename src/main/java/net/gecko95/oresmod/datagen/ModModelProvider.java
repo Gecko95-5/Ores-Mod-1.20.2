@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.item.ModItems;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -84,6 +83,25 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool polibedrockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BEDROCK);
         BlockStateModelGenerator.BlockTexturePool brickbedrockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BEDROCK_BRICKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_POLISHED_BEDROCK, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SANDITE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool sanditebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SANDITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool sanditetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SANDITE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SANDITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SANDSTONE_SANDITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_SANDSTONE_SANDITE_ORE);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_SANDITE, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_COAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_COPPER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_LAPIS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_GOLD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_REDSTONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_DIAMOND_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_EMERALD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_ALUMINUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_NICKEL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_TITANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_QUARTZ_ORE);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -118,6 +136,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         cutsteelPool.stairs(ModBlocks.CUT_STEEL_STAIRS);
         cutsteelPool.slab(ModBlocks.CUT_STEEL_SLAB);
+
+        sanditebrickPool.stairs(ModBlocks.SANDITE_BRICK_STAIRS);
+        sanditebrickPool.slab(ModBlocks.SANDITE_BRICK_SLAB);
+        sanditebrickPool.wall(ModBlocks.SANDITE_BRICK_WALL);
+
+        sanditetilePool.stairs(ModBlocks.SANDITE_TILE_STAIRS);
+        sanditetilePool.slab(ModBlocks.SANDITE_TILE_SLAB);
+        sanditetilePool.wall(ModBlocks.SANDITE_TILE_WALL);
 
         watertankPool.same(ModBlocks.AWKWARD_WATER_TANK);
 
@@ -161,6 +187,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(ModBlocks.IRON_SPIKES);
         blockStateModelGenerator.registerSimpleState(ModBlocks.ALUMINUM_SPIKES);
         blockStateModelGenerator.registerSimpleState(ModBlocks.STEEL_SPIKES);
+
+
     }
 
     @Override
@@ -442,5 +470,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_BOOTS));
+
+        itemModelGenerator.register(ModItems.SANDITE, Models.GENERATED);
     }
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "oresmod:frosite_block"
+    "item": "oresmod:sandite_tiles"
   },
-  "result": "oresmod:chiseled_frosite"
+  "result": "oresmod:sandite_tile_wall"
 }

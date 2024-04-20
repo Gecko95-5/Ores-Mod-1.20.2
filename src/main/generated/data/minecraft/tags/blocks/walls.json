@@ -6,6 +6,8 @@
     "oresmod:white_sandstone_wall",
     "oresmod:black_sandstone_wall",
     "oresmod:polished_bedrock_wall",
-    "oresmod:polished_bedrock_bricks_wall"
+    "oresmod:polished_bedrock_bricks_wall",
+    "oresmod:sandite_brick_wall",
+    "oresmod:sandite_tile_wall"
   ]
 }

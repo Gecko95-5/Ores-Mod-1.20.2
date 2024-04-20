@@ -1,5 +1,9 @@
-// 1.20.2	2024-04-17T16:15:20.4983509	Ores Mod/Tags for minecraft:item
+// 1.20.2	2024-04-19T23:02:42.8936245	Ores Mod/Tags for minecraft:item
 f48c85e419060bb7d2c795324d95f6538a7ed217 data\minecraft\tags\items\planks.json
+52ddec4c6566c279e248e84f103056c2eeab168d data\oresmod\tags\items\terracotta_boots.json
+8218aeb8dd7c7fa61639fb646c2f62e7753e8fbe data\oresmod\tags\items\terracotta_leggings.json
 d09fd133daae41057f5bf566c87bde38e3535327 data\minecraft\tags\items\smelts_to_glass.json
+bc9eb124e38cdca2d862715800aad9047ac1c403 data\oresmod\tags\items\terracotta_chestplates.json
+0a81f0c55b858ecbc28041d975a805ec14d89406 data\oresmod\tags\items\terracotta_helmets.json
 b3afbd03f19e52a30e27468b51e99c5a90af388a data\minecraft\tags\items\trimmable_armor.json
 d09fd133daae41057f5bf566c87bde38e3535327 data\minecraft\tags\items\sand.json

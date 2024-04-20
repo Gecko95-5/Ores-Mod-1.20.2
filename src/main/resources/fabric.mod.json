@@ -22,6 +22,9 @@
 		],
 		"fabric-datagen": [
 			"net.gecko95.oresmod.OresModDataGenerator"
+		],
+		"terrablender": [
+			"net.gecko95.oresmod.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [

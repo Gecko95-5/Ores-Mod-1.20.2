@@ -12,14 +12,12 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
-import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -42,6 +40,20 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> GRAVEL_COAL_ORE_KEY = registerKey("gravel_coal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIPSTONE_COPPER_ORE_KEY = registerKey("dripstone_copper_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TUFF_IRON_ORE_KEY = registerKey("tuff_iron_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SANNITE_ORE_KEY = registerKey("sannite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> RED_SANNITE_ORE_KEY = registerKey("red_sannite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_COAL_ORE_KEY = registerKey("cobblestone_coal_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_IRON_ORE_KEY = registerKey("cobblestone_iron_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_COPPER_ORE_KEY = registerKey("cobblestone_copper_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_GOLD_ORE_KEY = registerKey("cobblestone_gold_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_REDSTONE_ORE_KEY = registerKey("cobblestone_redstone_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_LAPIS_ORE_KEY = registerKey("cobblestone_lapis_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_DIAMOND_ORE_KEY = registerKey("cobblestone_diamond_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_EMERALD_ORE_KEY = registerKey("cobblestone_emerald_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_ALUMINUM_ORE_KEY = registerKey("cobblestone_aluminum_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_NICKEL_ORE_KEY = registerKey("cobblestone_nickel_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_TITANIUM_ORE_KEY = registerKey("cobblestone_titanium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_QUARTZ_ORE_KEY = registerKey("cobblestone_quartz_ore");
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
@@ -53,6 +65,9 @@ public class ModConfiguredFeatures {
         RuleTest packediceReplacebles = new BlockMatchRuleTest(Blocks.PACKED_ICE);
         RuleTest sandReplacebles = new BlockMatchRuleTest(Blocks.SAND);
         RuleTest terracottaReplacebles = new BlockMatchRuleTest(Blocks.TERRACOTTA);
+        RuleTest sandstoneReplacebles = new BlockMatchRuleTest(Blocks.SANDSTONE);
+        RuleTest redsandstoneReplacebles = new BlockMatchRuleTest(Blocks.RED_SANDSTONE);
+        RuleTest cobblestoneReplacebles = new BlockMatchRuleTest(Blocks.COBBLESTONE);
 
         List<OreFeatureConfig.Target> overworldSaltOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.SALT_ORE.getDefaultState()));
@@ -110,6 +125,51 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldTuffIronOres =
                 List.of(OreFeatureConfig.createTarget(deepslateReplacebles, ModBlocks.TUFF_IRON_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldSanniteOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.SANDITE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(sandstoneReplacebles, ModBlocks.SANDSTONE_SANDITE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldRedSanniteOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.SANDITE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(redsandstoneReplacebles, ModBlocks.RED_SANDSTONE_SANDITE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleCoalOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_COAL_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleIronOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_IRON_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleCopperOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_COPPER_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleGoldOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_GOLD_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleRedstoneOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_REDSTONE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleLapisOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_LAPIS_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleDiamondOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_DIAMOND_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleEmeraldOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_EMERALD_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleAluminumOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_ALUMINUM_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleNickelOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_NICKEL_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleTitaniumOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_TITANIUM_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldCobbleQuartzOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_QUARTZ_ORE.getDefaultState()));
+
+
         register(context, SALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSaltOres, 12));
 
         register(context, FROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldFrositeOres, 4));
@@ -143,6 +203,35 @@ public class ModConfiguredFeatures {
         register(context, DRIPSTONE_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDripstoneCopperOres, 7));
 
         register(context, TUFF_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTuffIronOres, 4));
+
+        register(context, SANNITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSanniteOres, 4));
+
+        register(context, RED_SANNITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRedSanniteOres, 4));
+
+        register(context, COBBLESTONE_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleCoalOres, 17));
+
+        register(context, COBBLESTONE_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleIronOres, 9));
+
+        register(context, COBBLESTONE_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleCopperOres, 10));
+
+        register(context, COBBLESTONE_GOLD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleGoldOres, 9));
+
+        register(context, COBBLESTONE_REDSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleRedstoneOres, 8));
+
+        register(context, COBBLESTONE_LAPIS_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleLapisOres, 7));
+
+        register(context, COBBLESTONE_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleDiamondOres, 4));
+
+        register(context, COBBLESTONE_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleEmeraldOres, 3));
+
+        register(context, COBBLESTONE_ALUMINUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleAluminumOres, 9));
+
+        register(context, COBBLESTONE_NICKEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleNickelOres, 10));
+
+        register(context, COBBLESTONE_TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleTitaniumOres, 6));
+
+        register(context, COBBLESTONE_QUARTZ_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleQuartzOres, 14));
+
 
         register(context, STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.STONEBARK_LOG),

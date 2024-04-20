@@ -8,7 +8,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class ModTags {
-    public static class Blocks{
+    public static class Blocks {
         public static final TagKey<Block> DRILL_MINEABLE =
                 createTag("drill_mineable");
         public static final TagKey<Block> CHAINSAW_MINEABLE =
@@ -28,7 +28,14 @@ public class ModTags {
     }
 
     public static class Items {
-
+        public static final TagKey<Item> TERRACOTTA_HELMETS =
+                createTag("terracotta_helmets");
+        public static final TagKey<Item> TERRACOTTA_CHESTPLATES =
+                createTag("terracotta_chestplates");
+        public static final TagKey<Item> TERRACOTTA_LEGGINGS =
+                createTag("terracotta_leggings");
+        public static final TagKey<Item> TERRACOTTA_BOOTS =
+                createTag("terracotta_boots");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(OresMod.MOD_ID, name));

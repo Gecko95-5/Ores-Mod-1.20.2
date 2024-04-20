@@ -22,22 +22,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> FROSITE_SMELTABLES = List.of(ModBlocks.FROSITE_ORE, ModBlocks.ICE_FROSITE_ORE);
 
     private static final List<ItemConvertible> ALUMINUM_SMELTABLES = List.of(ModItems.RAW_ALUMINUM,ModBlocks.ALUMINUM_ORE,
-            ModBlocks.DEEPSLATE_ALUMINUM_ORE);
+            ModBlocks.DEEPSLATE_ALUMINUM_ORE,ModBlocks.COBBLESTONE_ALUMINUM_ORE);
     private static final List<ItemConvertible> ALUMINUM_NUGGET_SMELTABLES = List.of(ModItems.ALUMINUM_SWORD,
             ModItems.ALUMINUM_PICKAXE, ModItems.ALUMINUM_AXE,ModItems.ALUMINUM_SHOVEL, ModItems.ALUMINUM_HOE,
             ModItems.ALUMINUM_HELMET,ModItems.ALUMINUM_CHESTPLATE, ModItems.ALUMINUM_LEGGINGS, ModItems.ALUMINUM_BOOTS);
 
     private static final List<ItemConvertible> NICKEL_SMELTABLES = List.of(ModItems.RAW_NICKEL,ModBlocks.NICKEL_ORE,
-            ModBlocks.DEEPSLATE_NICKEL_ORE);
+            ModBlocks.DEEPSLATE_NICKEL_ORE, ModBlocks.COBBLESTONE_NICKEL_ORE);
     private static final List<ItemConvertible> NICKEL_NUGGET_SMELTABLES = List.of(ModItems.NICKEL_SWORD,
             ModItems.NICKEL_PICKAXE, ModItems.NICKEL_AXE,ModItems.NICKEL_SHOVEL, ModItems.NICKEL_HOE,
             ModItems.NICKEL_HELMET,ModItems.NICKEL_CHESTPLATE, ModItems.NICKEL_LEGGINGS, ModItems.NICKEL_BOOTS);
 
-    private static final List<ItemConvertible> TITANIUM_SMELTABLES = List.of(ModItems.RAW_TITANIUM,ModBlocks.DEEPSLATE_TITANIUM_ORE);
+    private static final List<ItemConvertible> TITANIUM_SMELTABLES = List.of(ModItems.RAW_TITANIUM,ModBlocks.DEEPSLATE_TITANIUM_ORE,ModBlocks.COBBLESTONE_TITANIUM_ORE);
 
     private static final List<ItemConvertible> TUNGSTEN_SMELTABLES = List.of(ModBlocks.NETHER_TUNGSTEN_ORE);
 
     private static final List<ItemConvertible> COBALT_SMELTABLES = List.of(ModBlocks.NETHER_COBALT_ORE);
+
+    private static final List<ItemConvertible> COAL_SMELTABLES = List.of(ModBlocks.COBBLESTONE_COAL_ORE);
+
+    private static final List<ItemConvertible> IRON_SMELTABLES = List.of(ModBlocks.COBBLESTONE_IRON_ORE);
+
+    private static final List<ItemConvertible> COPPER_SMELTABLES = List.of(ModBlocks.COBBLESTONE_COPPER_ORE);
+
+    private static final List<ItemConvertible> GOLD_SMELTABLES = List.of(ModBlocks.COBBLESTONE_GOLD_ORE);
+
+    private static final List<ItemConvertible> REDSTONE_SMELTABLES = List.of(ModBlocks.COBBLESTONE_REDSTONE_ORE);
+
+    private static final List<ItemConvertible> LAPIS_SMELTABLES = List.of(ModBlocks.COBBLESTONE_LAPIS_ORE);
+
+    private static final List<ItemConvertible> DIAMOND_SMELTABLES = List.of(ModBlocks.COBBLESTONE_DIAMOND_ORE);
+
+    private static final List<ItemConvertible> EMERALD_SMELTABLES = List.of(ModBlocks.COBBLESTONE_EMERALD_ORE);
+
+    private static final List<ItemConvertible> QUARTZ_SMELTABLES = List.of(ModBlocks.COBBLESTONE_QUARTZ_ORE);
+
+    private static final List<ItemConvertible> SANNITE_SMELTABLES = List.of(ModBlocks.SANDITE_ORE, ModBlocks.SANDSTONE_SANDITE_ORE,ModBlocks.RED_SANDSTONE_SANDITE_ORE);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -84,6 +104,56 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f, 200, "cobalt");
         offerBlasting(exporter, COBALT_SMELTABLES, RecipeCategory.MISC, ModItems.COBALT_INGOT,
                 0.7f, 100, "cobalt");
+
+        offerSmelting(exporter, SANNITE_SMELTABLES, RecipeCategory.MISC, ModItems.SANDITE,
+                0.7f, 200, "sannite");
+        offerBlasting(exporter, SANNITE_SMELTABLES, RecipeCategory.MISC, ModItems.SANDITE,
+                0.7f, 100, "sannite");
+
+        offerSmelting(exporter, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL,
+                0.7f, 200, "coal");
+        offerBlasting(exporter, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL,
+                0.7f, 100, "coal");
+
+        offerSmelting(exporter, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT,
+                0.7f, 200, "iron");
+        offerBlasting(exporter, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT,
+                0.7f, 100, "iron");
+
+        offerSmelting(exporter, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT,
+                0.7f, 200, "copper");
+        offerBlasting(exporter, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT,
+                0.7f, 100, "copper");
+
+        offerSmelting(exporter, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT,
+                0.7f, 200, "gold");
+        offerBlasting(exporter, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT,
+                0.7f, 100, "gold");
+
+        offerSmelting(exporter, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE,
+                0.7f, 200, "redstone");
+        offerBlasting(exporter, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE,
+                0.7f, 100, "redstone");
+
+        offerSmelting(exporter, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI,
+                0.7f, 200, "lapis_lazuli");
+        offerBlasting(exporter, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI,
+                0.7f, 100, "lapis_lazuli");
+
+        offerSmelting(exporter, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND,
+                0.7f, 200, "diamond");
+        offerBlasting(exporter, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND,
+                0.7f, 100, "diamond");
+
+        offerSmelting(exporter, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD,
+                0.7f, 200, "emerald");
+        offerBlasting(exporter, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD,
+                0.7f, 100, "emerald");
+
+        offerSmelting(exporter, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ,
+                0.7f, 200, "quartz");
+        offerBlasting(exporter, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ,
+                0.7f, 100, "quartz");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.POWDERED_SALT,
                 RecipeCategory.BUILDING_BLOCKS, ModBlocks.SALT_BLOCK);
@@ -488,7 +558,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
                 .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
                 .offerTo(exporter, new Identifier("chiseled_frosite"));
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_FROSITE, ModBlocks.FROSITE_BLOCK);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FROSITE,18)
                 .input(ModBlocks.CHISELED_FROSITE)
@@ -3434,5 +3503,78 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TERRACOTTA_BOOTS), conditionsFromItem(ModItems.TERRACOTTA_BOOTS))
                 .criterion(hasItem(Items.YELLOW_DYE), conditionsFromItem(Items.YELLOW_DYE))
                 .offerTo(exporter, new Identifier("yellow_terracotta_boots"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SANDITE,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.SAND,8)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', Blocks.SAND)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
+                .offerTo(exporter, new Identifier("sand_from_sand_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.SAND,32)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', Blocks.SANDSTONE)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(Blocks.SANDSTONE), conditionsFromItem(Blocks.SANDSTONE))
+                .offerTo(exporter, new Identifier("sand_from_sandstone_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICKS,4)
+                .pattern("DS")
+                .pattern("SD")
+                .input('S', ModBlocks.SANDITE_BLOCK)
+                .input('D', Blocks.SAND)
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
+                .offerTo(exporter, new Identifier("sandite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICKS, ModBlocks.SANDITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILES,4)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.SANDITE_BLOCK)
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .offerTo(exporter, new Identifier("sandite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILES, ModBlocks.SANDITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_SANDITE,4)
+                .pattern("BBB")
+                .pattern("BSB")
+                .pattern("BBB")
+                .input('B', ModBlocks.SANDITE_BLOCK)
+                .input('S', ModItems.SANDITE)
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .offerTo(exporter, new Identifier("chiseled_sandite"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SANDITE,18)
+                .input(ModBlocks.CHISELED_SANDITE)
+                .criterion(hasItem(ModBlocks.CHISELED_SANDITE), conditionsFromItem(ModBlocks.CHISELED_SANDITE))
+                .offerTo(exporter, new Identifier("sandite_from_chiseled_sandite"));
+
+        createStairsRecipe(ModBlocks.SANDITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.SANDITE_BRICKS))
+                .criterion(hasItem(ModBlocks.SANDITE_BRICKS),conditionsFromItem(ModBlocks.SANDITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SANDITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_BRICK_WALL, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_BRICK_WALL, ModBlocks.SANDITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.SANDITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.SANDITE_TILES))
+                .criterion(hasItem(ModBlocks.SANDITE_TILES),conditionsFromItem(ModBlocks.SANDITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SANDITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_STAIRS, ModBlocks.SANDITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_SLAB, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_SLAB, ModBlocks.SANDITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_TILE_WALL, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_TILE_WALL, ModBlocks.SANDITE_TILES);
     }
 }
