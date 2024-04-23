@@ -1,6 +1,7 @@
 package net.gecko95.oresmod.world.biome;
 
 import net.gecko95.oresmod.OresMod;
+import net.gecko95.oresmod.entity.ModEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
@@ -35,9 +36,8 @@ public class ModBiomes {
 
     public static Biome qurrayBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.CAVE_SPIDER, 10, 1, 3));
-
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.SILVERFISH, 20, 2, 5));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.SILVERFISH, 95, 2, 5));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.SILVERPEDE, 75, 1, 3));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 

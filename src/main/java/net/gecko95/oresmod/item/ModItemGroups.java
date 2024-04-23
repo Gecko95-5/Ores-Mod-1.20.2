@@ -262,6 +262,12 @@ public class ModItemGroups {
                         entries.add(ModItems.FLINT_AXE);
                         entries.add(ModItems.FLINT_SHOVEL);
                         entries.add(ModItems.FLINT_HOE);
+                        entries.add(ModItems.SANDITE_PICKAXE);
+                        entries.add(ModItems.SANDITE_AXE);
+                        entries.add(ModItems.SANDITE_SHOVEL);
+                        entries.add(ModItems.SANDITE_HOE);
+                        entries.add(ModItems.SANDITE_DRILL);
+                        entries.add(ModItems.SANDITE_CHAINSAW);
                     }).build());
     public static final ItemGroup ORES_MOD_WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_weapons"),
@@ -353,6 +359,12 @@ public class ModItemGroups {
                         entries.add(ModItems.BEDROCK_BOOTS);
                         entries.add(ModItems.FLINT_SWORD);
                         entries.add(ModItems.FLINT_AXE);
+                        entries.add(ModItems.SANDITE_SWORD);
+                        entries.add(ModItems.SANDITE_AXE);
+                        entries.add(ModItems.SANDITE_HELMET);
+                        entries.add(ModItems.SANDITE_CHESTPLATE);
+                        entries.add(ModItems.SANDITE_LEGGINGS);
+                        entries.add(ModItems.SANDITE_BOOTS);
                         entries.add(ModItems.CLAY_HELMET);
                         entries.add(ModItems.CLAY_CHESTPLATE);
                         entries.add(ModItems.CLAY_LEGGINGS);
@@ -444,6 +456,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DUEL_POWER_DRIVE);
                         entries.add(ModItems.HANDLED_POWER_DRIVE);
                         entries.add(ModItems.DUEL_HANDLED_POWER_DRIVE);
+                        entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                     }).build());
 
     public static final ItemGroup ORES_MOD_OTHER_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

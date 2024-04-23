@@ -3,7 +3,13 @@ package net.gecko95.oresmod;
 import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.entity.ModEntities;
+import net.gecko95.oresmod.entity.client.ModModelLayers;
+import net.gecko95.oresmod.entity.client.SilverpedeModel;
+import net.gecko95.oresmod.entity.client.SilverpedeRenderer;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.util.SpriteIdentifier;
@@ -34,5 +40,8 @@ public class OresModClient implements ClientModInitializer {
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.DEEPBARK_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.DEEPBARK_HANDING_SIGN_TEXTURE));
+
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERPEDE, SilverpedeModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.SILVERPEDE, SilverpedeRenderer::new);
     }
 }

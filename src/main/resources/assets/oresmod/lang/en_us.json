@@ -306,6 +306,21 @@
 
   "item.oresmod.sandite": "Sandite",
 
+  "item.oresmod.sandite_sword": "Sandite Sword",
+  "item.oresmod.sandite_pickaxe": "Sandite Pickaxe",
+  "item.oresmod.sandite_axe": "Sandite Axe",
+  "item.oresmod.sandite_shovel": "Sandite Shovel",
+  "item.oresmod.sandite_hoe": "Sandite Hoe",
+  "item.oresmod.sandite_drill": "Sandite Drill",
+  "item.oresmod.sandite_chainsaw": "Sandite Chainsaw",
+
+  "item.oresmod.sandite_helmet": "Sandite Helmet",
+  "item.oresmod.sandite_chestplate": "Sandite Chestplate",
+  "item.oresmod.sandite_leggings": "Sandite Leggings",
+  "item.oresmod.sandite_boots": "Sandite Boots",
+
+  "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
+
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
   "block.oresmod.raw_salt_block": "Block of Raw Salt",
@@ -547,6 +562,8 @@
   "block.oresmod.iron_spikes": "Iron Spikes",
   "block.oresmod.aluminum_spikes": "Aluminum Spikes",
   "block.oresmod.steel_spikes": "Steel Spikes",
+
+  "entity.oresmod.silverpede": "Silverpede",
 
   "itemgroup.ores_mod_ores": "Ores & Materials",
   "itemgroup.ores_mod_compounds": "Compounds of Materials",

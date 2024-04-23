@@ -128,6 +128,15 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.TITANIUM_ALLOY_CHAINSAW) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "titanium_alloy_chainsaw_3d", "inventory"));
         }
+
+        if (stack.isOf(ModItems.SANDITE_DRILL) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "sandite_drill_3d", "inventory"));
+        }
+
+        if (stack.isOf(ModItems.SANDITE_CHAINSAW) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "sandite_chainsaw_3d", "inventory"));
+        }
         return value;
+
     }
 }

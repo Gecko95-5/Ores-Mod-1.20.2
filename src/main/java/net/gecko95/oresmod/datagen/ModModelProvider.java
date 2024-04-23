@@ -4,11 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -500,5 +500,19 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.YELLOW_TERRACOTTA_BOOTS));
 
         itemModelGenerator.register(ModItems.SANDITE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SANDITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SANDITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SANDITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SANDITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SANDITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_BOOTS));
+
+        itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

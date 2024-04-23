@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-20T17:08:18.6172006	Ores Mod/Block Loot Tables
+// 1.20.2	2024-04-22T21:58:22.2529891	Ores Mod/Block Loot Tables
 5b2d728d32410b648a8b78fa03e8e9590787e048 data\oresmod\loot_tables\blocks\steel_trapdoor.json
 09ee1cc01b2b476a859026bb3b02fe4f88622d59 data\oresmod\loot_tables\blocks\cobblestone_emerald_ore.json
 762ec1b68d91ac9538078811a92d80986ad9daf5 data\oresmod\loot_tables\blocks\stonebark_stairs.json
@@ -54,8 +54,8 @@ e1d7267d3acaf36a7c9dd700789b0ad07f12cf3f data\oresmod\loot_tables\blocks\smooth_
 ae371abc163678304d5b323dcb1f1b7feb2b309a data\oresmod\loot_tables\blocks\stonebark_log.json
 d44ed1301fe84606e9cbd0cf4c2bc92dcdb26057 data\oresmod\loot_tables\blocks\stripped_deepslate_log.json
 eb90319b1ebe44f80910662584d9d4ec6768a1c7 data\oresmod\loot_tables\blocks\black_sand.json
-299457e7e1e22778095cfb0580c1fe2ff73eb165 data\oresmod\loot_tables\blocks\deepbark_slab.json
 988b803dd84184194bac131e9b1f8267316a4fa1 data\oresmod\loot_tables\blocks\polished_bedrock_bricks_slab.json
+299457e7e1e22778095cfb0580c1fe2ff73eb165 data\oresmod\loot_tables\blocks\deepbark_slab.json
 6519ca5d65b01d655f08ba632411e842f75dd22b data\oresmod\loot_tables\blocks\aluminum_spikes.json
 8ae0e3ec312bd96573172bde063d5f8a1a34e72b data\oresmod\loot_tables\blocks\marble_bricks.json
 ae435c4d6d059f962b39a28bc3754fe98f538a96 data\oresmod\loot_tables\blocks\polished_andesite_bricks.json
@@ -91,8 +91,8 @@ fb6fed91b356cfbf8dd22e5fcd2ba50714d8a17a data\oresmod\loot_tables\blocks\tungste
 4827ab1b88b3303a3eaf090c8be2659358692160 data\oresmod\loot_tables\blocks\polished_andesite_brick_slab.json
 5e1299a0f87fc9a3b601657475dad83af884347e data\oresmod\loot_tables\blocks\sandite_brick_stairs.json
 9893c9e9731c272287f37d80ccff5401ab2ff88f data\oresmod\loot_tables\blocks\steel_block.json
-08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\swiftness_potion_tank.json
 596f9081de031dce3b028b8c08c5beb37b35d2e9 data\oresmod\loot_tables\blocks\cobblestone_nickel_ore.json
+08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\swiftness_potion_tank.json
 fd4b8b84da2f70901d95f2abe117a1384383ee0b data\oresmod\loot_tables\blocks\smooth_steel_slab.json
 5a6df559c72e8e61e50ee1b47f09871392bbace0 data\oresmod\loot_tables\blocks\stonebark_button.json
 7694134288eaedaeaea69dda96ec2207caf5b175 data\oresmod\loot_tables\blocks\smooth_steel_block.json

@@ -3,6 +3,7 @@ package net.gecko95.oresmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -291,7 +292,7 @@ public class ModItems {
     public static final Item BEDROCK_HELMET = registerItem("bedrock_helmet",
             new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item BEDROCK_CHESTPLATE = registerItem("bedrock_chestplate",
-            new ModArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new DoubleModArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item BEDROCK_LEGGINGS = registerItem("bedrock_leggings",
             new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item BEDROCK_BOOTS = registerItem("bedrock_boots",
@@ -472,6 +473,29 @@ public class ModItems {
 
     public static final Item SANDITE = registerItem("sandite", new Item(new FabricItemSettings()));
 
+    public static final Item SANDITE_PICKAXE = registerItem("sandite_pickaxe",
+            new PickaxeItem(ModToolMaterial.SANDITE, 1, -2.8f, new FabricItemSettings()));
+    public static final Item SANDITE_SWORD = registerItem("sandite_sword",
+            new SanditeSwordItem(ModToolMaterial.SANDITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item SANDITE_AXE = registerItem("sandite_axe",
+            new AxeItem(ModToolMaterial.SANDITE, 6.0f, -3.1f, new FabricItemSettings()));
+    public static final Item SANDITE_SHOVEL = registerItem("sandite_shovel",
+            new ShovelItem(ModToolMaterial.SANDITE, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item SANDITE_HOE = registerItem("sandite_hoe",
+            new HoeItem(ModToolMaterial.SANDITE, -2, -1.0f, new FabricItemSettings()));
+    public static final Item SANDITE_HELMET = registerItem("sandite_helmet",
+            new ArmorItem(ModArmorMaterials.SANDITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item SANDITE_CHESTPLATE = registerItem("sandite_chestplate",
+            new ModArmorItem(ModArmorMaterials.SANDITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item SANDITE_LEGGINGS = registerItem("sandite_leggings",
+            new ArmorItem(ModArmorMaterials.SANDITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item SANDITE_BOOTS = registerItem("sandite_boots",
+            new ArmorItem(ModArmorMaterials.SANDITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item SILVERPEDE_SPAWN_EGG = registerItem("silverpede_spawn_egg",
+            new SpawnEggItem(ModEntities.SILVERPEDE, 0xc0c0c0,0x868686, new FabricItemSettings()));
+
+
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
     public static final Item COPPER_DRIVE = registerItem("copper_drive", new Item(new FabricItemSettings()));
@@ -533,6 +557,11 @@ public class ModItems {
             new DrillItem(ModToolMaterial.POWER_TITANIUM_ALLOY, 0, -2.8f, new FabricItemSettings()));
     public static final Item TITANIUM_ALLOY_CHAINSAW = registerItem("titanium_alloy_chainsaw",
             new ChainsawItem(ModToolMaterial.POWER_TITANIUM_ALLOY, 0, -2.8f, new FabricItemSettings()));
+    public static final Item SANDITE_DRILL = registerItem("sandite_drill",
+            new DrillItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
+    public static final Item SANDITE_CHAINSAW = registerItem("sandite_chainsaw",
+            new ChainsawItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
+
 
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));

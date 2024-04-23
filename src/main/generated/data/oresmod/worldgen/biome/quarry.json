@@ -99,21 +99,20 @@
       }
     ],
     "axolotls": [],
-    "creature": [
+    "creature": [],
+    "misc": [],
+    "monster": [
       {
         "type": "minecraft:silverfish",
         "maxCount": 5,
         "minCount": 2,
-        "weight": 20
-      }
-    ],
-    "misc": [],
-    "monster": [
+        "weight": 95
+      },
       {
-        "type": "minecraft:cave_spider",
+        "type": "oresmod:silverpede",
         "maxCount": 3,
         "minCount": 1,
-        "weight": 10
+        "weight": 75
       },
       {
         "type": "minecraft:spider",

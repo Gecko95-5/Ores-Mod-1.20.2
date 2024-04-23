@@ -2,9 +2,12 @@ package net.gecko95.oresmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.entity.ModEntities;
+import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
 import net.gecko95.oresmod.item.ModItemGroups;
 import net.gecko95.oresmod.item.ModItems;
 import net.gecko95.oresmod.util.ModCustomTrades;
@@ -35,6 +38,8 @@ public class OresMod implements ModInitializer {
 		StrippableBlockRegistry.register(ModBlocks.DEEPSLATE_WOOD, ModBlocks.STRIPPED_DEEPSLATE_WOOD);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEEPSLATE_LEAVES,15,30);
+		FabricDefaultAttributeRegistry.register(ModEntities.SILVERPEDE, SilverpedeEntity.createSilverpedeAttributes());
+
 		LOGGER.info("Generating Ores!");
 	}
 }

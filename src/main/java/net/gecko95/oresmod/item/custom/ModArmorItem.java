@@ -15,15 +15,16 @@ import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
         private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
-                (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>()
                         .put(ModArmorMaterials.FROSITE, new StatusEffectInstance(StatusEffects.SLOW_FALLING, 400, 0,
+                                false, false, false))
+                    .put(ModArmorMaterials.SANDITE, new StatusEffectInstance(StatusEffects.SPEED, 400, 0,
                                 false, false, false))
                         .put(ModArmorMaterials.TUNGSTEN, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
                                 false, false, false))
                         .put(ModArmorMaterials.TITANIUM_ALLOY, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
-                                false, false, false))
-                        .put(ModArmorMaterials.BEDROCK, new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3,
                                 false, false, false)).build();
+
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
     }
