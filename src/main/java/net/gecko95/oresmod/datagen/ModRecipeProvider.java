@@ -3776,5 +3776,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
                 .criterion(hasItem(Items.LEATHER), conditionsFromItem(Items.LEATHER))
                 .offerTo(exporter, new Identifier("sandite_boots"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SILVER_SCALE,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_SCALES);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_SCALES,1)
+                .input(ModBlocks.FOSSILIZED_SILVER_SCALES)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.FOSSILIZED_SILVER_SCALES), conditionsFromItem(ModBlocks.FOSSILIZED_SILVER_SCALES))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("silver_scales_from_fossilized_silver_scales"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_SCALE_CORE,1)
+                .input(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE), conditionsFromItem(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("silver_scale_core_from_fossilized_silver_scale_core"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_SCALE_FACE,1)
+                .input(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE), conditionsFromItem(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("silver_scale_face_from_fossilized_silver_scale_face"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_CROWN)
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("TTT")
+                .input('S', ModItems.SILVER_SCALE)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModItems.SILVER_SCALE), conditionsFromItem(ModItems.SILVER_SCALE))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("silver_crown"));
     }
 }

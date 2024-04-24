@@ -106,7 +106,13 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool marblebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MARBLE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_MARBLE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_MARBLE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_SCALES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FOSSILIZED_SILVER_SCALES);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_MARBLE, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.SILVER_SCALE_CORE, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.SILVER_SCALE_FACE, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE, TexturedModel.CUBE_BOTTOM_TOP);
         BlockStateModelGenerator.BlockTexturePool andesitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_ANDESITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool dioritebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DIORITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool granitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRANITE_BRICKS);
@@ -216,7 +222,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(ModBlocks.ALUMINUM_SPIKES);
         blockStateModelGenerator.registerSimpleState(ModBlocks.STEEL_SPIKES);
 
-
+        blockStateModelGenerator.registerSimpleState(ModBlocks.SILVER_CROWN);
     }
 
     @Override
@@ -511,6 +517,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_BOOTS));
+
+        itemModelGenerator.register(ModItems.SILVER_SCALE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

@@ -357,14 +357,15 @@ public class ModItemGroups {
                         entries.add(ModItems.BEDROCK_CHESTPLATE);
                         entries.add(ModItems.BEDROCK_LEGGINGS);
                         entries.add(ModItems.BEDROCK_BOOTS);
-                        entries.add(ModItems.FLINT_SWORD);
-                        entries.add(ModItems.FLINT_AXE);
                         entries.add(ModItems.SANDITE_SWORD);
                         entries.add(ModItems.SANDITE_AXE);
                         entries.add(ModItems.SANDITE_HELMET);
                         entries.add(ModItems.SANDITE_CHESTPLATE);
                         entries.add(ModItems.SANDITE_LEGGINGS);
                         entries.add(ModItems.SANDITE_BOOTS);
+                        entries.add(ModItems.SPIKED_CLUB);
+                        entries.add(ModItems.FLINT_SWORD);
+                        entries.add(ModItems.FLINT_AXE);
                         entries.add(ModItems.CLAY_HELMET);
                         entries.add(ModItems.CLAY_CHESTPLATE);
                         entries.add(ModItems.CLAY_LEGGINGS);
@@ -456,7 +457,6 @@ public class ModItemGroups {
                         entries.add(ModItems.DUEL_POWER_DRIVE);
                         entries.add(ModItems.HANDLED_POWER_DRIVE);
                         entries.add(ModItems.DUEL_HANDLED_POWER_DRIVE);
-                        entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                     }).build());
 
     public static final ItemGroup ORES_MOD_OTHER_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -611,6 +611,20 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HARMING_POTION_TANK);
                         entries.add(ModBlocks.SLOWNESS_POTION_TANK);
                         entries.add(ModBlocks.TURTLE_MASTER_POTION_TANK);
+                    }).build());
+    public static final ItemGroup ORES_MOD_MOBS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(OresMod.MOD_ID, "ores_mod_mobs"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ores_mod_mobs"))
+                    .icon(() -> new ItemStack(ModItems.SILVERPEDE_SPAWN_EGG)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SILVER_SCALE);
+                        entries.add(ModBlocks.SILVER_SCALES);
+                        entries.add(ModBlocks.SILVER_SCALE_CORE);
+                        entries.add(ModBlocks.SILVER_SCALE_FACE);
+                        entries.add(ModBlocks.FOSSILIZED_SILVER_SCALES);
+                        entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE);
+                        entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
+                        entries.add(ModBlocks.SILVER_CROWN);
+                        entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                     }).build());
     public static void registerItemGroups(){
         OresMod.LOGGER.info("Registering Item Groups for " + OresMod.MOD_ID);

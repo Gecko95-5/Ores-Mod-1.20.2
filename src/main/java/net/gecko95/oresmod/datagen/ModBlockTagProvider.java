@@ -166,8 +166,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_GRANITE_BRICKS)
                 .add(ModBlocks.POLISHED_GRANITE_BRICK_STAIRS)
                 .add(ModBlocks.POLISHED_GRANITE_BRICK_SLAB)
-                .add(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
-
+                .add(ModBlocks.POLISHED_GRANITE_BRICK_WALL)
+                .add(ModBlocks.SILVER_SCALES)
+                .add(ModBlocks.SILVER_SCALE_CORE)
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE)
+                .add(ModBlocks.SILVER_SCALE_FACE)
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -286,7 +290,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBBLESTONE_EMERALD_ORE)
                 .add(ModBlocks.COBBLESTONE_TITANIUM_ORE)
                 .add(ModBlocks.GILDED_MARBLE)
-                .add(ModBlocks.GILDED_MARBLE_BRICKS);
+                .add(ModBlocks.GILDED_MARBLE_BRICKS)
+                .add(ModBlocks.SILVER_SCALES)
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALES)
+                .add(ModBlocks.SILVER_SCALE_CORE)
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE)
+                .add(ModBlocks.SILVER_SCALE_FACE)
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STEEL_BLOCK)

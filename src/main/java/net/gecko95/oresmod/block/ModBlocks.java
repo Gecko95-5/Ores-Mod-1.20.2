@@ -547,13 +547,41 @@ public class ModBlocks {
 
     public static final Block FLINT_SPIKES = registerBlock("flint_spikes",
             new FlintSpikeBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).mapColor(MapColor.BLACK).nonOpaque().strength(1.0f, 3.0f)));
-
     public static final Block IRON_SPIKES = registerBlock("iron_spikes",
             new IronSpikeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque().strength(1.0f, 3.0f)));
     public static final Block ALUMINUM_SPIKES = registerBlock("aluminum_spikes",
             new IronSpikeBlock(FabricBlockSettings.copyOf(ModBlocks.ALUMINUM_BLOCK).nonOpaque().strength(1.0f, 3.0f)));
     public static final Block STEEL_SPIKES = registerBlock("steel_spikes",
             new SteelSpikeBlock(FabricBlockSettings.copyOf(ModBlocks.STEEL_BLOCK).nonOpaque().strength(1.0f, 3.0f)));
+
+    public static final Block SILVER_CROWN = registerBlock("silver_crown",
+            new SilverCrownBlock(FabricBlockSettings.create()
+                    .breakInstantly().sounds(BlockSoundGroup.COPPER)
+                    .mapColor(MapColor.CLEAR).nonOpaque()));
+    public static final Block SILVER_SCALES = registerBlock("silver_scales",
+            new Block(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .mapColor(MapColor.WHITE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+    public static final Block FOSSILIZED_SILVER_SCALES = registerBlock("fossilized_silver_scales",
+            new Block(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.BONE)
+                    .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+    public static final Block SILVER_SCALE_CORE = registerBlock("silver_scale_core",
+            new PillarBlock(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .mapColor(MapColor.WHITE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+    public static final Block FOSSILIZED_SILVER_SCALE_CORE = registerBlock("fossilized_silver_scale_core",
+            new PillarBlock(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.BONE)
+                    .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+    public static final Block SILVER_SCALE_FACE = registerBlock("silver_scale_face",
+            new PillarBlock(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.COPPER)
+                    .mapColor(MapColor.WHITE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+    public static final Block FOSSILIZED_SILVER_SCALE_FACE = registerBlock("fossilized_silver_scale_face",
+            new PillarBlock(FabricBlockSettings.create()
+                    .sounds(BlockSoundGroup.BONE)
+                    .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
 
 
     private static Block registerBlock(String name, Block block) {

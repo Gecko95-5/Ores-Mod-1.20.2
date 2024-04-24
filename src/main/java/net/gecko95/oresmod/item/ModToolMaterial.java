@@ -31,6 +31,8 @@ public enum ModToolMaterial implements ToolMaterial {
             () -> Ingredient.ofItems(Items.FLINT)),
     SANDITE(2, 156, 7.7f, 3.3f, 12,
             () -> Ingredient.ofItems(ModItems.SANDITE)),
+    CLUB(0, 268, 7.0f, 2.0f, 2,
+            () -> Ingredient.ofItems(ModItems.SILVER_SCALE)),
     POWER_IRON (2, 500, 12f, 1.0f, 7,
             () -> Ingredient.ofItems(Items.REDSTONE)),
     POWER_DIAMOND (3, 3122, 16f, 1.5f, 5,

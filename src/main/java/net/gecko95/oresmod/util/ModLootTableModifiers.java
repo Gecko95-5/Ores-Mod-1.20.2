@@ -63,6 +63,10 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","chests/village/village_weaponsmith");
     private static final Identifier STRAY_ID =
             new Identifier("minecraft","entities/stray");
+    private static final Identifier HUSK_ID =
+            new Identifier("minecraft","entities/husk");
+    private static final Identifier SILVERFISH_ID =
+            new Identifier("minecraft","entities/silverfish");
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
             if (SIMPLE_DUNGEON_ID.equals(id)) {
@@ -1007,6 +1011,24 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceWithLootingLootCondition.builder(0.1f,0.5f))
                         .with(ItemEntry.builder(ModItems.FROSITE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (HUSK_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.1f,0.5f))
+                        .with(ItemEntry.builder(ModItems.SANDITE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (SILVERFISH_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.SILVER_SCALE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0f, 2.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }

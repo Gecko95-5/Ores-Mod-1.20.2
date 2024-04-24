@@ -137,6 +137,11 @@
     "oresmod:polished_granite_bricks",
     "oresmod:polished_granite_brick_stairs",
     "oresmod:polished_granite_brick_slab",
-    "oresmod:polished_granite_brick_wall"
+    "oresmod:polished_granite_brick_wall",
+    "oresmod:silver_scales",
+    "oresmod:silver_scale_core",
+    "oresmod:fossilized_silver_scale_core",
+    "oresmod:silver_scale_face",
+    "oresmod:fossilized_silver_scale_face"
   ]
 }

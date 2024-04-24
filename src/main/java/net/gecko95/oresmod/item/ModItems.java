@@ -562,6 +562,10 @@ public class ModItems {
     public static final Item SANDITE_CHAINSAW = registerItem("sandite_chainsaw",
             new ChainsawItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
 
+    public static final Item SILVER_SCALE = registerItem("silver_scale", new Item(new FabricItemSettings()));
+
+    public static final Item SPIKED_CLUB = registerItem("spiked_club",
+            new ClubItem(ModToolMaterial.CLUB, 0, -3.0f, new FabricItemSettings()));
 
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));

@@ -563,6 +563,18 @@
   "block.oresmod.aluminum_spikes": "Aluminum Spikes",
   "block.oresmod.steel_spikes": "Steel Spikes",
 
+  "item.oresmod.silver_scale": "Silver Scale",
+  "block.oresmod.silver_crown": "Silver Crown",
+
+  "block.oresmod.silver_scales": "Silver Scales",
+  "block.oresmod.fossilized_silver_scales": "Fossilized-Silver Scales",
+  "block.oresmod.silver_scale_core": "Silver Scale Core",
+  "block.oresmod.fossilized_silver_scale_core": "Fossilized-Silver Scale Core",
+  "block.oresmod.silver_scale_face": "Silver Scale Face",
+  "block.oresmod.fossilized_silver_scale_face": "Fossilized-Silver Scale Face",
+
+  "item.oresmod.spiked_club": "Spiked Club",
+
   "entity.oresmod.silverpede": "Silverpede",
 
   "itemgroup.ores_mod_ores": "Ores & Materials",
@@ -573,6 +585,7 @@
   "itemgroup.ores_mod_other_blocks": "Other Blocks",
   "itemgroup.ores_mod_other": "Other",
   "itemgroup.ores_mod_liquids": "Liquids Tank",
+  "itemgroup.ores_mod_mobs": "Mobs and Mobs Drops",
 
   "tooltip.oresmod.modded_upgrade_smithing_template_1": "Ingredients:",
   "tooltip.oresmod.modded_upgrade_smithing_template_2": "Applies to:",

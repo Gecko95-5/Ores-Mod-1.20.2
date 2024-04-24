@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "L": {
+      "item": "oresmod:silver_scale"
+    }
+  },
+  "pattern": [
+    "LPL",
+    "LPL",
+    " S "
+  ],
+  "result": {
+    "item": "minecraft:piston"
+  },
+  "show_notification": true
+}
