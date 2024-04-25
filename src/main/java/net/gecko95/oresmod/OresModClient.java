@@ -7,9 +7,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.entity.ModEntities;
-import net.gecko95.oresmod.entity.client.ModModelLayers;
-import net.gecko95.oresmod.entity.client.SilverpedeModel;
-import net.gecko95.oresmod.entity.client.SilverpedeRenderer;
+import net.gecko95.oresmod.entity.client.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.util.SpriteIdentifier;
@@ -42,6 +40,8 @@ public class OresModClient implements ClientModInitializer {
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.DEEPBARK_HANDING_SIGN_TEXTURE));
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERPEDE, SilverpedeModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERWYRM, SilverwyrmModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.SILVERPEDE, SilverpedeRenderer::new);
+        EntityRendererRegistry.register(ModEntities.SILVERWYRM, SilverwyrmRenderer::new);
     }
 }

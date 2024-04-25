@@ -383,7 +383,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WEAKNESS_POTION_TANK)
                 .add(ModBlocks.HARMING_POTION_TANK)
                 .add(ModBlocks.SLOWNESS_POTION_TANK)
-                .add(ModBlocks.TURTLE_MASTER_POTION_TANK);
+                .add(ModBlocks.TURTLE_MASTER_POTION_TANK)
+                .add(ModBlocks.FROSTBITE_POTION_TANK)
+                .add(ModBlocks.HEAT_STROKE_POTION_TANK)
+                .add(ModBlocks.FATAL_POISON_POTION_TANK)
+                .add(ModBlocks.VOID_SICKNESS_POTION_TANK);
 
 
         getOrCreateTagBuilder(BlockTags.SAND)

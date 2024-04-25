@@ -7,4 +7,6 @@ import net.minecraft.util.Identifier;
 public class ModModelLayers {
     public static final EntityModelLayer SILVERPEDE =
             new EntityModelLayer(new Identifier(OresMod.MOD_ID,"silverpede"),"silverpede");
+    public static final EntityModelLayer SILVERWYRM =
+            new EntityModelLayer(new Identifier(OresMod.MOD_ID,"silverwyrm"),"silverwyrm");
 }

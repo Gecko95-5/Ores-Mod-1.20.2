@@ -1,8 +1,6 @@
 package net.gecko95.oresmod.item.custom;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
@@ -15,7 +13,7 @@ public class ClubItem extends AxeItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER,200,0),attacker);
+        target.damageShield(84);
         return super.postHit(stack, target, attacker);
     }
 }

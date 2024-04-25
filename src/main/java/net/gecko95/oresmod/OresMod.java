@@ -6,10 +6,14 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.effect.ModEffects;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
+import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;
 import net.gecko95.oresmod.item.ModItemGroups;
 import net.gecko95.oresmod.item.ModItems;
+import net.gecko95.oresmod.potion.ModPotions;
+import net.gecko95.oresmod.registry.RegisterModEffects;
 import net.gecko95.oresmod.util.ModCustomTrades;
 import net.gecko95.oresmod.util.ModLootTableModifiers;
 import net.gecko95.oresmod.world.gen.ModWorldGeneration;
@@ -28,6 +32,8 @@ public class OresMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModLootTableModifiers.modifyLootTables();
 		ModCustomTrades.registerCustomTrades();
+		RegisterModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 		StrippableBlockRegistry.register(ModBlocks.STONEBARK_LOG, ModBlocks.STRIPPED_STONEBARK_LOG);
 		StrippableBlockRegistry.register(ModBlocks.STONEBARK_WOOD, ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -38,7 +44,9 @@ public class OresMod implements ModInitializer {
 		StrippableBlockRegistry.register(ModBlocks.DEEPSLATE_WOOD, ModBlocks.STRIPPED_DEEPSLATE_WOOD);
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEEPSLATE_LEAVES,15,30);
+
 		FabricDefaultAttributeRegistry.register(ModEntities.SILVERPEDE, SilverpedeEntity.createSilverpedeAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.SILVERWYRM, SilverwyrmEntity.createSilverwyrmAttributes());
 
 		LOGGER.info("Generating Ores!");
 	}

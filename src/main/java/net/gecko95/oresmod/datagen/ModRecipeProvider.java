@@ -3810,5 +3810,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SILVER_SCALE), conditionsFromItem(ModItems.SILVER_SCALE))
                 .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier("silver_crown"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.FROSTBITE_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.BLUE_ICE)
+                .input('T', ModBlocks.SLOWNESS_POTION_TANK)
+                .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
+                .criterion(hasItem(ModBlocks.SLOWNESS_POTION_TANK), conditionsFromItem(ModBlocks.SLOWNESS_POTION_TANK))
+                .offerTo(exporter, new Identifier("frostbite_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.HEAT_STROKE_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.RED_SAND)
+                .input('T', ModBlocks.WEAKNESS_POTION_TANK)
+                .criterion(hasItem(Items.RED_SAND), conditionsFromItem(Items.RED_SAND))
+                .criterion(hasItem(ModBlocks.WEAKNESS_POTION_TANK), conditionsFromItem(ModBlocks.WEAKNESS_POTION_TANK))
+                .offerTo(exporter, new Identifier("heat_stroke_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.FATAL_POISON_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.JUNGLE_LEAVES)
+                .input('T', ModBlocks.POISON_POTION_TANK)
+                .criterion(hasItem(Items.JUNGLE_LEAVES), conditionsFromItem(Items.JUNGLE_LEAVES))
+                .criterion(hasItem(ModBlocks.POISON_POTION_TANK), conditionsFromItem(ModBlocks.POISON_POTION_TANK))
+                .offerTo(exporter, new Identifier("fatal_poison_potion_tank"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.VOID_SICKNESS_POTION_TANK)
+                .pattern(" W ")
+                .pattern("WTW")
+                .pattern(" W ")
+                .input('W', Items.END_CRYSTAL)
+                .input('T', ModBlocks.HARMING_POTION_TANK)
+                .criterion(hasItem(Items.END_CRYSTAL), conditionsFromItem(Items.END_CRYSTAL))
+                .criterion(hasItem(ModBlocks.HARMING_POTION_TANK), conditionsFromItem(ModBlocks.HARMING_POTION_TANK))
+                .offerTo(exporter, new Identifier("void_sickness_potion_tank"));
     }
 }

@@ -59,6 +59,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEAKNESS_POTION_TANK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HARMING_POTION_TANK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLOWNESS_POTION_TANK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSTBITE_POTION_TANK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HEAT_STROKE_POTION_TANK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FATAL_POISON_POTION_TANK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_SICKNESS_POTION_TANK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TURTLE_MASTER_POTION_TANK);
         BlockStateModelGenerator.BlockTexturePool smoothsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_STEEL_BLOCK);
         BlockStateModelGenerator.BlockTexturePool cutsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CUT_STEEL);

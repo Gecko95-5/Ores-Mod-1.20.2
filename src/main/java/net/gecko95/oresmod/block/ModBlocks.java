@@ -473,6 +473,15 @@ public class ModBlocks {
     public static final Block TURTLE_MASTER_POTION_TANK = registerBlock("turtle_master_potion_tank",
             new TurtleMasterPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
 
+    public static final Block FROSTBITE_POTION_TANK = registerBlock("frostbite_potion_tank",
+            new FrostbitePotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block HEAT_STROKE_POTION_TANK = registerBlock("heat_stroke_potion_tank",
+            new HeatStrokePotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block FATAL_POISON_POTION_TANK = registerBlock("fatal_poison_potion_tank",
+            new FatalPoisonPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+    public static final Block VOID_SICKNESS_POTION_TANK = registerBlock("void_sickness_potion_tank",
+            new VoidSicknessPotionTankBlock(FabricBlockSettings.copyOf(ModBlocks.WATER_TANK)));
+
     public static final Block COBBLESTONE_COAL_ORE = registerBlock("cobblestone_coal_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)));
     public static final Block COBBLESTONE_IRON_ORE = registerBlock("cobblestone_iron_ore",

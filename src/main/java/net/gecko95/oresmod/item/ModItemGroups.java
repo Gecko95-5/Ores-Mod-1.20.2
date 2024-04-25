@@ -611,6 +611,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HARMING_POTION_TANK);
                         entries.add(ModBlocks.SLOWNESS_POTION_TANK);
                         entries.add(ModBlocks.TURTLE_MASTER_POTION_TANK);
+                        entries.add(ModBlocks.FROSTBITE_POTION_TANK);
+                        entries.add(ModBlocks.HEAT_STROKE_POTION_TANK);
+                        entries.add(ModBlocks.FATAL_POISON_POTION_TANK);
+                        entries.add(ModBlocks.VOID_SICKNESS_POTION_TANK);
                     }).build());
     public static final ItemGroup ORES_MOD_MOBS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_mobs"),

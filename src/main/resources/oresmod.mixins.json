@@ -3,7 +3,8 @@
 	"package": "net.gecko95.oresmod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"BrewingRecipeRegistryMixin"
 	],
 	"client": [
 		"ItemRendererAccessor",
