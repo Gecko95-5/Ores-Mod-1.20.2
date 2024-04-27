@@ -139,6 +139,9 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.SPIKED_CLUB) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "spiked_club_3d", "inventory"));
         }
+        if (stack.isOf(ModItems.MANDIBLE_HATCHET) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "mandible_hatchet_3d", "inventory"));
+        }
         return value;
 
     }

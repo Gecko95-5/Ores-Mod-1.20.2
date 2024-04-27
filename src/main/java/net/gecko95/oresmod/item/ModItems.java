@@ -567,6 +567,12 @@ public class ModItems {
     public static final Item SPIKED_CLUB = registerItem("spiked_club",
             new ClubItem(ModToolMaterial.CLUB, 0, -3.0f, new FabricItemSettings()));
 
+    public static final Item SILVER_MANDIBLE = registerItem("silver_mandible",
+            new MandibleItem(ModToolMaterial.MANDIBLE, 0, -3.2f, new FabricItemSettings()));
+
+    public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
+            new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings()));
+
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));
     public static final Item STONEBARK_HANGING_SIGN = registerItem("stonebark_hanging_sign",

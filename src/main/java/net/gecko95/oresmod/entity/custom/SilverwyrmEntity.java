@@ -4,15 +4,24 @@ import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.boss.BossBar;
+import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 public class SilverwyrmEntity extends HostileEntity {
+    private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.WHITE, BossBar.Style.PROGRESS).setThickenFog(false);
     public final AnimationState idleAnimtionState = new AnimationState();
     private int idleAnimtionTimeout = 0;
 
@@ -42,6 +51,20 @@ public class SilverwyrmEntity extends HostileEntity {
         super(entityType, world);
     }
     @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        if (this.hasCustomName()) {
+            this.bossBar.setName(this.getDisplayName());
+        }
+    }
+
+    @Override
+    public void setCustomName(@Nullable Text name) {
+        super.setCustomName(name);
+        this.bossBar.setName(this.getDisplayName());
+    }
+
+    @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(1, new PowderSnowJumpGoal(this, this.getWorld()));
@@ -51,12 +74,31 @@ public class SilverwyrmEntity extends HostileEntity {
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new RevengeGoal(this).setGroupRevenge());
     }
+
+    @Override
+    protected void mobTick() {
+        super.mobTick();
+        this.bossBar.setPercent(this.getHealth() / this.getMaxHealth());
+    }
+
+    @Override
+    public void onStartedTrackingBy(ServerPlayerEntity player) {
+        super.onStartedTrackingBy(player);
+        this.bossBar.addPlayer(player);
+    }
+
+    @Override
+    public void onStoppedTrackingBy(ServerPlayerEntity player) {
+        super.onStoppedTrackingBy(player);
+        this.bossBar.removePlayer(player);
+    }
+
     public static DefaultAttributeContainer.Builder createSilverwyrmAttributes(){
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,72.0)
                 .add(EntityAttributes.GENERIC_ARMOR,2.0)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.6)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 6.0)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 1.5)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.75);
@@ -73,7 +115,7 @@ public class SilverwyrmEntity extends HostileEntity {
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_SILVERFISH_DEATH;
+        return SoundEvents.ENTITY_STRAY_DEATH;
     }
     @Override
     public EntityGroup getGroup() {
@@ -85,6 +127,7 @@ public class SilverwyrmEntity extends HostileEntity {
             return false;
         }
         if (target instanceof LivingEntity) {
+            ((LivingEntity)target).disablesShield();
             ((LivingEntity)target).damageShield(336);
         }
         return true;

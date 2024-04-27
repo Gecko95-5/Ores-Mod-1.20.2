@@ -29,6 +29,27 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.AXE_MINEABLE)
                 .forceAddTag(BlockTags.HOE_MINEABLE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.MANDIBLE_MINEABLE)
+                .forceAddTag(BlockTags.SHOVEL_MINEABLE)
+                .add(Blocks.COBBLESTONE)
+                .add(Blocks.COBBLED_DEEPSLATE)
+                .add(Blocks.BLACKSTONE)
+                .add(Blocks.BASALT)
+                .add(Blocks.NETHERRACK)
+                .add(Blocks.COBBLED_DEEPSLATE)
+                .add(ModBlocks.COBBLESTONE_COAL_ORE)
+                .add(ModBlocks.COBBLESTONE_IRON_ORE)
+                .add(ModBlocks.COBBLESTONE_COPPER_ORE)
+                .add(ModBlocks.COBBLESTONE_LAPIS_ORE)
+                .add(ModBlocks.COBBLESTONE_GOLD_ORE)
+                .add(ModBlocks.COBBLESTONE_REDSTONE_ORE)
+                .add(ModBlocks.COBBLESTONE_DIAMOND_ORE)
+                .add(ModBlocks.COBBLESTONE_EMERALD_ORE)
+                .add(ModBlocks.COBBLESTONE_ALUMINUM_ORE)
+                .add(ModBlocks.COBBLESTONE_NICKEL_ORE)
+                .add(ModBlocks.COBBLESTONE_TITANIUM_ORE)
+                .add(ModBlocks.COBBLESTONE_QUARTZ_ORE);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SALT_ORE)
                 .add(ModBlocks.RAW_SALT_BLOCK)
@@ -171,7 +192,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SILVER_SCALE_CORE)
                 .add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE)
                 .add(ModBlocks.SILVER_SCALE_FACE)
-                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE)
+                .add(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
+                .add(ModBlocks.LIGHTY_RUSTED_CUT_STEEL)
+                .add(ModBlocks.RUSTED_STEEL_BLOCK)
+                .add(ModBlocks.RUSTED_CUT_STEEL);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -312,7 +337,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STEEL_PRESSURE_PLATE)
                 .add(ModBlocks.STEEL_LAMP)
                 .add(ModBlocks.TITANIUM_ALLOY_BLOCK)
-                .add(ModBlocks.STEEL_SPIKES);
+                .add(ModBlocks.STEEL_SPIKES)
+                .add(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
+                .add(ModBlocks.LIGHTY_RUSTED_CUT_STEEL)
+                .add(ModBlocks.RUSTED_STEEL_BLOCK)
+                .add(ModBlocks.RUSTED_CUT_STEEL);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.FAKE_BEDROCK)

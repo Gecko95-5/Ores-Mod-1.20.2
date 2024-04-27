@@ -592,6 +592,40 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.BONE)
                     .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
 
+    public static final Block ENDER_DRAGON_TROPHY = registerBlock("ender_dragon_trophy",
+            new TrophyBlock(FabricBlockSettings.create()
+                    .breakInstantly().sounds(BlockSoundGroup.METAL)
+                    .mapColor(MapColor.CLEAR).nonOpaque()));
+    public static final Block WITHER_TROPHY = registerBlock("wither_trophy",
+            new TrophyBlock(FabricBlockSettings.create()
+                    .breakInstantly().sounds(BlockSoundGroup.METAL)
+                    .mapColor(MapColor.CLEAR).nonOpaque()));
+    public static final Block ELDER_GUARDIAN_TROPHY = registerBlock("elder_guardian_trophy",
+            new TrophyBlock(FabricBlockSettings.create()
+                    .breakInstantly().sounds(BlockSoundGroup.METAL)
+                    .mapColor(MapColor.CLEAR).nonOpaque()));
+    public static final Block WARDEN_TROPHY = registerBlock("warden_trophy",
+            new WardenTrophyBlock(FabricBlockSettings.create()
+                    .breakInstantly().sounds(BlockSoundGroup.METAL)
+                    .mapColor(MapColor.CLEAR).nonOpaque()));
+    public static final Block SILVERWYRM_TROPHY = registerBlock("silverwyrm_trophy",
+            new TrophyBlock(FabricBlockSettings.create()
+                    .breakInstantly().sounds(BlockSoundGroup.METAL)
+                    .mapColor(MapColor.CLEAR).nonOpaque()));
+
+    public static final Block LIGHTY_RUSTED_STEEL_BLOCK = registerBlock("lighty_rusted_steel_block",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresTool()
+                    .strength(12.5f, 300.0f).sounds(BlockSoundGroup.METAL)));
+    public static final Block LIGHTY_RUSTED_CUT_STEEL = registerBlock("lighty_rusted_cut_steel",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresTool()
+                    .strength(12.5f, 300.0f).sounds(BlockSoundGroup.METAL)));
+
+    public static final Block RUSTED_STEEL_BLOCK = registerBlock("rusted_steel_block",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).requiresTool()
+                    .strength(6.25f, 150.0f).sounds(BlockSoundGroup.METAL)));
+    public static final Block RUSTED_CUT_STEEL = registerBlock("rusted_cut_steel",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).requiresTool()
+                    .strength(6.25f, 150.0f).sounds(BlockSoundGroup.METAL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

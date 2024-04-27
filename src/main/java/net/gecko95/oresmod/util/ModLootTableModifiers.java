@@ -67,6 +67,14 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","entities/husk");
     private static final Identifier SILVERFISH_ID =
             new Identifier("minecraft","entities/silverfish");
+    private static final Identifier ENDER_DRAGON_ID =
+            new Identifier("minecraft","entities/ender_dragon");
+    private static final Identifier WITHER_ID =
+            new Identifier("minecraft","entities/wither");
+    private static final Identifier ELDER_GUARDIAN_ID =
+            new Identifier("minecraft","entities/elder_guardian");
+    private static final Identifier WARDEN_ID =
+            new Identifier("minecraft","entities/warden");
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
             if (SIMPLE_DUNGEON_ID.equals(id)) {
@@ -1029,6 +1037,42 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(1f))
                         .with(ItemEntry.builder(ModItems.SILVER_SCALE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0.0f, 2.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (ENDER_DRAGON_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModBlocks.ENDER_DRAGON_TROPHY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (WITHER_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModBlocks.WITHER_TROPHY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (ELDER_GUARDIAN_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(ModBlocks.ELDER_GUARDIAN_TROPHY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (WARDEN_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModBlocks.WARDEN_TROPHY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }

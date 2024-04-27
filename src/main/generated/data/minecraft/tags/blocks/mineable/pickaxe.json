@@ -142,6 +142,10 @@
     "oresmod:silver_scale_core",
     "oresmod:fossilized_silver_scale_core",
     "oresmod:silver_scale_face",
-    "oresmod:fossilized_silver_scale_face"
+    "oresmod:fossilized_silver_scale_face",
+    "oresmod:lighty_rusted_steel_block",
+    "oresmod:lighty_rusted_cut_steel",
+    "oresmod:rusted_steel_block",
+    "oresmod:rusted_cut_steel"
   ]
 }

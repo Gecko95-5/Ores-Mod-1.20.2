@@ -26,7 +26,7 @@ public class SilverpedeRenderer extends MobEntityRenderer<SilverpedeEntity, Silv
         if (mobEntity.isBaby()){
             matrixStack.scale(0.5f,0.5f,0.5f);
         } else {
-            matrixStack.scale(1.5f,1.5f,1.5f);
+            matrixStack.scale(1.0f,1.0f,1.0f);
         }
 
         super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);

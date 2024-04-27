@@ -22,6 +22,9 @@ public class ModTags {
         public static final TagKey<Block> POTION_TANKS =
                 createTag("potion_tanks");
 
+        public static final TagKey<Block> MANDIBLE_MINEABLE =
+                createTag("mandible_mineable");
+
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(OresMod.MOD_ID, name));
         }

@@ -14,6 +14,10 @@
     "oresmod:steel_pressure_plate",
     "oresmod:steel_lamp",
     "oresmod:titanium_alloy_block",
-    "oresmod:steel_spikes"
+    "oresmod:steel_spikes",
+    "oresmod:lighty_rusted_steel_block",
+    "oresmod:lighty_rusted_cut_steel",
+    "oresmod:rusted_steel_block",
+    "oresmod:rusted_cut_steel"
   ]
 }

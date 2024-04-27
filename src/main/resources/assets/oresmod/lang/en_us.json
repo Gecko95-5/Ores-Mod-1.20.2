@@ -371,6 +371,11 @@
   "block.oresmod.steel_pressure_plate": "Steel Pressure Plate",
   "block.oresmod.steel_lamp": "Steel Lamp",
 
+  "block.oresmod.lighty_rusted_steel_block": "Light Rusted Steel Block",
+  "block.oresmod.lighty_rusted_cut_steel": "Light Rusted Cut Steel",
+  "block.oresmod.rusted_steel_block": "Rusty Steel Block",
+  "block.oresmod.rusted_cut_steel": "Rusty Cut Steel",
+
   "block.oresmod.stonebark_log": "Stonebark Log",
   "block.oresmod.stonebark_wood": "Stonebark Wood",
   "block.oresmod.stripped_stonebark_log": "Stripped Stonebark Log",
@@ -580,7 +585,17 @@
 
   "item.oresmod.spiked_club": "Spiked Club",
 
+  "item.oresmod.silver_mandible": "Silver Mandible",
+  "item.oresmod.mandible_hatchet": "Mandible Hatchet",
+
+  "block.oresmod.ender_dragon_trophy": "Ender Dragon Trophy",
+  "block.oresmod.wither_trophy": "Wither Trophy",
+  "block.oresmod.elder_guardian_trophy": "Elder Guardian Trophy",
+  "block.oresmod.warden_trophy": "Warden Trophy",
+  "block.oresmod.silverwyrm_trophy": "Silverwyrm Trophy",
+
   "entity.oresmod.silverpede": "Silverpede",
+  "entity.oresmod.silverwyrm": "Silverwyrm",
 
   "effect.oresmod.frostbite": "Frostbite",
   "item.minecraft.potion.effect.frostbite_potion": "Potion of Subzero",

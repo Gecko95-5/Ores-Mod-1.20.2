@@ -140,6 +140,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FOSSILIZED_SILVER_SCALES);
         addDrop(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE);
         addDrop(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
+        addDrop(ModBlocks.ENDER_DRAGON_TROPHY);
+        addDrop(ModBlocks.WITHER_TROPHY);
+        addDrop(ModBlocks.ELDER_GUARDIAN_TROPHY);
+        addDrop(ModBlocks.WARDEN_TROPHY);
+        addDrop(ModBlocks.SILVERWYRM_TROPHY);
+        addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
+        addDrop(ModBlocks.LIGHTY_RUSTED_CUT_STEEL);
+        addDrop(ModBlocks.RUSTED_STEEL_BLOCK);
+        addDrop(ModBlocks.RUSTED_CUT_STEEL);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 

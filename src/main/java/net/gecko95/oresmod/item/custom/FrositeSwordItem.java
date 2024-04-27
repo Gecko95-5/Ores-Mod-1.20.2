@@ -14,7 +14,7 @@ public class FrositeSwordItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,200,0),attacker);
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,100,0),attacker);
         return super.postHit(stack, target, attacker);
     }
 }

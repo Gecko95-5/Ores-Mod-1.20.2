@@ -19,14 +19,14 @@ public class SilverwyrmRenderer extends MobEntityRenderer<SilverwyrmEntity, Silv
         return TEXTURE;
     }
 
-    
+
     @Override
     public void render(SilverwyrmEntity mobEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
         super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);
            if (mobEntity.isBaby()){
         matrixStack.scale(0.5f,0.5f,0.5f);
     } else {
-        matrixStack.scale(1.5f,1.5f,1.5f);
+        matrixStack.scale(1.0f,1.0f,1.0f);
     }
 
         super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);

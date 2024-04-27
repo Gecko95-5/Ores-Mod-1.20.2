@@ -363,7 +363,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SANDITE_CHESTPLATE);
                         entries.add(ModItems.SANDITE_LEGGINGS);
                         entries.add(ModItems.SANDITE_BOOTS);
-                        entries.add(ModItems.SPIKED_CLUB);
+                        entries.add(ModItems.MANDIBLE_HATCHET);
                         entries.add(ModItems.FLINT_SWORD);
                         entries.add(ModItems.FLINT_AXE);
                         entries.add(ModItems.CLAY_HELMET);
@@ -627,8 +627,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALES);
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE);
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
+                        entries.add(ModItems.SILVER_MANDIBLE);
                         entries.add(ModBlocks.SILVER_CROWN);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
+                        entries.add(ModBlocks.ENDER_DRAGON_TROPHY);
+                        entries.add(ModBlocks.WITHER_TROPHY);
+                        entries.add(ModBlocks.ELDER_GUARDIAN_TROPHY);
+                        entries.add(ModBlocks.WARDEN_TROPHY);
+                        entries.add(ModBlocks.SILVERWYRM_TROPHY);
                     }).build());
     public static void registerItemGroups(){
         OresMod.LOGGER.info("Registering Item Groups for " + OresMod.MOD_ID);
