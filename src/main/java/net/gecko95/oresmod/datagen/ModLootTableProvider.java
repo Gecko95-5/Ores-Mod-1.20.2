@@ -49,6 +49,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STEEL_BARS);
         addDrop(ModBlocks.STEEL_PRESSURE_PLATE);
         addDrop(ModBlocks.STEEL_LAMP);
+        addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP);
+        addDrop(ModBlocks.RUSTED_STEEL_LAMP);
         addDrop(ModBlocks.STONEBARK_LOG);
         addDrop(ModBlocks.STONEBARK_WOOD);
         addDrop(ModBlocks.STRIPPED_STONEBARK_LOG);
@@ -147,8 +149,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SILVERWYRM_TROPHY);
         addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
         addDrop(ModBlocks.LIGHTY_RUSTED_CUT_STEEL);
+        addDrop(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_STAIRS);
         addDrop(ModBlocks.RUSTED_STEEL_BLOCK);
         addDrop(ModBlocks.RUSTED_CUT_STEEL);
+        addDrop(ModBlocks.RUSTED_CUT_STEEL_STAIRS);
+        addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR);
+        addDrop(ModBlocks.RUSTED_STEEL_TRAPDOOR);
+        addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_BARS);
+        addDrop(ModBlocks.RUSTED_STEEL_BARS);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 
@@ -227,6 +235,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_STEEL_SLAB, slabDrops(ModBlocks.SMOOTH_STEEL_SLAB));
         addDrop(ModBlocks.CUT_STEEL_SLAB, slabDrops(ModBlocks.CUT_STEEL_SLAB));
 
+        addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_SLAB, slabDrops(ModBlocks.LIGHTY_RUSTED_STEEL_SLAB));
+        addDrop(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_SLAB, slabDrops(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_SLAB));
+
+        addDrop(ModBlocks.RUSTED_STEEL_SLAB, slabDrops(ModBlocks.RUSTED_STEEL_SLAB));
+        addDrop(ModBlocks.RUSTED_CUT_STEEL_SLAB, slabDrops(ModBlocks.RUSTED_CUT_STEEL_SLAB));
+
         addDrop(ModBlocks.STONEBARK_SLAB, slabDrops(ModBlocks.STONEBARK_SLAB));
         addDrop(ModBlocks.DEEPBARK_SLAB, slabDrops(ModBlocks.DEEPBARK_SLAB));
 
@@ -253,6 +267,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));
+        addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR, doorDrops(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR));
+        addDrop(ModBlocks.RUSTED_STEEL_DOOR, doorDrops(ModBlocks.RUSTED_STEEL_DOOR));
         addDrop(ModBlocks.STONEBARK_DOOR, doorDrops(ModBlocks.STONEBARK_DOOR));
         addDrop(ModBlocks.DEEPBARK_DOOR, doorDrops(ModBlocks.DEEPBARK_DOOR));
 

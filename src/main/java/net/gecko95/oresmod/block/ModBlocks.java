@@ -616,16 +616,54 @@ public class ModBlocks {
     public static final Block LIGHTY_RUSTED_STEEL_BLOCK = registerBlock("lighty_rusted_steel_block",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresTool()
                     .strength(12.5f, 300.0f).sounds(BlockSoundGroup.METAL)));
+    public static final Block LIGHTY_RUSTED_STEEL_SLAB = registerBlock("lighty_rusted_steel_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)));
     public static final Block LIGHTY_RUSTED_CUT_STEEL = registerBlock("lighty_rusted_cut_steel",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresTool()
                     .strength(12.5f, 300.0f).sounds(BlockSoundGroup.METAL)));
+    public static final Block LIGHTY_RUSTED_CUT_STEEL_STAIRS = registerBlock("lighty_rusted_cut_steel_stairs",
+            new StairsBlock(ModBlocks.LIGHTY_RUSTED_CUT_STEEL.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHTY_RUSTED_CUT_STEEL)));
+    public static final Block LIGHTY_RUSTED_CUT_STEEL_SLAB = registerBlock("lighty_rusted_cut_steel_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHTY_RUSTED_CUT_STEEL)));
+
 
     public static final Block RUSTED_STEEL_BLOCK = registerBlock("rusted_steel_block",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).requiresTool()
                     .strength(6.25f, 150.0f).sounds(BlockSoundGroup.METAL)));
+    public static final Block RUSTED_STEEL_SLAB = registerBlock("rusted_steel_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.RUSTED_STEEL_BLOCK)));
     public static final Block RUSTED_CUT_STEEL = registerBlock("rusted_cut_steel",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).requiresTool()
                     .strength(6.25f, 150.0f).sounds(BlockSoundGroup.METAL)));
+    public static final Block RUSTED_CUT_STEEL_STAIRS = registerBlock("rusted_cut_steel_stairs",
+            new StairsBlock(ModBlocks.RUSTED_CUT_STEEL.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.RUSTED_CUT_STEEL)));
+    public static final Block RUSTED_CUT_STEEL_SLAB = registerBlock("rusted_cut_steel_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.RUSTED_CUT_STEEL)));
+
+    public static final Block LIGHTY_RUSTED_STEEL_DOOR = registerBlock("lighty_rusted_steel_door",
+            new DoorBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).
+                    requiresTool().strength(12.5f).nonOpaque().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.GOLD));
+    public static final Block LIGHTY_RUSTED_STEEL_TRAPDOOR = registerBlock("lighty_rusted_steel_trapdoor",
+            new TrapdoorBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresTool()
+                    .strength(12.5f).nonOpaque().allowsSpawning(Blocks::never), BlockSetType.GOLD));
+
+    public static final Block RUSTED_STEEL_DOOR = registerBlock("rusted_steel_door",
+            new DoorBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).
+                    requiresTool().strength(6.25f).nonOpaque().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.GOLD));
+    public static final Block RUSTED_STEEL_TRAPDOOR = registerBlock("rusted_steel_trapdoor",
+            new TrapdoorBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).requiresTool()
+                    .strength(6.25f).nonOpaque().allowsSpawning(Blocks::never), BlockSetType.GOLD));
+
+    public static final Block LIGHTY_RUSTED_STEEL_BARS = registerBlock("lighty_rusted_steel_bars",
+            new PaneBlock(AbstractBlock.Settings.create().requiresTool().strength(12.5f, 300.0f)
+                    .sounds(BlockSoundGroup.METAL).nonOpaque()));
+    public static final Block RUSTED_STEEL_BARS = registerBlock("rusted_steel_bars",
+            new PaneBlock(AbstractBlock.Settings.create().requiresTool().strength(6.25f, 150.0f)
+                    .sounds(BlockSoundGroup.METAL).nonOpaque()));
+    public static final Block LIGHTY_RUSTED_STEEL_LAMP = registerBlock("lighty_rusted_steel_lamp",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK).luminance(state -> 7).solidBlock(Blocks::never)));
+    public static final Block RUSTED_STEEL_LAMP = registerBlock("rusted_steel_lamp",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.RUSTED_STEEL_BLOCK).luminance(state -> 3).solidBlock(Blocks::never)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -67,7 +67,7 @@ public class SilverpedeEntity extends HostileEntity {
     public static DefaultAttributeContainer.Builder createSilverpedeAttributes(){
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,24.0)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.0);
     }
     @Override

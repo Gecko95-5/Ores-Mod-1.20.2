@@ -120,10 +120,12 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool andesitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_ANDESITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool dioritebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DIORITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool granitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRANITE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHTY_RUSTED_CUT_STEEL);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_STEEL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_CUT_STEEL);
+        BlockStateModelGenerator.BlockTexturePool lrustedsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool lrustedcutsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHTY_RUSTED_CUT_STEEL);
+        BlockStateModelGenerator.BlockTexturePool rustedsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUSTED_STEEL_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool rustedcutsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUSTED_CUT_STEEL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_STEEL_LAMP);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -158,6 +160,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         cutsteelPool.stairs(ModBlocks.CUT_STEEL_STAIRS);
         cutsteelPool.slab(ModBlocks.CUT_STEEL_SLAB);
+
+        lrustedsteelPool.slab(ModBlocks.LIGHTY_RUSTED_STEEL_SLAB);
+
+        lrustedcutsteelPool.stairs(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_STAIRS);
+        lrustedcutsteelPool.slab(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_SLAB);
+
+        rustedsteelPool.slab(ModBlocks.RUSTED_STEEL_SLAB);
+
+        rustedcutsteelPool.stairs(ModBlocks.RUSTED_CUT_STEEL_STAIRS);
+        rustedcutsteelPool.slab(ModBlocks.RUSTED_CUT_STEEL_SLAB);
 
         sanditebrickPool.stairs(ModBlocks.SANDITE_BRICK_STAIRS);
         sanditebrickPool.slab(ModBlocks.SANDITE_BRICK_SLAB);
@@ -218,6 +230,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.STEEL_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.STEEL_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.RUSTED_STEEL_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.RUSTED_STEEL_TRAPDOOR);
 
         blockStateModelGenerator.registerDoor(ModBlocks.STONEBARK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.STONEBARK_TRAPDOOR);
@@ -535,7 +553,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_SCALE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_MANDIBLE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.RUSTED_STEEL_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUSTED_STEEL_BEETROOT, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+        itemModelGenerator.register(ModItems.JUNGLE_SPIDER_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

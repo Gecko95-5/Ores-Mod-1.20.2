@@ -18,17 +18,4 @@ public class SilverpedeRenderer extends MobEntityRenderer<SilverpedeEntity, Silv
     public Identifier getTexture(SilverpedeEntity entity) {
         return TEXTURE;
     }
-
-    @Override
-    public void render(SilverpedeEntity mobEntity, float f, float g, MatrixStack matrixStack,
-                       VertexConsumerProvider vertexConsumerProvider, int i) {
-
-        if (mobEntity.isBaby()){
-            matrixStack.scale(0.5f,0.5f,0.5f);
-        } else {
-            matrixStack.scale(1.0f,1.0f,1.0f);
-        }
-
-        super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);
-    }
 }

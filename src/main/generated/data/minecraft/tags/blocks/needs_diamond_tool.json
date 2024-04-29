@@ -16,8 +16,22 @@
     "oresmod:titanium_alloy_block",
     "oresmod:steel_spikes",
     "oresmod:lighty_rusted_steel_block",
+    "oresmod:lighty_rusted_steel_slab",
     "oresmod:lighty_rusted_cut_steel",
+    "oresmod:lighty_rusted_cut_steel_stairs",
+    "oresmod:lighty_rusted_cut_steel_slab",
     "oresmod:rusted_steel_block",
-    "oresmod:rusted_cut_steel"
+    "oresmod:rusted_steel_slab",
+    "oresmod:rusted_cut_steel",
+    "oresmod:rusted_cut_steel_stairs",
+    "oresmod:rusted_cut_steel_slab",
+    "oresmod:lighty_rusted_steel_door",
+    "oresmod:lighty_rusted_steel_trapdoor",
+    "oresmod:rusted_steel_door",
+    "oresmod:rusted_steel_trapdoor",
+    "oresmod:lighty_rusted_steel_bars",
+    "oresmod:rusted_steel_bars",
+    "oresmod:lighty_rusted_steel_lamp",
+    "oresmod:rusted_steel_lamp"
   ]
 }

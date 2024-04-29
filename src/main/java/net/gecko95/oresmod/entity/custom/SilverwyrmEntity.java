@@ -97,8 +97,8 @@ public class SilverwyrmEntity extends HostileEntity {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH,72.0)
                 .add(EntityAttributes.GENERIC_ARMOR,2.0)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.6)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 6.0)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0)
                 .add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 1.5)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.75);
@@ -121,15 +121,17 @@ public class SilverwyrmEntity extends HostileEntity {
     public EntityGroup getGroup() {
         return EntityGroup.ARTHROPOD;
     }
+
     @Override
     public boolean tryAttack(Entity target) {
         if (!super.tryAttack(target)) {
+            ((LivingEntity)target).disablesShield();
             return false;
         }
         if (target instanceof LivingEntity) {
-            ((LivingEntity)target).disablesShield();
-            ((LivingEntity)target).damageShield(336);
+            ((LivingEntity)target).damageArmor(target.getDamageSources().generic(),2);
         }
         return true;
     }
+
 }

@@ -182,6 +182,11 @@ public class ModItems {
     public static final Item STEEL_BOOTS = registerItem("steel_boots",
             new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item RUSTED_STEEL_APPLE = registerItem("rusted_steel_apple",
+            new Item(new FabricItemSettings().food(ModFoodComponents.RUSTED_STEEL_APPLE)));
+    public static final Item RUSTED_STEEL_BEETROOT = registerItem("rusted_steel_beetroot",
+            new Item(new FabricItemSettings().food(ModFoodComponents.RUSTED_STEEL_BEETROOT)));
+
     public static final Item RAW_TITANIUM = registerItem("raw_titanium", new Item(new FabricItemSettings()));
     public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", new Item(new FabricItemSettings()));
 
@@ -494,6 +499,8 @@ public class ModItems {
 
     public static final Item SILVERPEDE_SPAWN_EGG = registerItem("silverpede_spawn_egg",
             new SpawnEggItem(ModEntities.SILVERPEDE, 0xc0c0c0,0x868686, new FabricItemSettings()));
+    public static final Item JUNGLE_SPIDER_SPAWN_EGG = registerItem("jungle_spider_spawn_egg",
+            new SpawnEggItem(ModEntities.JUNGLE_SPIDER, 0x3c5436,0x930c0c, new FabricItemSettings()));
 
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));

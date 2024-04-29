@@ -1636,12 +1636,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter, new Identifier("steel_door"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_DOOR,3)
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.SMOOTH_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.SMOOTH_STEEL_BLOCK), conditionsFromItem(ModBlocks.SMOOTH_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("steel_door_from_smooth_steel_block"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_TRAPDOOR)
                 .pattern("SS")
                 .pattern("SS")
                 .input('S', ModItems.STEEL_INGOT)
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter, new Identifier("steel_trapdoor"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.STEEL_TRAPDOOR)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.SMOOTH_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.SMOOTH_STEEL_BLOCK), conditionsFromItem(ModBlocks.SMOOTH_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("steel_trapdoor_from_smooth_steel_block"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STEEL_BARS,16)
                 .pattern("SSS")
@@ -1667,6 +1682,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.STEEL_BARS), conditionsFromItem(ModBlocks.STEEL_BARS))
                 .criterion(hasItem(Blocks.GLOWSTONE), conditionsFromItem(Blocks.GLOWSTONE))
                 .offerTo(exporter, new Identifier("steel_lamp"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STEEL_LAMP)
+                .pattern("SBS")
+                .pattern("BGB")
+                .pattern("SBS")
+                .input('S', ModBlocks.SMOOTH_STEEL_BLOCK)
+                .input('B', ModBlocks.STEEL_BARS)
+                .input('G', Blocks.GLOWSTONE)
+                .criterion(hasItem(ModBlocks.SMOOTH_STEEL_BLOCK), conditionsFromItem(ModBlocks.SMOOTH_STEEL_BLOCK))
+                .criterion(hasItem(ModBlocks.STEEL_BARS), conditionsFromItem(ModBlocks.STEEL_BARS))
+                .criterion(hasItem(Blocks.GLOWSTONE), conditionsFromItem(Blocks.GLOWSTONE))
+                .offerTo(exporter, new Identifier("steel_lamp_from_smooth_steel_block"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONEBARK_PLANKS,4)
                 .input(ModBlocks.STONEBARK_LOG)
@@ -3875,69 +3902,309 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier("mandible_hatchet"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK,1)
                 .input(ModBlocks.SMOOTH_STEEL_BLOCK)
                 .input(Items.WATER_BUCKET)
                 .criterion(hasItem(ModBlocks.SMOOTH_STEEL_BLOCK), conditionsFromItem(ModBlocks.SMOOTH_STEEL_BLOCK))
                 .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier("lighty_rusted_steel_block_from_smooth_steel_block"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LIGHTY_RUSTED_CUT_STEEL,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL,1)
                 .input(ModBlocks.CUT_STEEL)
                 .input(Items.WATER_BUCKET)
                 .criterion(hasItem(ModBlocks.CUT_STEEL), conditionsFromItem(ModBlocks.CUT_STEEL))
                 .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier("lighty_rusted_cut_steel_from_cut_steel"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUSTED_STEEL_BLOCK,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_BLOCK,1)
                 .input(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
                 .input(Items.WATER_BUCKET)
                 .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK))
                 .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier("rusted_steel_block_from_lighty_rusted_steel_block"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUSTED_CUT_STEEL,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL,1)
                 .input(ModBlocks.LIGHTY_RUSTED_CUT_STEEL)
                 .input(Items.WATER_BUCKET)
                 .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_CUT_STEEL), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_CUT_STEEL))
                 .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier("rusted_cut_steel_from_lighty_rusted_cut_steel"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUSTED_STEEL_BLOCK,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_BLOCK,1)
                 .input(ModBlocks.SMOOTH_STEEL_BLOCK)
                 .input(Items.BLUE_ICE)
                 .criterion(hasItem(ModBlocks.SMOOTH_STEEL_BLOCK), conditionsFromItem(ModBlocks.SMOOTH_STEEL_BLOCK))
                 .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
                 .offerTo(exporter, new Identifier("rusted_steel_block_from_smooth_steel_block"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUSTED_CUT_STEEL,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL,1)
                 .input(ModBlocks.CUT_STEEL)
                 .input(Items.BLUE_ICE)
                 .criterion(hasItem(ModBlocks.CUT_STEEL), conditionsFromItem(ModBlocks.CUT_STEEL))
                 .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
                 .offerTo(exporter, new Identifier("rusted_cut_steel_from_cut_steel"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK,1)
                 .input(ModBlocks.RUSTED_STEEL_BLOCK)
                 .input(ModItems.POWDERED_SALT)
                 .criterion(hasItem(ModBlocks.RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.RUSTED_STEEL_BLOCK))
                 .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
                 .offerTo(exporter, new Identifier("lighty_rusted_steel_block_from_rusted_steel_block"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LIGHTY_RUSTED_CUT_STEEL,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL,1)
                 .input(ModBlocks.RUSTED_CUT_STEEL)
                 .input(ModItems.POWDERED_SALT)
                 .criterion(hasItem(ModBlocks.RUSTED_CUT_STEEL), conditionsFromItem(ModBlocks.RUSTED_CUT_STEEL))
                 .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
                 .offerTo(exporter, new Identifier("lighty_rusted_cut_steel_from_rusted_cut_steel"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SMOOTH_STEEL_BLOCK,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STEEL_BLOCK,1)
                 .input(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
                 .input(ModItems.POWDERED_SALT)
                 .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK))
                 .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
                 .offerTo(exporter, new Identifier("smooth_steel_block_from_lighty_rusted_steel_block"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CUT_STEEL,1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_STEEL,1)
                 .input(ModBlocks.LIGHTY_RUSTED_CUT_STEEL)
                 .input(ModItems.POWDERED_SALT)
                 .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_CUT_STEEL), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_CUT_STEEL))
                 .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
                 .offerTo(exporter, new Identifier("cut_steel_from_lighty_rusted_cut_steel"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL,4)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("lighty_rusted_cut_steel"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL,4)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.RUSTED_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.RUSTED_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("rusted_cut_steel"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL, ModBlocks.RUSTED_STEEL_BLOCK);
+
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_SLAB, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_SLAB, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK,2);
+
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_SLAB, ModBlocks.RUSTED_STEEL_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_SLAB, ModBlocks.RUSTED_STEEL_BLOCK,2);
+
+        createStairsRecipe(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_STAIRS, Ingredient.ofItems(ModBlocks.LIGHTY_RUSTED_CUT_STEEL))
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_CUT_STEEL),conditionsFromItem(ModBlocks.LIGHTY_RUSTED_CUT_STEEL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHTY_RUSTED_CUT_STEEL_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL_STAIRS, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL_STAIRS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL_SLAB, ModBlocks.LIGHTY_RUSTED_CUT_STEEL);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL_SLAB, ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_CUT_STEEL_SLAB, ModBlocks.LIGHTY_RUSTED_CUT_STEEL,2);
+
+        createStairsRecipe(ModBlocks.RUSTED_CUT_STEEL_STAIRS, Ingredient.ofItems(ModBlocks.RUSTED_CUT_STEEL))
+                .criterion(hasItem(ModBlocks.RUSTED_CUT_STEEL),conditionsFromItem(ModBlocks.RUSTED_CUT_STEEL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.RUSTED_CUT_STEEL_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL_STAIRS, ModBlocks.RUSTED_STEEL_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL_STAIRS, ModBlocks.RUSTED_CUT_STEEL);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL_SLAB, ModBlocks.RUSTED_CUT_STEEL);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL_SLAB, ModBlocks.RUSTED_STEEL_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_CUT_STEEL_SLAB, ModBlocks.RUSTED_CUT_STEEL,2);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_DOOR,1)
+                .input(ModBlocks.STEEL_DOOR)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.STEEL_DOOR), conditionsFromItem(ModBlocks.STEEL_DOOR))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_door_from_steel_door"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR,1)
+                .input(ModBlocks.STEEL_TRAPDOOR)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.STEEL_TRAPDOOR), conditionsFromItem(ModBlocks.STEEL_TRAPDOOR))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_trapdoor_from_steel_trapdoor"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_DOOR,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("rusted_steel_door_from_lighty_rusted_steel_door"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_TRAPDOOR,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("rusted_steel_trapdoor_from_lighty_rusted_steel_trapdoor"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_DOOR,1)
+                .input(ModBlocks.STEEL_DOOR)
+                .input(Items.BLUE_ICE)
+                .criterion(hasItem(ModBlocks.STEEL_DOOR), conditionsFromItem(ModBlocks.STEEL_DOOR))
+                .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
+                .offerTo(exporter, new Identifier("rusted_steel_door_from_steel_door"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_TRAPDOOR,1)
+                .input(ModBlocks.STEEL_TRAPDOOR)
+                .input(Items.BLUE_ICE)
+                .criterion(hasItem(ModBlocks.STEEL_TRAPDOOR), conditionsFromItem(ModBlocks.STEEL_TRAPDOOR))
+                .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
+                .offerTo(exporter, new Identifier("rusted_steel_trapdoor_from_steel_trapdoor"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_DOOR,1)
+                .input(ModBlocks.RUSTED_STEEL_DOOR)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_DOOR), conditionsFromItem(ModBlocks.RUSTED_STEEL_DOOR))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_door_from_rusted_steel_door"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR,1)
+                .input(ModBlocks.RUSTED_STEEL_TRAPDOOR)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_TRAPDOOR), conditionsFromItem(ModBlocks.RUSTED_STEEL_TRAPDOOR))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_trapdoor_from_rusted_steel_trapdoor"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_DOOR,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_DOOR))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("steel_door_from_lighty_rusted_steel_door"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_TRAPDOOR,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("steel_trapdoor_from_lighty_rusted_steel_trapdoor"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LIGHTY_RUSTED_STEEL_DOOR,3)
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_door_from_lighty_rusted_steel_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.RUSTED_STEEL_DOOR,3)
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.RUSTED_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.RUSTED_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("rusted_steel_door_from_rusted_steel_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LIGHTY_RUSTED_STEEL_TRAPDOOR)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_trapdoor_from_lighty_rusted_steel_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.RUSTED_STEEL_TRAPDOOR)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.RUSTED_STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.RUSTED_STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("rusted_steel_trapdoor_from_rusted_steel_block"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_BARS,1)
+                .input(ModBlocks.STEEL_BARS)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.STEEL_BARS), conditionsFromItem(ModBlocks.STEEL_BARS))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_bars_from_steel_bars"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_BARS,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_BARS)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BARS), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BARS))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("rusted_steel_bars_from_lighty_rusted_steel_bars"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_BARS,1)
+                .input(ModBlocks.RUSTED_STEEL_BARS)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_BARS), conditionsFromItem(ModBlocks.RUSTED_STEEL_BARS))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_bars_from_rusted_steel_bars"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_BARS,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_BARS)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BARS), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BARS))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("steel_bars_from_lighty_rusted_steel_bars"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.LIGHTY_RUSTED_STEEL_LAMP)
+                .pattern("SBS")
+                .pattern("BGB")
+                .pattern("SBS")
+                .input('S', ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK)
+                .input('B', ModBlocks.LIGHTY_RUSTED_STEEL_BARS)
+                .input('G', Blocks.GLOWSTONE)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BLOCK))
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_BARS), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_BARS))
+                .criterion(hasItem(Blocks.GLOWSTONE), conditionsFromItem(Blocks.GLOWSTONE))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_lamp_from_lighty_rusted_steel_block"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.RUSTED_STEEL_LAMP)
+                .pattern("SBS")
+                .pattern("BGB")
+                .pattern("SBS")
+                .input('S', ModBlocks.RUSTED_STEEL_BLOCK)
+                .input('B', ModBlocks.RUSTED_STEEL_BARS)
+                .input('G', Blocks.GLOWSTONE)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_BLOCK), conditionsFromItem(ModBlocks.RUSTED_STEEL_BLOCK))
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_BARS), conditionsFromItem(ModBlocks.RUSTED_STEEL_BARS))
+                .criterion(hasItem(Blocks.GLOWSTONE), conditionsFromItem(Blocks.GLOWSTONE))
+                .offerTo(exporter, new Identifier("rusted_steel_lamp_from_rusted_steel_block"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_LAMP,1)
+                .input(ModBlocks.STEEL_LAMP)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.STEEL_LAMP), conditionsFromItem(ModBlocks.STEEL_LAMP))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_lamp_from_steel_lamp"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_LAMP,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("rusted_steel_lamp_from_lighty_rusted_steel_lamp"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_LAMP,1)
+                .input(ModBlocks.RUSTED_STEEL_LAMP)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.RUSTED_STEEL_LAMP), conditionsFromItem(ModBlocks.RUSTED_STEEL_LAMP))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("lighty_rusted_steel_lamp_from_rusted_steel_lamp"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_LAMP,1)
+                .input(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP), conditionsFromItem(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("steel_lamp_from_lighty_rusted_steel_lamp"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUSTED_STEEL_APPLE,1)
+                .input(ModItems.STEEL_APPLE)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModItems.STEEL_APPLE), conditionsFromItem(ModItems.STEEL_APPLE))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("rusted_steel_apple_from_steel_apple"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUSTED_STEEL_BEETROOT,1)
+                .input(ModItems.STEEL_BEETROOT)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(ModItems.STEEL_BEETROOT), conditionsFromItem(ModItems.STEEL_BEETROOT))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier("rusted_steel_beetroot_from_steel_beetroot"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_APPLE,1)
+                .input(ModItems.RUSTED_STEEL_APPLE)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModItems.RUSTED_STEEL_APPLE), conditionsFromItem(ModItems.RUSTED_STEEL_APPLE))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("steel_apple_from_rusted_steel_apple"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_BEETROOT,1)
+                .input(ModItems.RUSTED_STEEL_BEETROOT)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModItems.RUSTED_STEEL_BEETROOT), conditionsFromItem(ModItems.RUSTED_STEEL_BEETROOT))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("steel_beetroot_from_rusted_steel_beetroot"));
     }
 }

@@ -117,6 +117,9 @@
   "item.oresmod.steel_apple": "Steel Apple",
   "item.oresmod.steel_beetroot": "Steel Beetroot",
 
+  "item.oresmod.rusted_steel_apple": "Rusty Steel Apple",
+  "item.oresmod.rusted_steel_beetroot": "Rusty Steel Beetroot",
+
   "item.oresmod.steel_sword": "Steel Sword",
   "item.oresmod.steel_pickaxe": "Steel Pickaxe",
   "item.oresmod.steel_axe": "Steel Axe",
@@ -320,6 +323,7 @@
   "item.oresmod.sandite_boots": "Sandite Boots",
 
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
+  "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
@@ -372,9 +376,23 @@
   "block.oresmod.steel_lamp": "Steel Lamp",
 
   "block.oresmod.lighty_rusted_steel_block": "Light Rusted Steel Block",
+  "block.oresmod.lighty_rusted_steel_slab": "Light Rusted Steel Slab",
   "block.oresmod.lighty_rusted_cut_steel": "Light Rusted Cut Steel",
+  "block.oresmod.lighty_rusted_cut_steel_stairs": "Light Rusted Cut Steel Stairs",
+  "block.oresmod.lighty_rusted_cut_steel_slab": "Light Rusted Cut Steel Slab",
+  "block.oresmod.lighty_rusted_steel_door": "Light Rusted Steel Door",
+  "block.oresmod.lighty_rusted_steel_trapdoor": "Light Rusted Steel Trapdoor",
+  "block.oresmod.lighty_rusted_steel_bars": "Light Rusted Steel Bars",
+  "block.oresmod.lighty_rusted_steel_lamp": "Light Rusted Steel Lamp",
   "block.oresmod.rusted_steel_block": "Rusty Steel Block",
+  "block.oresmod.rusted_steel_slab": "Rusty Steel Slab",
   "block.oresmod.rusted_cut_steel": "Rusty Cut Steel",
+  "block.oresmod.rusted_cut_steel_stairs": "Rusty Cut Steel Stairs",
+  "block.oresmod.rusted_cut_steel_slab": "Rusty Cut Steel Slab",
+  "block.oresmod.rusted_steel_door": "Rusty Steel Door",
+  "block.oresmod.rusted_steel_trapdoor": "Rusty Steel Trapdoor",
+  "block.oresmod.rusted_steel_bars": "Rusty Steel Bars",
+  "block.oresmod.rusted_steel_lamp": "Rusty Steel Lamp",
 
   "block.oresmod.stonebark_log": "Stonebark Log",
   "block.oresmod.stonebark_wood": "Stonebark Wood",
@@ -596,6 +614,7 @@
 
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",
+  "entity.oresmod.jungle_spider": "Jungle Spider",
 
   "effect.oresmod.frostbite": "Frostbite",
   "item.minecraft.potion.effect.frostbite_potion": "Potion of Subzero",

@@ -144,8 +144,18 @@
     "oresmod:silver_scale_face",
     "oresmod:fossilized_silver_scale_face",
     "oresmod:lighty_rusted_steel_block",
+    "oresmod:lighty_rusted_steel_slab",
     "oresmod:lighty_rusted_cut_steel",
+    "oresmod:lighty_rusted_cut_steel_stairs",
+    "oresmod:lighty_rusted_cut_steel_slab",
     "oresmod:rusted_steel_block",
-    "oresmod:rusted_cut_steel"
+    "oresmod:rusted_steel_slab",
+    "oresmod:rusted_cut_steel",
+    "oresmod:rusted_cut_steel_stairs",
+    "oresmod:rusted_cut_steel_slab",
+    "oresmod:lighty_rusted_steel_bars",
+    "oresmod:rusted_steel_bars",
+    "oresmod:lighty_rusted_steel_lamp",
+    "oresmod:rusted_steel_lamp"
   ]
 }
