@@ -3554,6 +3554,66 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.SANDSTONE), conditionsFromItem(Blocks.SANDSTONE))
                 .offerTo(exporter, new Identifier("sand_from_sandstone_with_sandite"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.RED_SAND,8)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', Blocks.RED_SAND)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(Blocks.RED_SAND), conditionsFromItem(Blocks.RED_SAND))
+                .offerTo(exporter, new Identifier("red_sand_from_red_sand_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.RED_SAND,32)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', Blocks.RED_SANDSTONE)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(Blocks.RED_SANDSTONE), conditionsFromItem(Blocks.RED_SANDSTONE))
+                .offerTo(exporter, new Identifier("red_sand_from_red_sandstone_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WHITE_SAND,8)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', ModBlocks.WHITE_SAND)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(ModBlocks.WHITE_SAND), conditionsFromItem(ModBlocks.WHITE_SAND))
+                .offerTo(exporter, new Identifier("white_sand_from_white_sand_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WHITE_SAND,32)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', ModBlocks.WHITE_SANDSTONE)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(ModBlocks.WHITE_SANDSTONE), conditionsFromItem(ModBlocks.WHITE_SANDSTONE))
+                .offerTo(exporter, new Identifier("white_sand_from_white_sandstone_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BLACK_SAND,8)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', ModBlocks.BLACK_SAND)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(ModBlocks.BLACK_SAND), conditionsFromItem(ModBlocks.BLACK_SAND))
+                .offerTo(exporter, new Identifier("black_sand_from_black_sand_with_sandite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BLACK_SAND,32)
+                .pattern(" S ")
+                .pattern("SDS")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('D', ModBlocks.BLACK_SANDSTONE)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(ModBlocks.BLACK_SANDSTONE), conditionsFromItem(ModBlocks.BLACK_SANDSTONE))
+                .offerTo(exporter, new Identifier("black_sand_from_black_sandstone_with_sandite"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICKS,4)
                 .pattern("DS")
                 .pattern("SD")
@@ -4206,5 +4266,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RUSTED_STEEL_BEETROOT), conditionsFromItem(ModItems.RUSTED_STEEL_BEETROOT))
                 .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
                 .offerTo(exporter, new Identifier("steel_beetroot_from_rusted_steel_beetroot"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_DRILL)
+                .pattern(" S ")
+                .pattern("SBP")
+                .pattern(" S ")
+                .input('S', ModItems.SANDITE)
+                .input('B', ModBlocks.SANDITE_BLOCK)
+                .input('P', ModItems.HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("sandite_drill"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_CHAINSAW)
+                .pattern("  P")
+                .pattern("SSB")
+                .input('S', ModItems.SANDITE)
+                .input('B', ModBlocks.SANDITE_BLOCK)
+                .input('P', ModItems.HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("sandite_chainsaw"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.LEAFITE,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BLOCK);
     }
 }

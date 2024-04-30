@@ -322,6 +322,8 @@
   "item.oresmod.sandite_leggings": "Sandite Leggings",
   "item.oresmod.sandite_boots": "Sandite Boots",
 
+  "item.oresmod.leafite": "Leafite",
+
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
 
@@ -611,6 +613,8 @@
   "block.oresmod.elder_guardian_trophy": "Elder Guardian Trophy",
   "block.oresmod.warden_trophy": "Warden Trophy",
   "block.oresmod.silverwyrm_trophy": "Silverwyrm Trophy",
+
+  "block.oresmod.leafite_block": "Block of Leafite",
 
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",

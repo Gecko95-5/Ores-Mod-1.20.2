@@ -75,6 +75,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SANDITE_ORE);
                         entries.add(ModBlocks.SANDSTONE_SANDITE_ORE);
                         entries.add(ModBlocks.RED_SANDSTONE_SANDITE_ORE);
+                        entries.add(ModItems.LEAFITE);
                         entries.add(ModItems.ALUMINUM_INGOT);
                         entries.add(ModItems.ALUMINUM_NUGGET);
                         entries.add(ModItems.RAW_ALUMINUM);
@@ -158,6 +159,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_SALT_BLOCK);
                         entries.add(ModBlocks.FROSITE_BLOCK);
                         entries.add(ModBlocks.SANDITE_BLOCK);
+                        entries.add(ModBlocks.LEAFITE_BLOCK);
                         entries.add(ModBlocks.ALUMINUM_BLOCK);
                         entries.add(ModBlocks.RAW_ALUMINUM_BLOCK);
                         entries.add(ModBlocks.NICKEL_BLOCK);

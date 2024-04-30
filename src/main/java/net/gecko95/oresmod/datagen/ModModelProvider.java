@@ -126,6 +126,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool rustedcutsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUSTED_CUT_STEEL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_STEEL_LAMP);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAFITE_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -549,6 +550,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.SANDITE_BOOTS));
+
+        itemModelGenerator.register(ModItems.LEAFITE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVER_SCALE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_MANDIBLE, Models.HANDHELD);

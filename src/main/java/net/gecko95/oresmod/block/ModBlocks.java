@@ -365,6 +365,10 @@ public class ModBlocks {
     public static final Block SANDITE_TILE_WALL = registerBlock("sandite_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
 
+    public static final Block LEAFITE_BLOCK = registerBlock("leafite_block",
+            new Block(FabricBlockSettings.create()
+                    .strength(5.0f, 6.0f).sounds(BlockSoundGroup.AZALEA_LEAVES)
+                    .mapColor(MapColor.ORANGE).instrument(Instrument.GUITAR)));
     public static final Block WHITE_SAND = registerBlock("white_sand",
             new GravelBlock(FabricBlockSettings.copyOf(Blocks.SAND).mapColor(MapColor.WHITE)));
     public static final Block SUSPICIOUS_WHITE_SAND = registerBlock("suspicious_white_sand",
@@ -605,7 +609,7 @@ public class ModBlocks {
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
     public static final Block WARDEN_TROPHY = registerBlock("warden_trophy",
-            new WardenTrophyBlock(FabricBlockSettings.create()
+            new TrophyBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
     public static final Block SILVERWYRM_TROPHY = registerBlock("silverwyrm_trophy",

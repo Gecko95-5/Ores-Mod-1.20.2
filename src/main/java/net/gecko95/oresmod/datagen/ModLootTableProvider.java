@@ -157,6 +157,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUSTED_STEEL_TRAPDOOR);
         addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_BARS);
         addDrop(ModBlocks.RUSTED_STEEL_BARS);
+        addDrop(ModBlocks.LEAFITE_BLOCK);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 

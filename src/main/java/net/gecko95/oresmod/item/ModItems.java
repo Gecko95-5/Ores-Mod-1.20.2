@@ -497,6 +497,8 @@ public class ModItems {
     public static final Item SANDITE_BOOTS = registerItem("sandite_boots",
             new ArmorItem(ModArmorMaterials.SANDITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item LEAFITE = registerItem("leafite", new Item(new FabricItemSettings()));
+
     public static final Item SILVERPEDE_SPAWN_EGG = registerItem("silverpede_spawn_egg",
             new SpawnEggItem(ModEntities.SILVERPEDE, 0xc0c0c0,0x868686, new FabricItemSettings()));
     public static final Item JUNGLE_SPIDER_SPAWN_EGG = registerItem("jungle_spider_spawn_egg",
