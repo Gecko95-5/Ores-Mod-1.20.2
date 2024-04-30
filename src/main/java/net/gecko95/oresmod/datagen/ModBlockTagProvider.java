@@ -212,7 +212,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
                 .add(ModBlocks.STONEBARK_LEAVES)
-                .add(ModBlocks.DEEPSLATE_LEAVES);
+                .add(ModBlocks.DEEPSLATE_LEAVES)
+                .add(ModBlocks.LEAFITE_LEAVES)
+                .add(ModBlocks.LEAFITE_LEAVES_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.STONEBARK_PLANKS)
@@ -249,7 +251,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WALL_DEEPBARK_SIGN)
                 .add(ModBlocks.HANGING_DEEPBARK_SIGN)
                 .add(ModBlocks.WALL_HANGING_DEEPBARK_SIGN)
-                .add(ModBlocks.FLINT_SPIKES);
+                .add(ModBlocks.FLINT_SPIKES)
+                .add(ModBlocks.LEAFITE_PLANKS)
+                .add(ModBlocks.LEAFITE_LOG)
+                .add(ModBlocks.LEAFITE_WOOD)
+                .add(ModBlocks.STRIPPED_LEAFITE_LOG)
+                .add(ModBlocks.STRIPPED_LEAFITE_WOOD)
+                .add(ModBlocks.LEAFITE_PLANKS_SLAB)
+                .add(ModBlocks.LEAFITE_PLANKS_STAIRS)
+                .add(ModBlocks.LEAFITE_PLANKS_FENCE)
+                .add(ModBlocks.LEAFITE_PLANKS_FENCE_GATE)
+                .add(ModBlocks.LEAFITE_PLANKS_BUTTON)
+                .add(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE)
+                .add(ModBlocks.LEAFITE_DOOR)
+                .add(ModBlocks.LEAFITE_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.WHITE_SAND)
@@ -400,11 +415,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.STONEBARK_FENCE)
-                .add(ModBlocks.DEEPBARK_FENCE);
+                .add(ModBlocks.DEEPBARK_FENCE)
+                .add(ModBlocks.LEAFITE_PLANKS_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.STONEBARK_FENCE_GATE)
-                .add(ModBlocks.DEEPBARK_FENCE_GATE);
+                .add(ModBlocks.DEEPBARK_FENCE_GATE)
+                .add(ModBlocks.LEAFITE_PLANKS_FENCE_GATE);
 
         getOrCreateTagBuilder(ModTags.Blocks.STONEBARK_PLACEABLE)
                 .add(Blocks.STONE)

@@ -76,6 +76,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SANDSTONE_SANDITE_ORE);
                         entries.add(ModBlocks.RED_SANDSTONE_SANDITE_ORE);
                         entries.add(ModItems.LEAFITE);
+                        entries.add(ModBlocks.LEAFITE_LEAVES_ORE);
                         entries.add(ModItems.ALUMINUM_INGOT);
                         entries.add(ModItems.ALUMINUM_NUGGET);
                         entries.add(ModItems.RAW_ALUMINUM);
@@ -485,6 +486,19 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SANDITE_TILE_SLAB);
                         entries.add(ModBlocks.SANDITE_TILE_WALL);
                         entries.add(ModBlocks.CHISELED_SANDITE);
+                        entries.add(ModBlocks.LEAFITE_PLANKS);
+                        entries.add(ModBlocks.LEAFITE_PLANKS_STAIRS);
+                        entries.add(ModBlocks.LEAFITE_PLANKS_SLAB);
+                        entries.add(ModBlocks.LEAFITE_PLANKS_FENCE);
+                        entries.add(ModBlocks.LEAFITE_PLANKS_FENCE_GATE);
+                        entries.add(ModBlocks.LEAFITE_PLANKS_BUTTON);
+                        entries.add(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
+                        entries.add(ModBlocks.LEAFITE_LOG);
+                        entries.add(ModBlocks.LEAFITE_WOOD);
+                        entries.add(ModBlocks.STRIPPED_LEAFITE_LOG);
+                        entries.add(ModBlocks.STRIPPED_LEAFITE_WOOD);
+                        entries.add(ModBlocks.LEAFITE_LEAVES);
+                        entries.add(ModBlocks.LEAFITE_SAPLING);
                         entries.add(ModBlocks.ALUMINUM_DOOR);
                         entries.add(ModBlocks.ALUMINUM_TRAPDOOR);
                         entries.add(ModBlocks.ALUMINUM_BARS);

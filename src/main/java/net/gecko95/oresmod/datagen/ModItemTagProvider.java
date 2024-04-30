@@ -50,7 +50,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.STONEBARK_PLANKS.asItem())
-                .add(ModBlocks.DEEPSLATE_PLANKS.asItem());
+                .add(ModBlocks.DEEPSLATE_PLANKS.asItem())
+                .add(ModBlocks.LEAFITE_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.SAND)
                 .add(ModBlocks.WHITE_SAND.asItem())

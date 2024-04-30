@@ -138,8 +138,15 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool deepbarkPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_LEAVES);
 
+        blockStateModelGenerator.registerLog(ModBlocks.LEAFITE_LOG).log(ModBlocks.LEAFITE_LOG).wood(ModBlocks.LEAFITE_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_LEAFITE_LOG).log(ModBlocks.STRIPPED_LEAFITE_LOG).wood(ModBlocks.STRIPPED_LEAFITE_WOOD);
+        BlockStateModelGenerator.BlockTexturePool leafiteplankPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAFITE_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAFITE_LEAVES_ORE);
+
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STONEBARK_SAPLING, ModBlocks.POTTED_STONEBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DEEPBARK_SAPLING, ModBlocks.POTTED_DEEPBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.LEAFITE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         frostbrickPool.stairs(ModBlocks.FROSITE_BRICK_STAIRS);
         frostbrickPool.slab(ModBlocks.FROSITE_BRICK_SLAB);
@@ -198,6 +205,13 @@ public class ModModelProvider extends FabricModelProvider {
         deepbarkPool.pressurePlate(ModBlocks.DEEPBARK_PRESSURE_PLATE);
         deepbarkPool.family(ModBlocks.DEEPBARK_FAMILY);
 
+        leafiteplankPool.stairs(ModBlocks.LEAFITE_PLANKS_STAIRS);
+        leafiteplankPool.slab(ModBlocks.LEAFITE_PLANKS_SLAB);
+        leafiteplankPool.fence(ModBlocks.LEAFITE_PLANKS_FENCE);
+        leafiteplankPool.fenceGate(ModBlocks.LEAFITE_PLANKS_FENCE_GATE);
+        leafiteplankPool.button(ModBlocks.LEAFITE_PLANKS_BUTTON);
+        leafiteplankPool.pressurePlate(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
+
         smoothwhitesandstonePool.stairs(ModBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS);
         smoothwhitesandstonePool.slab(ModBlocks.SMOOTH_WHITE_SANDSTONE_SLAB);
         whitesandstonePool.wall(ModBlocks.WHITE_SANDSTONE_WALL);
@@ -243,6 +257,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.DEEPBARK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.DEEPBARK_TRAPDOOR);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.LEAFITE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.LEAFITE_TRAPDOOR);
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.FLINT_SPIKES);
         blockStateModelGenerator.registerSimpleState(ModBlocks.IRON_SPIKES);

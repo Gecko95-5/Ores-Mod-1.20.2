@@ -11,12 +11,18 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
+import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
+import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
@@ -65,6 +71,7 @@ public class ModConfiguredFeatures {
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> LEAFITE_TREE_KEY = registerKey("leafite_tree");
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -286,7 +293,8 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.STONEBARK_LEAVES),
                 new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1)),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2))
+                .dirtProvider(BlockStateProvider.of(Blocks.COBBLESTONE)).forceDirt().build());
 
 
         register(context, DEEPBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
@@ -295,7 +303,16 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.DEEPSLATE_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),2),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2))
+                .dirtProvider(BlockStateProvider.of(Blocks.COBBLED_DEEPSLATE)).forceDirt().build());
+
+        register(context, LEAFITE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
+                (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
+                        new StraightTrunkPlacer(4, 2, 0),
+                        BlockStateProvider.of(ModBlocks.LEAFITE_LEAVES),
+                        new JungleFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(2),2),
+
+                        new TwoLayersFeatureSize(1, 0, 1)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

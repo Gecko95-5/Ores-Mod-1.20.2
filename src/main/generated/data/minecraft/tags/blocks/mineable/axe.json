@@ -35,6 +35,19 @@
     "oresmod:deepbark_wall_sign",
     "oresmod:deepbark_hanging_sign",
     "oresmod:deepbark_wall_hanging_sign",
-    "oresmod:flint_spikes"
+    "oresmod:flint_spikes",
+    "oresmod:leafite_planks",
+    "oresmod:leafite_log",
+    "oresmod:leafite_wood",
+    "oresmod:stripped_leafite_log",
+    "oresmod:stripped_leafite_wood",
+    "oresmod:leafite_planks_slab",
+    "oresmod:leafite_planks_stairs",
+    "oresmod:leafite_planks_fence",
+    "oresmod:leafite_planks_fence_gate",
+    "oresmod:leafite_planks_button",
+    "oresmod:leafite_planks_pressure_plate",
+    "oresmod:leafite_door",
+    "oresmod:leafite_trapdoor"
   ]
 }

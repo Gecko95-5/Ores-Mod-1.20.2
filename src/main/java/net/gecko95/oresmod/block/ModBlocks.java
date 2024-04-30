@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.block.custom.*;
 import net.gecko95.oresmod.world.tree.DeepbarkSaplingGenerator;
+import net.gecko95.oresmod.world.tree.LeafiteSaplingGenerator;
 import net.gecko95.oresmod.world.tree.StonebarkSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -369,6 +370,50 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create()
                     .strength(5.0f, 6.0f).sounds(BlockSoundGroup.AZALEA_LEAVES)
                     .mapColor(MapColor.ORANGE).instrument(Instrument.GUITAR)));
+    public static final Block LEAFITE_LOG = registerBlock("leafite_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.ORANGE)
+                    .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
+    public static final Block LEAFITE_WOOD = registerBlock("leafite_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_WOOD).mapColor(MapColor.ORANGE)
+                    .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
+    public static final Block STRIPPED_LEAFITE_LOG = registerBlock("stripped_leafite_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_LOG).mapColor(MapColor.PALE_GREEN)
+                    .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
+    public static final Block STRIPPED_LEAFITE_WOOD = registerBlock("stripped_leafite_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_JUNGLE_WOOD).mapColor(MapColor.PALE_GREEN)
+                    .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
+
+    public static final Block LEAFITE_PLANKS = registerBlock("leafite_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).mapColor(MapColor.PALE_GREEN)
+                    .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
+    public static final Block LEAFITE_LEAVES = registerBlock("leafite_leaves",
+            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.GREEN)));
+    public static final Block LEAFITE_LEAVES_ORE = registerBlock("leafite_leaves_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.GREEN)));
+
+    public static final Block LEAFITE_PLANKS_STAIRS = registerBlock("leafite_planks_stairs",
+            new StairsBlock(ModBlocks.LEAFITE_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)));
+    public static final Block LEAFITE_PLANKS_SLAB = registerBlock("leafite_planks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)));
+    public static final Block LEAFITE_PLANKS_FENCE = registerBlock("leafite_planks_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)));
+    public static final Block LEAFITE_PLANKS_FENCE_GATE = registerBlock("leafite_planks_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS),WoodType.JUNGLE));
+    public static final Block LEAFITE_PLANKS_BUTTON = registerBlock("leafite_planks_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS), BlockSetType.JUNGLE, 10,false));
+    public static final Block LEAFITE_PLANKS_PRESSURE_PLATE = registerBlock("leafite_planks_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS), BlockSetType.JUNGLE));
+    public static final Block LEAFITE_DOOR = registerBlock("leafite_door",
+            new DoorBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)
+                    .nonOpaque().pistonBehavior(PistonBehavior.DESTROY), BlockSetType.JUNGLE));
+    public static final Block LEAFITE_TRAPDOOR = registerBlock("leafite_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)
+                    .nonOpaque().allowsSpawning(Blocks::never), BlockSetType.JUNGLE));
+
+    public static final Block LEAFITE_SAPLING = registerBlock("leafite_sapling",
+            new SaplingBlock(new LeafiteSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.JUNGLE_SAPLING)));
+
     public static final Block WHITE_SAND = registerBlock("white_sand",
             new GravelBlock(FabricBlockSettings.copyOf(Blocks.SAND).mapColor(MapColor.WHITE)));
     public static final Block SUSPICIOUS_WHITE_SAND = registerBlock("suspicious_white_sand",

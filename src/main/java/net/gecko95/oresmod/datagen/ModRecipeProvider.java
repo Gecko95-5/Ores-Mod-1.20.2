@@ -4291,5 +4291,72 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.LEAFITE,
                 RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BLOCK);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_PLANKS,4)
+                .input(ModBlocks.LEAFITE_LOG)
+                .criterion(hasItem(ModBlocks.LEAFITE_LOG), conditionsFromItem(ModBlocks.LEAFITE_LOG))
+                .offerTo(exporter, new Identifier("leafite_planks_from_leafite_log"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_PLANKS,4)
+                .input(ModBlocks.STRIPPED_LEAFITE_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_LEAFITE_LOG), conditionsFromItem(ModBlocks.STRIPPED_LEAFITE_LOG))
+                .offerTo(exporter, new Identifier("leafite_planks_from_stripped_leafite_log"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_PLANKS,4)
+                .input(ModBlocks.LEAFITE_WOOD)
+                .criterion(hasItem(ModBlocks.LEAFITE_WOOD), conditionsFromItem(ModBlocks.LEAFITE_WOOD))
+                .offerTo(exporter, new Identifier("leafite_planks_from_leafite_wood"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_PLANKS,4)
+                .input(ModBlocks.STRIPPED_LEAFITE_WOOD)
+                .criterion(hasItem(ModBlocks.STRIPPED_LEAFITE_WOOD), conditionsFromItem(ModBlocks.STRIPPED_LEAFITE_WOOD))
+                .offerTo(exporter, new Identifier("leafite_planks_from_stripped_leafite_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_WOOD)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.LEAFITE_LOG)
+                .criterion(hasItem(ModBlocks.LEAFITE_LOG), conditionsFromItem(ModBlocks.LEAFITE_LOG))
+                .offerTo(exporter, new Identifier("leafite_wood"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_LEAFITE_WOOD)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.STRIPPED_LEAFITE_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_LEAFITE_LOG), conditionsFromItem(ModBlocks.STRIPPED_LEAFITE_LOG))
+                .offerTo(exporter, new Identifier("stripped_leafite_wood"));
+
+        createStairsRecipe(ModBlocks.LEAFITE_PLANKS_STAIRS, Ingredient.ofItems(ModBlocks.LEAFITE_PLANKS))
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS),conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_PLANKS_STAIRS)));
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_PLANKS_SLAB, ModBlocks.LEAFITE_PLANKS);
+        createFenceRecipe(ModBlocks.LEAFITE_PLANKS_FENCE, Ingredient.ofItems(ModBlocks.LEAFITE_PLANKS))
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS),conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_PLANKS_FENCE)));
+        createFenceGateRecipe(ModBlocks.LEAFITE_PLANKS_FENCE_GATE, Ingredient.ofItems(ModBlocks.LEAFITE_PLANKS))
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS),conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_PLANKS_FENCE_GATE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LEAFITE_PLANKS_BUTTON)
+                .input(ModBlocks.LEAFITE_PLANKS)
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS), conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_PLANKS_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE)
+                .pattern("SS")
+                .input('S', ModBlocks.LEAFITE_PLANKS)
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS), conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LEAFITE_DOOR,3)
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', ModBlocks.LEAFITE_PLANKS)
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS), conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_DOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LEAFITE_TRAPDOOR)
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('S', ModBlocks.LEAFITE_PLANKS)
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS), conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_TRAPDOOR)));
     }
 }

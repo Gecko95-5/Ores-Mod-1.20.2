@@ -616,6 +616,26 @@
 
   "block.oresmod.leafite_block": "Block of Leafite",
 
+  "block.oresmod.leafite_log": "Leafite Log",
+  "block.oresmod.leafite_wood": "Leafite Wood",
+  "block.oresmod.stripped_leafite_log": "Stripped Leafite Log",
+  "block.oresmod.stripped_leafite_wood": "Stripped Leafite Wood",
+
+  "block.oresmod.leafite_planks": "Leafite Planks",
+  "block.oresmod.leafite_leaves": "Leafite Leaves",
+  "block.oresmod.leafite_leaves_ore": "Leaves Leafite Ore",
+  "block.oresmod.leafite_sapling": "Leafite Sapling",
+
+  "block.oresmod.leafite_planks_stairs": "Leafite Plank Stairs",
+  "block.oresmod.leafite_planks_slab": "Leafite Plank Slab",
+  "block.oresmod.leafite_planks_fence": "Leafite Plank Fence",
+  "block.oresmod.leafite_planks_fence_gate": "Leafite Plank Fence Gate",
+  "block.oresmod.leafite_planks_button": "Leafite Plank Button",
+  "block.oresmod.leafite_planks_pressure_plate": "Leafite Plank Pressure Plate",
+
+  "block.oresmod.leafite_door": "Leafite Door",
+  "block.oresmod.leafite_trapdoor": "Leafite Trapdoor",
+
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",
   "entity.oresmod.jungle_spider": "Jungle Spider",

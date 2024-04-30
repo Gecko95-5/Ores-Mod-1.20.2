@@ -46,6 +46,21 @@ public class OresMod implements ModInitializer {
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEEPSLATE_LEAVES,15,30);
 
+		StrippableBlockRegistry.register(ModBlocks.LEAFITE_LOG, ModBlocks.STRIPPED_LEAFITE_LOG);
+		StrippableBlockRegistry.register(ModBlocks.LEAFITE_WOOD, ModBlocks.STRIPPED_LEAFITE_WOOD);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_LEAVES,30,60);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_PLANKS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_PLANKS_SLAB,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_PLANKS_STAIRS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_PLANKS_FENCE,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_PLANKS_FENCE_GATE,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFITE_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_LEAFITE_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_LEAFITE_WOOD,5,5);
+
 		FabricDefaultAttributeRegistry.register(ModEntities.SILVERPEDE, SilverpedeEntity.createSilverpedeAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.SILVERWYRM, SilverwyrmEntity.createSilverwyrmAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.JUNGLE_SPIDER, JungleSpiderEntity.createJungleSpiderAttributes());

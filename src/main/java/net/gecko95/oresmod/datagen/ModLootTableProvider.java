@@ -158,6 +158,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_BARS);
         addDrop(ModBlocks.RUSTED_STEEL_BARS);
         addDrop(ModBlocks.LEAFITE_BLOCK);
+        addDrop(ModBlocks.LEAFITE_LOG);
+        addDrop(ModBlocks.LEAFITE_WOOD);
+        addDrop(ModBlocks.STRIPPED_LEAFITE_LOG);
+        addDrop(ModBlocks.STRIPPED_LEAFITE_WOOD);
+        addDrop(ModBlocks.LEAFITE_PLANKS);
+        addDrop(ModBlocks.LEAFITE_PLANKS_STAIRS);
+        addDrop(ModBlocks.LEAFITE_PLANKS_FENCE);
+        addDrop(ModBlocks.LEAFITE_PLANKS_FENCE_GATE);
+        addDrop(ModBlocks.LEAFITE_PLANKS_BUTTON);
+        addDrop(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
+        addDrop(ModBlocks.LEAFITE_TRAPDOOR);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 
@@ -244,6 +255,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.STONEBARK_SLAB, slabDrops(ModBlocks.STONEBARK_SLAB));
         addDrop(ModBlocks.DEEPBARK_SLAB, slabDrops(ModBlocks.DEEPBARK_SLAB));
+        addDrop(ModBlocks.LEAFITE_PLANKS_SLAB, slabDrops(ModBlocks.LEAFITE_PLANKS_SLAB));
 
         addDrop(ModBlocks.WHITE_SANDSTONE_SLAB, slabDrops(ModBlocks.WHITE_SANDSTONE_SLAB));
         addDrop(ModBlocks.CUT_WHITE_SANDSTONE_SLAB, slabDrops(ModBlocks.CUT_WHITE_SANDSTONE_SLAB));
@@ -272,9 +284,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUSTED_STEEL_DOOR, doorDrops(ModBlocks.RUSTED_STEEL_DOOR));
         addDrop(ModBlocks.STONEBARK_DOOR, doorDrops(ModBlocks.STONEBARK_DOOR));
         addDrop(ModBlocks.DEEPBARK_DOOR, doorDrops(ModBlocks.DEEPBARK_DOOR));
+        addDrop(ModBlocks.LEAFITE_DOOR, doorDrops(ModBlocks.LEAFITE_DOOR));
 
         addDrop(ModBlocks.STONEBARK_LEAVES, leavesDrops(ModBlocks.STONEBARK_LEAVES, ModBlocks.STONEBARK_SAPLING, 0.025f));
         addDrop(ModBlocks.DEEPSLATE_LEAVES, leavesDrops(ModBlocks.DEEPSLATE_LEAVES, ModBlocks.DEEPBARK_SAPLING, 0.025f));
+
+        addDrop(ModBlocks.LEAFITE_LEAVES, leavesDrops(ModBlocks.LEAFITE_LEAVES, ModBlocks.LEAFITE_SAPLING, 0.025f));
+        addDrop(ModBlocks.LEAFITE_LEAVES_ORE, leavesDrops(ModBlocks.LEAFITE_LEAVES, ModBlocks.LEAFITE_SAPLING, 0.025f));
 
         addPottedPlantDrops(ModBlocks.POTTED_STONEBARK_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_DEEPBARK_SAPLING);
