@@ -493,6 +493,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LEAFITE_PLANKS_FENCE_GATE);
                         entries.add(ModBlocks.LEAFITE_PLANKS_BUTTON);
                         entries.add(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
+                        entries.add(ModBlocks.LEAFITE_DOOR);
+                        entries.add(ModBlocks.LEAFITE_TRAPDOOR);
                         entries.add(ModBlocks.LEAFITE_LOG);
                         entries.add(ModBlocks.LEAFITE_WOOD);
                         entries.add(ModBlocks.STRIPPED_LEAFITE_LOG);

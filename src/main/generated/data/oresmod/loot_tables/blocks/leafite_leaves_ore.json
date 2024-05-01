@@ -11,119 +11,45 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:any_of",
-                  "terms": [
-                    {
-                      "condition": "minecraft:match_tool",
-                      "predicate": {
-                        "items": [
-                          "minecraft:shears"
-                        ]
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
                       }
-                    },
-                    {
-                      "condition": "minecraft:match_tool",
-                      "predicate": {
-                        "enchantments": [
-                          {
-                            "enchantment": "minecraft:silk_touch",
-                            "levels": {
-                              "min": 1
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
+                    ]
+                  }
                 }
               ],
-              "name": "oresmod:leafite_leaves"
+              "name": "oresmod:leafite_leaves_ore"
             },
             {
               "type": "minecraft:item",
-              "conditions": [
+              "functions": [
                 {
-                  "condition": "minecraft:survives_explosion"
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 2.0,
+                    "min": 1.0
+                  },
+                  "function": "minecraft:set_count"
                 },
                 {
-                  "chances": [
-                    0.025
-                  ],
-                  "condition": "minecraft:table_bonus",
-                  "enchantment": "minecraft:fortune"
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "oresmod:leafite_sapling"
+              "name": "oresmod:leafite"
             }
           ]
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:any_of",
-            "terms": [
-              {
-                "condition": "minecraft:match_tool",
-                "predicate": {
-                  "items": [
-                    "minecraft:shears"
-                  ]
-                }
-              },
-              {
-                "condition": "minecraft:match_tool",
-                "predicate": {
-                  "enchantments": [
-                    {
-                      "enchantment": "minecraft:silk_touch",
-                      "levels": {
-                        "min": 1
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chances": [
-                0.02,
-                0.022222223,
-                0.025,
-                0.033333335,
-                0.1
-              ],
-              "condition": "minecraft:table_bonus",
-              "enchantment": "minecraft:fortune"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            },
-            {
-              "function": "minecraft:explosion_decay"
-            }
-          ],
-          "name": "minecraft:stick"
         }
       ],
       "rolls": 1.0

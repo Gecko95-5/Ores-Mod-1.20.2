@@ -13,14 +13,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "oresmod:leafite_door",
+              "block": "oresmod:deepbark_door",
               "condition": "minecraft:block_state_property",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "oresmod:leafite_door"
+          "name": "oresmod:deepbark_door"
         }
       ],
       "rolls": 1.0

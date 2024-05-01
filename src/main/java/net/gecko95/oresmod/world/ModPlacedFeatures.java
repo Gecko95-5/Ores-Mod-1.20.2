@@ -60,6 +60,11 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> STONEBARK_PLACED_KEY = registerKey("stonebark_placed");
 
+    public static final RegistryKey<PlacedFeature> LEAFITE_ORE_TREE_PLACED_KEY = registerKey("leafite_ore_tree_placed");
+    public static final RegistryKey<PlacedFeature> LEAFITE_TREE_PLACED_KEY = registerKey("leafite_tree_placed");
+    public static final RegistryKey<PlacedFeature> BIG_LEAFITE_TREE_PLACED_KEY = registerKey("big_leafite_tree_placed");
+    public static final RegistryKey<PlacedFeature> BIG_LEAFITE_ORE_TREE_PLACED_KEY = registerKey("big_leafite_ore_tree_placed");
+
     public static void boostrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -223,6 +228,22 @@ public class ModPlacedFeatures {
         register(context, STONEBARK_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.STONEBARK_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2,0.1f,2),
                         ModBlocks.STONEBARK_SAPLING));
+
+        register(context, LEAFITE_ORE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LEAFITE_ORE_TREE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,1),
+                        ModBlocks.LEAFITE_SAPLING));
+
+        register(context, LEAFITE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LEAFITE_TREE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,2),
+                        ModBlocks.LEAFITE_SAPLING));
+
+        register(context, BIG_LEAFITE_ORE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BIG_LEAFITE_ORE_TREE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,0),
+                        ModBlocks.LEAFITE_SAPLING));
+
+        register(context, BIG_LEAFITE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BIG_LEAFITE_TREE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,1),
+                        ModBlocks.LEAFITE_SAPLING));
     }
 
 

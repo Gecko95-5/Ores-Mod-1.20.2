@@ -23,10 +23,21 @@
       "radius": 2
     },
     "foliage_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "oresmod:leafite_leaves"
-      }
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "oresmod:leafite_leaves"
+          },
+          "weight": 5
+        },
+        {
+          "data": {
+            "Name": "oresmod:leafite_leaves_ore"
+          },
+          "weight": 1
+        }
+      ]
     },
     "force_dirt": false,
     "ignore_vines": false,

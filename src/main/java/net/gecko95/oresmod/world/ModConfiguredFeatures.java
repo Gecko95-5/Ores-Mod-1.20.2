@@ -1,7 +1,9 @@
 package net.gecko95.oresmod.world;
 
+import com.google.common.collect.ImmutableList;
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -13,17 +15,18 @@ import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
-import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
-import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
+import net.minecraft.world.gen.treedecorator.LeavesVineTreeDecorator;
+import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
+import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
+import net.minecraft.world.gen.trunk.MegaJungleTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -71,7 +74,10 @@ public class ModConfiguredFeatures {
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> LEAFITE_ORE_TREE_KEY = registerKey("leafite_ore_tree");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> LEAFITE_TREE_KEY = registerKey("leafite_tree");
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> BIG_LEAFITE_TREE_KEY = registerKey("big_leafite_tree");
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> BIG_LEAFITE_ORE_TREE_KEY = registerKey("big_leafite_ore_tree");
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -306,13 +312,49 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2))
                 .dirtProvider(BlockStateProvider.of(Blocks.COBBLED_DEEPSLATE)).forceDirt().build());
 
+        register(context, LEAFITE_ORE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
+                (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
+                        new StraightTrunkPlacer(6,2,0),
+                        new WeightedBlockStateProvider(DataPool.<BlockState>builder()
+                                .add(ModBlocks.LEAFITE_LEAVES.getDefaultState(),5)
+                                .add(ModBlocks.LEAFITE_LEAVES_ORE.getDefaultState(),1)),
+                        new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0),2),
+
+                        new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))
+                .build());
+
         register(context, LEAFITE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
                 (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
-                        new StraightTrunkPlacer(4, 2, 0),
+                        new StraightTrunkPlacer(6,2,0),
                         BlockStateProvider.of(ModBlocks.LEAFITE_LEAVES),
-                        new JungleFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(2),2),
+                        new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0),2),
 
-                        new TwoLayersFeatureSize(1, 0, 1)).build());
+                        new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))
+                .build());
+
+        register(context, BIG_LEAFITE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
+                (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
+                        new MegaJungleTrunkPlacer(10,4,0),
+                        BlockStateProvider.of(ModBlocks.LEAFITE_LEAVES),
+                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),3),
+
+                        new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))
+                .build());
+
+        register(context, BIG_LEAFITE_ORE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
+                (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
+                        new MegaJungleTrunkPlacer(10,4,0),
+                        new WeightedBlockStateProvider(DataPool.<BlockState>builder()
+                                .add(ModBlocks.LEAFITE_LEAVES.getDefaultState(),5)
+                                .add(ModBlocks.LEAFITE_LEAVES_ORE.getDefaultState(),1)),
+                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),3),
+
+                        new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))
+                .build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

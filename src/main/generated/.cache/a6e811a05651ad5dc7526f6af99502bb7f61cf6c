@@ -1,4 +1,4 @@
-// 1.20.2	2024-04-30T14:45:51.4871312	Ores Mod/Recipes
+// 1.20.2	2024-04-30T23:38:24.5553471	Ores Mod/Recipes
 eac109db32b65d17fa6503a337db652f1d629104 data\oresmod\advancements\recipes\tools\frosite_drill.json
 0c627fcbf2d9153b026f05be7566800c526e2f61 data\oresmod\advancements\recipes\misc\glass_pane_from_yellow_stained_glass_pane.json
 655e8fff979695a3a09c96336ffcfc8a2d7c4fdf data\oresmod\advancements\recipes\tools\iron_chainsaw.json
@@ -692,8 +692,8 @@ d8613af7bb1eecfff6cd0fe664f35417904265c7 data\oresmod\advancements\recipes\build
 63f32ea88bf2ba1051347f58d93489ab0ac80eb0 data\oresmod\recipes\deepbark_fence_gate.json
 726a94edb8b75d08811d78029efe20296133525c data\oresmod\advancements\recipes\misc\tungsten_ingot_from_tungsten_nugget.json
 c8ec08f8078cd99765d55747cf3844bbadbf64c6 data\oresmod\recipes\lighty_rusted_steel_lamp_from_lighty_rusted_steel_block.json
-9fc97f0e8808b4b26488db477025d58efad57ed8 data\oresmod\advancements\recipes\building_blocks\marble_slab_from_marble_stonecutting.json
 f8e2e37cbcdceb4625f446d505fd6ef16d93e6bd data\oresmod\advancements\recipes\tools\sandite_sword.json
+9fc97f0e8808b4b26488db477025d58efad57ed8 data\oresmod\advancements\recipes\building_blocks\marble_slab_from_marble_stonecutting.json
 430286cc65f97cd5d34cc048383556fdf7c86646 data\oresmod\recipes\steel_door_from_smooth_steel_block.json
 3bb29b2884450003442682aef8e057787751710c data\oresmod\recipes\cooked_flesh_from_smoking.json
 fab4a27700e5aa876c1b6d023c78fabc0b195b2f data\oresmod\recipes\aluminum_boots.json

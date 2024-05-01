@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
-import net.gecko95.oresmod.effect.ModEffects;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.entity.custom.JungleSpiderEntity;
 import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
@@ -18,6 +17,7 @@ import net.gecko95.oresmod.registry.RegisterModEffects;
 import net.gecko95.oresmod.util.ModCustomTrades;
 import net.gecko95.oresmod.util.ModLootTableModifiers;
 import net.gecko95.oresmod.world.gen.ModWorldGeneration;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

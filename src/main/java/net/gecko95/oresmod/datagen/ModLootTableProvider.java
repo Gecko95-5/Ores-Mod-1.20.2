@@ -211,6 +211,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ICE_FROSITE_ORE,specialOreDrops(ModBlocks.ICE_FROSITE_ORE, ModItems.FROSITE));
         addDrop(ModBlocks.SANDSTONE_SANDITE_ORE,specialOreDrops(ModBlocks.SANDSTONE_SANDITE_ORE, ModItems.SANDITE));
         addDrop(ModBlocks.RED_SANDSTONE_SANDITE_ORE,specialOreDrops(ModBlocks.RED_SANDSTONE_SANDITE_ORE, ModItems.SANDITE));
+        addDrop(ModBlocks.LEAFITE_LEAVES_ORE,specialOreDrops(ModBlocks.LEAFITE_LEAVES_ORE, ModItems.LEAFITE));
 
         addDrop(ModBlocks.DEEPSLATE_TITANIUM_ORE,oreDrops(ModBlocks.DEEPSLATE_TITANIUM_ORE, ModItems.RAW_TITANIUM));
 
@@ -284,13 +285,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUSTED_STEEL_DOOR, doorDrops(ModBlocks.RUSTED_STEEL_DOOR));
         addDrop(ModBlocks.STONEBARK_DOOR, doorDrops(ModBlocks.STONEBARK_DOOR));
         addDrop(ModBlocks.DEEPBARK_DOOR, doorDrops(ModBlocks.DEEPBARK_DOOR));
-        addDrop(ModBlocks.LEAFITE_DOOR, doorDrops(ModBlocks.LEAFITE_DOOR));
+        addDrop(ModBlocks.LEAFITE_DOOR, doorDrops(ModBlocks.DEEPBARK_DOOR));
 
         addDrop(ModBlocks.STONEBARK_LEAVES, leavesDrops(ModBlocks.STONEBARK_LEAVES, ModBlocks.STONEBARK_SAPLING, 0.025f));
         addDrop(ModBlocks.DEEPSLATE_LEAVES, leavesDrops(ModBlocks.DEEPSLATE_LEAVES, ModBlocks.DEEPBARK_SAPLING, 0.025f));
 
-        addDrop(ModBlocks.LEAFITE_LEAVES, leavesDrops(ModBlocks.LEAFITE_LEAVES, ModBlocks.LEAFITE_SAPLING, 0.025f));
-        addDrop(ModBlocks.LEAFITE_LEAVES_ORE, leavesDrops(ModBlocks.LEAFITE_LEAVES, ModBlocks.LEAFITE_SAPLING, 0.025f));
+        addDrop(ModBlocks.LEAFITE_LEAVES, leavesDrops(ModBlocks.LEAFITE_LEAVES, ModBlocks.STONEBARK_SAPLING, 0.025f));
 
         addPottedPlantDrops(ModBlocks.POTTED_STONEBARK_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_DEEPBARK_SAPLING);
