@@ -158,6 +158,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LIGHTY_RUSTED_STEEL_BARS);
         addDrop(ModBlocks.RUSTED_STEEL_BARS);
         addDrop(ModBlocks.LEAFITE_BLOCK);
+        addDrop(ModBlocks.LEAFITE_BRICKS);
+        addDrop(ModBlocks.LEAFITE_BRICK_STAIRS);
+        addDrop(ModBlocks.LEAFITE_BRICK_WALL);
+        addDrop(ModBlocks.LEAFITE_TILES);
+        addDrop(ModBlocks.LEAFITE_TILE_STAIRS);
+        addDrop(ModBlocks.LEAFITE_TILE_WALL);
         addDrop(ModBlocks.LEAFITE_LOG);
         addDrop(ModBlocks.LEAFITE_WOOD);
         addDrop(ModBlocks.STRIPPED_LEAFITE_LOG);
@@ -272,6 +278,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SANDITE_BRICK_SLAB, slabDrops(ModBlocks.SANDITE_BRICK_SLAB));
         addDrop(ModBlocks.SANDITE_TILE_SLAB, slabDrops(ModBlocks.SANDITE_TILE_SLAB));
 
+        addDrop(ModBlocks.LEAFITE_BRICK_SLAB, slabDrops(ModBlocks.LEAFITE_BRICK_SLAB));
+        addDrop(ModBlocks.LEAFITE_TILE_SLAB, slabDrops(ModBlocks.LEAFITE_TILE_SLAB));
+
         addDrop(ModBlocks.MARBLE_SLAB, slabDrops(ModBlocks.MARBLE_SLAB));
         addDrop(ModBlocks.MARBLE_BRICK_SLAB, slabDrops(ModBlocks.MARBLE_BRICK_SLAB));
 
@@ -294,6 +303,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addPottedPlantDrops(ModBlocks.POTTED_STONEBARK_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_DEEPBARK_SAPLING);
+        addPottedPlantDrops(ModBlocks.POTTED_LEAFITE_SAPLING);
     }
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,

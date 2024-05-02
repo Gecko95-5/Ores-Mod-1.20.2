@@ -1,11 +1,13 @@
 package net.gecko95.oresmod;
 
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.entity.ModBoats;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.entity.client.*;
 import net.minecraft.client.render.RenderLayer;
@@ -37,6 +39,7 @@ public class OresModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LEAFITE_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LEAFITE_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LEAFITE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LEAFITE_SAPLING, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WATER_TANK, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FLINT_SPIKES, RenderLayer.getTranslucent());
@@ -46,6 +49,11 @@ public class OresModClient implements ClientModInitializer {
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.DEEPBARK_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.DEEPBARK_HANDING_SIGN_TEXTURE));
+
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.LEAFITE_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.LEAFITE_HANDING_SIGN_TEXTURE));
+
+        TerraformBoatClientHelper.registerModelLayers(ModBoats.LEAFITE_BOAT_ID,false);
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERPEDE, SilverpedeModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERWYRM, SilverwyrmModel::getTexturedModelData);

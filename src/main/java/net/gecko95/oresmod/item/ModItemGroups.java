@@ -271,6 +271,12 @@ public class ModItemGroups {
                         entries.add(ModItems.SANDITE_HOE);
                         entries.add(ModItems.SANDITE_DRILL);
                         entries.add(ModItems.SANDITE_CHAINSAW);
+                        entries.add(ModItems.LEAFITE_PICKAXE);
+                        entries.add(ModItems.LEAFITE_AXE);
+                        entries.add(ModItems.LEAFITE_SHOVEL);
+                        entries.add(ModItems.LEAFITE_HOE);
+                        entries.add(ModItems.LEAFITE_DRILL);
+                        entries.add(ModItems.LEAFITE_CHAINSAW);
                     }).build());
     public static final ItemGroup ORES_MOD_WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_weapons"),
@@ -366,6 +372,12 @@ public class ModItemGroups {
                         entries.add(ModItems.SANDITE_CHESTPLATE);
                         entries.add(ModItems.SANDITE_LEGGINGS);
                         entries.add(ModItems.SANDITE_BOOTS);
+                        entries.add(ModItems.LEAFITE_SWORD);
+                        entries.add(ModItems.LEAFITE_AXE);
+                        entries.add(ModItems.LEAFITE_HELMET);
+                        entries.add(ModItems.LEAFITE_CHESTPLATE);
+                        entries.add(ModItems.LEAFITE_LEGGINGS);
+                        entries.add(ModItems.LEAFITE_BOOTS);
                         entries.add(ModItems.MANDIBLE_HATCHET);
                         entries.add(ModItems.FLINT_SWORD);
                         entries.add(ModItems.FLINT_AXE);
@@ -462,6 +474,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DUEL_POWER_DRIVE);
                         entries.add(ModItems.HANDLED_POWER_DRIVE);
                         entries.add(ModItems.DUEL_HANDLED_POWER_DRIVE);
+                        entries.add(ModItems.LEAFITE_BOAT);
+                        entries.add(ModItems.LEAFITE_CHEST_BOAT);
                     }).build());
 
     public static final ItemGroup ORES_MOD_OTHER_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -486,6 +500,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SANDITE_TILE_SLAB);
                         entries.add(ModBlocks.SANDITE_TILE_WALL);
                         entries.add(ModBlocks.CHISELED_SANDITE);
+                        entries.add(ModBlocks.LEAFITE_BRICKS);
+                        entries.add(ModBlocks.LEAFITE_BRICK_STAIRS);
+                        entries.add(ModBlocks.LEAFITE_BRICK_SLAB);
+                        entries.add(ModBlocks.LEAFITE_BRICK_WALL);
+                        entries.add(ModBlocks.LEAFITE_TILES);
+                        entries.add(ModBlocks.LEAFITE_TILE_STAIRS);
+                        entries.add(ModBlocks.LEAFITE_TILE_SLAB);
+                        entries.add(ModBlocks.LEAFITE_TILE_WALL);
+                        entries.add(ModBlocks.CHISELED_LEAFITE);
                         entries.add(ModBlocks.LEAFITE_PLANKS);
                         entries.add(ModBlocks.LEAFITE_PLANKS_STAIRS);
                         entries.add(ModBlocks.LEAFITE_PLANKS_SLAB);
@@ -495,6 +518,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
                         entries.add(ModBlocks.LEAFITE_DOOR);
                         entries.add(ModBlocks.LEAFITE_TRAPDOOR);
+                        entries.add(ModItems.LEAFITE_SIGN);
+                        entries.add(ModItems.LEAFITE_HANGING_SIGN);
                         entries.add(ModBlocks.LEAFITE_LOG);
                         entries.add(ModBlocks.LEAFITE_WOOD);
                         entries.add(ModBlocks.STRIPPED_LEAFITE_LOG);

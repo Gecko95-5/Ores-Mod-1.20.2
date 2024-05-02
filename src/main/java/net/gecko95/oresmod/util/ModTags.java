@@ -39,7 +39,6 @@ public class ModTags {
                 createTag("terracotta_leggings");
         public static final TagKey<Item> TERRACOTTA_BOOTS =
                 createTag("terracotta_boots");
-
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(OresMod.MOD_ID, name));
         }

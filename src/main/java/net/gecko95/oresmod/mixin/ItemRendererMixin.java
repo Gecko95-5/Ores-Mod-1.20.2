@@ -136,6 +136,15 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.SANDITE_CHAINSAW) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "sandite_chainsaw_3d", "inventory"));
         }
+
+        if (stack.isOf(ModItems.LEAFITE_DRILL) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "leafite_drill_3d", "inventory"));
+        }
+
+        if (stack.isOf(ModItems.LEAFITE_CHAINSAW) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "leafite_chainsaw_3d", "inventory"));
+        }
+
         if (stack.isOf(ModItems.SPIKED_CLUB) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(OresMod.MOD_ID, "spiked_club_3d", "inventory"));
         }

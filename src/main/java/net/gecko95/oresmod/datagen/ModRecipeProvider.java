@@ -610,42 +610,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier("frosite_hoe"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FROSITE_HELMET)
-                .pattern("WWW")
-                .pattern("F F")
-                .pattern(" F ")
-                .input('F', ModItems.FROSITE)
-                .input('W', Items.WHITE_WOOL)
-                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
-                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
-                .offerTo(exporter, new Identifier("frosite_helmet"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FROSITE_CHESTPLATE)
-                .pattern("W W")
-                .pattern("FFF")
-                .pattern("FFF")
-                .input('F', ModItems.FROSITE)
-                .input('W', Items.WHITE_WOOL)
-                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
-                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
-                .offerTo(exporter, new Identifier("frosite_chestplate"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FROSITE_LEGGINGS)
-                .pattern("WWW")
-                .pattern("F F")
-                .pattern("F F")
-                .input('F', ModItems.FROSITE)
-                .input('W', Items.WHITE_WOOL)
-                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
-                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
-                .offerTo(exporter, new Identifier("frosite_leggings"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FROSITE_BOOTS)
-                .pattern("F F")
-                .pattern("W W")
-                .input('F', ModItems.FROSITE)
-                .input('W', Items.WHITE_WOOL)
-                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
-                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
-                .offerTo(exporter, new Identifier("frosite_boots"));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_HANDLE)
                 .pattern(" C ")
                 .pattern("C C")
@@ -4358,5 +4322,242 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', ModBlocks.LEAFITE_PLANKS)
                 .criterion(hasItem(ModBlocks.LEAFITE_PLANKS), conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_TRAPDOOR)));
+
+        createSignRecipe(ModItems.LEAFITE_SIGN, Ingredient.ofItems(ModBlocks.LEAFITE_PLANKS))
+                .criterion(hasItem(ModBlocks.LEAFITE_PLANKS),conditionsFromItem(ModBlocks.LEAFITE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.LEAFITE_SIGN)));
+
+        offerHangingSignRecipe(exporter, ModItems.LEAFITE_HANGING_SIGN, ModBlocks.STRIPPED_LEAFITE_WOOD);
+
+        offerBoatRecipe(exporter, ModItems.LEAFITE_BOAT, ModBlocks.LEAFITE_PLANKS);
+        offerChestBoatRecipe(exporter, ModItems.LEAFITE_CHEST_BOAT, ModBlocks.LEAFITE_PLANKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICKS,4)
+                .pattern("SL")
+                .pattern("LS")
+                .input('L', ModBlocks.LEAFITE_BLOCK)
+                .input('S', ModBlocks.LEAFITE_LEAVES)
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .criterion(hasItem(ModBlocks.LEAFITE_LEAVES), conditionsFromItem(ModBlocks.LEAFITE_LEAVES))
+                .offerTo(exporter, new Identifier("leafite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICKS, ModBlocks.LEAFITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILES,4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.LEAFITE_BLOCK)
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .offerTo(exporter, new Identifier("leafite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILES, ModBlocks.LEAFITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_LEAFITE,4)
+                .pattern("BBB")
+                .pattern("BLB")
+                .pattern("BBB")
+                .input('B', ModBlocks.LEAFITE_BLOCK)
+                .input('L', ModItems.LEAFITE)
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .offerTo(exporter, new Identifier("chiseled_leafite"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LEAFITE,18)
+                .input(ModBlocks.CHISELED_LEAFITE)
+                .criterion(hasItem(ModBlocks.CHISELED_LEAFITE), conditionsFromItem(ModBlocks.CHISELED_LEAFITE))
+                .offerTo(exporter, new Identifier("leafite_from_chiseled_leafite"));
+
+        createStairsRecipe(ModBlocks.LEAFITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.LEAFITE_BRICKS))
+                .criterion(hasItem(ModBlocks.LEAFITE_BRICKS),conditionsFromItem(ModBlocks.LEAFITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.LEAFITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.LEAFITE_TILES))
+                .criterion(hasItem(ModBlocks.LEAFITE_TILES),conditionsFromItem(ModBlocks.LEAFITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_TILE_WALL, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_TILE_WALL, ModBlocks.LEAFITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_SWORD)
+                .pattern("L")
+                .pattern("L")
+                .pattern("S")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("leafite_sword"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_PICKAXE)
+                .pattern("LLL")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("leafite_pickaxe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_AXE)
+                .pattern("LL")
+                .pattern("LS")
+                .pattern(" S")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("leafite_axe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_SHOVEL)
+                .pattern("L")
+                .pattern("S")
+                .pattern("S")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("leafite_shovel"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_HOE)
+                .pattern("LL")
+                .pattern(" S")
+                .pattern(" S")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("leafite_hoe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_DRILL)
+                .pattern(" L ")
+                .pattern("LBP")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('B', ModBlocks.LEAFITE_BLOCK)
+                .input('P', ModItems.HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("leafite_drill"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_CHAINSAW)
+                .pattern("  P")
+                .pattern("LLB")
+                .input('L', ModItems.LEAFITE)
+                .input('B', ModBlocks.LEAFITE_BLOCK)
+                .input('P', ModItems.HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("leafite_chainsaw"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.OAK_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.OAK_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.OAK_SAPLING), conditionsFromItem(Blocks.OAK_SAPLING))
+                .offerTo(exporter, new Identifier("oak_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.BIRCH_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.BIRCH_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.BIRCH_SAPLING), conditionsFromItem(Blocks.BIRCH_SAPLING))
+                .offerTo(exporter, new Identifier("birch_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.SPRUCE_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.SPRUCE_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.SPRUCE_SAPLING), conditionsFromItem(Blocks.SPRUCE_SAPLING))
+                .offerTo(exporter, new Identifier("spruce_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.JUNGLE_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.JUNGLE_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.JUNGLE_SAPLING), conditionsFromItem(Blocks.JUNGLE_SAPLING))
+                .offerTo(exporter, new Identifier("jungle_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.ACACIA_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.ACACIA_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.ACACIA_SAPLING), conditionsFromItem(Blocks.ACACIA_SAPLING))
+                .offerTo(exporter, new Identifier("acacia_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.DARK_OAK_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.DARK_OAK_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.DARK_OAK_SAPLING), conditionsFromItem(Blocks.DARK_OAK_SAPLING))
+                .offerTo(exporter, new Identifier("dark_oak_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.MANGROVE_PROPAGULE,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.MANGROVE_PROPAGULE)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.MANGROVE_PROPAGULE), conditionsFromItem(Blocks.MANGROVE_PROPAGULE))
+                .offerTo(exporter, new Identifier("mangrove_propagule_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.CHERRY_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', Blocks.CHERRY_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(Blocks.CHERRY_SAPLING), conditionsFromItem(Blocks.CHERRY_SAPLING))
+                .offerTo(exporter, new Identifier("cherry_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STONEBARK_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', ModBlocks.STONEBARK_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(ModBlocks.STONEBARK_SAPLING), conditionsFromItem(ModBlocks.STONEBARK_SAPLING))
+                .offerTo(exporter, new Identifier("stonebark_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DEEPBARK_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', ModBlocks.DEEPBARK_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(ModBlocks.DEEPBARK_SAPLING), conditionsFromItem(ModBlocks.DEEPBARK_SAPLING))
+                .offerTo(exporter, new Identifier("deepbark_sapling_from_leafite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LEAFITE_SAPLING,4)
+                .pattern(" L ")
+                .pattern("LSL")
+                .pattern(" L ")
+                .input('L', ModItems.LEAFITE)
+                .input('S', ModBlocks.LEAFITE_SAPLING)
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .criterion(hasItem(ModBlocks.LEAFITE_SAPLING), conditionsFromItem(ModBlocks.LEAFITE_SAPLING))
+                .offerTo(exporter, new Identifier("leafite_sapling_from_leafite"));
     }
 }

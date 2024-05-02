@@ -127,6 +127,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_STEEL_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAFITE_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_LEAFITE, TexturedModel.CUBE_BOTTOM_TOP);
+        BlockStateModelGenerator.BlockTexturePool leafitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool leafitetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_TILES);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -146,7 +149,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STONEBARK_SAPLING, ModBlocks.POTTED_STONEBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DEEPBARK_SAPLING, ModBlocks.POTTED_DEEPBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(ModBlocks.LEAFITE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LEAFITE_SAPLING, ModBlocks.POTTED_LEAFITE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         frostbrickPool.stairs(ModBlocks.FROSITE_BRICK_STAIRS);
         frostbrickPool.slab(ModBlocks.FROSITE_BRICK_SLAB);
@@ -211,6 +214,15 @@ public class ModModelProvider extends FabricModelProvider {
         leafiteplankPool.fenceGate(ModBlocks.LEAFITE_PLANKS_FENCE_GATE);
         leafiteplankPool.button(ModBlocks.LEAFITE_PLANKS_BUTTON);
         leafiteplankPool.pressurePlate(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
+        leafiteplankPool.family(ModBlocks.LEAFITE_FAMILY);
+
+        leafitebrickPool.stairs(ModBlocks.LEAFITE_BRICK_STAIRS);
+        leafitebrickPool.slab(ModBlocks.LEAFITE_BRICK_SLAB);
+        leafitebrickPool.wall(ModBlocks.LEAFITE_BRICK_WALL);
+
+        leafitetilePool.stairs(ModBlocks.LEAFITE_TILE_STAIRS);
+        leafitetilePool.slab(ModBlocks.LEAFITE_TILE_SLAB);
+        leafitetilePool.wall(ModBlocks.LEAFITE_TILE_WALL);
 
         smoothwhitesandstonePool.stairs(ModBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS);
         smoothwhitesandstonePool.slab(ModBlocks.SMOOTH_WHITE_SANDSTONE_SLAB);
@@ -575,6 +587,22 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RUSTED_STEEL_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUSTED_STEEL_BEETROOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LEAFITE_HANGING_SIGN, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LEAFITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEAFITE_CHEST_BOAT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LEAFITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LEAFITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LEAFITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LEAFITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LEAFITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LEAFITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LEAFITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LEAFITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.LEAFITE_BOOTS));
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

@@ -324,6 +324,22 @@
 
   "item.oresmod.leafite": "Leafite",
 
+  "item.oresmod.leafite_sword": "Leafite Sword",
+  "item.oresmod.leafite_pickaxe": "Leafite Pickaxe",
+  "item.oresmod.leafite_axe": "Leafite Axe",
+  "item.oresmod.leafite_shovel": "Leafite Shovel",
+  "item.oresmod.leafite_hoe": "Leafite Hoe",
+  "item.oresmod.leafite_drill": "Leafite Drill",
+  "item.oresmod.leafite_chainsaw": "Leafite Chainsaw",
+
+  "item.oresmod.leafite_helmet": "Leafite Helmet",
+  "item.oresmod.leafite_chestplate": "Leafite Chestplate",
+  "item.oresmod.leafite_leggings": "Leafite Leggings",
+  "item.oresmod.leafite_boots": "Leafite Boots",
+
+  "item.oresmod.leafite_boat": "Leafite Boat",
+  "item.oresmod.leafite_chest_boat": "Leafite Chest Boat",
+
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
 
@@ -616,6 +632,17 @@
 
   "block.oresmod.leafite_block": "Block of Leafite",
 
+  "block.oresmod.leafite_bricks": "Leafite Bricks",
+  "block.oresmod.leafite_tiles": "Leafite Tiles",
+  "block.oresmod.chiseled_leafite": "Chiseled Leafite",
+
+  "block.oresmod.leafite_brick_stairs": "Leafite Brick Stairs",
+  "block.oresmod.leafite_brick_slab": "Leafite Brick Slab",
+  "block.oresmod.leafite_brick_wall": "Leafite Brick Wall",
+  "block.oresmod.leafite_tile_stairs": "Leafite Tile Stairs",
+  "block.oresmod.leafite_tile_slab": "Leafite Tile Slab",
+  "block.oresmod.leafite_tile_wall": "Leafite Tile Wall",
+
   "block.oresmod.leafite_log": "Leafite Log",
   "block.oresmod.leafite_wood": "Leafite Wood",
   "block.oresmod.stripped_leafite_log": "Stripped Leafite Log",
@@ -635,6 +662,11 @@
 
   "block.oresmod.leafite_door": "Leafite Door",
   "block.oresmod.leafite_trapdoor": "Leafite Trapdoor",
+
+  "block.oresmod.leafite_standing_sign": "Leafite Sign",
+  "block.oresmod.leafite_wall_sign": "Leafite Wall Sign",
+  "block.oresmod.leafite_hanging_sign": "Leafite Hanging Sign",
+  "block.oresmod.leafite_wall_hanging_sign": "Leafite Wall Hanging Sign",
 
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",

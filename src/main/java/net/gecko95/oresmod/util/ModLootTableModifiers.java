@@ -1016,7 +1016,7 @@ public class ModLootTableModifiers {
             if (STRAY_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.1f,0.5f))
+                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.2f,0.2f))
                         .with(ItemEntry.builder(ModItems.FROSITE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -1025,7 +1025,7 @@ public class ModLootTableModifiers {
             if (HUSK_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.1f,0.5f))
+                        .conditionally(RandomChanceWithLootingLootCondition.builder(0.2f,0.2f))
                         .with(ItemEntry.builder(ModItems.SANDITE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.entity.ModBoats;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.entity.custom.JungleSpiderEntity;
 import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
@@ -64,6 +65,8 @@ public class OresMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.SILVERPEDE, SilverpedeEntity.createSilverpedeAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.SILVERWYRM, SilverwyrmEntity.createSilverwyrmAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.JUNGLE_SPIDER, JungleSpiderEntity.createJungleSpiderAttributes());
+
+		ModBoats.registerBoats();
 
 		LOGGER.info("Generating Ores!");
 	}

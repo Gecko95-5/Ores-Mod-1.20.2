@@ -18,7 +18,9 @@ public class ModArmorItem extends ArmorItem {
                 new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>()
                         .put(ModArmorMaterials.FROSITE, new StatusEffectInstance(StatusEffects.SPEED, 400, 0,
                                 false, false, false))
-                    .put(ModArmorMaterials.SANDITE, new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0,
+                        .put(ModArmorMaterials.SANDITE, new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0,
+                                false, false, false))
+                        .put(ModArmorMaterials.LEAFITE, new StatusEffectInstance(StatusEffects.REGENERATION, 400, 0,
                                 false, false, false))
                         .put(ModArmorMaterials.TUNGSTEN, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
                                 false, false, false))

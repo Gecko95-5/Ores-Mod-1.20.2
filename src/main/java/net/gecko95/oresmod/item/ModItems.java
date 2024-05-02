@@ -1,8 +1,10 @@
 package net.gecko95.oresmod.item;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.block.ModBlocks;
+import net.gecko95.oresmod.entity.ModBoats;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.item.custom.*;
 import net.minecraft.item.*;
@@ -499,6 +501,26 @@ public class ModItems {
 
     public static final Item LEAFITE = registerItem("leafite", new Item(new FabricItemSettings()));
 
+    public static final Item LEAFITE_PICKAXE = registerItem("leafite_pickaxe",
+            new PickaxeItem(ModToolMaterial.LEAFITE, 1, -2.8f, new FabricItemSettings()));
+    public static final Item LEAFITE_SWORD = registerItem("leafite_sword",
+            new LeafiteSwordItem(ModToolMaterial.LEAFITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item LEAFITE_AXE = registerItem("leafite_axe",
+            new AxeItem(ModToolMaterial.LEAFITE, 6.0f, -3.1f, new FabricItemSettings()));
+    public static final Item LEAFITE_SHOVEL = registerItem("leafite_shovel",
+            new ShovelItem(ModToolMaterial.LEAFITE, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item LEAFITE_HOE = registerItem("leafite_hoe",
+            new HoeItem(ModToolMaterial.LEAFITE, -2, -1.0f, new FabricItemSettings()));
+
+    public static final Item LEAFITE_HELMET = registerItem("leafite_helmet",
+            new ArmorItem(ModArmorMaterials.LEAFITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item LEAFITE_CHESTPLATE = registerItem("leafite_chestplate",
+            new ModArmorItem(ModArmorMaterials.LEAFITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item LEAFITE_LEGGINGS = registerItem("leafite_leggings",
+            new ArmorItem(ModArmorMaterials.LEAFITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item LEAFITE_BOOTS = registerItem("leafite_boots",
+            new ArmorItem(ModArmorMaterials.LEAFITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     public static final Item SILVERPEDE_SPAWN_EGG = registerItem("silverpede_spawn_egg",
             new SpawnEggItem(ModEntities.SILVERPEDE, 0xc0c0c0,0x868686, new FabricItemSettings()));
     public static final Item JUNGLE_SPIDER_SPAWN_EGG = registerItem("jungle_spider_spawn_egg",
@@ -570,6 +592,10 @@ public class ModItems {
             new DrillItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
     public static final Item SANDITE_CHAINSAW = registerItem("sandite_chainsaw",
             new ChainsawItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
+    public static final Item LEAFITE_DRILL = registerItem("leafite_drill",
+            new DrillItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings()));
+    public static final Item LEAFITE_CHAINSAW = registerItem("leafite_chainsaw",
+            new ChainsawItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings()));
 
     public static final Item SILVER_SCALE = registerItem("silver_scale", new Item(new FabricItemSettings()));
 
@@ -591,6 +617,14 @@ public class ModItems {
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_DEEPBARK_SIGN, ModBlocks.WALL_DEEPBARK_SIGN));
     public static final Item DEEPBARK_HANGING_SIGN = registerItem("deepbark_hanging_sign",
             new HangingSignItem(ModBlocks.HANGING_DEEPBARK_SIGN, ModBlocks.WALL_HANGING_DEEPBARK_SIGN, new FabricItemSettings().maxCount(16)));
+
+    public static final Item LEAFITE_SIGN = registerItem("leafite_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_LEAFITE_SIGN, ModBlocks.WALL_LEAFITE_SIGN));
+    public static final Item LEAFITE_HANGING_SIGN = registerItem("leafite_hanging_sign",
+            new HangingSignItem(ModBlocks.HANGING_LEAFITE_SIGN, ModBlocks.WALL_HANGING_LEAFITE_SIGN, new FabricItemSettings().maxCount(16)));
+
+    public static final Item LEAFITE_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.LEAFITE_BOAT_ID, ModBoats.LEAFITE_BOAT_KEY,false);
+    public static final Item LEAFITE_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(ModBoats.LEAFITE_CHEST_BOAT_ID, ModBoats.LEAFITE_BOAT_KEY,true);
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(OresMod.MOD_ID, name),item);

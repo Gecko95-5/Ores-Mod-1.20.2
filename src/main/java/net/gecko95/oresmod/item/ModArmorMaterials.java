@@ -11,10 +11,12 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    FROSITE("frosite", 17, new int[] { 2, 4, 3, 2}, 12,
+    FROSITE("frosite", 12, new int[] { 2, 4, 3, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.ofItems(ModItems.FROSITE)),
-    SANDITE("sandite", 17, new int[] { 2, 3, 4, 2}, 12,
+    SANDITE("sandite", 12, new int[] { 2, 3, 4, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.ofItems(ModItems.SANDITE)),
+    LEAFITE("leafite", 12, new int[] { 3, 2, 3, 3}, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0f, () -> Ingredient.ofItems(ModItems.LEAFITE)),
     COPPER("copper", 10, new int[] { 3, 3, 3, 2}, 10,
             SoundEvents.BLOCK_COPPER_STEP, 1f, 0f, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
     NICKEL("nickel", 16, new int[] { 1, 5, 4, 1}, 7,

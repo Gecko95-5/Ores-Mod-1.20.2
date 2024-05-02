@@ -2,6 +2,7 @@ package net.gecko95.oresmod.potion;
 
 
 import net.gecko95.oresmod.OresMod;
+import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.effect.ModEffects;
 import net.gecko95.oresmod.item.ModItems;
 import net.gecko95.oresmod.mixin.BrewingRecipeRegistryMixin;
@@ -50,9 +51,9 @@ public static Potion VOID_SICKNESS_POTION, STRONG_VOID_SICKNESS_POTION, LONGER_V
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.HEAT_STROKE_POTION, Items.REDSTONE,ModPotions.LONGER_HEAT_STROKE_POTION);
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.HEAT_STROKE_POTION, ModItems.SANDITE,ModPotions.STRONG_HEAT_STROKE_POTION);
 
-        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.POISON, Items.JUNGLE_SAPLING,ModPotions.FATAL_POISON_POTION);
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.POISON, ModBlocks.LEAFITE_LEAVES.asItem(),ModPotions.FATAL_POISON_POTION);
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.FATAL_POISON_POTION, Items.REDSTONE,ModPotions.LONGER_FATAL_POISON_POTION);
-        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.FATAL_POISON_POTION, Items.JUNGLE_LEAVES,ModPotions.STRONG_FATAL_POISON_POTION);//Remember to change these to Leafite
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.FATAL_POISON_POTION, ModItems.LEAFITE,ModPotions.STRONG_FATAL_POISON_POTION);
 
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.HARMING, Items.END_CRYSTAL,ModPotions.VOID_SICKNESS_POTION);
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.VOID_SICKNESS_POTION, Items.REDSTONE,ModPotions.LONGER_VOID_SICKNESS_POTION);

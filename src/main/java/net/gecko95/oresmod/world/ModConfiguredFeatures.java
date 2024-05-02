@@ -338,7 +338,7 @@ public class ModConfiguredFeatures {
                 (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
                         new MegaJungleTrunkPlacer(10,4,0),
                         BlockStateProvider.of(ModBlocks.LEAFITE_LEAVES),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),3),
+                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2),3),
 
                         new TwoLayersFeatureSize(1, 0, 1))
                 .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))
@@ -350,7 +350,7 @@ public class ModConfiguredFeatures {
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
                                 .add(ModBlocks.LEAFITE_LEAVES.getDefaultState(),5)
                                 .add(ModBlocks.LEAFITE_LEAVES_ORE.getDefaultState(),1)),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),3),
+                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2),3),
 
                         new TwoLayersFeatureSize(1, 0, 1))
                 .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))

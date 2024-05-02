@@ -48,6 +48,10 @@
     "oresmod:leafite_planks_button",
     "oresmod:leafite_planks_pressure_plate",
     "oresmod:leafite_door",
-    "oresmod:leafite_trapdoor"
+    "oresmod:leafite_trapdoor",
+    "oresmod:leafite_standing_sign",
+    "oresmod:leafite_wall_sign",
+    "oresmod:leafite_hanging_sign",
+    "oresmod:leafite_wall_hanging_sign"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "oresmod:leafite_block"
+    },
+    "S": {
+      "item": "oresmod:leafite_leaves"
+    }
+  },
+  "pattern": [
+    "SL",
+    "LS"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oresmod:leafite_bricks"
+  },
+  "show_notification": true
+}

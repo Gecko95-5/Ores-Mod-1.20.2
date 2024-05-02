@@ -370,6 +370,27 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create()
                     .strength(5.0f, 6.0f).sounds(BlockSoundGroup.AZALEA_LEAVES)
                     .mapColor(MapColor.ORANGE).instrument(Instrument.GUITAR)));
+
+    public static final Block LEAFITE_BRICKS = registerBlock("leafite_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK)));
+    public static final Block LEAFITE_TILES = registerBlock("leafite_tiles",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK)));
+    public static final Block CHISELED_LEAFITE = registerBlock("chiseled_leafite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK)));
+
+    public static final Block LEAFITE_BRICK_STAIRS = registerBlock("leafite_brick_stairs",
+            new StairsBlock(ModBlocks.LEAFITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BRICKS)));
+    public static final Block LEAFITE_BRICK_SLAB = registerBlock("leafite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BRICKS)));
+    public static final Block LEAFITE_BRICK_WALL = registerBlock("leafite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BRICKS)));
+
+    public static final Block LEAFITE_TILE_STAIRS = registerBlock("leafite_tile_stairs",
+            new StairsBlock(ModBlocks.LEAFITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES)));
+    public static final Block LEAFITE_TILE_SLAB = registerBlock("leafite_tile_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES)));
+    public static final Block LEAFITE_TILE_WALL = registerBlock("leafite_tile_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES)));
     public static final Block LEAFITE_LOG = registerBlock("leafite_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.ORANGE)
                     .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
@@ -411,8 +432,31 @@ public class ModBlocks {
             new TrapdoorBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)
                     .nonOpaque().allowsSpawning(Blocks::never), BlockSetType.JUNGLE));
 
+    public static Identifier LEAFITE_SIGN_TEXTURE = new Identifier(OresMod.MOD_ID, "entity/signs/leafite");
+    public static Identifier LEAFITE_HANDING_SIGN_TEXTURE = new Identifier(OresMod.MOD_ID, "entity/signs/hanging/leafite");
+    public static Identifier LEAFITE_HANDING_GUI_SIGN_TEXTURE = new Identifier(OresMod.MOD_ID, "textures/gui/hanging_signs/leafite");
+    public static final Block STANDING_LEAFITE_SIGN = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "leafite_standing_sign"), new TerraformSignBlock(LEAFITE_SIGN_TEXTURE,
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_SIGN)));
+    public static final Block WALL_LEAFITE_SIGN = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "leafite_wall_sign"), new TerraformWallSignBlock(LEAFITE_SIGN_TEXTURE,
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_WALL_SIGN)));
+    public static final Block HANGING_LEAFITE_SIGN = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "leafite_hanging_sign"), new TerraformHangingSignBlock(LEAFITE_HANDING_SIGN_TEXTURE,
+            LEAFITE_HANDING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.JUNGLE_HANGING_SIGN)));
+    public static final Block WALL_HANGING_LEAFITE_SIGN = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "leafite_wall_hanging_sign"), new TerraformWallHangingSignBlock(LEAFITE_HANDING_SIGN_TEXTURE,
+            LEAFITE_HANDING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.JUNGLE_WALL_HANGING_SIGN)));
+
+    public static final BlockFamily LEAFITE_FAMILY = BlockFamilies.register(ModBlocks.LEAFITE_PLANKS)
+            .sign(ModBlocks.STANDING_LEAFITE_SIGN, ModBlocks.WALL_LEAFITE_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
     public static final Block LEAFITE_SAPLING = registerBlock("leafite_sapling",
             new SaplingBlock(new LeafiteSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.JUNGLE_SAPLING)));
+    public static final Block POTTED_LEAFITE_SAPLING = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "potted_leafite_sapling"), new FlowerPotBlock(LEAFITE_SAPLING,
+            FabricBlockSettings.copyOf(Blocks.POTTED_JUNGLE_SAPLING).nonOpaque()));
 
     public static final Block WHITE_SAND = registerBlock("white_sand",
             new GravelBlock(FabricBlockSettings.copyOf(Blocks.SAND).mapColor(MapColor.WHITE)));
