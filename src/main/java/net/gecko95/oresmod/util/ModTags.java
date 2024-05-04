@@ -13,6 +13,8 @@ public class ModTags {
                 createTag("drill_mineable");
         public static final TagKey<Block> CHAINSAW_MINEABLE =
                 createTag("chainsaw_mineable");
+        public static final TagKey<Block> MULTI_TOOL_MINEABLE =
+                createTag("multi_tool_mineable");
 
         public static final TagKey<Block> STONEBARK_PLACEABLE =
                 createTag("stonebark_placeable");

@@ -32,6 +32,9 @@
     "oresmod:lighty_rusted_steel_bars",
     "oresmod:rusted_steel_bars",
     "oresmod:lighty_rusted_steel_lamp",
-    "oresmod:rusted_steel_lamp"
+    "oresmod:rusted_steel_lamp",
+    "oresmod:platinum_block",
+    "oresmod:platinum_ore",
+    "oresmod:platinum_cluster_ore"
   ]
 }

@@ -128,5 +128,13 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY_BIOME),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_BLACKSTONE_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_BARRENS, BiomeKeys.END_MIDLANDS,
+                        BiomeKeys.END_HIGHLANDS, BiomeKeys.SMALL_END_ISLANDS),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_BARRENS, BiomeKeys.END_MIDLANDS,
+                        BiomeKeys.END_HIGHLANDS, BiomeKeys.SMALL_END_ISLANDS),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.END_ITE_ORE_PLACED_KEY);
     }
 }

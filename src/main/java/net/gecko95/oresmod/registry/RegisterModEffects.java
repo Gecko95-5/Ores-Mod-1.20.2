@@ -16,5 +16,6 @@ public class RegisterModEffects {
         registerEffect(ModEffects.HEAT_STROKE,"heat_stroke");
         registerEffect(ModEffects.FATAL_POISON,"fatal_poison");
         registerEffect(ModEffects.VOID_SICKNESS,"void_sickness");
+        registerEffect(ModEffects.DECREASE_HEALTH,"decrease_health");
     }
 }

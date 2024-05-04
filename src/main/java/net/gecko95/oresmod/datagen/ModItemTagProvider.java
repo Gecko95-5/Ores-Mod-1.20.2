@@ -30,6 +30,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BEDROCK_HELMET, ModItems.BEDROCK_CHESTPLATE, ModItems.BEDROCK_LEGGINGS, ModItems.BEDROCK_BOOTS)
                 .add(ModItems.SANDITE_HELMET, ModItems.SANDITE_CHESTPLATE, ModItems.SANDITE_LEGGINGS, ModItems.SANDITE_BOOTS)
                 .add(ModItems.LEAFITE_HELMET, ModItems.LEAFITE_CHESTPLATE, ModItems.LEAFITE_LEGGINGS, ModItems.LEAFITE_BOOTS)
+                .add(ModItems.END_ITE_HELMET, ModItems.END_ITE_CHESTPLATE, ModItems.END_ITE_LEGGINGS, ModItems.END_ITE_BOOTS)
+                .add(ModItems.PLATINUM_HELMET, ModItems.PLATINUM_CHESTPLATE, ModItems.PLATINUM_LEGGINGS, ModItems.PLATINUM_BOOTS)
                 .add(ModItems.CLAY_HELMET, ModItems.CLAY_CHESTPLATE, ModItems.CLAY_LEGGINGS, ModItems.CLAY_BOOTS)
                 .add(ModItems.TERRACOTTA_HELMET, ModItems.TERRACOTTA_CHESTPLATE, ModItems.TERRACOTTA_LEGGINGS, ModItems.TERRACOTTA_BOOTS)
                 .add(ModItems.BLACK_TERRACOTTA_HELMET, ModItems.BLACK_TERRACOTTA_CHESTPLATE, ModItems.BLACK_TERRACOTTA_LEGGINGS, ModItems.BLACK_TERRACOTTA_BOOTS)

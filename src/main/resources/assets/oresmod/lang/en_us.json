@@ -340,8 +340,38 @@
   "item.oresmod.leafite_boat": "Leafite Boat",
   "item.oresmod.leafite_chest_boat": "Leafite Chest Boat",
 
+  "item.oresmod.platinum_cluster": "Platinum Cluster",
+  "item.oresmod.platinum_scrap": "Platinum Scrap",
+  "item.oresmod.platinum_ingot": "Platinum Ingot",
+
+  "item.oresmod.platinum_sword": "Platinum Sword",
+  "item.oresmod.platinum_pickaxe": "Platinum Pickaxe",
+  "item.oresmod.platinum_axe": "Platinum Axe",
+  "item.oresmod.platinum_shovel": "Platinum Shovel",
+  "item.oresmod.platinum_hoe": "Platinum Hoe",
+  "item.oresmod.platinum_multi_tool": "Platinum Multi-Tool",
+
+  "item.oresmod.platinum_helmet": "Platinum Helmet",
+  "item.oresmod.platinum_chestplate": "Platinum Chestplate",
+  "item.oresmod.platinum_leggings": "Platinum Leggings",
+  "item.oresmod.platinum_boots": "Platinum Boots",
+
+  "item.oresmod.end_ite": "End-ite",
+
+  "item.oresmod.end_ite_sword": "End-ite Sword",
+  "item.oresmod.end_ite_pickaxe": "End-ite Pickaxe",
+  "item.oresmod.end_ite_axe": "End-ite Axe",
+  "item.oresmod.end_ite_shovel": "End-ite Shovel",
+  "item.oresmod.end_ite_hoe": "End-ite Hoe",
+
+  "item.oresmod.end_ite_helmet": "End-ite Helmet",
+  "item.oresmod.end_ite_chestplate": "End-ite Chestplate",
+  "item.oresmod.end_ite_leggings": "End-ite Leggings",
+  "item.oresmod.end_ite_boots": "End-ite Boots",
+
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
+  "item.oresmod.ender_spider_spawn_egg": "Enderspider Spawn Egg",
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
@@ -498,6 +528,10 @@
 
   "block.oresmod.nether_cobalt_ore": "Nether Cobalt Ore",
   "block.oresmod.cobalt_block": "Block of Cobalt",
+
+  "block.oresmod.platinum_block": "Block of Platinum",
+  "block.oresmod.platinum_ore": "Platinum Ore",
+  "block.oresmod.platinum_cluster_ore": "Platinum Cluster Ore",
 
   "block.oresmod.white_sand": "White Sand",
   "block.oresmod.black_sand": "Black Sand",
@@ -668,9 +702,31 @@
   "block.oresmod.leafite_hanging_sign": "Leafite Hanging Sign",
   "block.oresmod.leafite_wall_hanging_sign": "Leafite Wall Hanging Sign",
 
+  "block.oresmod.void_stone": "Void Stone",
+
+  "block.oresmod.void_stone_bricks": "Void Stone Bricks",
+  "block.oresmod.void_stone_brick_stairs": "Void Stone Brick Stairs",
+  "block.oresmod.void_stone_brick_slab": "Void Stone Brick Slab",
+  "block.oresmod.void_stone_brick_wall": "Void Stone Brick Wall",
+
+  "block.oresmod.end_ite_block": "Block of End-Ite",
+  "block.oresmod.end_ite_ore": "End-Ite Ore",
+
+  "block.oresmod.end_ite_bricks": "End-Ite Bricks",
+  "block.oresmod.end_ite_tiles": "End-Ite Tiles",
+  "block.oresmod.chiseled_end_ite": "Chiseled End-Ite",
+
+  "block.oresmod.end_ite_brick_stairs": "End-Ite Brick Stairs",
+  "block.oresmod.end_ite_brick_slab": "End-Ite Brick Slab",
+  "block.oresmod.end_ite_brick_wall": "End-Ite Brick Wall",
+  "block.oresmod.end_ite_tile_stairs": "End-Ite Tile Stairs",
+  "block.oresmod.end_ite_tile_slab": "End-Ite Tile Slab",
+  "block.oresmod.end_ite_tile_wall": "End-Ite Tile Wall",
+
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",
   "entity.oresmod.jungle_spider": "Jungle Spider",
+  "entity.oresmod.ender_spider": "Enderspider",
 
   "effect.oresmod.frostbite": "Frostbite",
   "item.minecraft.potion.effect.frostbite_potion": "Potion of Subzero",
@@ -727,6 +783,8 @@
   "item.minecraft.splash_potion.effect.strong_void_sickness_potion": "Splash Potion of Void Sickness",
   "item.minecraft.lingering_potion.effect.strong_void_sickness_potion": "Lingering Potion of Void Sickness",
   "item.minecraft.tipped_arrow.effect.strong_void_sickness_potion": "Arrow of Void Sickness",
+
+  "effect.oresmod.decrease_health": "Health Decrease",
 
   "itemgroup.ores_mod_ores": "Ores & Materials",
   "itemgroup.ores_mod_compounds": "Compounds of Materials",

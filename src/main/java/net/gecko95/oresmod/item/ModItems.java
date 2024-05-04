@@ -521,11 +521,34 @@ public class ModItems {
     public static final Item LEAFITE_BOOTS = registerItem("leafite_boots",
             new ArmorItem(ModArmorMaterials.LEAFITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item END_ITE = registerItem("end_ite", new Item(new FabricItemSettings()));
+
+    public static final Item END_ITE_PICKAXE = registerItem("end_ite_pickaxe",
+            new PickaxeItem(ModToolMaterial.END_ITE, 1, -2.8f, new FabricItemSettings()));
+    public static final Item END_ITE_SWORD = registerItem("end_ite_sword",
+            new EndIteSwordItem(ModToolMaterial.END_ITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item END_ITE_AXE = registerItem("end_ite_axe",
+            new AxeItem(ModToolMaterial.END_ITE, 6.0f, -3.1f, new FabricItemSettings()));
+    public static final Item END_ITE_SHOVEL = registerItem("end_ite_shovel",
+            new ShovelItem(ModToolMaterial.END_ITE, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item END_ITE_HOE = registerItem("end_ite_hoe",
+            new HoeItem(ModToolMaterial.END_ITE, -3, -1.0f, new FabricItemSettings()));
+
+    public static final Item END_ITE_HELMET = registerItem("end_ite_helmet",
+            new ArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item END_ITE_CHESTPLATE = registerItem("end_ite_chestplate",
+            new ModArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item END_ITE_LEGGINGS = registerItem("end_ite_leggings",
+            new ArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item END_ITE_BOOTS = registerItem("end_ite_boots",
+            new ArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     public static final Item SILVERPEDE_SPAWN_EGG = registerItem("silverpede_spawn_egg",
             new SpawnEggItem(ModEntities.SILVERPEDE, 0xc0c0c0,0x868686, new FabricItemSettings()));
     public static final Item JUNGLE_SPIDER_SPAWN_EGG = registerItem("jungle_spider_spawn_egg",
             new SpawnEggItem(ModEntities.JUNGLE_SPIDER, 0x3c5436,0x930c0c, new FabricItemSettings()));
-
+    public static final Item ENDER_SPIDER_SPAWN_EGG = registerItem("ender_spider_spawn_egg",
+            new SpawnEggItem(ModEntities.ENDER_SPIDER, 0x302733,0x8200a0, new FabricItemSettings()));
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
@@ -607,6 +630,33 @@ public class ModItems {
 
     public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
             new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings()));
+
+    public static final Item PLATINUM_CLUSTER = registerItem("platinum_cluster", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_SCRAP = registerItem("platinum_scrap", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item PLATINUM_SWORD = registerItem("platinum_sword",
+            new SwordItem(ModToolMaterial.PLATINUM, 3, -2.4f, new FabricItemSettings()));
+    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
+            new PickaxeItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings()));
+    public static final Item PLATINUM_AXE = registerItem("platinum_axe",
+            new AxeItem(ModToolMaterial.PLATINUM, 5.0f, -3.0f, new FabricItemSettings()));
+    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
+            new ShovelItem(ModToolMaterial.PLATINUM, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
+            new HoeItem(ModToolMaterial.PLATINUM, -3, 0.0f, new FabricItemSettings()));
+
+    public static final Item PLATINUM_MULTI_TOOL = registerItem("platinum_multi_tool",
+            new MultiToolItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings()));
+
+    public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));

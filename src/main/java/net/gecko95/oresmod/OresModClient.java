@@ -60,5 +60,6 @@ public class OresModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.SILVERPEDE, SilverpedeRenderer::new);
         EntityRendererRegistry.register(ModEntities.SILVERWYRM, SilverwyrmRenderer::new);
         EntityRendererRegistry.register(ModEntities.JUNGLE_SPIDER, JungleSpiderRenderer::new);
+        EntityRendererRegistry.register(ModEntities.ENDER_SPIDER, EnderSpiderRenderer::new);
     }
 }

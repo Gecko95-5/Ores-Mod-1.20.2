@@ -130,6 +130,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_LEAFITE, TexturedModel.CUBE_BOTTOM_TOP);
         BlockStateModelGenerator.BlockTexturePool leafitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool leafitetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_CLUSTER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_STONE);
+        BlockStateModelGenerator.BlockTexturePool voidbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_ITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_ITE_ORE);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_END_ITE, TexturedModel.CUBE_BOTTOM_TOP);
+        BlockStateModelGenerator.BlockTexturePool enditebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_ITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool enditetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_ITE_TILES);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -166,6 +176,10 @@ public class ModModelProvider extends FabricModelProvider {
         brickbedrockPool.stairs(ModBlocks.POLISHED_BEDROCK_BRICKS_STAIRS);
         brickbedrockPool.slab(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB);
         brickbedrockPool.wall(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
+
+        voidbrickPool.stairs(ModBlocks.VOID_STONE_BRICK_STAIRS);
+        voidbrickPool.slab(ModBlocks.VOID_STONE_BRICK_SLAB);
+        voidbrickPool.wall(ModBlocks.VOID_STONE_BRICK_WALL);
 
         smoothsteelPool.slab(ModBlocks.SMOOTH_STEEL_SLAB);
 
@@ -223,6 +237,14 @@ public class ModModelProvider extends FabricModelProvider {
         leafitetilePool.stairs(ModBlocks.LEAFITE_TILE_STAIRS);
         leafitetilePool.slab(ModBlocks.LEAFITE_TILE_SLAB);
         leafitetilePool.wall(ModBlocks.LEAFITE_TILE_WALL);
+
+        enditebrickPool.stairs(ModBlocks.END_ITE_BRICK_STAIRS);
+        enditebrickPool.slab(ModBlocks.END_ITE_BRICK_SLAB);
+        enditebrickPool.wall(ModBlocks.END_ITE_BRICK_WALL);
+
+        enditetilePool.stairs(ModBlocks.END_ITE_TILE_STAIRS);
+        enditetilePool.slab(ModBlocks.END_ITE_TILE_SLAB);
+        enditetilePool.wall(ModBlocks.END_ITE_TILE_WALL);
 
         smoothwhitesandstonePool.stairs(ModBlocks.SMOOTH_WHITE_SANDSTONE_STAIRS);
         smoothwhitesandstonePool.slab(ModBlocks.SMOOTH_WHITE_SANDSTONE_SLAB);
@@ -604,10 +626,43 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.LEAFITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.LEAFITE_BOOTS));
 
+        itemModelGenerator.register(ModItems.PLATINUM_CLUSTER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLATINUM_SCRAP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLATINUM_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PLATINUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PLATINUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.PLATINUM_MULTI_TOOL, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PLATINUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PLATINUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PLATINUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.PLATINUM_BOOTS));
+
+        itemModelGenerator.register(ModItems.END_ITE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.END_ITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.END_ITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.END_ITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.END_ITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.END_ITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_BOOTS));
+
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
         itemModelGenerator.register(ModItems.JUNGLE_SPIDER_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+        itemModelGenerator.register(ModItems.ENDER_SPIDER_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

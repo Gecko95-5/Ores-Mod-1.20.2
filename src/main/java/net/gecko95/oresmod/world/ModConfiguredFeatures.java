@@ -71,6 +71,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_DIRT_ORE_KEY = registerKey("quarry_dirt_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_GRAVEL_ORE_KEY = registerKey("quarry_gravel_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_BLACKSTONE_ORE_KEY = registerKey("quarry_blackstone_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PLATINUM_ORE_KEY = registerKey("platinum_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> END_ITE_ORE_KEY = registerKey("end_ite_ore");
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
@@ -89,6 +91,7 @@ public class ModConfiguredFeatures {
         RuleTest sandstoneReplacebles = new BlockMatchRuleTest(Blocks.SANDSTONE);
         RuleTest redsandstoneReplacebles = new BlockMatchRuleTest(Blocks.RED_SANDSTONE);
         RuleTest cobblestoneReplacebles = new BlockMatchRuleTest(Blocks.COBBLESTONE);
+        RuleTest endstoneReplacebles = new BlockMatchRuleTest(Blocks.END_STONE);
 
         List<OreFeatureConfig.Target> overworldSaltOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.SALT_ORE.getDefaultState()));
@@ -214,6 +217,12 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldQuarryBlackstoneOres =
                 List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.BLACKSTONE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> endPlatinumOres =
+                List.of(OreFeatureConfig.createTarget(endstoneReplacebles, ModBlocks.PLATINUM_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> endEndIteOres =
+                List.of(OreFeatureConfig.createTarget(endstoneReplacebles, ModBlocks.END_ITE_ORE.getDefaultState()));
+
 
         register(context, SALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSaltOres, 12));
 
@@ -292,6 +301,10 @@ public class ModConfiguredFeatures {
         register(context, QUARRY_GRAVEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryGravelOres, 33));
 
         register(context, QUARRY_BLACKSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldQuarryBlackstoneOres, 33));
+
+        register(context, PLATINUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPlatinumOres, 8));
+
+        register(context, END_ITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(endEndIteOres, 4));
 
         register(context, STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.STONEBARK_LOG),

@@ -758,6 +758,56 @@ public class ModBlocks {
     public static final Block RUSTED_STEEL_LAMP = registerBlock("rusted_steel_lamp",
             new Block(FabricBlockSettings.copyOf(ModBlocks.RUSTED_STEEL_BLOCK).luminance(state -> 3).solidBlock(Blocks::never)));
 
+    public static final Block VOID_STONE = registerBlock("void_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).mapColor(MapColor.DEEPSLATE_GRAY)));
+
+    public static final Block VOID_STONE_BRICKS = registerBlock("void_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE)));
+    public static final Block VOID_STONE_BRICK_STAIRS = registerBlock("void_stone_brick_stairs",
+            new StairsBlock(ModBlocks.MARBLE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block VOID_STONE_BRICK_SLAB = registerBlock("void_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block VOID_STONE_BRICK_WALL = registerBlock("void_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+
+    public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+    public static final Block PLATINUM_BLOCK = registerBlock("platinum_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.PALE_PURPLE).instrument(Instrument.XYLOPHONE)
+                    .requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block PLATINUM_CLUSTER_ORE = registerBlock("platinum_cluster_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.DEEPSLATE_GRAY).instrument(Instrument.BASEDRUM)
+                    .requiresTool()));
+
+    public static final Block END_ITE_ORE = registerBlock("end_ite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).mapColor(MapColor.PALE_YELLOW)));
+
+    public static final Block END_ITE_BLOCK = registerBlock("end_ite_block",
+            new Block(FabricBlockSettings.create()
+                    .strength(5.0f, 6.0f).sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .mapColor(MapColor.PURPLE).instrument(Instrument.CHIME)));
+
+    public static final Block END_ITE_BRICKS = registerBlock("end_ite_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK)));
+    public static final Block END_ITE_TILES = registerBlock("end_ite_tiles",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK)));
+    public static final Block CHISELED_END_ITE = registerBlock("chiseled_end_ite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK)));
+
+    public static final Block END_ITE_BRICK_STAIRS = registerBlock("end_ite_brick_stairs",
+            new StairsBlock(ModBlocks.END_ITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.END_ITE_BRICKS)));
+    public static final Block END_ITE_BRICK_SLAB = registerBlock("end_ite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BRICKS)));
+    public static final Block END_ITE_BRICK_WALL = registerBlock("end_ite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BRICKS)));
+
+    public static final Block END_ITE_TILE_STAIRS = registerBlock("end_ite_tile_stairs",
+            new StairsBlock(ModBlocks.END_ITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.END_ITE_TILES)));
+    public static final Block END_ITE_TILE_SLAB = registerBlock("end_ite_tile_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_TILES)));
+    public static final Block END_ITE_TILE_WALL = registerBlock("end_ite_tile_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_TILES)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID, name), block);

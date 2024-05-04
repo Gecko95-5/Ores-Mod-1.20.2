@@ -164,6 +164,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LEAFITE_TILES);
         addDrop(ModBlocks.LEAFITE_TILE_STAIRS);
         addDrop(ModBlocks.LEAFITE_TILE_WALL);
+        addDrop(ModBlocks.CHISELED_LEAFITE);
         addDrop(ModBlocks.LEAFITE_LOG);
         addDrop(ModBlocks.LEAFITE_WOOD);
         addDrop(ModBlocks.STRIPPED_LEAFITE_LOG);
@@ -175,6 +176,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LEAFITE_PLANKS_BUTTON);
         addDrop(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
         addDrop(ModBlocks.LEAFITE_TRAPDOOR);
+        addDrop(ModBlocks.PLATINUM_BLOCK);
+        addDrop(ModBlocks.VOID_STONE);
+        addDrop(ModBlocks.VOID_STONE_BRICKS);
+        addDrop(ModBlocks.VOID_STONE_BRICK_STAIRS);
+        addDrop(ModBlocks.VOID_STONE_BRICK_WALL);
+        addDrop(ModBlocks.END_ITE_BLOCK);
+        addDrop(ModBlocks.END_ITE_BRICKS);
+        addDrop(ModBlocks.END_ITE_BRICK_STAIRS);
+        addDrop(ModBlocks.END_ITE_BRICK_WALL);
+        addDrop(ModBlocks.END_ITE_TILES);
+        addDrop(ModBlocks.END_ITE_TILE_STAIRS);
+        addDrop(ModBlocks.END_ITE_TILE_WALL);
+        addDrop(ModBlocks.CHISELED_END_ITE);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 
@@ -207,6 +221,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FROSITE_ORE,oreDrops(ModBlocks.FROSITE_ORE, ModItems.FROSITE));
 
         addDrop(ModBlocks.SANDITE_ORE,oreDrops(ModBlocks.SANDITE_ORE, ModItems.SANDITE));
+
+        addDrop(ModBlocks.END_ITE_ORE,oreDrops(ModBlocks.END_ITE_ORE, ModItems.END_ITE));
 
         addDrop(ModBlocks.ALUMINUM_ORE,oreDrops(ModBlocks.ALUMINUM_ORE, ModItems.RAW_ALUMINUM));
         addDrop(ModBlocks.DEEPSLATE_ALUMINUM_ORE,oreDrops(ModBlocks.DEEPSLATE_ALUMINUM_ORE, ModItems.RAW_ALUMINUM));
@@ -246,6 +262,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SUSPICIOUS_WHITE_SAND,saltBlockDrops(ModBlocks.SUSPICIOUS_WHITE_SAND));
 
+        addDrop(ModBlocks.PLATINUM_ORE,oreDrops(ModBlocks.PLATINUM_ORE, ModItems.PLATINUM_CLUSTER));
+        addDrop(ModBlocks.PLATINUM_CLUSTER_ORE,clusterOreDrops(ModBlocks.PLATINUM_CLUSTER_ORE, ModItems.PLATINUM_CLUSTER));
+
         addDrop(ModBlocks.SALT_BLOCK,saltBlockDrops(ModBlocks.SALT_BLOCK));
 
         addDrop(ModBlocks.FROSITE_BRICK_SLAB, slabDrops(ModBlocks.FROSITE_BRICK_SLAB));
@@ -284,9 +303,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MARBLE_SLAB, slabDrops(ModBlocks.MARBLE_SLAB));
         addDrop(ModBlocks.MARBLE_BRICK_SLAB, slabDrops(ModBlocks.MARBLE_BRICK_SLAB));
 
+        addDrop(ModBlocks.END_ITE_BRICK_SLAB, slabDrops(ModBlocks.END_ITE_BRICK_SLAB));
+        addDrop(ModBlocks.END_ITE_TILE_SLAB, slabDrops(ModBlocks.END_ITE_TILE_SLAB));
+
         addDrop(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB));
         addDrop(ModBlocks.POLISHED_DIORITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_DIORITE_BRICK_SLAB));
         addDrop(ModBlocks.POLISHED_GRANITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_GRANITE_BRICK_SLAB));
+
+        addDrop(ModBlocks.VOID_STONE_BRICK_SLAB, slabDrops(ModBlocks.VOID_STONE_BRICK_SLAB));
 
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));
@@ -344,5 +368,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                         .builder(UniformLootNumberProvider
                                                 .create(1.0f, 2.0f))))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+
+
+    }
+    public LootTable.Builder clusterOreDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(1.0f, 4.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+
+
     }
 }

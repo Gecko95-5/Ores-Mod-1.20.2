@@ -61,6 +61,17 @@
     "oresmod:silver_scale_core",
     "oresmod:fossilized_silver_scale_core",
     "oresmod:silver_scale_face",
-    "oresmod:fossilized_silver_scale_face"
+    "oresmod:fossilized_silver_scale_face",
+    "oresmod:end_ite_ore",
+    "oresmod:end_ite_block",
+    "oresmod:end_ite_bricks",
+    "oresmod:end_ite_brick_stairs",
+    "oresmod:end_ite_brick_slab",
+    "oresmod:end_ite_brick_wall",
+    "oresmod:end_ite_tiles",
+    "oresmod:end_ite_tile_stairs",
+    "oresmod:end_ite_tile_slab",
+    "oresmod:end_ite_tile_wall",
+    "oresmod:chiseled_end_ite"
   ]
 }

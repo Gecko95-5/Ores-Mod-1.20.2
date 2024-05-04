@@ -11,7 +11,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModEffects {
-    private static final int DARKNESS_PADDING_DURATION = 22;
     public static StatusEffect FROSTBITE = new FrostbiteEffect(StatusEffectCategory.HARMFUL,0x24f1c6)
             .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.2f,
                     EntityAttributeModifier.Operation.MULTIPLY_TOTAL);
@@ -24,4 +23,6 @@ public class ModEffects {
     public static StatusEffect VOID_SICKNESS = new VoidSicknessEffect(StatusEffectCategory.HARMFUL,0x000000)
             .addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "5D6F0BA2-1186-46AC-B896-C61C5CEE99CC", -2.0,
                     EntityAttributeModifier.Operation.ADDITION);
+    public static StatusEffect DECREASE_HEALTH = new ModStatusEffect(StatusEffectCategory.HARMFUL,0x671960).addAttributeModifier(EntityAttributes.GENERIC_MAX_HEALTH, "5D6F0BA2-1186-46AC-B896-C61C5CEE99CC",-2.0,
+            EntityAttributeModifier.Operation.ADDITION);
 }

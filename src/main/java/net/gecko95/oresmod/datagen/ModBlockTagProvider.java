@@ -29,6 +29,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.AXE_MINEABLE)
                 .forceAddTag(BlockTags.HOE_MINEABLE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.MULTI_TOOL_MINEABLE)
+                .forceAddTag(BlockTags.PICKAXE_MINEABLE)
+                .forceAddTag(BlockTags.SHOVEL_MINEABLE)
+                .forceAddTag(BlockTags.AXE_MINEABLE)
+                .forceAddTag(BlockTags.HOE_MINEABLE);
+
         getOrCreateTagBuilder(ModTags.Blocks.MANDIBLE_MINEABLE)
                 .forceAddTag(BlockTags.SHOVEL_MINEABLE)
                 .add(Blocks.COBBLESTONE)
@@ -216,7 +222,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIGHTY_RUSTED_STEEL_BARS)
                 .add(ModBlocks.RUSTED_STEEL_BARS)
                 .add(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP)
-                .add(ModBlocks.RUSTED_STEEL_LAMP);
+                .add(ModBlocks.RUSTED_STEEL_LAMP)
+                .add(ModBlocks.PLATINUM_BLOCK)
+                .add(ModBlocks.PLATINUM_ORE)
+                .add(ModBlocks.PLATINUM_CLUSTER_ORE)
+                .add(ModBlocks.VOID_STONE)
+                .add(ModBlocks.VOID_STONE_BRICKS)
+                .add(ModBlocks.VOID_STONE_BRICK_STAIRS)
+                .add(ModBlocks.VOID_STONE_BRICK_SLAB)
+                .add(ModBlocks.VOID_STONE_BRICK_WALL)
+                .add(ModBlocks.END_ITE_ORE)
+                .add(ModBlocks.END_ITE_BLOCK)
+                .add(ModBlocks.END_ITE_BRICKS)
+                .add(ModBlocks.END_ITE_BRICK_STAIRS)
+                .add(ModBlocks.END_ITE_BRICK_SLAB)
+                .add(ModBlocks.END_ITE_BRICK_WALL)
+                .add(ModBlocks.END_ITE_TILES)
+                .add(ModBlocks.END_ITE_TILE_STAIRS)
+                .add(ModBlocks.END_ITE_TILE_SLAB)
+                .add(ModBlocks.END_ITE_TILE_WALL)
+                .add(ModBlocks.CHISELED_END_ITE);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -370,7 +395,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SILVER_SCALE_CORE)
                 .add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE)
                 .add(ModBlocks.SILVER_SCALE_FACE)
-                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
+                .add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE)
+                .add(ModBlocks.END_ITE_ORE)
+                .add(ModBlocks.END_ITE_BLOCK)
+                .add(ModBlocks.END_ITE_BRICKS)
+                .add(ModBlocks.END_ITE_BRICK_STAIRS)
+                .add(ModBlocks.END_ITE_BRICK_SLAB)
+                .add(ModBlocks.END_ITE_BRICK_WALL)
+                .add(ModBlocks.END_ITE_TILES)
+                .add(ModBlocks.END_ITE_TILE_STAIRS)
+                .add(ModBlocks.END_ITE_TILE_SLAB)
+                .add(ModBlocks.END_ITE_TILE_WALL)
+                .add(ModBlocks.CHISELED_END_ITE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STEEL_BLOCK)
@@ -404,7 +440,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIGHTY_RUSTED_STEEL_BARS)
                 .add(ModBlocks.RUSTED_STEEL_BARS)
                 .add(ModBlocks.LIGHTY_RUSTED_STEEL_LAMP)
-                .add(ModBlocks.RUSTED_STEEL_LAMP);
+                .add(ModBlocks.RUSTED_STEEL_LAMP)
+                .add(ModBlocks.PLATINUM_BLOCK)
+                .add(ModBlocks.PLATINUM_ORE)
+                .add(ModBlocks.PLATINUM_CLUSTER_ORE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.FAKE_BEDROCK)
@@ -434,8 +473,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MARBLE_BRICK_WALL)
                 .add(ModBlocks.POLISHED_ANDESITE_BRICK_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_BRICK_WALL)
-                .add(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
-
+                .add(ModBlocks.POLISHED_GRANITE_BRICK_WALL)
+                .add(ModBlocks.VOID_STONE_BRICK_WALL)
+                .add(ModBlocks.END_ITE_BRICK_WALL)
+                .add(ModBlocks.END_ITE_TILE_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.STONEBARK_FENCE)

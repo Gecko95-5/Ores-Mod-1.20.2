@@ -77,6 +77,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RED_SANDSTONE_SANDITE_ORE);
                         entries.add(ModItems.LEAFITE);
                         entries.add(ModBlocks.LEAFITE_LEAVES_ORE);
+                        entries.add(ModItems.END_ITE);
+                        entries.add(ModBlocks.END_ITE_ORE);
                         entries.add(ModItems.ALUMINUM_INGOT);
                         entries.add(ModItems.ALUMINUM_NUGGET);
                         entries.add(ModItems.RAW_ALUMINUM);
@@ -105,6 +107,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_COBALT_ORE);
                         entries.add(ModBlocks.CRACKED_BEDROCK);
                         entries.add(ModItems.BEDROCK_SHARD);
+                        entries.add(ModBlocks.PLATINUM_ORE);
+                        entries.add(ModBlocks.PLATINUM_CLUSTER_ORE);
+                        entries.add(ModItems.PLATINUM_INGOT);
+                        entries.add(ModItems.PLATINUM_CLUSTER);
+                        entries.add(ModItems.PLATINUM_SCRAP);
                         entries.add(Items.GRAVEL);
                         entries.add(Items.FLINT);
                         entries.add(Items.CLAY);
@@ -161,6 +168,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FROSITE_BLOCK);
                         entries.add(ModBlocks.SANDITE_BLOCK);
                         entries.add(ModBlocks.LEAFITE_BLOCK);
+                        entries.add(ModBlocks.END_ITE_BLOCK);
                         entries.add(ModBlocks.ALUMINUM_BLOCK);
                         entries.add(ModBlocks.RAW_ALUMINUM_BLOCK);
                         entries.add(ModBlocks.NICKEL_BLOCK);
@@ -172,6 +180,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TUNGSTEN_BLOCK);
                         entries.add(ModBlocks.TITANIUM_ALLOY_BLOCK);
                         entries.add(ModBlocks.COBALT_BLOCK);
+                        entries.add(ModBlocks.PLATINUM_BLOCK);
                         entries.add(ModBlocks.FAKE_BEDROCK);
                     }).build());
     public static final ItemGroup ORES_MOD_TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -277,6 +286,15 @@ public class ModItemGroups {
                         entries.add(ModItems.LEAFITE_HOE);
                         entries.add(ModItems.LEAFITE_DRILL);
                         entries.add(ModItems.LEAFITE_CHAINSAW);
+                        entries.add(ModItems.END_ITE_PICKAXE);
+                        entries.add(ModItems.END_ITE_AXE);
+                        entries.add(ModItems.END_ITE_SHOVEL);
+                        entries.add(ModItems.END_ITE_HOE);
+                        entries.add(ModItems.PLATINUM_PICKAXE);
+                        entries.add(ModItems.PLATINUM_AXE);
+                        entries.add(ModItems.PLATINUM_SHOVEL);
+                        entries.add(ModItems.PLATINUM_HOE);
+                        entries.add(ModItems.PLATINUM_MULTI_TOOL);
                     }).build());
     public static final ItemGroup ORES_MOD_WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_weapons"),
@@ -378,6 +396,18 @@ public class ModItemGroups {
                         entries.add(ModItems.LEAFITE_CHESTPLATE);
                         entries.add(ModItems.LEAFITE_LEGGINGS);
                         entries.add(ModItems.LEAFITE_BOOTS);
+                        entries.add(ModItems.END_ITE_SWORD);
+                        entries.add(ModItems.END_ITE_AXE);
+                        entries.add(ModItems.END_ITE_HELMET);
+                        entries.add(ModItems.END_ITE_CHESTPLATE);
+                        entries.add(ModItems.END_ITE_LEGGINGS);
+                        entries.add(ModItems.END_ITE_BOOTS);
+                        entries.add(ModItems.PLATINUM_SWORD);
+                        entries.add(ModItems.PLATINUM_AXE);
+                        entries.add(ModItems.PLATINUM_HELMET);
+                        entries.add(ModItems.PLATINUM_CHESTPLATE);
+                        entries.add(ModItems.PLATINUM_LEGGINGS);
+                        entries.add(ModItems.PLATINUM_BOOTS);
                         entries.add(ModItems.MANDIBLE_HATCHET);
                         entries.add(ModItems.FLINT_SWORD);
                         entries.add(ModItems.FLINT_AXE);
@@ -526,6 +556,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_LEAFITE_WOOD);
                         entries.add(ModBlocks.LEAFITE_LEAVES);
                         entries.add(ModBlocks.LEAFITE_SAPLING);
+                        entries.add(ModBlocks.END_ITE_BRICKS);
+                        entries.add(ModBlocks.END_ITE_BRICK_STAIRS);
+                        entries.add(ModBlocks.END_ITE_BRICK_SLAB);
+                        entries.add(ModBlocks.END_ITE_BRICK_WALL);
+                        entries.add(ModBlocks.END_ITE_TILES);
+                        entries.add(ModBlocks.END_ITE_TILE_STAIRS);
+                        entries.add(ModBlocks.END_ITE_TILE_SLAB);
+                        entries.add(ModBlocks.END_ITE_TILE_WALL);
+                        entries.add(ModBlocks.CHISELED_END_ITE);
                         entries.add(ModBlocks.ALUMINUM_DOOR);
                         entries.add(ModBlocks.ALUMINUM_TRAPDOOR);
                         entries.add(ModBlocks.ALUMINUM_BARS);
@@ -645,6 +684,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_SLAB);
                         entries.add(ModBlocks.POLISHED_BEDROCK_BRICKS_WALL);
                         entries.add(ModBlocks.CHISELED_POLISHED_BEDROCK);
+                        entries.add(ModBlocks.VOID_STONE);
+                        entries.add(ModBlocks.VOID_STONE_BRICKS);
+                        entries.add(ModBlocks.VOID_STONE_BRICK_STAIRS);
+                        entries.add(ModBlocks.VOID_STONE_BRICK_SLAB);
+                        entries.add(ModBlocks.VOID_STONE_BRICK_WALL);
                         entries.add(ModBlocks.FLINT_SPIKES);
                         entries.add(ModBlocks.IRON_SPIKES);
                         entries.add(ModBlocks.ALUMINUM_SPIKES);
@@ -694,6 +738,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SILVER_CROWN);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                         entries.add(ModItems.JUNGLE_SPIDER_SPAWN_EGG);
+                        entries.add(ModItems.ENDER_SPIDER_SPAWN_EGG);
                         entries.add(ModBlocks.ENDER_DRAGON_TROPHY);
                         entries.add(ModBlocks.WITHER_TROPHY);
                         entries.add(ModBlocks.ELDER_GUARDIAN_TROPHY);

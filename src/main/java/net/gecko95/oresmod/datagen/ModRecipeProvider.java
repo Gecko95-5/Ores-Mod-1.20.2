@@ -33,7 +33,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             ModItems.NICKEL_PICKAXE, ModItems.NICKEL_AXE,ModItems.NICKEL_SHOVEL, ModItems.NICKEL_HOE,
             ModItems.NICKEL_HELMET,ModItems.NICKEL_CHESTPLATE, ModItems.NICKEL_LEGGINGS, ModItems.NICKEL_BOOTS);
 
-    private static final List<ItemConvertible> TITANIUM_SMELTABLES = List.of(ModItems.RAW_TITANIUM,ModBlocks.DEEPSLATE_TITANIUM_ORE,ModBlocks.COBBLESTONE_TITANIUM_ORE);
+    private static final List<ItemConvertible> TITANIUM_SMELTABLES = List.of(ModItems.RAW_TITANIUM,ModBlocks.DEEPSLATE_TITANIUM_ORE,
+            ModBlocks.COBBLESTONE_TITANIUM_ORE);
 
     private static final List<ItemConvertible> TUNGSTEN_SMELTABLES = List.of(ModBlocks.NETHER_TUNGSTEN_ORE);
 
@@ -58,6 +59,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> QUARTZ_SMELTABLES = List.of(ModBlocks.COBBLESTONE_QUARTZ_ORE);
 
     private static final List<ItemConvertible> SANNITE_SMELTABLES = List.of(ModBlocks.SANDITE_ORE, ModBlocks.SANDSTONE_SANDITE_ORE,ModBlocks.RED_SANDSTONE_SANDITE_ORE);
+
+    private static final List<ItemConvertible> PLATINUM_SMELTABLES = List.of(ModItems.PLATINUM_CLUSTER,ModBlocks.PLATINUM_ORE,
+            ModBlocks.PLATINUM_CLUSTER_ORE);
+    private static final List<ItemConvertible> END_ITE_SMELTABLES = List.of(ModBlocks.END_ITE_ORE);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -154,6 +159,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f, 200, "quartz");
         offerBlasting(exporter, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ,
                 0.7f, 100, "quartz");
+
+        offerSmelting(exporter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_SCRAP,
+                0.7f, 400, "platinum");
+        offerBlasting(exporter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_SCRAP,
+                0.7f, 200, "platinum");
+
+        offerSmelting(exporter, END_ITE_SMELTABLES, RecipeCategory.MISC, ModItems.END_ITE,
+                0.7f, 200, "end_ite");
+        offerBlasting(exporter, END_ITE_SMELTABLES, RecipeCategory.MISC, ModItems.END_ITE,
+                0.7f, 100, "end_ite");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.POWDERED_SALT,
                 RecipeCategory.BUILDING_BLOCKS, ModBlocks.SALT_BLOCK);
@@ -4559,5 +4574,288 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
                 .criterion(hasItem(ModBlocks.LEAFITE_SAPLING), conditionsFromItem(ModBlocks.LEAFITE_SAPLING))
                 .offerTo(exporter, new Identifier("leafite_sapling_from_leafite"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.PLATINUM_INGOT,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.PLATINUM_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_INGOT)
+                .pattern("PPP")
+                .pattern("PAA")
+                .pattern("AA ")
+                .input('P', ModItems.PLATINUM_SCRAP)
+                .input('A', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.PLATINUM_SCRAP), conditionsFromItem(ModItems.PLATINUM_SCRAP))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("platinum_ingot_from_platinum_scrap"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE,4)
+                .pattern("EA")
+                .pattern("AE")
+                .input('E', Items.END_STONE)
+                .input('A', Items.AMETHYST_SHARD)
+                .criterion(hasItem(Items.END_STONE), conditionsFromItem(Items.END_STONE))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("void_stone"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICKS,4)
+                .pattern("VV")
+                .pattern("VV")
+                .input('V', ModBlocks.VOID_STONE)
+                .criterion(hasItem(ModBlocks.VOID_STONE), conditionsFromItem(ModBlocks.VOID_STONE))
+                .offerTo(exporter, new Identifier("void_stone_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICKS, ModBlocks.VOID_STONE);
+
+        createStairsRecipe(ModBlocks.VOID_STONE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.VOID_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.VOID_STONE_BRICKS),conditionsFromItem(ModBlocks.VOID_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VOID_STONE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICK_STAIRS, ModBlocks.VOID_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICK_STAIRS, ModBlocks.VOID_STONE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICK_SLAB, ModBlocks.VOID_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICK_SLAB, ModBlocks.VOID_STONE,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_BRICK_SLAB, ModBlocks.VOID_STONE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_BRICK_WALL, ModBlocks.VOID_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_BRICK_WALL, ModBlocks.VOID_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_BRICK_WALL, ModBlocks.VOID_STONE_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLATINUM_SWORD)
+                .pattern("P")
+                .pattern("P")
+                .pattern("D")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .input('D', ModItems.DUEL_HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .criterion(hasItem(ModItems.DUEL_HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.DUEL_HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("platinum_sword"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLATINUM_PICKAXE)
+                .pattern("PPP")
+                .pattern(" C ")
+                .pattern(" D ")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .input('D', ModItems.DUEL_HANDLED_POWER_DRIVE)
+                .input('C', ModItems.COBALT_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .criterion(hasItem(ModItems.DUEL_HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.DUEL_HANDLED_POWER_DRIVE))
+                .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
+                .offerTo(exporter, new Identifier("platinum_pickaxe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLATINUM_AXE)
+                .pattern("PP")
+                .pattern("PC")
+                .pattern(" D")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .input('D', ModItems.DUEL_HANDLED_POWER_DRIVE)
+                .input('C', ModItems.COBALT_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .criterion(hasItem(ModItems.DUEL_HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.DUEL_HANDLED_POWER_DRIVE))
+                .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
+                .offerTo(exporter, new Identifier("platinum_axe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLATINUM_SHOVEL)
+                .pattern("P")
+                .pattern("C")
+                .pattern("D")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .input('D', ModItems.DUEL_HANDLED_POWER_DRIVE)
+                .input('C', ModItems.COBALT_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .criterion(hasItem(ModItems.DUEL_HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.DUEL_HANDLED_POWER_DRIVE))
+                .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
+                .offerTo(exporter, new Identifier("platinum_shovel"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLATINUM_HOE)
+                .pattern("PP")
+                .pattern(" C")
+                .pattern(" D")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .input('D', ModItems.DUEL_HANDLED_POWER_DRIVE)
+                .input('C', ModItems.COBALT_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .criterion(hasItem(ModItems.DUEL_HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.DUEL_HANDLED_POWER_DRIVE))
+                .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
+                .offerTo(exporter, new Identifier("platinum_hoe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PLATINUM_MULTI_TOOL)
+                .pattern(" P ")
+                .pattern("ACS")
+                .pattern(" H ")
+                .input('C', ModItems.COBALT_INGOT)
+                .input('P', ModItems.PLATINUM_PICKAXE)
+                .input('S', ModItems.PLATINUM_SHOVEL)
+                .input('A', ModItems.PLATINUM_AXE)
+                .input('H', ModItems.PLATINUM_HOE)
+                .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
+                .criterion(hasItem(ModItems.PLATINUM_PICKAXE), conditionsFromItem(ModItems.PLATINUM_PICKAXE))
+                .criterion(hasItem(ModItems.PLATINUM_SHOVEL), conditionsFromItem(ModItems.PLATINUM_SHOVEL))
+                .criterion(hasItem(ModItems.PLATINUM_AXE), conditionsFromItem(ModItems.PLATINUM_AXE))
+                .criterion(hasItem(ModItems.PLATINUM_HOE), conditionsFromItem(ModItems.PLATINUM_HOE))
+                .offerTo(exporter, new Identifier("platinum_multi_tool"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLATINUM_HELMET)
+                .pattern("PPP")
+                .pattern("P P")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .offerTo(exporter, new Identifier("platinum_helmet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_CHESTPLATE)
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .offerTo(exporter, new Identifier("platinum_chestplate"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_LEGGINGS)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .offerTo(exporter, new Identifier("platinum_leggings"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_BOOTS)
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PLATINUM_INGOT)
+                .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
+                .offerTo(exporter, new Identifier("platinum_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_SWORD)
+                .pattern("E")
+                .pattern("E")
+                .pattern("S")
+                .input('E', ModItems.END_ITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("end_ite_sword"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_PICKAXE)
+                .pattern("EEE")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('E', ModItems.END_ITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("end_ite_pickaxe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_AXE)
+                .pattern("EE")
+                .pattern("ES")
+                .pattern(" S")
+                .input('E', ModItems.END_ITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("end_ite_axe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_SHOVEL)
+                .pattern("E")
+                .pattern("S")
+                .pattern("S")
+                .input('E', ModItems.END_ITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("end_ite_shovel"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_HOE)
+                .pattern("EE")
+                .pattern(" S")
+                .pattern(" S")
+                .input('E', ModItems.END_ITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("end_ite_hoe"));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.END_ITE,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_HELMET)
+                .pattern("ECE")
+                .pattern("E E")
+                .input('E', ModItems.END_ITE)
+                .input('C', Items.POPPED_CHORUS_FRUIT)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
+                .offerTo(exporter, new Identifier("end_ite_helmet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_CHESTPLATE)
+                .pattern("C C")
+                .pattern("EEE")
+                .pattern("EEE")
+                .input('E', ModItems.END_ITE)
+                .input('C', Items.POPPED_CHORUS_FRUIT)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
+                .offerTo(exporter, new Identifier("end_ite_chestplate"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_LEGGINGS)
+                .pattern("CCC")
+                .pattern("E E")
+                .pattern("E E")
+                .input('E', ModItems.END_ITE)
+                .input('C', Items.POPPED_CHORUS_FRUIT)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
+                .offerTo(exporter, new Identifier("end_ite_leggings"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_BOOTS)
+                .pattern("E E")
+                .pattern("C C")
+                .input('E', ModItems.END_ITE)
+                .input('C', Items.POPPED_CHORUS_FRUIT)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
+                .offerTo(exporter, new Identifier("end_ite_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ENDER_PEARL,8)
+                .pattern(" E ")
+                .pattern("EPE")
+                .pattern(" E ")
+                .input('E', ModItems.END_ITE)
+                .input('P', Items.ENDER_PEARL)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
+                .offerTo(exporter, new Identifier("ender_pearl_from_ender_pearl_with_end_ite"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICKS,4)
+                .pattern("PE")
+                .pattern("EP")
+                .input('E', ModBlocks.END_ITE_BLOCK)
+                .input('P', Blocks.PURPUR_BLOCK)
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .criterion(hasItem(Blocks.PURPUR_BLOCK), conditionsFromItem(Blocks.PURPUR_BLOCK))
+                .offerTo(exporter, new Identifier("end_ite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICKS, ModBlocks.END_ITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILES,4)
+                .pattern("EE")
+                .pattern("EE")
+                .input('E', ModBlocks.END_ITE_BLOCK)
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .offerTo(exporter, new Identifier("end_ite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILES, ModBlocks.END_ITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_END_ITE,4)
+                .pattern("BBB")
+                .pattern("BEB")
+                .pattern("BBB")
+                .input('B', ModBlocks.END_ITE_BLOCK)
+                .input('E', ModItems.END_ITE)
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .offerTo(exporter, new Identifier("chiseled_end_ite"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.END_ITE,18)
+                .input(ModBlocks.CHISELED_END_ITE)
+                .criterion(hasItem(ModBlocks.CHISELED_END_ITE), conditionsFromItem(ModBlocks.CHISELED_END_ITE))
+                .offerTo(exporter, new Identifier("end_ite_from_chiseled_end_ite"));
+
+        createStairsRecipe(ModBlocks.END_ITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.END_ITE_BRICKS))
+                .criterion(hasItem(ModBlocks.END_ITE_BRICKS),conditionsFromItem(ModBlocks.END_ITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.END_ITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.END_ITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.END_ITE_TILES))
+                .criterion(hasItem(ModBlocks.END_ITE_TILES),conditionsFromItem(ModBlocks.END_ITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.END_ITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_STAIRS, ModBlocks.END_ITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_SLAB, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_SLAB, ModBlocks.END_ITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
     }
 }

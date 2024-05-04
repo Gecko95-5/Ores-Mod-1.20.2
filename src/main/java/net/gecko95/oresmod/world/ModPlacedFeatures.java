@@ -57,6 +57,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> QUARRY_DIRT_ORE_PLACED_KEY = registerKey("quarry_dirt_ore_placed");
     public static final RegistryKey<PlacedFeature> QUARRY_GRAVEL_ORE_PLACED_KEY = registerKey("quarry_gravel_ore_placed");
     public static final RegistryKey<PlacedFeature> QUARRY_BLACKSTONE_ORE_PLACED_KEY = registerKey("quarry_blackstone_ore_placed");
+    public static final RegistryKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
+    public static final RegistryKey<PlacedFeature> END_ITE_ORE_PLACED_KEY = registerKey("end_ite_ore_placed");
 
     public static final RegistryKey<PlacedFeature> STONEBARK_PLACED_KEY = registerKey("stonebark_placed");
 
@@ -223,6 +225,14 @@ public class ModPlacedFeatures {
         register(context, QUARRY_BLACKSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARRY_BLACKSTONE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(62), YOffset.fixed(174))));
+
+        register(context, PLATINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PLATINUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(8,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(174))));
+
+        register(context, END_ITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_ITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(174))));
 
 
         register(context, STONEBARK_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.STONEBARK_KEY),

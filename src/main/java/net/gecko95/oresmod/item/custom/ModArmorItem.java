@@ -22,6 +22,8 @@ public class ModArmorItem extends ArmorItem {
                                 false, false, false))
                         .put(ModArmorMaterials.LEAFITE, new StatusEffectInstance(StatusEffects.REGENERATION, 400, 0,
                                 false, false, false))
+                        .put(ModArmorMaterials.END_ITE, new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 800, 0,
+                                false, false, false))
                         .put(ModArmorMaterials.TUNGSTEN, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
                                 false, false, false))
                         .put(ModArmorMaterials.TITANIUM_ALLOY, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0,
