@@ -17,7 +17,7 @@
       "spawns": [
         {
           "type": "oresmod:ender_spider",
-          "weight": 5,
+          "weight": 10,
           "minCount": 1,
           "maxCount": 3
         }
