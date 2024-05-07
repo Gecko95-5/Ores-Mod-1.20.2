@@ -5,13 +5,13 @@
     "E": {
       "item": "oresmod:end_ite_block"
     },
-    "P": {
-      "item": "minecraft:purpur_block"
+    "I": {
+      "item": "oresmod:end_ite"
     }
   },
   "pattern": [
-    "PE",
-    "EP"
+    "IE",
+    "EI"
   ],
   "result": {
     "count": 4,

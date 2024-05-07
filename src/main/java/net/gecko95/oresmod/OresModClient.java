@@ -10,6 +10,7 @@ import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.entity.ModBoats;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.entity.client.*;
+import net.gecko95.oresmod.entity.client.renderers.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.util.SpriteIdentifier;

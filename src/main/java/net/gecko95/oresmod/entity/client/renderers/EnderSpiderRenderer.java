@@ -1,4 +1,4 @@
-package net.gecko95.oresmod.entity.client;
+package net.gecko95.oresmod.entity.client.renderers;
 
 import net.gecko95.oresmod.OresMod;
 import net.minecraft.client.render.entity.CaveSpiderEntityRenderer;

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sand": {
+    "has_sandite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:sand"
+              "oresmod:sandite"
             ]
           }
         ]
@@ -36,7 +36,7 @@
     [
       "has_the_recipe",
       "has_sandite_block",
-      "has_sand"
+      "has_sandite"
     ]
   ],
   "rewards": {

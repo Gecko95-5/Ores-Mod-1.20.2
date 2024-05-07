@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_ice": {
+    "has_frosite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:blue_ice"
+              "oresmod:frosite"
             ]
           }
         ]
@@ -36,7 +36,7 @@
     [
       "has_the_recipe",
       "has_frosite_block",
-      "has_blue_ice"
+      "has_frosite"
     ]
   ],
   "rewards": {

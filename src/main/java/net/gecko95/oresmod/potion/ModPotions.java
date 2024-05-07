@@ -57,6 +57,6 @@ public static Potion VOID_SICKNESS_POTION, STRONG_VOID_SICKNESS_POTION, LONGER_V
 
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.HARMING, ModBlocks.VOID_STONE.asItem(),ModPotions.VOID_SICKNESS_POTION);
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.VOID_SICKNESS_POTION, Items.REDSTONE,ModPotions.LONGER_VOID_SICKNESS_POTION);
-        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.VOID_SICKNESS_POTION, Items.END_CRYSTAL,ModPotions.STRONG_VOID_SICKNESS_POTION);//Remember to change these to End-Ite
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(ModPotions.VOID_SICKNESS_POTION, ModItems.END_ITE,ModPotions.STRONG_VOID_SICKNESS_POTION);
     }
 }

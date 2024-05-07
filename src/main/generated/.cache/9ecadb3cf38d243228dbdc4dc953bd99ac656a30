@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-03T21:14:31.7652119	Ores Mod/Block Loot Tables
+// 1.20.2	2024-05-06T22:40:33.4818802	Ores Mod/Block Loot Tables
 09ee1cc01b2b476a859026bb3b02fe4f88622d59 data\oresmod\loot_tables\blocks\cobblestone_emerald_ore.json
 762ec1b68d91ac9538078811a92d80986ad9daf5 data\oresmod\loot_tables\blocks\stonebark_stairs.json
 afa718338eb974cc0067428164905834e692ede9 data\oresmod\loot_tables\blocks\smooth_white_sandstone_stairs.json
@@ -35,8 +35,8 @@ e1d7267d3acaf36a7c9dd700789b0ad07f12cf3f data\oresmod\loot_tables\blocks\smooth_
 eb90319b1ebe44f80910662584d9d4ec6768a1c7 data\oresmod\loot_tables\blocks\black_sand.json
 299457e7e1e22778095cfb0580c1fe2ff73eb165 data\oresmod\loot_tables\blocks\deepbark_slab.json
 988b803dd84184194bac131e9b1f8267316a4fa1 data\oresmod\loot_tables\blocks\polished_bedrock_bricks_slab.json
-962d8d6caab07c4bbd4883afa1f547b17ca76e16 data\oresmod\loot_tables\blocks\leafite_bricks.json
 8ae0e3ec312bd96573172bde063d5f8a1a34e72b data\oresmod\loot_tables\blocks\marble_bricks.json
+962d8d6caab07c4bbd4883afa1f547b17ca76e16 data\oresmod\loot_tables\blocks\leafite_bricks.json
 e5a28e372d44b6c4f5395e8dd0dafbb16271b380 data\oresmod\loot_tables\blocks\leafite_planks_fence_gate.json
 a15a6b30111f19a1db46c0298e876605646078c1 data\oresmod\loot_tables\blocks\deepslate_wood.json
 b413327082e5d20011e5522297999118d40bc4c0 data\oresmod\loot_tables\blocks\leafite_planks.json
@@ -208,8 +208,8 @@ f6e25caee1cda500163152795cf744b8be43210f data\oresmod\loot_tables\blocks\silver_
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\awkward_water_tank.json
 8e00ae7a38fe88a78626bef74988bac19e85b9c6 data\oresmod\loot_tables\blocks\tuff_iron_ore.json
 8eaed2b621c08ca11517d23e041242f725c8f270 data\oresmod\loot_tables\blocks\cobblestone_copper_ore.json
-179cf9d6ed9d40cdea733ab9c3112ae80bf11ec7 data\oresmod\loot_tables\blocks\steel_pressure_plate.json
 ac7da01fa33f1b7339bc849ef6dbc2e10f3b29cf data\oresmod\loot_tables\blocks\sandite_bricks.json
+179cf9d6ed9d40cdea733ab9c3112ae80bf11ec7 data\oresmod\loot_tables\blocks\steel_pressure_plate.json
 f4f7ba12cd8ccd3057d9d46ddc0489c127f44427 data\oresmod\loot_tables\blocks\aluminum_ore.json
 78d53a6ca547376fa6b55c9e84b726bb82d797f3 data\oresmod\loot_tables\blocks\polished_diorite_brick_stairs.json
 98a0b9aae488fd57c6b57480522924ff6a090724 data\oresmod\loot_tables\blocks\marble_stairs.json

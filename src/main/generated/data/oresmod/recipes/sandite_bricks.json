@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "D": {
-      "item": "minecraft:sand"
+    "I": {
+      "item": "oresmod:sandite"
     },
     "S": {
       "item": "oresmod:sandite_block"
     }
   },
   "pattern": [
-    "DS",
-    "SD"
+    "IS",
+    "SI"
   ],
   "result": {
     "count": 4,

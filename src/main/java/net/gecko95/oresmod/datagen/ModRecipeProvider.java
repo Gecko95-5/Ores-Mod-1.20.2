@@ -533,9 +533,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("IF")
                 .pattern("FI")
                 .input('F', ModBlocks.FROSITE_BLOCK)
-                .input('I', Blocks.BLUE_ICE)
+                .input('I', ModItems.FROSITE)
                 .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
-                .criterion(hasItem(Blocks.BLUE_ICE), conditionsFromItem(Blocks.BLUE_ICE))
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
                 .offerTo(exporter, new Identifier("frosite_bricks"));
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_BRICKS, ModBlocks.FROSITE_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_TILES,4)
@@ -3594,12 +3594,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("black_sand_from_black_sandstone_with_sandite"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICKS,4)
-                .pattern("DS")
-                .pattern("SD")
+                .pattern("IS")
+                .pattern("SI")
                 .input('S', ModBlocks.SANDITE_BLOCK)
-                .input('D', Blocks.SAND)
+                .input('I', ModItems.SANDITE)
                 .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
-                .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
                 .offerTo(exporter, new Identifier("sandite_bricks"));
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICKS, ModBlocks.SANDITE_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILES,4)
@@ -4348,12 +4348,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerChestBoatRecipe(exporter, ModItems.LEAFITE_CHEST_BOAT, ModBlocks.LEAFITE_PLANKS);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICKS,4)
-                .pattern("SL")
-                .pattern("LS")
+                .pattern("IL")
+                .pattern("LI")
                 .input('L', ModBlocks.LEAFITE_BLOCK)
-                .input('S', ModBlocks.LEAFITE_LEAVES)
+                .input('I', ModItems.LEAFITE)
                 .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
-                .criterion(hasItem(ModBlocks.LEAFITE_LEAVES), conditionsFromItem(ModBlocks.LEAFITE_LEAVES))
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
                 .offerTo(exporter, new Identifier("leafite_bricks"));
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICKS, ModBlocks.LEAFITE_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILES,4)
@@ -4798,7 +4798,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
                 .offerTo(exporter, new Identifier("end_ite_boots"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ENDER_PEARL,8)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ENDER_PEARL,4)
                 .pattern(" E ")
                 .pattern("EPE")
                 .pattern(" E ")
@@ -4809,12 +4809,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("ender_pearl_from_ender_pearl_with_end_ite"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICKS,4)
-                .pattern("PE")
-                .pattern("EP")
+                .pattern("IE")
+                .pattern("EI")
                 .input('E', ModBlocks.END_ITE_BLOCK)
-                .input('P', Blocks.PURPUR_BLOCK)
+                .input('I', ModItems.END_ITE)
                 .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
-                .criterion(hasItem(Blocks.PURPUR_BLOCK), conditionsFromItem(Blocks.PURPUR_BLOCK))
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
                 .offerTo(exporter, new Identifier("end_ite_bricks"));
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICKS, ModBlocks.END_ITE_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILES,4)

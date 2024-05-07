@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_leafite_block": {
+    "has_leafite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:leafite_block"
+              "oresmod:leafite"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_leafite_leaves": {
+    "has_leafite_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:leafite_leaves"
+              "oresmod:leafite_block"
             ]
           }
         ]
@@ -36,7 +36,7 @@
     [
       "has_the_recipe",
       "has_leafite_block",
-      "has_leafite_leaves"
+      "has_leafite"
     ]
   ],
   "rewards": {

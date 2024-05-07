@@ -1,6 +1,8 @@
-package net.gecko95.oresmod.entity.client;
+package net.gecko95.oresmod.entity.client.renderers;
 
 import net.gecko95.oresmod.OresMod;
+import net.gecko95.oresmod.entity.client.ModModelLayers;
+import net.gecko95.oresmod.entity.client.SilverwyrmModel;
 import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;

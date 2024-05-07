@@ -1,9 +1,9 @@
-// 1.20.2	2024-05-03T21:14:31.7881498	Ores Mod/Tags for minecraft:block
+// 1.20.2	2024-05-06T22:40:33.5058162	Ores Mod/Tags for minecraft:block
 197ef0cdddb7ab4a6314b828dfb3e05c99a851cf data\minecraft\tags\blocks\fences.json
 fa98bd5a906f2d4d798de14db103d699b1b43269 data\minecraft\tags\blocks\fence_gates.json
 077dbbbd56efbc87cfb17da835d8bad64b48b93b data\minecraft\tags\blocks\mineable\pickaxe.json
 05f6f5f934af7bc9bae962b22631791a402af9ee data\oresmod\tags\blocks\potion_tanks.json
-fe7d166a7e42b3a5f9832bc534e50110a3d020e2 data\minecraft\tags\blocks\walls.json
+aacea6cdbf206f15b2ca097c0f940c7e06d46fc2 data\minecraft\tags\blocks\walls.json
 0abee4e8c156427f52d0e1475f21cccde2f9fcb2 data\oresmod\tags\blocks\chainsaw_mineable.json
 25af1e6a77f71ebfe69eef52cd29198a720115d8 data\fabric\tags\blocks\needs_tool_level_4.json
 d09fd133daae41057f5bf566c87bde38e3535327 data\minecraft\tags\blocks\sand.json
