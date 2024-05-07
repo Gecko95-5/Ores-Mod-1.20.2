@@ -189,6 +189,62 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.END_ITE_TILE_STAIRS);
         addDrop(ModBlocks.END_ITE_TILE_WALL);
         addDrop(ModBlocks.CHISELED_END_ITE);
+        addDrop(ModBlocks.LIGHT_FROSITE_BLOCK);
+        addDrop(ModBlocks.DARKEN_FROSITE_BLOCK);
+        addDrop(ModBlocks.LIGHT_SANDITE_BLOCK);
+        addDrop(ModBlocks.DARKEN_SANDITE_BLOCK);
+        addDrop(ModBlocks.LIGHT_LEAFITE_BLOCK);
+        addDrop(ModBlocks.DARKEN_LEAFITE_BLOCK);
+        addDrop(ModBlocks.LIGHT_END_ITE_BLOCK);
+        addDrop(ModBlocks.DARKEN_END_ITE_BLOCK);
+        addDrop(ModBlocks.LIGHT_FROSITE_BRICKS);
+        addDrop(ModBlocks.LIGHT_FROSITE_BRICK_STAIRS);
+        addDrop(ModBlocks.LIGHT_FROSITE_BRICK_WALL);
+        addDrop(ModBlocks.LIGHT_FROSITE_TILES);
+        addDrop(ModBlocks.LIGHT_FROSITE_TILE_STAIRS);
+        addDrop(ModBlocks.LIGHT_FROSITE_TILE_WALL);
+        addDrop(ModBlocks.DARKEN_FROSITE_BRICKS);
+        addDrop(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS);
+        addDrop(ModBlocks.DARKEN_FROSITE_BRICK_WALL);
+        addDrop(ModBlocks.DARKEN_FROSITE_TILES);
+        addDrop(ModBlocks.DARKEN_FROSITE_TILE_STAIRS);
+        addDrop(ModBlocks.DARKEN_FROSITE_TILE_WALL);
+        addDrop(ModBlocks.LIGHT_SANDITE_BRICKS);
+        addDrop(ModBlocks.LIGHT_SANDITE_BRICK_STAIRS);
+        addDrop(ModBlocks.LIGHT_SANDITE_BRICK_WALL);
+        addDrop(ModBlocks.LIGHT_SANDITE_TILES);
+        addDrop(ModBlocks.LIGHT_SANDITE_TILE_STAIRS);
+        addDrop(ModBlocks.LIGHT_SANDITE_TILE_WALL);
+        addDrop(ModBlocks.DARKEN_SANDITE_BRICKS);
+        addDrop(ModBlocks.DARKEN_SANDITE_BRICK_STAIRS);
+        addDrop(ModBlocks.DARKEN_SANDITE_BRICK_WALL);
+        addDrop(ModBlocks.DARKEN_SANDITE_TILES);
+        addDrop(ModBlocks.DARKEN_SANDITE_TILE_STAIRS);
+        addDrop(ModBlocks.DARKEN_SANDITE_TILE_WALL);
+        addDrop(ModBlocks.LIGHT_LEAFITE_BRICKS);
+        addDrop(ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS);
+        addDrop(ModBlocks.LIGHT_LEAFITE_BRICK_WALL);
+        addDrop(ModBlocks.LIGHT_LEAFITE_TILES);
+        addDrop(ModBlocks.LIGHT_LEAFITE_TILE_STAIRS);
+        addDrop(ModBlocks.LIGHT_LEAFITE_TILE_WALL);
+        addDrop(ModBlocks.DARKEN_LEAFITE_BRICKS);
+        addDrop(ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS);
+        addDrop(ModBlocks.DARKEN_LEAFITE_BRICK_WALL);
+        addDrop(ModBlocks.DARKEN_LEAFITE_TILES);
+        addDrop(ModBlocks.DARKEN_LEAFITE_TILE_STAIRS);
+        addDrop(ModBlocks.DARKEN_LEAFITE_TILE_WALL);
+        addDrop(ModBlocks.LIGHT_END_ITE_BRICKS);
+        addDrop(ModBlocks.LIGHT_END_ITE_BRICK_STAIRS);
+        addDrop(ModBlocks.LIGHT_END_ITE_BRICK_WALL);
+        addDrop(ModBlocks.LIGHT_END_ITE_TILES);
+        addDrop(ModBlocks.LIGHT_END_ITE_TILE_STAIRS);
+        addDrop(ModBlocks.LIGHT_END_ITE_TILE_WALL);
+        addDrop(ModBlocks.DARKEN_END_ITE_BRICKS);
+        addDrop(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS);
+        addDrop(ModBlocks.DARKEN_END_ITE_BRICK_WALL);
+        addDrop(ModBlocks.DARKEN_END_ITE_TILES);
+        addDrop(ModBlocks.DARKEN_END_ITE_TILE_STAIRS);
+        addDrop(ModBlocks.DARKEN_END_ITE_TILE_WALL);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 
@@ -311,6 +367,26 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_GRANITE_BRICK_SLAB, slabDrops(ModBlocks.POLISHED_GRANITE_BRICK_SLAB));
 
         addDrop(ModBlocks.VOID_STONE_BRICK_SLAB, slabDrops(ModBlocks.VOID_STONE_BRICK_SLAB));
+
+        addDrop(ModBlocks.LIGHT_FROSITE_BRICK_SLAB, slabDrops(ModBlocks.LIGHT_FROSITE_BRICK_SLAB));
+        addDrop(ModBlocks.LIGHT_FROSITE_TILE_SLAB, slabDrops(ModBlocks.LIGHT_FROSITE_TILE_SLAB));
+        addDrop(ModBlocks.DARKEN_FROSITE_BRICK_SLAB, slabDrops(ModBlocks.DARKEN_FROSITE_BRICK_SLAB));
+        addDrop(ModBlocks.DARKEN_FROSITE_TILE_SLAB, slabDrops(ModBlocks.DARKEN_FROSITE_TILE_SLAB));
+
+        addDrop(ModBlocks.LIGHT_SANDITE_BRICK_SLAB, slabDrops(ModBlocks.LIGHT_SANDITE_BRICK_SLAB));
+        addDrop(ModBlocks.LIGHT_SANDITE_TILE_SLAB, slabDrops(ModBlocks.LIGHT_SANDITE_TILE_SLAB));
+        addDrop(ModBlocks.DARKEN_SANDITE_BRICK_SLAB, slabDrops(ModBlocks.DARKEN_SANDITE_BRICK_SLAB));
+        addDrop(ModBlocks.DARKEN_SANDITE_TILE_SLAB, slabDrops(ModBlocks.DARKEN_SANDITE_TILE_SLAB));
+
+        addDrop(ModBlocks.LIGHT_LEAFITE_BRICK_SLAB, slabDrops(ModBlocks.LIGHT_LEAFITE_BRICK_SLAB));
+        addDrop(ModBlocks.LIGHT_LEAFITE_TILE_SLAB, slabDrops(ModBlocks.LIGHT_LEAFITE_TILE_SLAB));
+        addDrop(ModBlocks.DARKEN_LEAFITE_BRICK_SLAB, slabDrops(ModBlocks.DARKEN_LEAFITE_BRICK_SLAB));
+        addDrop(ModBlocks.DARKEN_LEAFITE_TILE_SLAB, slabDrops(ModBlocks.DARKEN_LEAFITE_TILE_SLAB));
+
+        addDrop(ModBlocks.LIGHT_END_ITE_BRICK_SLAB, slabDrops(ModBlocks.LIGHT_END_ITE_BRICK_SLAB));
+        addDrop(ModBlocks.LIGHT_END_ITE_TILE_SLAB, slabDrops(ModBlocks.LIGHT_END_ITE_TILE_SLAB));
+        addDrop(ModBlocks.DARKEN_END_ITE_BRICK_SLAB, slabDrops(ModBlocks.DARKEN_END_ITE_BRICK_SLAB));
+        addDrop(ModBlocks.DARKEN_END_ITE_TILE_SLAB, slabDrops(ModBlocks.DARKEN_END_ITE_TILE_SLAB));
 
         addDrop(ModBlocks.ALUMINUM_DOOR, doorDrops(ModBlocks.ALUMINUM_DOOR));
         addDrop(ModBlocks.STEEL_DOOR, doorDrops(ModBlocks.STEEL_DOOR));

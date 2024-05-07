@@ -20,12 +20,13 @@ public class ModTags {
                 createTag("stonebark_placeable");
         public static final TagKey<Block> DEEPBARK_PLACEABLE =
                 createTag("deepbark_placeable");
-
         public static final TagKey<Block> POTION_TANKS =
                 createTag("potion_tanks");
-
         public static final TagKey<Block> MANDIBLE_MINEABLE =
                 createTag("mandible_mineable");
+
+        public static final TagKey<Block> ITE_BLOCKS =
+                createTag("ite_blocks");
 
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(OresMod.MOD_ID, name));

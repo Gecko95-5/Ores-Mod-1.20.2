@@ -549,19 +549,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.FROSITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.FROSITE_BRICKS))
                 .criterion(hasItem(ModBlocks.FROSITE_BRICKS),conditionsFromItem(ModBlocks.FROSITE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROSITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_BRICK_STAIRS, ModBlocks.FROSITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_BRICK_STAIRS, ModBlocks.FROSITE_BRICKS);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BRICKS,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.FROSITE_BRICK_WALL, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.FROSITE_BRICK_WALL, ModBlocks.FROSITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.FROSITE_BRICK_WALL, ModBlocks.FROSITE_BRICKS);
 
         createStairsRecipe(ModBlocks.FROSITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.FROSITE_TILES))
                 .criterion(hasItem(ModBlocks.FROSITE_TILES),conditionsFromItem(ModBlocks.FROSITE_TILES))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROSITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_TILE_STAIRS, ModBlocks.FROSITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_TILE_STAIRS, ModBlocks.FROSITE_TILES);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_TILE_SLAB, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_TILE_SLAB, ModBlocks.FROSITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROSITE_TILE_SLAB, ModBlocks.FROSITE_TILES,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.FROSITE_TILE_WALL, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.FROSITE_TILE_WALL, ModBlocks.FROSITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.FROSITE_TILE_WALL, ModBlocks.FROSITE_TILES);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_FROSITE,4)
@@ -3628,19 +3634,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.SANDITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.SANDITE_BRICKS))
                 .criterion(hasItem(ModBlocks.SANDITE_BRICKS),conditionsFromItem(ModBlocks.SANDITE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SANDITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BRICKS);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BRICKS,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_BRICK_WALL, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_BRICK_WALL, ModBlocks.SANDITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_BRICK_WALL, ModBlocks.SANDITE_BRICKS);
 
         createStairsRecipe(ModBlocks.SANDITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.SANDITE_TILES))
                 .criterion(hasItem(ModBlocks.SANDITE_TILES),conditionsFromItem(ModBlocks.SANDITE_TILES))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SANDITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_STAIRS, ModBlocks.SANDITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_STAIRS, ModBlocks.SANDITE_TILES);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_SLAB, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_SLAB, ModBlocks.SANDITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SANDITE_TILE_SLAB, ModBlocks.SANDITE_TILES,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_TILE_WALL, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_TILE_WALL, ModBlocks.SANDITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.SANDITE_TILE_WALL, ModBlocks.SANDITE_TILES);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_BRICKS,4)
@@ -4382,19 +4394,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.LEAFITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.LEAFITE_BRICKS))
                 .criterion(hasItem(ModBlocks.LEAFITE_BRICKS),conditionsFromItem(ModBlocks.LEAFITE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BRICKS);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BRICKS,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BRICKS);
 
         createStairsRecipe(ModBlocks.LEAFITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.LEAFITE_TILES))
                 .criterion(hasItem(ModBlocks.LEAFITE_TILES),conditionsFromItem(ModBlocks.LEAFITE_TILES))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LEAFITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_TILES);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_TILES,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_TILE_WALL, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_TILE_WALL, ModBlocks.LEAFITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LEAFITE_TILE_WALL, ModBlocks.LEAFITE_TILES);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LEAFITE_SWORD)
@@ -4843,19 +4861,561 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.END_ITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.END_ITE_BRICKS))
                 .criterion(hasItem(ModBlocks.END_ITE_BRICKS),conditionsFromItem(ModBlocks.END_ITE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.END_ITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BRICKS);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_BRICK_WALL, ModBlocks.END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
 
         createStairsRecipe(ModBlocks.END_ITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.END_ITE_TILES))
                 .criterion(hasItem(ModBlocks.END_ITE_TILES),conditionsFromItem(ModBlocks.END_ITE_TILES))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.END_ITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_STAIRS, ModBlocks.END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_STAIRS, ModBlocks.END_ITE_TILES);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_SLAB, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_SLAB, ModBlocks.END_ITE_BLOCK,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_ITE_TILE_SLAB, ModBlocks.END_ITE_TILES,2);
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_TILE_WALL, ModBlocks.END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.FROSITE_BLOCK)
+                .input('I', ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("light_frosite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BLOCK, ModBlocks.FROSITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.FROSITE_BLOCK)
+                .input('I', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("darken_frosite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BLOCK, ModBlocks.FROSITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.SANDITE_BLOCK)
+                .input('I', ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("light_sandite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BLOCK, ModBlocks.SANDITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.SANDITE_BLOCK)
+                .input('I', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModBlocks.SANDITE_BLOCK), conditionsFromItem(ModBlocks.SANDITE_BLOCK))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("darken_sandite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BLOCK, ModBlocks.SANDITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.LEAFITE_BLOCK)
+                .input('I', ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("light_leafite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BLOCK, ModBlocks.LEAFITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.LEAFITE_BLOCK)
+                .input('I', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModBlocks.LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LEAFITE_BLOCK))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("darken_leafite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BLOCK, ModBlocks.LEAFITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.END_ITE_BLOCK)
+                .input('I', ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier("light_end_ite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BLOCK, ModBlocks.END_ITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BLOCK,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.END_ITE_BLOCK)
+                .input('I', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("darken_end_ite_block"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BLOCK, ModBlocks.END_ITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.LIGHT_FROSITE_BLOCK)
+                .input('I', ModItems.FROSITE)
+                .criterion(hasItem(ModBlocks.LIGHT_FROSITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_FROSITE_BLOCK))
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
+                .offerTo(exporter, new Identifier("light_frosite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICKS, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICKS, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICKS, ModBlocks.LIGHT_FROSITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.LIGHT_FROSITE_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHT_FROSITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_FROSITE_BLOCK))
+                .offerTo(exporter, new Identifier("light_frosite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILES, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILES, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILES, ModBlocks.LIGHT_FROSITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.LIGHT_FROSITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_FROSITE_BRICKS))
+                .criterion(hasItem(ModBlocks.LIGHT_FROSITE_BRICKS),conditionsFromItem(ModBlocks.LIGHT_FROSITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_FROSITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_STAIRS, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_STAIRS, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_STAIRS, ModBlocks.LIGHT_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_STAIRS, ModBlocks.LIGHT_FROSITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_SLAB, ModBlocks.LIGHT_FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_SLAB, ModBlocks.LIGHT_FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_BRICK_SLAB, ModBlocks.LIGHT_FROSITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_BRICK_WALL, ModBlocks.LIGHT_FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_BRICK_WALL, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_BRICK_WALL, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_BRICK_WALL, ModBlocks.LIGHT_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_BRICK_WALL, ModBlocks.LIGHT_FROSITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.LIGHT_FROSITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_FROSITE_TILES))
+                .criterion(hasItem(ModBlocks.LIGHT_FROSITE_TILES),conditionsFromItem(ModBlocks.LIGHT_FROSITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_FROSITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_STAIRS, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_STAIRS, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_STAIRS, ModBlocks.LIGHT_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_STAIRS, ModBlocks.LIGHT_FROSITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_SLAB, ModBlocks.LIGHT_FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_SLAB, ModBlocks.FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_SLAB, ModBlocks.FROSITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_SLAB, ModBlocks.LIGHT_FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_FROSITE_TILE_SLAB, ModBlocks.LIGHT_FROSITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_TILE_WALL, ModBlocks.LIGHT_FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_TILE_WALL, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_TILE_WALL, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_TILE_WALL, ModBlocks.LIGHT_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_FROSITE_TILE_WALL, ModBlocks.LIGHT_FROSITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.DARKEN_FROSITE_BLOCK)
+                .input('I', ModItems.FROSITE)
+                .criterion(hasItem(ModBlocks.DARKEN_FROSITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_FROSITE_BLOCK))
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
+                .offerTo(exporter, new Identifier("darken_frosite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICKS, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICKS, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICKS, ModBlocks.DARKEN_FROSITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.DARKEN_FROSITE_BLOCK)
+                .criterion(hasItem(ModBlocks.DARKEN_FROSITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_FROSITE_BLOCK))
+                .offerTo(exporter, new Identifier("darken_frosite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILES, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILES, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILES, ModBlocks.DARKEN_FROSITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_FROSITE_BRICKS))
+                .criterion(hasItem(ModBlocks.DARKEN_FROSITE_BRICKS),conditionsFromItem(ModBlocks.DARKEN_FROSITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_STAIRS, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_STAIRS, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_STAIRS, ModBlocks.DARKEN_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_STAIRS, ModBlocks.DARKEN_FROSITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_SLAB, ModBlocks.DARKEN_FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_SLAB, ModBlocks.FROSITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_SLAB, ModBlocks.DARKEN_FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_BRICK_SLAB, ModBlocks.DARKEN_FROSITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_BRICK_WALL, ModBlocks.DARKEN_FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_BRICK_WALL, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_BRICK_WALL, ModBlocks.FROSITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_BRICK_WALL, ModBlocks.DARKEN_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_BRICK_WALL, ModBlocks.DARKEN_FROSITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.DARKEN_FROSITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_FROSITE_TILES))
+                .criterion(hasItem(ModBlocks.DARKEN_FROSITE_TILES),conditionsFromItem(ModBlocks.DARKEN_FROSITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_FROSITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_STAIRS, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_STAIRS, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_STAIRS, ModBlocks.DARKEN_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_STAIRS, ModBlocks.DARKEN_FROSITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_SLAB, ModBlocks.DARKEN_FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_SLAB, ModBlocks.FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_SLAB, ModBlocks.FROSITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_SLAB, ModBlocks.DARKEN_FROSITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_FROSITE_TILE_SLAB, ModBlocks.DARKEN_FROSITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_TILE_WALL, ModBlocks.DARKEN_FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_TILE_WALL, ModBlocks.FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_TILE_WALL, ModBlocks.FROSITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_TILE_WALL, ModBlocks.DARKEN_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_FROSITE_TILE_WALL, ModBlocks.DARKEN_FROSITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.LIGHT_SANDITE_BLOCK)
+                .input('I', ModItems.SANDITE)
+                .criterion(hasItem(ModBlocks.LIGHT_SANDITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_SANDITE_BLOCK))
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .offerTo(exporter, new Identifier("light_sandite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICKS, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICKS, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICKS, ModBlocks.LIGHT_SANDITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.LIGHT_SANDITE_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHT_SANDITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_SANDITE_BLOCK))
+                .offerTo(exporter, new Identifier("light_sandite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILES, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILES, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILES, ModBlocks.LIGHT_SANDITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.LIGHT_SANDITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_SANDITE_BRICKS))
+                .criterion(hasItem(ModBlocks.LIGHT_SANDITE_BRICKS),conditionsFromItem(ModBlocks.LIGHT_SANDITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_SANDITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_STAIRS, ModBlocks.LIGHT_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_STAIRS, ModBlocks.LIGHT_SANDITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_SLAB, ModBlocks.LIGHT_SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_SLAB, ModBlocks.LIGHT_SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_BRICK_SLAB, ModBlocks.LIGHT_SANDITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_BRICK_WALL, ModBlocks.LIGHT_SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_BRICK_WALL, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_BRICK_WALL, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_BRICK_WALL, ModBlocks.LIGHT_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_BRICK_WALL, ModBlocks.LIGHT_SANDITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.LIGHT_SANDITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_SANDITE_TILES))
+                .criterion(hasItem(ModBlocks.LIGHT_SANDITE_TILES),conditionsFromItem(ModBlocks.LIGHT_SANDITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_SANDITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_STAIRS, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_STAIRS, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_STAIRS, ModBlocks.LIGHT_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_STAIRS, ModBlocks.LIGHT_SANDITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_SLAB, ModBlocks.LIGHT_SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_SLAB, ModBlocks.SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_SLAB, ModBlocks.SANDITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_SLAB, ModBlocks.LIGHT_SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_SANDITE_TILE_SLAB, ModBlocks.LIGHT_SANDITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_TILE_WALL, ModBlocks.LIGHT_SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_TILE_WALL, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_TILE_WALL, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_TILE_WALL, ModBlocks.LIGHT_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_SANDITE_TILE_WALL, ModBlocks.LIGHT_SANDITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.DARKEN_SANDITE_BLOCK)
+                .input('I', ModItems.SANDITE)
+                .criterion(hasItem(ModBlocks.DARKEN_SANDITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_SANDITE_BLOCK))
+                .criterion(hasItem(ModItems.SANDITE), conditionsFromItem(ModItems.SANDITE))
+                .offerTo(exporter, new Identifier("darken_sandite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICKS, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICKS, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICKS, ModBlocks.DARKEN_SANDITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.DARKEN_SANDITE_BLOCK)
+                .criterion(hasItem(ModBlocks.DARKEN_SANDITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_SANDITE_BLOCK))
+                .offerTo(exporter, new Identifier("darken_sandite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILES, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILES, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILES, ModBlocks.DARKEN_SANDITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.DARKEN_SANDITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_SANDITE_BRICKS))
+                .criterion(hasItem(ModBlocks.DARKEN_SANDITE_BRICKS),conditionsFromItem(ModBlocks.DARKEN_SANDITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_SANDITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_STAIRS, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_STAIRS, ModBlocks.DARKEN_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_STAIRS, ModBlocks.DARKEN_SANDITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_SLAB, ModBlocks.DARKEN_SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_SLAB, ModBlocks.SANDITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_SLAB, ModBlocks.DARKEN_SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_BRICK_SLAB, ModBlocks.DARKEN_SANDITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_BRICK_WALL, ModBlocks.DARKEN_SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_BRICK_WALL, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_BRICK_WALL, ModBlocks.SANDITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_BRICK_WALL, ModBlocks.DARKEN_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_BRICK_WALL, ModBlocks.DARKEN_SANDITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.DARKEN_SANDITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_SANDITE_TILES))
+                .criterion(hasItem(ModBlocks.DARKEN_SANDITE_TILES),conditionsFromItem(ModBlocks.DARKEN_SANDITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_SANDITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_STAIRS, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_STAIRS, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_STAIRS, ModBlocks.DARKEN_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_STAIRS, ModBlocks.DARKEN_SANDITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_SLAB, ModBlocks.DARKEN_SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_SLAB, ModBlocks.SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_SLAB, ModBlocks.SANDITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_SLAB, ModBlocks.DARKEN_SANDITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_SANDITE_TILE_SLAB, ModBlocks.DARKEN_SANDITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_TILE_WALL, ModBlocks.DARKEN_SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_TILE_WALL, ModBlocks.SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_TILE_WALL, ModBlocks.SANDITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_TILE_WALL, ModBlocks.DARKEN_SANDITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_SANDITE_TILE_WALL, ModBlocks.DARKEN_SANDITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.LIGHT_LEAFITE_BLOCK)
+                .input('I', ModItems.LEAFITE)
+                .criterion(hasItem(ModBlocks.LIGHT_LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_LEAFITE_BLOCK))
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .offerTo(exporter, new Identifier("light_leafite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICKS, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICKS, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICKS, ModBlocks.LIGHT_LEAFITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.LIGHT_LEAFITE_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHT_LEAFITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_LEAFITE_BLOCK))
+                .offerTo(exporter, new Identifier("light_leafite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILES, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILES, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILES, ModBlocks.LIGHT_LEAFITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_LEAFITE_BRICKS))
+                .criterion(hasItem(ModBlocks.LIGHT_LEAFITE_BRICKS),conditionsFromItem(ModBlocks.LIGHT_LEAFITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS, ModBlocks.LIGHT_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS, ModBlocks.LIGHT_LEAFITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_SLAB, ModBlocks.LIGHT_LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_SLAB, ModBlocks.LIGHT_LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_BRICK_SLAB, ModBlocks.LIGHT_LEAFITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_BRICK_WALL, ModBlocks.LIGHT_LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_BRICK_WALL, ModBlocks.LIGHT_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_BRICK_WALL, ModBlocks.LIGHT_LEAFITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.LIGHT_LEAFITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_LEAFITE_TILES))
+                .criterion(hasItem(ModBlocks.LIGHT_LEAFITE_TILES),conditionsFromItem(ModBlocks.LIGHT_LEAFITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_LEAFITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_STAIRS, ModBlocks.LIGHT_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_STAIRS, ModBlocks.LIGHT_LEAFITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_SLAB, ModBlocks.LIGHT_LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_SLAB, ModBlocks.LIGHT_LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_LEAFITE_TILE_SLAB, ModBlocks.LIGHT_LEAFITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_TILE_WALL, ModBlocks.LIGHT_LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_TILE_WALL, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_TILE_WALL, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_TILE_WALL, ModBlocks.LIGHT_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_LEAFITE_TILE_WALL, ModBlocks.LIGHT_LEAFITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.DARKEN_LEAFITE_BLOCK)
+                .input('I', ModItems.LEAFITE)
+                .criterion(hasItem(ModBlocks.DARKEN_LEAFITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_LEAFITE_BLOCK))
+                .criterion(hasItem(ModItems.LEAFITE), conditionsFromItem(ModItems.LEAFITE))
+                .offerTo(exporter, new Identifier("darken_leafite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICKS, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICKS, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICKS, ModBlocks.DARKEN_LEAFITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.DARKEN_LEAFITE_BLOCK)
+                .criterion(hasItem(ModBlocks.DARKEN_LEAFITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_LEAFITE_BLOCK))
+                .offerTo(exporter, new Identifier("darken_leafite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILES, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILES, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILES, ModBlocks.DARKEN_LEAFITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_LEAFITE_BRICKS))
+                .criterion(hasItem(ModBlocks.DARKEN_LEAFITE_BRICKS),conditionsFromItem(ModBlocks.DARKEN_LEAFITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS, ModBlocks.DARKEN_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS, ModBlocks.DARKEN_LEAFITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_SLAB, ModBlocks.DARKEN_LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_SLAB, ModBlocks.LEAFITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_SLAB, ModBlocks.DARKEN_LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_BRICK_SLAB, ModBlocks.DARKEN_LEAFITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_BRICK_WALL, ModBlocks.DARKEN_LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_BRICK_WALL, ModBlocks.LEAFITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_BRICK_WALL, ModBlocks.DARKEN_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_BRICK_WALL, ModBlocks.DARKEN_LEAFITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.DARKEN_LEAFITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_LEAFITE_TILES))
+                .criterion(hasItem(ModBlocks.DARKEN_LEAFITE_TILES),conditionsFromItem(ModBlocks.DARKEN_LEAFITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_LEAFITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_STAIRS, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_STAIRS, ModBlocks.DARKEN_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_STAIRS, ModBlocks.DARKEN_LEAFITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_SLAB, ModBlocks.DARKEN_LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_SLAB, ModBlocks.LEAFITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_SLAB, ModBlocks.DARKEN_LEAFITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_LEAFITE_TILE_SLAB, ModBlocks.DARKEN_LEAFITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_TILE_WALL, ModBlocks.DARKEN_LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_TILE_WALL, ModBlocks.LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_TILE_WALL, ModBlocks.LEAFITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_TILE_WALL, ModBlocks.DARKEN_LEAFITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_LEAFITE_TILE_WALL, ModBlocks.DARKEN_LEAFITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.LIGHT_END_ITE_BLOCK)
+                .input('I', ModItems.END_ITE)
+                .criterion(hasItem(ModBlocks.LIGHT_END_ITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_END_ITE_BLOCK))
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .offerTo(exporter, new Identifier("light_end_ite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS, ModBlocks.LIGHT_END_ITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.LIGHT_END_ITE_BLOCK)
+                .criterion(hasItem(ModBlocks.LIGHT_END_ITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_END_ITE_BLOCK))
+                .offerTo(exporter, new Identifier("light_end_ite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILES, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILES, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILES, ModBlocks.LIGHT_END_ITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.LIGHT_END_ITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_END_ITE_BRICKS))
+                .criterion(hasItem(ModBlocks.LIGHT_END_ITE_BRICKS),conditionsFromItem(ModBlocks.LIGHT_END_ITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_END_ITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_STAIRS, ModBlocks.LIGHT_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_STAIRS, ModBlocks.LIGHT_END_ITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_SLAB, ModBlocks.LIGHT_END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_SLAB, ModBlocks.LIGHT_END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICK_SLAB, ModBlocks.LIGHT_END_ITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_BRICK_WALL, ModBlocks.LIGHT_END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_BRICK_WALL, ModBlocks.LIGHT_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_BRICK_WALL, ModBlocks.LIGHT_END_ITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.LIGHT_END_ITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.LIGHT_END_ITE_TILES))
+                .criterion(hasItem(ModBlocks.LIGHT_END_ITE_TILES),conditionsFromItem(ModBlocks.LIGHT_END_ITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_END_ITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_STAIRS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_STAIRS, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_STAIRS, ModBlocks.LIGHT_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_STAIRS, ModBlocks.LIGHT_END_ITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_SLAB, ModBlocks.LIGHT_END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_SLAB, ModBlocks.END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_SLAB, ModBlocks.END_ITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_SLAB, ModBlocks.LIGHT_END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_TILE_SLAB, ModBlocks.LIGHT_END_ITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_TILE_WALL, ModBlocks.LIGHT_END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_TILE_WALL, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_TILE_WALL, ModBlocks.LIGHT_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.LIGHT_END_ITE_TILE_WALL, ModBlocks.LIGHT_END_ITE_TILES);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICKS,4)
+                .pattern("IB")
+                .pattern("BI")
+                .input('B', ModBlocks.DARKEN_END_ITE_BLOCK)
+                .input('I', ModItems.END_ITE)
+                .criterion(hasItem(ModBlocks.DARKEN_END_ITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_END_ITE_BLOCK))
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .offerTo(exporter, new Identifier("darken_end_ite_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICKS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICKS, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICKS, ModBlocks.DARKEN_END_ITE_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILES,4)
+                .pattern("BB")
+                .pattern("BB")
+                .input('B', ModBlocks.DARKEN_END_ITE_BLOCK)
+                .criterion(hasItem(ModBlocks.DARKEN_END_ITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_END_ITE_BLOCK))
+                .offerTo(exporter, new Identifier("darken_end_ite_tiles"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILES, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILES, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILES, ModBlocks.DARKEN_END_ITE_BLOCK);
+
+        createStairsRecipe(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_END_ITE_BRICKS))
+                .criterion(hasItem(ModBlocks.DARKEN_END_ITE_BRICKS),conditionsFromItem(ModBlocks.DARKEN_END_ITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.DARKEN_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.DARKEN_END_ITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.DARKEN_END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.DARKEN_END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.DARKEN_END_ITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.DARKEN_END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.DARKEN_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.DARKEN_END_ITE_BRICKS);
+
+        createStairsRecipe(ModBlocks.DARKEN_END_ITE_TILE_STAIRS, Ingredient.ofItems(ModBlocks.DARKEN_END_ITE_TILES))
+                .criterion(hasItem(ModBlocks.DARKEN_END_ITE_TILES),conditionsFromItem(ModBlocks.DARKEN_END_ITE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_END_ITE_TILE_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_STAIRS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_STAIRS, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_STAIRS, ModBlocks.DARKEN_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_STAIRS, ModBlocks.DARKEN_END_ITE_TILES);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_SLAB, ModBlocks.DARKEN_END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_SLAB, ModBlocks.END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_SLAB, ModBlocks.END_ITE_TILES,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_SLAB, ModBlocks.DARKEN_END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_TILE_SLAB, ModBlocks.DARKEN_END_ITE_TILES,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_TILES);
     }
 }

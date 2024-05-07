@@ -18,6 +18,22 @@
     "oresmod:polished_granite_brick_wall",
     "oresmod:void_stone_brick_wall",
     "oresmod:end_ite_brick_wall",
-    "oresmod:end_ite_tile_wall"
+    "oresmod:end_ite_tile_wall",
+    "oresmod:light_frosite_brick_wall",
+    "oresmod:light_frosite_tile_wall",
+    "oresmod:darken_frosite_brick_wall",
+    "oresmod:darken_frosite_tile_wall",
+    "oresmod:light_sandite_brick_wall",
+    "oresmod:light_sandite_tile_wall",
+    "oresmod:darken_sandite_brick_wall",
+    "oresmod:darken_sandite_tile_wall",
+    "oresmod:light_leafite_brick_wall",
+    "oresmod:light_leafite_tile_wall",
+    "oresmod:darken_leafite_brick_wall",
+    "oresmod:darken_leafite_tile_wall",
+    "oresmod:light_end_ite_brick_wall",
+    "oresmod:light_end_ite_tile_wall",
+    "oresmod:darken_end_ite_brick_wall",
+    "oresmod:darken_end_ite_tile_wall"
   ]
 }

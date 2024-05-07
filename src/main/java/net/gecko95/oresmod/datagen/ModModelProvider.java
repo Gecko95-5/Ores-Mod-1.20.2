@@ -140,6 +140,30 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_END_ITE, TexturedModel.CUBE_BOTTOM_TOP);
         BlockStateModelGenerator.BlockTexturePool enditebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_ITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool enditetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_ITE_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_FROSITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKEN_FROSITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_SANDITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKEN_SANDITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_LEAFITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKEN_LEAFITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_END_ITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKEN_END_ITE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool lightfrostbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_FROSITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool lightfrosttilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_FROSITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool darkenfrostbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_FROSITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool darkenfrosttilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_FROSITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool lightsandbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_SANDITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool lightsandtilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_SANDITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool darkensandbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_SANDITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool darkensandtilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_SANDITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool lightleafbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_LEAFITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool lightleaftilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_LEAFITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool darkenleafbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_LEAFITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool darkenleaftilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_LEAFITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool lightendbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_END_ITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool lightendtilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_END_ITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool darkenendbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_END_ITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool darkenendtilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_END_ITE_TILES);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -273,6 +297,70 @@ public class ModModelProvider extends FabricModelProvider {
         granitebrickPool.stairs(ModBlocks.POLISHED_GRANITE_BRICK_STAIRS);
         granitebrickPool.slab(ModBlocks.POLISHED_GRANITE_BRICK_SLAB);
         granitebrickPool.wall(ModBlocks.POLISHED_GRANITE_BRICK_WALL);
+
+        lightfrostbrickPool.stairs(ModBlocks.LIGHT_FROSITE_BRICK_STAIRS);
+        lightfrostbrickPool.slab(ModBlocks.LIGHT_FROSITE_BRICK_SLAB);
+        lightfrostbrickPool.wall(ModBlocks.LIGHT_FROSITE_BRICK_WALL);
+
+        lightfrosttilePool.stairs(ModBlocks.LIGHT_FROSITE_TILE_STAIRS);
+        lightfrosttilePool.slab(ModBlocks.LIGHT_FROSITE_TILE_SLAB);
+        lightfrosttilePool.wall(ModBlocks.LIGHT_FROSITE_TILE_WALL);
+
+        darkenfrostbrickPool.stairs(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS);
+        darkenfrostbrickPool.slab(ModBlocks.DARKEN_FROSITE_BRICK_SLAB);
+        darkenfrostbrickPool.wall(ModBlocks.DARKEN_FROSITE_BRICK_WALL);
+
+        darkenfrosttilePool.stairs(ModBlocks.DARKEN_FROSITE_TILE_STAIRS);
+        darkenfrosttilePool.slab(ModBlocks.DARKEN_FROSITE_TILE_SLAB);
+        darkenfrosttilePool.wall(ModBlocks.DARKEN_FROSITE_TILE_WALL);
+
+        lightsandbrickPool.stairs(ModBlocks.LIGHT_SANDITE_BRICK_STAIRS);
+        lightsandbrickPool.slab(ModBlocks.LIGHT_SANDITE_BRICK_SLAB);
+        lightsandbrickPool.wall(ModBlocks.LIGHT_SANDITE_BRICK_WALL);
+
+        lightsandtilePool.stairs(ModBlocks.LIGHT_SANDITE_TILE_STAIRS);
+        lightsandtilePool.slab(ModBlocks.LIGHT_SANDITE_TILE_SLAB);
+        lightsandtilePool.wall(ModBlocks.LIGHT_SANDITE_TILE_WALL);
+
+        darkensandbrickPool.stairs(ModBlocks.DARKEN_SANDITE_BRICK_STAIRS);
+        darkensandbrickPool.slab(ModBlocks.DARKEN_SANDITE_BRICK_SLAB);
+        darkensandbrickPool.wall(ModBlocks.DARKEN_SANDITE_BRICK_WALL);
+
+        darkensandtilePool.stairs(ModBlocks.DARKEN_SANDITE_TILE_STAIRS);
+        darkensandtilePool.slab(ModBlocks.DARKEN_SANDITE_TILE_SLAB);
+        darkensandtilePool.wall(ModBlocks.DARKEN_SANDITE_TILE_WALL);
+
+        lightleafbrickPool.stairs(ModBlocks.LIGHT_LEAFITE_BRICK_STAIRS);
+        lightleafbrickPool.slab(ModBlocks.LIGHT_LEAFITE_BRICK_SLAB);
+        lightleafbrickPool.wall(ModBlocks.LIGHT_LEAFITE_BRICK_WALL);
+
+        lightleaftilePool.stairs(ModBlocks.LIGHT_LEAFITE_TILE_STAIRS);
+        lightleaftilePool.slab(ModBlocks.LIGHT_LEAFITE_TILE_SLAB);
+        lightleaftilePool.wall(ModBlocks.LIGHT_LEAFITE_TILE_WALL);
+
+        darkenleafbrickPool.stairs(ModBlocks.DARKEN_LEAFITE_BRICK_STAIRS);
+        darkenleafbrickPool.slab(ModBlocks.DARKEN_LEAFITE_BRICK_SLAB);
+        darkenleafbrickPool.wall(ModBlocks.DARKEN_LEAFITE_BRICK_WALL);
+
+        darkenleaftilePool.stairs(ModBlocks.DARKEN_LEAFITE_TILE_STAIRS);
+        darkenleaftilePool.slab(ModBlocks.DARKEN_LEAFITE_TILE_SLAB);
+        darkenleaftilePool.wall(ModBlocks.DARKEN_LEAFITE_TILE_WALL);
+
+        lightendbrickPool.stairs(ModBlocks.LIGHT_END_ITE_BRICK_STAIRS);
+        lightendbrickPool.slab(ModBlocks.LIGHT_END_ITE_BRICK_SLAB);
+        lightendbrickPool.wall(ModBlocks.LIGHT_END_ITE_BRICK_WALL);
+
+        lightendtilePool.stairs(ModBlocks.LIGHT_END_ITE_TILE_STAIRS);
+        lightendtilePool.slab(ModBlocks.LIGHT_END_ITE_TILE_SLAB);
+        lightendtilePool.wall(ModBlocks.LIGHT_END_ITE_TILE_WALL);
+
+        darkenendbrickPool.stairs(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS);
+        darkenendbrickPool.slab(ModBlocks.DARKEN_END_ITE_BRICK_SLAB);
+        darkenendbrickPool.wall(ModBlocks.DARKEN_END_ITE_BRICK_WALL);
+
+        darkenendtilePool.stairs(ModBlocks.DARKEN_END_ITE_TILE_STAIRS);
+        darkenendtilePool.slab(ModBlocks.DARKEN_END_ITE_TILE_SLAB);
+        darkenendtilePool.wall(ModBlocks.DARKEN_END_ITE_TILE_WALL);
 
         blockStateModelGenerator.registerDoor(ModBlocks.ALUMINUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ALUMINUM_TRAPDOOR);
