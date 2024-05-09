@@ -6,6 +6,7 @@ import net.gecko95.oresmod.entity.custom.EnderSpiderEntity;
 import net.gecko95.oresmod.entity.custom.JungleSpiderEntity;
 import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
 import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;
+import net.gecko95.oresmod.entity.custom.golem.FrositeGolemEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -31,5 +32,10 @@ public class ModEntities {
             new Identifier(OresMod.MOD_ID,"ender_spider"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, EnderSpiderEntity::new)
                     .dimensions(EntityDimensions.fixed(1.4f, 0.9f)).build());
+
+    public static final EntityType<FrositeGolemEntity> FROSITE_GOLEM = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"frosite_golem"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, FrositeGolemEntity::new)
+                    .dimensions(EntityDimensions.fixed(1.0f, 1.6f)).build());
 
 }

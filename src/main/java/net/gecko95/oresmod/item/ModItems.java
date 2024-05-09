@@ -549,6 +549,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.JUNGLE_SPIDER, 0x3c5436,0x930c0c, new FabricItemSettings()));
     public static final Item ENDER_SPIDER_SPAWN_EGG = registerItem("ender_spider_spawn_egg",
             new SpawnEggItem(ModEntities.ENDER_SPIDER, 0x302733,0x8200a0, new FabricItemSettings()));
+    public static final Item FROSITE_GOLEM_SPAWN_EGG = registerItem("frosite_golem_spawn_egg",
+            new SpawnEggItem(ModEntities.FROSITE_GOLEM, 0x85adf8,0x91a3c5, new FabricItemSettings()));
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));

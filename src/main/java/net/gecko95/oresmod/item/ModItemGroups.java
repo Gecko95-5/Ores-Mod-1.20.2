@@ -811,6 +811,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                         entries.add(ModItems.JUNGLE_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.ENDER_SPIDER_SPAWN_EGG);
+                        entries.add(ModItems.FROSITE_GOLEM_SPAWN_EGG);
                         entries.add(ModBlocks.ENDER_DRAGON_TROPHY);
                         entries.add(ModBlocks.WITHER_TROPHY);
                         entries.add(ModBlocks.ELDER_GUARDIAN_TROPHY);

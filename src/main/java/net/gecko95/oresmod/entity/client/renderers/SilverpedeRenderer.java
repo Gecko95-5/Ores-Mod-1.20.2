@@ -2,12 +2,10 @@ package net.gecko95.oresmod.entity.client.renderers;
 
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.entity.client.ModModelLayers;
-import net.gecko95.oresmod.entity.client.SilverpedeModel;
+import net.gecko95.oresmod.entity.client.models.SilverpedeModel;
 import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
-import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 public class SilverpedeRenderer extends MobEntityRenderer<SilverpedeEntity, SilverpedeModel<SilverpedeEntity>> {

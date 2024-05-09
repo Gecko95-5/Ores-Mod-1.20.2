@@ -9,4 +9,6 @@ public class ModModelLayers {
             new EntityModelLayer(new Identifier(OresMod.MOD_ID,"silverpede"),"silverpede");
     public static final EntityModelLayer SILVERWYRM =
             new EntityModelLayer(new Identifier(OresMod.MOD_ID,"silverwyrm"),"silverwyrm");
+    public static final EntityModelLayer FROSITE_GOLEM =
+            new EntityModelLayer(new Identifier(OresMod.MOD_ID,"frosite_golem"),"frosite_golem");
 }

@@ -1,8 +1,8 @@
-// 1.20.2	2024-05-07T17:37:26.5168198	Ores Mod/Tags for minecraft:block
+// 1.20.2	2024-05-07T22:03:46.1280015	Ores Mod/Tags for minecraft:block
 197ef0cdddb7ab4a6314b828dfb3e05c99a851cf data\minecraft\tags\blocks\fences.json
 fa98bd5a906f2d4d798de14db103d699b1b43269 data\minecraft\tags\blocks\fence_gates.json
-a98999d5a22c5676930056aff3025ffbe755d1cd data\minecraft\tags\blocks\mineable\pickaxe.json
 05f6f5f934af7bc9bae962b22631791a402af9ee data\oresmod\tags\blocks\potion_tanks.json
+a98999d5a22c5676930056aff3025ffbe755d1cd data\minecraft\tags\blocks\mineable\pickaxe.json
 2b962374b70254959f172ab691bbb4b8e17f2a80 data\minecraft\tags\blocks\walls.json
 0abee4e8c156427f52d0e1475f21cccde2f9fcb2 data\oresmod\tags\blocks\chainsaw_mineable.json
 25af1e6a77f71ebfe69eef52cd29198a720115d8 data\fabric\tags\blocks\needs_tool_level_4.json
@@ -11,9 +11,9 @@ d09fd133daae41057f5bf566c87bde38e3535327 data\minecraft\tags\blocks\sand.json
 8fcde37833bea5310394b05110bfd0e83514c8c0 data\oresmod\tags\blocks\deepbark_placeable.json
 6692e97304264c5d0e223f4c5de97f361ccbf437 data\minecraft\tags\blocks\mineable\shovel.json
 68b379c00f163ec58749e2d6b411e77d37ede7f6 data\minecraft\tags\blocks\needs_diamond_tool.json
-c4e9587fadc056397aef4e5c989ce60d2de7a022 data\oresmod\tags\blocks\multi_tool_mineable.json
-2f8b7198e132782f193091e66f7b78d3d11e9e78 data\minecraft\tags\blocks\mineable\hoe.json
 5def7eb2f995d0254680a9853c1eecaca8154174 data\minecraft\tags\blocks\mineable\axe.json
+2f8b7198e132782f193091e66f7b78d3d11e9e78 data\minecraft\tags\blocks\mineable\hoe.json
+c4e9587fadc056397aef4e5c989ce60d2de7a022 data\oresmod\tags\blocks\multi_tool_mineable.json
 d619e91f0540d68b573033cd07be59c6d6d33104 data\oresmod\tags\blocks\mandible_mineable.json
 e69be43fb5d0fc3bc987f4966780001c12b0d179 data\minecraft\tags\blocks\needs_stone_tool.json
 539e0d94fac341b177abbed653de86f11846d228 data\oresmod\tags\blocks\stonebark_placeable.json

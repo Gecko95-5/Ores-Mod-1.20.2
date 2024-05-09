@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
 
-package net.gecko95.oresmod.entity.client;
+package net.gecko95.oresmod.entity.client.models;
 
 import net.gecko95.oresmod.entity.animation.ModAnimations;
 import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;

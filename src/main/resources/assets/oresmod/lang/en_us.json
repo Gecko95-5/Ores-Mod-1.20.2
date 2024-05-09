@@ -372,6 +372,7 @@
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
   "item.oresmod.ender_spider_spawn_egg": "Enderspider Spawn Egg",
+  "item.oresmod.frosite_golem_spawn_egg": "Frosite Golem Spawn Egg",
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
@@ -816,6 +817,7 @@
   "entity.oresmod.silverwyrm": "Silverwyrm",
   "entity.oresmod.jungle_spider": "Jungle Spider",
   "entity.oresmod.ender_spider": "Enderspider",
+  "entity.oresmod.frosite_golem": "Frosite Golem",
 
   "effect.oresmod.frostbite": "Frostbite",
   "item.minecraft.potion.effect.frostbite_potion": "Potion of Subzero",
