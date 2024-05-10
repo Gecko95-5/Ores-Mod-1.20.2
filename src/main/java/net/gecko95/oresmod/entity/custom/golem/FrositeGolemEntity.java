@@ -1,12 +1,16 @@
 package net.gecko95.oresmod.entity.custom.golem;
 
 import net.gecko95.oresmod.effect.ModEffects;
+import net.gecko95.oresmod.entity.behavior.golems.FrositeGolemAttackGoal;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.BlazeEntity;
@@ -22,8 +26,12 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
 public class FrositeGolemEntity extends HostileEntity {
+    private static final TrackedData<Boolean> ATTACKING =
+            DataTracker.registerData(FrositeGolemEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
     public final AnimationState idleAnimtionState = new AnimationState();
     private int idleAnimtionTimeout = 0;
+    public final AnimationState attackAnimtionState = new AnimationState();
+    public int attackAnimtionTimeout = 0;
     public FrositeGolemEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -34,6 +42,15 @@ public class FrositeGolemEntity extends HostileEntity {
             this.idleAnimtionState.start(this.age);
         } else {
             --this.idleAnimtionTimeout;
+        }
+        if (this.isAttacking() && attackAnimtionTimeout <= 0){
+            attackAnimtionTimeout = 20;
+            attackAnimtionState.start(this.age);
+        }else {
+         --this.attackAnimtionTimeout;
+        }
+        if (!this.isAttacking()){
+            attackAnimtionState.stop();
         }
     }
     @Override
@@ -52,7 +69,7 @@ public class FrositeGolemEntity extends HostileEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, true));
+        this.goalSelector.add(1, new FrositeGolemAttackGoal(this, 1.0, true));
         this.goalSelector.add(2, new WanderAroundGoal(this,1.0));
         this.goalSelector.add(4, new LookAroundGoal(this));
         this.targetSelector.add(1, new RevengeGoal(this).setGroupRevenge());
@@ -66,6 +83,21 @@ public class FrositeGolemEntity extends HostileEntity {
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.5)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2);
     }
+
+    @Override
+    protected void initDataTracker() {
+        super.initDataTracker();
+        this.dataTracker.startTracking(ATTACKING, false);
+    }
+    public void setAttacking(boolean attacking){
+        this.dataTracker.set(ATTACKING, attacking);
+    }
+
+    @Override
+    public boolean isAttacking() {
+        return this.dataTracker.get(ATTACKING);
+    }
+
     @Override
     protected int getNextAirUnderwater(int air) {
         return air;

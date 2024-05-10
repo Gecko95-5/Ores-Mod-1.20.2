@@ -16,6 +16,7 @@ import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -968,6 +969,13 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_TILES)));
     public static final Block DARKEN_END_ITE_TILE_WALL = registerBlock("darken_end_ite_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_TILES)));
+
+    public static final Block ICY_CROCUS = registerBlock("icy_crocus",
+            new FlowerBlock(StatusEffects.SPEED,20, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+
+    public static final Block POTTED_ICY_CROCUS = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "potted_icy_crocus"), new FlowerPotBlock(ICY_CROCUS,
+            FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

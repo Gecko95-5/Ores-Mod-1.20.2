@@ -5417,5 +5417,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.END_ITE_TILES);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_TILES);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.LIGHT_BLUE_DYE,20)
+                .input(ModBlocks.ICY_CROCUS)
+                .criterion(hasItem(ModBlocks.ICY_CROCUS), conditionsFromItem(ModBlocks.ICY_CROCUS))
+                .offerTo(exporter, new Identifier("light_blue_dye_from_icy_crocus"));
     }
 }

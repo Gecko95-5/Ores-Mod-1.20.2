@@ -369,6 +369,8 @@
   "item.oresmod.end_ite_leggings": "End-ite Leggings",
   "item.oresmod.end_ite_boots": "End-ite Boots",
 
+  "item.oresmod.ice_chunk": "Ice Chunk",
+
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
   "item.oresmod.ender_spider_spawn_egg": "Enderspider Spawn Egg",
@@ -812,6 +814,8 @@
   "block.oresmod.darken_end_ite_tile_stairs": "Darken End-Ite Tile Stairs",
   "block.oresmod.darken_end_ite_tile_slab": "Darken End-Ite Tile Slab",
   "block.oresmod.darken_end_ite_tile_wall": "Darken End-Ite Tile Wall",
+
+  "block.oresmod.icy_crocus": "Icy Crocus",
 
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",

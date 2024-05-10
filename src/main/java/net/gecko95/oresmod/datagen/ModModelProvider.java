@@ -184,6 +184,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STONEBARK_SAPLING, ModBlocks.POTTED_STONEBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DEEPBARK_SAPLING, ModBlocks.POTTED_DEEPBARK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LEAFITE_SAPLING, ModBlocks.POTTED_LEAFITE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ICY_CROCUS, ModBlocks.POTTED_ICY_CROCUS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         frostbrickPool.stairs(ModBlocks.FROSITE_BRICK_STAIRS);
         frostbrickPool.slab(ModBlocks.FROSITE_BRICK_SLAB);
@@ -743,6 +744,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_BOOTS));
+
+        itemModelGenerator.register(ModItems.ICE_CHUNK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

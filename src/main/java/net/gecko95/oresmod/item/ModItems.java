@@ -10,6 +10,7 @@ import net.gecko95.oresmod.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -659,6 +660,8 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
             new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item ICE_CHUNK = registerItem("ice_chunk", new IceChunkItem(new FabricItemSettings()));
 
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));

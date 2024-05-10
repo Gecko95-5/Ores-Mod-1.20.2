@@ -77,5 +77,6 @@ public class FrositeGolemModel<T extends FrositeGolemEntity> extends SinglePartE
 
 		this.animateMovement(ModAnimations.FROSITE_GOLEM_WALK, limbAngle, limbDistance, 2f, 2.5f);
 		this.updateAnimation(entity.idleAnimtionState, ModAnimations.FROSITE_GOLEM_IDLE, animationProgress, 1f);
+		this.updateAnimation(entity.attackAnimtionState, ModAnimations.FROSITE_GOLEM_ATTACK, animationProgress, 1f);
 	}
 }

@@ -7,6 +7,8 @@ import net.gecko95.oresmod.entity.custom.JungleSpiderEntity;
 import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
 import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;
 import net.gecko95.oresmod.entity.custom.golem.FrositeGolemEntity;
+import net.gecko95.oresmod.entity.custom.mite.FrositeMiteEntity;
+import net.gecko95.oresmod.entity.custom.projectiles.IceProjectileEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -37,5 +39,13 @@ public class ModEntities {
             new Identifier(OresMod.MOD_ID,"frosite_golem"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, FrositeGolemEntity::new)
                     .dimensions(EntityDimensions.fixed(1.0f, 1.6f)).build());
+    public static final EntityType<IceProjectileEntity> ICE_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"ice_projectile"),FabricEntityTypeBuilder.
+                    <IceProjectileEntity>create(SpawnGroup.MISC,IceProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25f,0.25f)).build());
 
+    public static final EntityType<FrositeMiteEntity> FROSITE_MITE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"frosite_mite"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, FrositeMiteEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.4f, 0.7f)).build());
 }

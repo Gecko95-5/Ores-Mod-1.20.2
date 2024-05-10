@@ -765,6 +765,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.IRON_SPIKES);
                         entries.add(ModBlocks.ALUMINUM_SPIKES);
                         entries.add(ModBlocks.STEEL_SPIKES);
+                        entries.add(ModBlocks.ICY_CROCUS);
                     }).build());
 
     public static final ItemGroup ORES_MOD_LIQUIDS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -808,6 +809,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
                         entries.add(ModItems.SILVER_MANDIBLE);
                         entries.add(ModBlocks.SILVER_CROWN);
+                        entries.add(ModItems.ICE_CHUNK);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                         entries.add(ModItems.JUNGLE_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.ENDER_SPIDER_SPAWN_EGG);
