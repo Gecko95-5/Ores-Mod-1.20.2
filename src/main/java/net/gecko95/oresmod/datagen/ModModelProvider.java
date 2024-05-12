@@ -164,6 +164,8 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool lightendtilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_END_ITE_TILES);
         BlockStateModelGenerator.BlockTexturePool darkenendbrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_END_ITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool darkenendtilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_END_ITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool icebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICE_BRICKS);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.ICE_PILLAR, TexturedModel.CUBE_BOTTOM_TOP);
 
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
@@ -362,6 +364,10 @@ public class ModModelProvider extends FabricModelProvider {
         darkenendtilePool.stairs(ModBlocks.DARKEN_END_ITE_TILE_STAIRS);
         darkenendtilePool.slab(ModBlocks.DARKEN_END_ITE_TILE_SLAB);
         darkenendtilePool.wall(ModBlocks.DARKEN_END_ITE_TILE_WALL);
+
+        icebrickPool.stairs(ModBlocks.ICE_BRICK_STAIRS);
+        icebrickPool.slab(ModBlocks.ICE_BRICK_SLAB);
+        icebrickPool.wall(ModBlocks.ICE_BRICK_WALL);
 
         blockStateModelGenerator.registerDoor(ModBlocks.ALUMINUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ALUMINUM_TRAPDOOR);
@@ -746,6 +752,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_BOOTS));
 
         itemModelGenerator.register(ModItems.ICE_CHUNK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FROZEN_FLESH, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
@@ -757,6 +764,9 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
         itemModelGenerator.register(ModItems.FROSITE_GOLEM_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+        itemModelGenerator.register(ModItems.FROSTBITEN_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

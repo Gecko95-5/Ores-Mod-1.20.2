@@ -369,12 +369,14 @@
   "item.oresmod.end_ite_leggings": "End-ite Leggings",
   "item.oresmod.end_ite_boots": "End-ite Boots",
 
-  "item.oresmod.ice_chunk": "Ice Chunk",
+  "item.oresmod.ice_chunk": "Ice Chunks",
+  "item.oresmod.frozen_flesh": "Frozen Flesh",
 
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
   "item.oresmod.ender_spider_spawn_egg": "Enderspider Spawn Egg",
   "item.oresmod.frosite_golem_spawn_egg": "Frosite Golem Spawn Egg",
+  "item.oresmod.frostbiten_spawn_egg": "Frostbiten Spawn Egg",
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
@@ -815,6 +817,13 @@
   "block.oresmod.darken_end_ite_tile_slab": "Darken End-Ite Tile Slab",
   "block.oresmod.darken_end_ite_tile_wall": "Darken End-Ite Tile Wall",
 
+  "block.oresmod.ice_bricks": "Ice Bricks",
+  "block.oresmod.ice_pillar": "Ice Pillar",
+
+  "block.oresmod.ice_brick_stairs": "Ice Brick Stairs",
+  "block.oresmod.ice_brick_slab": "Ice Brick Slab",
+  "block.oresmod.ice_brick_wall": "Ice Brick Wall",
+
   "block.oresmod.icy_crocus": "Icy Crocus",
 
   "entity.oresmod.silverpede": "Silverpede",
@@ -822,6 +831,7 @@
   "entity.oresmod.jungle_spider": "Jungle Spider",
   "entity.oresmod.ender_spider": "Enderspider",
   "entity.oresmod.frosite_golem": "Frosite Golem",
+  "entity.oresmod.frostbiten": "Frostbiten",
 
   "effect.oresmod.frostbite": "Frostbite",
   "item.minecraft.potion.effect.frostbite_potion": "Potion of Subzero",

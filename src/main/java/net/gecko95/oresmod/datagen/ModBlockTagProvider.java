@@ -201,9 +201,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_STONE_BRICK_STAIRS)
                 .add(ModBlocks.VOID_STONE_BRICK_SLAB)
                 .add(ModBlocks.VOID_STONE_BRICK_WALL)
+                .add(ModBlocks.ICE_BRICKS)
+                .add(ModBlocks.ICE_PILLAR)
+                .add(ModBlocks.ICE_BRICK_STAIRS)
+                .add(ModBlocks.ICE_BRICK_SLAB)
+                .add(ModBlocks.ICE_BRICK_WALL)
                 .add(ModBlocks.END_ITE_ORE)
                 .forceAddTag(ModTags.Blocks.ITE_BLOCKS);
-
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.SALT_BLOCK)
@@ -415,7 +419,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIGHT_END_ITE_BRICK_WALL)
                 .add(ModBlocks.LIGHT_END_ITE_TILE_WALL)
                 .add(ModBlocks.DARKEN_END_ITE_BRICK_WALL)
-                .add(ModBlocks.DARKEN_END_ITE_TILE_WALL);
+                .add(ModBlocks.DARKEN_END_ITE_TILE_WALL)
+                .add(ModBlocks.ICE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.STONEBARK_FENCE)

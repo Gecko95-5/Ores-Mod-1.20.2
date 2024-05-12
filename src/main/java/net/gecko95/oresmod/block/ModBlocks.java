@@ -970,6 +970,17 @@ public class ModBlocks {
     public static final Block DARKEN_END_ITE_TILE_WALL = registerBlock("darken_end_ite_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_TILES)));
 
+    public static final Block ICE_BRICKS = registerBlock("ice_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+    public static final Block ICE_BRICK_STAIRS = registerBlock("ice_brick_stairs",
+            new StairsBlock(ModBlocks.ICE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.ICE_BRICKS)));
+    public static final Block ICE_BRICK_SLAB = registerBlock("ice_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICE_BRICKS)));
+    public static final Block ICE_BRICK_WALL = registerBlock("ice_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICE_BRICKS)));
+    public static final Block ICE_PILLAR = registerBlock("ice_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
+
     public static final Block ICY_CROCUS = registerBlock("icy_crocus",
             new FlowerBlock(StatusEffects.SPEED,20, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
 

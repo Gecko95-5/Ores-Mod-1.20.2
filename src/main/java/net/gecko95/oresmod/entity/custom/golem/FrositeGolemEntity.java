@@ -104,13 +104,6 @@ public class FrositeGolemEntity extends HostileEntity {
     }
 
     @Override
-    protected void pushAway(Entity entity) {
-        if (entity instanceof Monster && !(entity instanceof CreeperEntity) && this.getRandom().nextInt(20) == 0) {
-            this.setTarget((LivingEntity)entity);
-        }
-        super.pushAway(entity);
-    }
-    @Override
     public boolean tryAttack(Entity target) {
         if (super.tryAttack(target)) {
             if (target instanceof LivingEntity) {

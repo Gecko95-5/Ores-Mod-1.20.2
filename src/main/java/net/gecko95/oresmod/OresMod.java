@@ -8,12 +8,8 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.entity.ModBoats;
 import net.gecko95.oresmod.entity.ModEntities;
-import net.gecko95.oresmod.entity.custom.EnderSpiderEntity;
-import net.gecko95.oresmod.entity.custom.JungleSpiderEntity;
-import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
-import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;
+import net.gecko95.oresmod.entity.custom.*;
 import net.gecko95.oresmod.entity.custom.golem.FrositeGolemEntity;
-import net.gecko95.oresmod.entity.custom.mite.MiteEntity;
 import net.gecko95.oresmod.item.ModItemGroups;
 import net.gecko95.oresmod.item.ModItems;
 import net.gecko95.oresmod.potion.ModPotions;
@@ -69,8 +65,8 @@ public class OresMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.SILVERWYRM, SilverwyrmEntity.createSilverwyrmAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.JUNGLE_SPIDER, JungleSpiderEntity.createJungleSpiderAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.ENDER_SPIDER, EnderSpiderEntity.createEnderSpiderAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.FROSTBITEN, FrostbitenEntity.createFrostbitenAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.FROSITE_GOLEM, FrositeGolemEntity.createFrositeGolemAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.FROSITE_MITE, MiteEntity.createMiteAttributes());
 
 		ModBoats.registerBoats();
 

@@ -10,7 +10,6 @@ import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.entity.ModBoats;
 import net.gecko95.oresmod.entity.ModEntities;
 import net.gecko95.oresmod.entity.client.*;
-import net.gecko95.oresmod.entity.client.models.FrositeMiteModel;
 import net.gecko95.oresmod.entity.client.models.SilverpedeModel;
 import net.gecko95.oresmod.entity.client.models.SilverwyrmModel;
 import net.gecko95.oresmod.entity.client.models.golem.FrositeGolemModel;
@@ -66,13 +65,12 @@ public class OresModClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERPEDE, SilverpedeModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SILVERWYRM, SilverwyrmModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.FROSITE_GOLEM, FrositeGolemModel::getTexturedModelData);
-        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.FROSITE_MITE, FrositeMiteModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.SILVERPEDE, SilverpedeRenderer::new);
         EntityRendererRegistry.register(ModEntities.SILVERWYRM, SilverwyrmRenderer::new);
         EntityRendererRegistry.register(ModEntities.JUNGLE_SPIDER, JungleSpiderRenderer::new);
         EntityRendererRegistry.register(ModEntities.ENDER_SPIDER, EnderSpiderRenderer::new);
         EntityRendererRegistry.register(ModEntities.FROSITE_GOLEM, FrositeGolemRenderer::new);
+        EntityRendererRegistry.register(ModEntities.FROSTBITEN, FrostbitenRenderer::new);
         EntityRendererRegistry.register(ModEntities.ICE_PROJECTILE, FlyingItemEntityRenderer::new);
-        EntityRendererRegistry.register(ModEntities.FROSITE_MITE, FrositeMiteRenderer::new);
     }
 }

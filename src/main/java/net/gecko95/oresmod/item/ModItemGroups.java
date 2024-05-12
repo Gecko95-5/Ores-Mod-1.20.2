@@ -670,6 +670,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUSTED_STEEL_TRAPDOOR);
                         entries.add(ModBlocks.RUSTED_STEEL_BARS);
                         entries.add(ModBlocks.RUSTED_STEEL_LAMP);
+                        entries.add(ModBlocks.ICE_BRICKS);
+                        entries.add(ModBlocks.ICE_PILLAR);
+                        entries.add(ModBlocks.ICE_BRICK_STAIRS);
+                        entries.add(ModBlocks.ICE_BRICK_SLAB);
+                        entries.add(ModBlocks.ICE_BRICK_WALL);
                         entries.add(ModBlocks.STONEBARK_PLANKS);
                         entries.add(ModBlocks.STONEBARK_STAIRS);
                         entries.add(ModBlocks.STONEBARK_SLAB);
@@ -809,8 +814,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
                         entries.add(ModItems.SILVER_MANDIBLE);
                         entries.add(ModBlocks.SILVER_CROWN);
+                        entries.add(ModItems.FROZEN_FLESH);
                         entries.add(ModItems.ICE_CHUNK);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
+                        entries.add(ModItems.FROSTBITEN_SPAWN_EGG);
                         entries.add(ModItems.JUNGLE_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.ENDER_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.FROSITE_GOLEM_SPAWN_EGG);

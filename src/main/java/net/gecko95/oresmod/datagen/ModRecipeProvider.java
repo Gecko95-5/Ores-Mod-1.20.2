@@ -5422,5 +5422,51 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.ICY_CROCUS)
                 .criterion(hasItem(ModBlocks.ICY_CROCUS), conditionsFromItem(ModBlocks.ICY_CROCUS))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_icy_crocus"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_CHUNK,8)
+                .pattern("III")
+                .pattern("IFI")
+                .pattern("III")
+                .input('F', ModItems.FROSITE)
+                .input('I', Blocks.ICE)
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
+                .criterion(hasItem(Blocks.ICE), conditionsFromItem(Blocks.ICE))
+                .offerTo(exporter, new Identifier("ice_chunk"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
+                        (ModItems.FROZEN_FLESH), RecipeCategory.MISC, Items.ROTTEN_FLESH,0.35f, 200)
+                .criterion(hasItem(ModItems.FROZEN_FLESH), conditionsFromItem(ModItems.FROZEN_FLESH))
+                .offerTo(exporter, new Identifier("rotten_flesh_from_smelting"));
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems
+                        (ModItems.FROZEN_FLESH), RecipeCategory.MISC, Items.ROTTEN_FLESH,0.35f, 100)
+                .criterion(hasItem(ModItems.FROZEN_FLESH), conditionsFromItem(ModItems.FROZEN_FLESH))
+                .offerTo(exporter, new Identifier("rotten_flesh_from_smoking"));
+        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems
+                        (ModItems.FROZEN_FLESH), RecipeCategory.MISC, Items.ROTTEN_FLESH,0.35f, 600)
+                .criterion(hasItem(ModItems.FROZEN_FLESH), conditionsFromItem(ModItems.FROZEN_FLESH))
+                .offerTo(exporter, new Identifier("rotten_flesh_from_campfire_cooking"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICKS,4)
+                .pattern("II")
+                .pattern("II")
+                .input('I', Items.PACKED_ICE)
+                .criterion(hasItem(Items.PACKED_ICE), conditionsFromItem(Items.PACKED_ICE))
+                .offerTo(exporter, new Identifier("ice_bricks"));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICKS, Items.PACKED_ICE);
+
+        createStairsRecipe(ModBlocks.ICE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.ICE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICE_BRICKS),conditionsFromItem(ModBlocks.ICE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_STAIRS, Items.PACKED_ICE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_STAIRS, ModBlocks.ICE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_SLAB, ModBlocks.ICE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_SLAB, Items.PACKED_ICE,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_BRICK_SLAB, ModBlocks.ICE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.ICE_BRICK_WALL, ModBlocks.ICE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.ICE_BRICK_WALL, Items.PACKED_ICE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.ICE_BRICK_WALL, ModBlocks.ICE_BRICKS);
+        offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_PILLAR, ModBlocks.ICE_BRICK_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_PILLAR, Items.PACKED_ICE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_PILLAR, ModBlocks.ICE_BRICKS);
     }
 }

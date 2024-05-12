@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "oresmod:frosite_castle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 43643634,
+    "spacing": 20,
+    "separation": 6
+  }
+}

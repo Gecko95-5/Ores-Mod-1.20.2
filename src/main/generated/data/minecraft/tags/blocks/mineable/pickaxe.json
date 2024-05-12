@@ -145,6 +145,11 @@
     "oresmod:void_stone_brick_stairs",
     "oresmod:void_stone_brick_slab",
     "oresmod:void_stone_brick_wall",
+    "oresmod:ice_bricks",
+    "oresmod:ice_pillar",
+    "oresmod:ice_brick_stairs",
+    "oresmod:ice_brick_slab",
+    "oresmod:ice_brick_wall",
     "oresmod:end_ite_ore",
     "#oresmod:ite_blocks"
   ]

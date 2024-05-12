@@ -552,6 +552,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.ENDER_SPIDER, 0x302733,0x8200a0, new FabricItemSettings()));
     public static final Item FROSITE_GOLEM_SPAWN_EGG = registerItem("frosite_golem_spawn_egg",
             new SpawnEggItem(ModEntities.FROSITE_GOLEM, 0x85adf8,0x91a3c5, new FabricItemSettings()));
+    public static final Item FROSTBITEN_SPAWN_EGG = registerItem("frostbiten_spawn_egg",
+            new SpawnEggItem(ModEntities.FROSTBITEN, 0x2d6849,0x839dc9, new FabricItemSettings()));
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
@@ -661,7 +663,10 @@ public class ModItems {
     public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
             new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    public static final Item ICE_CHUNK = registerItem("ice_chunk", new IceChunkItem(new FabricItemSettings()));
+    public static final Item ICE_CHUNK = registerItem("ice_chunk", new IceChunkItem(new FabricItemSettings().maxCount(16)));
+
+    public static final Item FROZEN_FLESH = registerItem("frozen_flesh",
+            new Item(new FabricItemSettings().food(ModFoodComponents.FROZEN_FLESH)));
 
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));

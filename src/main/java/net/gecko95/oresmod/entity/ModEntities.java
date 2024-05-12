@@ -2,12 +2,8 @@ package net.gecko95.oresmod.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.gecko95.oresmod.OresMod;
-import net.gecko95.oresmod.entity.custom.EnderSpiderEntity;
-import net.gecko95.oresmod.entity.custom.JungleSpiderEntity;
-import net.gecko95.oresmod.entity.custom.SilverpedeEntity;
-import net.gecko95.oresmod.entity.custom.SilverwyrmEntity;
+import net.gecko95.oresmod.entity.custom.*;
 import net.gecko95.oresmod.entity.custom.golem.FrositeGolemEntity;
-import net.gecko95.oresmod.entity.custom.mite.FrositeMiteEntity;
 import net.gecko95.oresmod.entity.custom.projectiles.IceProjectileEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -44,8 +40,8 @@ public class ModEntities {
                     <IceProjectileEntity>create(SpawnGroup.MISC,IceProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25f,0.25f)).build());
 
-    public static final EntityType<FrositeMiteEntity> FROSITE_MITE = Registry.register(Registries.ENTITY_TYPE,
-            new Identifier(OresMod.MOD_ID,"frosite_mite"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, FrositeMiteEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.4f, 0.7f)).build());
+    public static final EntityType<FrostbitenEntity> FROSTBITEN = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"frostbiten"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, FrostbitenEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
 }
