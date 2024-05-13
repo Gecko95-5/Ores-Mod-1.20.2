@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "oresmod:silverpede",
-    "oresmod:silverwyrm"
+    "oresmod:silverwyrm",
+    "oresmod:ice_cube"
   ]
 }

@@ -119,6 +119,7 @@ public class FrositeGolemEntity extends HostileEntity {
         }
         return false;
     }
+
     @Override
     public void tickMovement() {
         super.tickMovement();
@@ -131,6 +132,7 @@ public class FrositeGolemEntity extends HostileEntity {
             }
         }
     }
+
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
         return SoundEvents.ENTITY_IRON_GOLEM_HURT;

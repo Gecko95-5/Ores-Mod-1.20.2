@@ -554,6 +554,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.FROSITE_GOLEM, 0x85adf8,0x91a3c5, new FabricItemSettings()));
     public static final Item FROSTBITEN_SPAWN_EGG = registerItem("frostbiten_spawn_egg",
             new SpawnEggItem(ModEntities.FROSTBITEN, 0x2d6849,0x839dc9, new FabricItemSettings()));
+    public static final Item ICE_CUBE_SPAWN_EGG = registerItem("ice_cube_spawn_egg",
+            new SpawnEggItem(ModEntities.ICE_CUBE, 0x6ca3fd,0x5682ca, new FabricItemSettings()));
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));
@@ -631,8 +633,7 @@ public class ModItems {
             new ClubItem(ModToolMaterial.CLUB, 0, -3.0f, new FabricItemSettings()));
 
     public static final Item SILVER_MANDIBLE = registerItem("silver_mandible",
-            new MandibleItem(ModToolMaterial.MANDIBLE, 0, -3.2f, new FabricItemSettings()));
-
+            new Item(new FabricItemSettings().maxCount(2)));
     public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
             new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings()));
 
@@ -664,6 +665,9 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item ICE_CHUNK = registerItem("ice_chunk", new IceChunkItem(new FabricItemSettings().maxCount(16)));
+
+    public static final Item BOMB = registerItem("bomb", new BombItem(new FabricItemSettings().maxCount(16)));
+    public static final Item ICE_BOMB = registerItem("ice_bomb", new IceBombItem(new FabricItemSettings().maxCount(16)));
 
     public static final Item FROZEN_FLESH = registerItem("frozen_flesh",
             new Item(new FabricItemSettings().food(ModFoodComponents.FROZEN_FLESH)));

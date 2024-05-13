@@ -67,6 +67,7 @@ public class OresMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.ENDER_SPIDER, EnderSpiderEntity.createEnderSpiderAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.FROSTBITEN, FrostbitenEntity.createFrostbitenAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.FROSITE_GOLEM, FrositeGolemEntity.createFrositeGolemAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.ICE_CUBE, IceCubeEntity.createIceCubeAttributes());
 
 		ModBoats.registerBoats();
 

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "oresmod:frosite_golem",
-    "oresmod:frostbiten"
+    "oresmod:frostbiten",
+    "oresmod:ice_cube"
   ]
 }

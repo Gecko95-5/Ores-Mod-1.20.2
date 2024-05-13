@@ -5468,5 +5468,68 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerChiseledBlockRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_PILLAR, ModBlocks.ICE_BRICK_SLAB);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_PILLAR, Items.PACKED_ICE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_PILLAR, ModBlocks.ICE_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REINFORCED_FROSITE_BLOCK)
+                .pattern("TIT")
+                .pattern("IFI")
+                .pattern("TIT")
+                .input('F', ModBlocks.FROSITE_BLOCK)
+                .input('I', Items.IRON_INGOT)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("reinforced_frosite_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK)
+                .pattern("TIT")
+                .pattern("IFI")
+                .pattern("TIT")
+                .input('F', ModBlocks.LIGHT_FROSITE_BLOCK)
+                .input('I', Items.IRON_INGOT)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModBlocks.LIGHT_FROSITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_FROSITE_BLOCK))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("light_reinforced_frosite_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK)
+                .pattern("TIT")
+                .pattern("IFI")
+                .pattern("TIT")
+                .input('F', ModBlocks.DARKEN_FROSITE_BLOCK)
+                .input('I', Items.IRON_INGOT)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModBlocks.DARKEN_FROSITE_BLOCK), conditionsFromItem(ModBlocks.DARKEN_FROSITE_BLOCK))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("darken_reinforced_frosite_block"));
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK, ModBlocks.REINFORCED_FROSITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK, ModBlocks.REINFORCED_FROSITE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BOMB)
+                .pattern(" IS")
+                .pattern("IGI")
+                .pattern(" I ")
+                .input('G', Items.GUNPOWDER)
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STRING)
+                .criterion(hasItem(Items.GUNPOWDER), conditionsFromItem(Items.GUNPOWDER))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .offerTo(exporter, new Identifier("bomb"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_BOMB)
+                .pattern(" IF")
+                .pattern("IBI")
+                .pattern(" I ")
+                .input('B', ModItems.BOMB)
+                .input('I', ModItems.ICE_CHUNK)
+                .input('F', ModItems.FROSITE)
+                .criterion(hasItem(ModItems.BOMB), conditionsFromItem(ModItems.BOMB))
+                .criterion(hasItem(ModItems.ICE_CHUNK), conditionsFromItem(ModItems.ICE_CHUNK))
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
+                .offerTo(exporter, new Identifier("ice_bomb"));
     }
 }

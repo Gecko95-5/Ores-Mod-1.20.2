@@ -67,7 +67,6 @@ public class SilverwyrmEntity extends HostileEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
-        this.goalSelector.add(1, new PowderSnowJumpGoal(this, this.getWorld()));
         this.goalSelector.add(4, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0));
         this.goalSelector.add(6, new LookAroundGoal(this));
@@ -95,7 +94,7 @@ public class SilverwyrmEntity extends HostileEntity {
 
     public static DefaultAttributeContainer.Builder createSilverwyrmAttributes(){
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH,72.0)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH,144.0)
                 .add(EntityAttributes.GENERIC_ARMOR,2.0)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4.0)
@@ -121,17 +120,8 @@ public class SilverwyrmEntity extends HostileEntity {
     public EntityGroup getGroup() {
         return EntityGroup.ARTHROPOD;
     }
-
     @Override
-    public boolean tryAttack(Entity target) {
-        if (!super.tryAttack(target)) {
-            ((LivingEntity)target).disablesShield();
-            return false;
-        }
-        if (target instanceof LivingEntity) {
-            ((LivingEntity)target).damageArmor(target.getDamageSources().generic(),2);
-        }
-        return true;
+    public void damageShield(float amount) {
+        super.damageShield(168);
     }
-
 }

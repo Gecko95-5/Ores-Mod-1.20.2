@@ -19,10 +19,12 @@ public class ModEntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPro
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(EntityTypeTags.POWDER_SNOW_WALKABLE_MOBS)
                 .add(ModEntities.SILVERPEDE)
-                .add(ModEntities.SILVERWYRM);
+                .add(ModEntities.SILVERWYRM)
+                .add(ModEntities.ICE_CUBE);
 
         getOrCreateTagBuilder(EntityTypeTags.FREEZE_IMMUNE_ENTITY_TYPES)
                 .add(ModEntities.FROSITE_GOLEM)
-                .add(ModEntities.FROSTBITEN);
+                .add(ModEntities.FROSTBITEN)
+                .add(ModEntities.ICE_CUBE);
     }
 }

@@ -55,7 +55,6 @@ public class SilverpedeEntity extends HostileEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
-        this.goalSelector.add(1, new PowderSnowJumpGoal(this, this.getWorld()));
         this.goalSelector.add(3, new PounceAtTargetGoal(this, 0.4f));
         this.goalSelector.add(4, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0));

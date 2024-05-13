@@ -20,7 +20,7 @@
       }
     },
     {
-      "weight": 5,
+      "weight": 3,
       "element": {
         "location": "oresmod:frosite_tower/frosite_tower_spawner_frostbiten",
         "processors": "minecraft:empty",

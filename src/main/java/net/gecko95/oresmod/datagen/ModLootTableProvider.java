@@ -280,6 +280,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VOID_SICKNESS_POTION_TANK,tankBlockDrops(ModBlocks.WATER_TANK));
         addDrop(ModBlocks.MILK_TANK,tankBlockDrops(ModBlocks.MILK_TANK));
 
+        addDropWithSilkTouch(ModBlocks.REINFORCED_FROSITE_BLOCK,ModBlocks.FROSITE_BLOCK);
+        addDropWithSilkTouch(ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK,ModBlocks.LIGHT_FROSITE_BLOCK);
+        addDropWithSilkTouch(ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK,ModBlocks.DARKEN_FROSITE_BLOCK);
+
         addDrop(ModBlocks.FROSITE_ORE,oreDrops(ModBlocks.FROSITE_ORE, ModItems.FROSITE));
 
         addDrop(ModBlocks.SANDITE_ORE,oreDrops(ModBlocks.SANDITE_ORE, ModItems.SANDITE));

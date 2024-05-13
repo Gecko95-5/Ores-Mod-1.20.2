@@ -20,6 +20,7 @@ public class IceChunkItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
+        user.getItemCooldownManager().set(this, 5);
         if (!world.isClient) {
             IceProjectileEntity iceProjectileEntity = new IceProjectileEntity(user, world);
             iceProjectileEntity.setItem(itemStack);

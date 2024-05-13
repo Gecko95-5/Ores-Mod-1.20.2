@@ -483,6 +483,8 @@ public class ModItemGroups {
                         entries.add(ModItems.YELLOW_TERRACOTTA_CHESTPLATE);
                         entries.add(ModItems.YELLOW_TERRACOTTA_LEGGINGS);
                         entries.add(ModItems.YELLOW_TERRACOTTA_BOOTS);
+                        entries.add(ModItems.BOMB);
+                        entries.add(ModItems.ICE_BOMB);
                     }).build());
     public static final ItemGroup ORES_MOD_OTHER_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_other"),
@@ -521,6 +523,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FROSITE_TILE_SLAB);
                         entries.add(ModBlocks.FROSITE_TILE_WALL);
                         entries.add(ModBlocks.CHISELED_FROSITE);
+                        entries.add(ModBlocks.REINFORCED_FROSITE_BLOCK);
                         entries.add(ModBlocks.LIGHT_FROSITE_BLOCK);
                         entries.add(ModBlocks.LIGHT_FROSITE_BRICKS);
                         entries.add(ModBlocks.LIGHT_FROSITE_BRICK_STAIRS);
@@ -530,6 +533,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LIGHT_FROSITE_TILE_STAIRS);
                         entries.add(ModBlocks.LIGHT_FROSITE_TILE_SLAB);
                         entries.add(ModBlocks.LIGHT_FROSITE_TILE_WALL);
+                        entries.add(ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK);
                         entries.add(ModBlocks.DARKEN_FROSITE_BLOCK);
                         entries.add(ModBlocks.DARKEN_FROSITE_BRICKS);
                         entries.add(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS);
@@ -539,6 +543,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DARKEN_FROSITE_TILE_STAIRS);
                         entries.add(ModBlocks.DARKEN_FROSITE_TILE_SLAB);
                         entries.add(ModBlocks.DARKEN_FROSITE_TILE_WALL);
+                        entries.add(ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK);
                         entries.add(ModBlocks.SANDITE_BRICKS);
                         entries.add(ModBlocks.SANDITE_BRICK_STAIRS);
                         entries.add(ModBlocks.SANDITE_BRICK_SLAB);
@@ -818,6 +823,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_CHUNK);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                         entries.add(ModItems.FROSTBITEN_SPAWN_EGG);
+                        entries.add(ModItems.ICE_CUBE_SPAWN_EGG);
                         entries.add(ModItems.JUNGLE_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.ENDER_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.FROSITE_GOLEM_SPAWN_EGG);

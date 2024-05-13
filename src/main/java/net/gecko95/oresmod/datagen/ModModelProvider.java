@@ -128,6 +128,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUSTED_STEEL_LAMP);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAFITE_BLOCK);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_LEAFITE, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerSingleton(ModBlocks.REINFORCED_FROSITE_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerSingleton(ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerSingleton(ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
         BlockStateModelGenerator.BlockTexturePool leafitebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool leafitetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LEAFITE_TILES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_BLOCK);
@@ -752,6 +755,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_BOOTS));
 
         itemModelGenerator.register(ModItems.ICE_CHUNK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOMB, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_BOMB, Models.GENERATED);
         itemModelGenerator.register(ModItems.FROZEN_FLESH, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
@@ -767,6 +772,9 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
         itemModelGenerator.register(ModItems.FROSTBITEN_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+        itemModelGenerator.register(ModItems.ICE_CUBE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

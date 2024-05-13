@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.gecko95.oresmod.OresMod;
 import net.gecko95.oresmod.entity.custom.*;
 import net.gecko95.oresmod.entity.custom.golem.FrositeGolemEntity;
+import net.gecko95.oresmod.entity.custom.projectiles.BombProjectileEntity;
+import net.gecko95.oresmod.entity.custom.projectiles.IceBombProjectileEntity;
 import net.gecko95.oresmod.entity.custom.projectiles.IceProjectileEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -39,9 +41,21 @@ public class ModEntities {
             new Identifier(OresMod.MOD_ID,"ice_projectile"),FabricEntityTypeBuilder.
                     <IceProjectileEntity>create(SpawnGroup.MISC,IceProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25f,0.25f)).build());
-
     public static final EntityType<FrostbitenEntity> FROSTBITEN = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(OresMod.MOD_ID,"frostbiten"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, FrostbitenEntity::new)
                     .dimensions(EntityDimensions.fixed(0.6f, 1.95f)).build());
+    public static final EntityType<IceCubeEntity> ICE_CUBE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"ice_cube"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, IceCubeEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.6f, 0.6f)).build());
+    public static final EntityType<BombProjectileEntity> BOMB_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"bomb_projectile"),FabricEntityTypeBuilder.
+                    <BombProjectileEntity>create(SpawnGroup.MISC,BombProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25f,0.25f)).build());
+
+    public static final EntityType<IceBombProjectileEntity> ICE_BOMB_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(OresMod.MOD_ID,"ice_bomb_projectile"),FabricEntityTypeBuilder.
+                    <IceBombProjectileEntity>create(SpawnGroup.MISC,IceBombProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25f,0.25f)).build());
 }

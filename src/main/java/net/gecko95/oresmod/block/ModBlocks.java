@@ -988,6 +988,13 @@ public class ModBlocks {
             "potted_icy_crocus"), new FlowerPotBlock(ICY_CROCUS,
             FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
+    public static final Block REINFORCED_FROSITE_BLOCK = registerBlock("reinforced_frosite_block",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).strength(50.0f, 1200.0f)));
+    public static final Block LIGHT_REINFORCED_FROSITE_BLOCK = registerBlock("light_reinforced_frosite_block",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BLOCK).strength(50.0f, 1200.0f)));
+    public static final Block DARKEN_REINFORCED_FROSITE_BLOCK = registerBlock("darken_reinforced_frosite_block",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BLOCK).strength(50.0f, 1200.0f)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID, name), block);

@@ -370,6 +370,8 @@
   "item.oresmod.end_ite_boots": "End-ite Boots",
 
   "item.oresmod.ice_chunk": "Ice Chunks",
+  "item.oresmod.bomb": "Bomb",
+  "item.oresmod.ice_bomb": "Icy Bomb",
   "item.oresmod.frozen_flesh": "Frozen Flesh",
 
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
@@ -377,6 +379,7 @@
   "item.oresmod.ender_spider_spawn_egg": "Enderspider Spawn Egg",
   "item.oresmod.frosite_golem_spawn_egg": "Frosite Golem Spawn Egg",
   "item.oresmod.frostbiten_spawn_egg": "Frostbiten Spawn Egg",
+  "item.oresmod.ice_cube_spawn_egg": "Ice Cube Spawn Egg",
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
@@ -729,13 +732,13 @@
   "block.oresmod.end_ite_tile_wall": "End-Ite Tile Wall",
 
   "block.oresmod.light_frosite_block": "Light Frosite Block",
-  "block.oresmod.darken_frosite_block": "Darken Frosite Block",
+  "block.oresmod.darken_frosite_block": "Dark Frosite Block",
   "block.oresmod.light_sandite_block": "Light Sandite Block",
-  "block.oresmod.darken_sandite_block": "Darken Sandite Block",
+  "block.oresmod.darken_sandite_block": "Dark Sandite Block",
   "block.oresmod.light_leafite_block": "Light Leafite Block",
-  "block.oresmod.darken_leafite_block": "Darken Leafite Block",
+  "block.oresmod.darken_leafite_block": "Dark Leafite Block",
   "block.oresmod.light_end_ite_block": "Light End-Ite Block",
-  "block.oresmod.darken_end_ite_block": "Darken End-Ite Block",
+  "block.oresmod.darken_end_ite_block": "Dark End-Ite Block",
 
   "block.oresmod.light_frosite_bricks": "Light Frosite Bricks",
   "block.oresmod.light_frosite_tiles": "Light Frosite Tiles",
@@ -747,15 +750,15 @@
   "block.oresmod.light_frosite_tile_slab": "Light Frosite Tile Slab",
   "block.oresmod.light_frosite_tile_wall": "Light Frosite Tile Wall",
 
-  "block.oresmod.darken_frosite_bricks": "Darken Frosite Bricks",
-  "block.oresmod.darken_frosite_tiles": "Darken Frosite Tiles",
+  "block.oresmod.darken_frosite_bricks": "Dark Frosite Bricks",
+  "block.oresmod.darken_frosite_tiles": "Dark Frosite Tiles",
 
-  "block.oresmod.darken_frosite_brick_stairs": "Darken Frosite Brick Stairs",
-  "block.oresmod.darken_frosite_brick_slab": "Darken Frosite Brick Slab",
-  "block.oresmod.darken_frosite_brick_wall": "Darken Frosite Brick Wall",
-  "block.oresmod.darken_frosite_tile_stairs": "Darken Frosite Tile Stairs",
-  "block.oresmod.darken_frosite_tile_slab": "Darken Frosite Tile Slab",
-  "block.oresmod.darken_frosite_tile_wall": "Darken Frosite Tile Wall",
+  "block.oresmod.darken_frosite_brick_stairs": "Dark Frosite Brick Stairs",
+  "block.oresmod.darken_frosite_brick_slab": "Dark Frosite Brick Slab",
+  "block.oresmod.darken_frosite_brick_wall": "Dark Frosite Brick Wall",
+  "block.oresmod.darken_frosite_tile_stairs": "Dark Frosite Tile Stairs",
+  "block.oresmod.darken_frosite_tile_slab": "Dark Frosite Tile Slab",
+  "block.oresmod.darken_frosite_tile_wall": "Dark Frosite Tile Wall",
 
   "block.oresmod.light_sandite_bricks": "Light Sandite Bricks",
   "block.oresmod.light_sandite_tiles": "Light Sandite Tiles",
@@ -767,15 +770,15 @@
   "block.oresmod.light_sandite_tile_slab": "Light Sandite Tile Slab",
   "block.oresmod.light_sandite_tile_wall": "Light Sandite Tile Wall",
 
-  "block.oresmod.darken_sandite_bricks": "Darken Sandite Bricks",
-  "block.oresmod.darken_sandite_tiles": "Darken Sandite Tiles",
+  "block.oresmod.darken_sandite_bricks": "Dark Sandite Bricks",
+  "block.oresmod.darken_sandite_tiles": "Dark Sandite Tiles",
 
-  "block.oresmod.darken_sandite_brick_stairs": "Darken Sandite Brick Stairs",
-  "block.oresmod.darken_sandite_brick_slab": "Darken Sandite Brick Slab",
-  "block.oresmod.darken_sandite_brick_wall": "Darken Sandite Brick Wall",
-  "block.oresmod.darken_sandite_tile_stairs": "Darken Sandite Tile Stairs",
-  "block.oresmod.darken_sandite_tile_slab": "Darken Sandite Tile Slab",
-  "block.oresmod.darken_sandite_tile_wall": "Darken Sandite Tile Wall",
+  "block.oresmod.darken_sandite_brick_stairs": "Dark Sandite Brick Stairs",
+  "block.oresmod.darken_sandite_brick_slab": "Dark Sandite Brick Slab",
+  "block.oresmod.darken_sandite_brick_wall": "Dark Sandite Brick Wall",
+  "block.oresmod.darken_sandite_tile_stairs": "Dark Sandite Tile Stairs",
+  "block.oresmod.darken_sandite_tile_slab": "Dark Sandite Tile Slab",
+  "block.oresmod.darken_sandite_tile_wall": "Dark Sandite Tile Wall",
 
   "block.oresmod.light_leafite_bricks": "Light Leafite Bricks",
   "block.oresmod.light_leafite_tiles": "Light Leafite Tiles",
@@ -787,15 +790,15 @@
   "block.oresmod.light_leafite_tile_slab": "Light Leafite Tile Slab",
   "block.oresmod.light_leafite_tile_wall": "Light Leafite Tile Wall",
 
-  "block.oresmod.darken_leafite_bricks": "Darken Leafite Bricks",
-  "block.oresmod.darken_leafite_tiles": "Darken Leafite Tiles",
+  "block.oresmod.darken_leafite_bricks": "Dark Leafite Bricks",
+  "block.oresmod.darken_leafite_tiles": "Dark Leafite Tiles",
 
-  "block.oresmod.darken_leafite_brick_stairs": "Darken Leafite Brick Stairs",
-  "block.oresmod.darken_leafite_brick_slab": "Darken Leafite Brick Slab",
-  "block.oresmod.darken_leafite_brick_wall": "Darken Leafite Brick Wall",
-  "block.oresmod.darken_leafite_tile_stairs": "Darken Leafite Tile Stairs",
-  "block.oresmod.darken_leafite_tile_slab": "Darken Leafite Tile Slab",
-  "block.oresmod.darken_leafite_tile_wall": "Darken Leafite Tile Wall",
+  "block.oresmod.darken_leafite_brick_stairs": "Dark Leafite Brick Stairs",
+  "block.oresmod.darken_leafite_brick_slab": "Dark Leafite Brick Slab",
+  "block.oresmod.darken_leafite_brick_wall": "Dark Leafite Brick Wall",
+  "block.oresmod.darken_leafite_tile_stairs": "Dark Leafite Tile Stairs",
+  "block.oresmod.darken_leafite_tile_slab": "Dark Leafite Tile Slab",
+  "block.oresmod.darken_leafite_tile_wall": "Dark Leafite Tile Wall",
 
   "block.oresmod.light_end_ite_bricks": "Light End-Ite Bricks",
   "block.oresmod.light_end_ite_tiles": "Light End-Ite Tiles",
@@ -807,15 +810,15 @@
   "block.oresmod.light_end_ite_tile_slab": "Light End-Ite Tile Slab",
   "block.oresmod.light_end_ite_tile_wall": "Light End-Ite Tile Wall",
 
-  "block.oresmod.darken_end_ite_bricks": "Darken End-Ite Bricks",
-  "block.oresmod.darken_end_ite_tiles": "Darken End-Ite Tiles",
+  "block.oresmod.darken_end_ite_bricks": "Dark End-Ite Bricks",
+  "block.oresmod.darken_end_ite_tiles": "Dark End-Ite Tiles",
 
-  "block.oresmod.darken_end_ite_brick_stairs": "Darken End-Ite Brick Stairs",
-  "block.oresmod.darken_end_ite_brick_slab": "Darken End-Ite Brick Slab",
-  "block.oresmod.darken_end_ite_brick_wall": "Darken End-Ite Brick Wall",
-  "block.oresmod.darken_end_ite_tile_stairs": "Darken End-Ite Tile Stairs",
-  "block.oresmod.darken_end_ite_tile_slab": "Darken End-Ite Tile Slab",
-  "block.oresmod.darken_end_ite_tile_wall": "Darken End-Ite Tile Wall",
+  "block.oresmod.darken_end_ite_brick_stairs": "Dark End-Ite Brick Stairs",
+  "block.oresmod.darken_end_ite_brick_slab": "Dark End-Ite Brick Slab",
+  "block.oresmod.darken_end_ite_brick_wall": "Dark End-Ite Brick Wall",
+  "block.oresmod.darken_end_ite_tile_stairs": "Dark End-Ite Tile Stairs",
+  "block.oresmod.darken_end_ite_tile_slab": "Dark End-Ite Tile Slab",
+  "block.oresmod.darken_end_ite_tile_wall": "Dark End-Ite Tile Wall",
 
   "block.oresmod.ice_bricks": "Ice Bricks",
   "block.oresmod.ice_pillar": "Ice Pillar",
@@ -826,12 +829,17 @@
 
   "block.oresmod.icy_crocus": "Icy Crocus",
 
+  "block.oresmod.reinforced_frosite_block": "Reinforced Frosite Block",
+  "block.oresmod.light_reinforced_frosite_block": "Light Reinforced Frosite Block",
+  "block.oresmod.darken_reinforced_frosite_block": "Dark Reinforced Frosite Block",
+
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",
   "entity.oresmod.jungle_spider": "Jungle Spider",
   "entity.oresmod.ender_spider": "Enderspider",
   "entity.oresmod.frosite_golem": "Frosite Golem",
   "entity.oresmod.frostbiten": "Frostbiten",
+  "entity.oresmod.ice_cube": "Ice Cube",
 
   "effect.oresmod.frostbite": "Frostbite",
   "item.minecraft.potion.effect.frostbite_potion": "Potion of Subzero",
