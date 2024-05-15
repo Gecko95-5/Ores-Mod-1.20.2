@@ -70,6 +70,12 @@ public class ModBlocks {
     public static final Block FROSITE_TILE_WALL = registerBlock("frosite_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.FROSITE_TILES)));
 
+    public static final Block FROSITE_PRESSURE_PLATE = registerBlock("frosite_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK), BlockSetType.GOLD));
+    public static final Block FROSITE_BUTTON = registerBlock("frosite_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK), BlockSetType.GOLD, 20,false));
+
     public static final Block ALUMINUM_ORE = registerBlock("aluminum_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2.5f, 2.5f)));
     public static final Block DEEPSLATE_ALUMINUM_ORE = registerBlock("deepslate_aluminum_ore",
@@ -661,6 +667,7 @@ public class ModBlocks {
             new SilverCrownBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.COPPER)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
+
     public static final Block SILVER_SCALES = registerBlock("silver_scales",
             new Block(FabricBlockSettings.create()
                     .sounds(BlockSoundGroup.COPPER)
@@ -861,6 +868,17 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_TILES)));
     public static final Block DARKEN_FROSITE_TILE_WALL = registerBlock("darken_frosite_tile_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_TILES)));
+
+    public static final Block LIGHT_FROSITE_PRESSURE_PLATE = registerBlock("light_frosite_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BLOCK), BlockSetType.GOLD));
+    public static final Block LIGHT_FROSITE_BUTTON = registerBlock("light_frosite_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BLOCK), BlockSetType.GOLD, 20,false));
+    public static final Block DARKEN_FROSITE_PRESSURE_PLATE = registerBlock("darken_frosite_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BLOCK), BlockSetType.GOLD));
+    public static final Block DARKEN_FROSITE_BUTTON = registerBlock("darken_frosite_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BLOCK), BlockSetType.GOLD, 20,false));
 
     public static final Block LIGHT_SANDITE_BRICKS = registerBlock("light_sandite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_BLOCK)));

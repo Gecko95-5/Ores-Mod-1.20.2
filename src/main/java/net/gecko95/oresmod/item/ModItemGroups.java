@@ -408,7 +408,9 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM_CHESTPLATE);
                         entries.add(ModItems.PLATINUM_LEGGINGS);
                         entries.add(ModItems.PLATINUM_BOOTS);
+                        entries.add(ModItems.SPIKED_CLUB);
                         entries.add(ModItems.MANDIBLE_HATCHET);
+                        entries.add(ModItems.ICY_DAGGER);
                         entries.add(ModItems.FLINT_SWORD);
                         entries.add(ModItems.FLINT_AXE);
                         entries.add(ModItems.CLAY_HELMET);
@@ -522,6 +524,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FROSITE_TILE_STAIRS);
                         entries.add(ModBlocks.FROSITE_TILE_SLAB);
                         entries.add(ModBlocks.FROSITE_TILE_WALL);
+                        entries.add(ModBlocks.FROSITE_BUTTON);
+                        entries.add(ModBlocks.FROSITE_PRESSURE_PLATE);
                         entries.add(ModBlocks.CHISELED_FROSITE);
                         entries.add(ModBlocks.REINFORCED_FROSITE_BLOCK);
                         entries.add(ModBlocks.LIGHT_FROSITE_BLOCK);
@@ -533,6 +537,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LIGHT_FROSITE_TILE_STAIRS);
                         entries.add(ModBlocks.LIGHT_FROSITE_TILE_SLAB);
                         entries.add(ModBlocks.LIGHT_FROSITE_TILE_WALL);
+                        entries.add(ModBlocks.LIGHT_FROSITE_BUTTON);
+                        entries.add(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE);
                         entries.add(ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK);
                         entries.add(ModBlocks.DARKEN_FROSITE_BLOCK);
                         entries.add(ModBlocks.DARKEN_FROSITE_BRICKS);
@@ -543,6 +549,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DARKEN_FROSITE_TILE_STAIRS);
                         entries.add(ModBlocks.DARKEN_FROSITE_TILE_SLAB);
                         entries.add(ModBlocks.DARKEN_FROSITE_TILE_WALL);
+                        entries.add(ModBlocks.DARKEN_FROSITE_BUTTON);
+                        entries.add(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE);
                         entries.add(ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK);
                         entries.add(ModBlocks.SANDITE_BRICKS);
                         entries.add(ModBlocks.SANDITE_BRICK_STAIRS);
@@ -818,7 +826,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE);
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
                         entries.add(ModItems.SILVER_MANDIBLE);
-                        entries.add(ModBlocks.SILVER_CROWN);
                         entries.add(ModItems.FROZEN_FLESH);
                         entries.add(ModItems.ICE_CHUNK);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);

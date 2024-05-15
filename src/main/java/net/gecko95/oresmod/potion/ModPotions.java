@@ -24,19 +24,19 @@ public static Potion VOID_SICKNESS_POTION, STRONG_VOID_SICKNESS_POTION, LONGER_V
         return Registry.register(Registries.POTION, new Identifier(OresMod.MOD_ID, name), potion);
     }
     public static void registerPotions(){
-        FROSTBITE_POTION = registerPotion("frostbite_potion", new Potion(new StatusEffectInstance(ModEffects.FROSTBITE,450,0)));
+        FROSTBITE_POTION = registerPotion("frostbite_potion", new Potion(new StatusEffectInstance(ModEffects.FROSTBITE,432,0)));
         STRONG_FROSTBITE_POTION = registerPotion("strong_frostbite_potion", new Potion(new StatusEffectInstance(ModEffects.FROSTBITE,225,1)));
         LONGER_FROSTBITE_POTION = registerPotion("long_frostbite_potion", new Potion(new StatusEffectInstance(ModEffects.FROSTBITE,900,0)));
 
-        HEAT_STROKE_POTION = registerPotion("heat_stroke_potion", new Potion(new StatusEffectInstance(ModEffects.HEAT_STROKE,450,0)));
+        HEAT_STROKE_POTION = registerPotion("heat_stroke_potion", new Potion(new StatusEffectInstance(ModEffects.HEAT_STROKE,432,0)));
         STRONG_HEAT_STROKE_POTION = registerPotion("strong_heat_stroke_potion", new Potion(new StatusEffectInstance(ModEffects.HEAT_STROKE,225,1)));
         LONGER_HEAT_STROKE_POTION = registerPotion("long_heat_stroke_potion", new Potion(new StatusEffectInstance(ModEffects.HEAT_STROKE,900,0)));
 
-        FATAL_POISON_POTION = registerPotion("fatal_poison_potion", new Potion(new StatusEffectInstance(ModEffects.FATAL_POISON,450,0)));
+        FATAL_POISON_POTION = registerPotion("fatal_poison_potion", new Potion(new StatusEffectInstance(ModEffects.FATAL_POISON,432,0)));
         STRONG_FATAL_POISON_POTION = registerPotion("strong_fatal_poison_potion", new Potion(new StatusEffectInstance(ModEffects.FATAL_POISON,225,1)));
         LONGER_FATAL_POISON_POTION = registerPotion("long_fatal_poison_potion", new Potion(new StatusEffectInstance(ModEffects.FATAL_POISON,900,0)));
 
-        VOID_SICKNESS_POTION = registerPotion("void_sickness_potion", new Potion(new StatusEffectInstance(ModEffects.VOID_SICKNESS,450,0)));
+        VOID_SICKNESS_POTION = registerPotion("void_sickness_potion", new Potion(new StatusEffectInstance(ModEffects.VOID_SICKNESS,432,0)));
         STRONG_VOID_SICKNESS_POTION = registerPotion("strong_void_sickness_potion", new Potion(new StatusEffectInstance(ModEffects.VOID_SICKNESS,225,1)));
         LONGER_VOID_SICKNESS_POTION = registerPotion("long_void_sickness_potion", new Potion(new StatusEffectInstance(ModEffects.VOID_SICKNESS,900,0)));
 

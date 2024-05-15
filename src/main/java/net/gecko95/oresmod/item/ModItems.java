@@ -630,12 +630,14 @@ public class ModItems {
     public static final Item SILVER_SCALE = registerItem("silver_scale", new Item(new FabricItemSettings()));
 
     public static final Item SPIKED_CLUB = registerItem("spiked_club",
-            new ClubItem(ModToolMaterial.CLUB, 0, -3.0f, new FabricItemSettings()));
+            new ClubItem(ModToolMaterial.CLUB, 0, -3.6f, new FabricItemSettings()));
 
     public static final Item SILVER_MANDIBLE = registerItem("silver_mandible",
             new Item(new FabricItemSettings().maxCount(2)));
     public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
             new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings()));
+    public static final Item ICY_DAGGER = registerItem("icy_dagger",
+            new IcyDaggerItem(ModToolMaterial.ICY_DAGGER, 0, -1.8f, new FabricItemSettings()));
 
     public static final Item PLATINUM_CLUSTER = registerItem("platinum_cluster", new Item(new FabricItemSettings()));
     public static final Item PLATINUM_SCRAP = registerItem("platinum_scrap", new Item(new FabricItemSettings()));

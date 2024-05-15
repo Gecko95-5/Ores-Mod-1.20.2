@@ -485,6 +485,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FROSITE_TILE_SLAB)
                 .add(ModBlocks.FROSITE_TILE_WALL)
                 .add(ModBlocks.CHISELED_FROSITE)
+                .add(ModBlocks.FROSITE_PRESSURE_PLATE)
+                .add(ModBlocks.FROSITE_BUTTON)
                 .add(ModBlocks.LIGHT_FROSITE_BLOCK)
                 .add(ModBlocks.DARKEN_FROSITE_BLOCK)
                 .add(ModBlocks.REINFORCED_FROSITE_BLOCK)
@@ -534,6 +536,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIGHT_FROSITE_TILE_STAIRS)
                 .add(ModBlocks.LIGHT_FROSITE_TILE_SLAB)
                 .add(ModBlocks.LIGHT_FROSITE_TILE_WALL)
+                .add(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE)
+                .add(ModBlocks.LIGHT_FROSITE_BUTTON)
                 .add(ModBlocks.DARKEN_FROSITE_BRICKS)
                 .add(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS)
                 .add(ModBlocks.DARKEN_FROSITE_BRICK_SLAB)
@@ -542,6 +546,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARKEN_FROSITE_TILE_STAIRS)
                 .add(ModBlocks.DARKEN_FROSITE_TILE_SLAB)
                 .add(ModBlocks.DARKEN_FROSITE_TILE_WALL)
+                .add(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE)
+                .add(ModBlocks.DARKEN_FROSITE_BUTTON)
                 .add(ModBlocks.LIGHT_SANDITE_BRICKS)
                 .add(ModBlocks.LIGHT_SANDITE_BRICK_STAIRS)
                 .add(ModBlocks.LIGHT_SANDITE_BRICK_SLAB)
@@ -590,5 +596,48 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARKEN_END_ITE_TILE_STAIRS)
                 .add(ModBlocks.DARKEN_END_ITE_TILE_SLAB)
                 .add(ModBlocks.DARKEN_END_ITE_TILE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.SIGNS)
+                .add(ModBlocks.WALL_STONEBARK_SIGN)
+                .add(ModBlocks.WALL_DEEPBARK_SIGN)
+                .add(ModBlocks.WALL_LEAFITE_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.STANDING_STONEBARK_SIGN)
+                .add(ModBlocks.STANDING_DEEPBARK_SIGN)
+                .add(ModBlocks.STANDING_LEAFITE_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.WALL_HANGING_STONEBARK_SIGN)
+                .add(ModBlocks.WALL_HANGING_DEEPBARK_SIGN)
+                .add(ModBlocks.WALL_HANGING_LEAFITE_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.HANGING_STONEBARK_SIGN)
+                .add(ModBlocks.HANGING_DEEPBARK_SIGN)
+                .add(ModBlocks.HANGING_LEAFITE_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(ModBlocks.FROSITE_BUTTON)
+                .add(ModBlocks.LIGHT_FROSITE_BUTTON)
+                .add(ModBlocks.DARKEN_FROSITE_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.STONEBARK_BUTTON)
+                .add(ModBlocks.DEEPBARK_BUTTON)
+                .add(ModBlocks.LEAFITE_PLANKS_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.ALUMINUM_PRESSURE_PLATE)
+                .add(ModBlocks.NICKEL_PRESSURE_PLATE)
+                .add(ModBlocks.STEEL_PRESSURE_PLATE)
+                .add(ModBlocks.FROSITE_PRESSURE_PLATE)
+                .add(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE)
+                .add(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.STONEBARK_PRESSURE_PLATE)
+                .add(ModBlocks.DEEPBARK_PRESSURE_PLATE)
+                .add(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
     }
 }

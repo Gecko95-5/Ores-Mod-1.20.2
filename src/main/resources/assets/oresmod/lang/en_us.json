@@ -373,6 +373,7 @@
   "item.oresmod.bomb": "Bomb",
   "item.oresmod.ice_bomb": "Icy Bomb",
   "item.oresmod.frozen_flesh": "Frozen Flesh",
+  "item.oresmod.icy_dagger": "Icy Dagger",
 
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
@@ -397,6 +398,9 @@
   "block.oresmod.frosite_tile_slab": "Frosite Tile Slab",
   "block.oresmod.frosite_tile_wall": "Frosite Tile Wall",
   "block.oresmod.chiseled_frosite": "Chiseled Frosite",
+
+  "block.oresmod.frosite_button": "Frosite Button",
+  "block.oresmod.frosite_pressure_plate": "Frosite Pressure Plate",
 
   "block.oresmod.aluminum_ore": "Aluminum Ore",
   "block.oresmod.deepslate_aluminum_ore": "Deepslate Aluminum Ore",
@@ -750,6 +754,9 @@
   "block.oresmod.light_frosite_tile_slab": "Light Frosite Tile Slab",
   "block.oresmod.light_frosite_tile_wall": "Light Frosite Tile Wall",
 
+  "block.oresmod.light_frosite_button": "Light Frosite Button",
+  "block.oresmod.light_frosite_pressure_plate": "Light Frosite Pressure Plate",
+
   "block.oresmod.darken_frosite_bricks": "Dark Frosite Bricks",
   "block.oresmod.darken_frosite_tiles": "Dark Frosite Tiles",
 
@@ -759,6 +766,9 @@
   "block.oresmod.darken_frosite_tile_stairs": "Dark Frosite Tile Stairs",
   "block.oresmod.darken_frosite_tile_slab": "Dark Frosite Tile Slab",
   "block.oresmod.darken_frosite_tile_wall": "Dark Frosite Tile Wall",
+
+  "block.oresmod.darken_frosite_button": "Dark Frosite Button",
+  "block.oresmod.darken_frosite_pressure_plate": "Dark Frosite Pressure Plate",
 
   "block.oresmod.light_sandite_bricks": "Light Sandite Bricks",
   "block.oresmod.light_sandite_tiles": "Light Sandite Tiles",

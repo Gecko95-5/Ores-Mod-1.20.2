@@ -5531,5 +5531,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ICE_CHUNK), conditionsFromItem(ModItems.ICE_CHUNK))
                 .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
                 .offerTo(exporter, new Identifier("ice_bomb"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.FROSITE_PRESSURE_PLATE)
+                .pattern("FF")
+                .input('F', ModItems.FROSITE)
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROSITE_PRESSURE_PLATE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.FROSITE_BUTTON)
+                .input(ModItems.FROSITE)
+                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROSITE_BUTTON)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE)
+                .input(ModBlocks.FROSITE_PRESSURE_PLATE)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.FROSITE_PRESSURE_PLATE), conditionsFromItem(ModBlocks.FROSITE_PRESSURE_PLATE))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.LIGHT_FROSITE_BUTTON)
+                .input(ModBlocks.FROSITE_BUTTON)
+                .input(ModItems.POWDERED_SALT)
+                .criterion(hasItem(ModBlocks.FROSITE_BUTTON), conditionsFromItem(ModBlocks.FROSITE_BUTTON))
+                .criterion(hasItem(ModItems.POWDERED_SALT), conditionsFromItem(ModItems.POWDERED_SALT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIGHT_FROSITE_BUTTON)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE)
+                .input(ModBlocks.FROSITE_PRESSURE_PLATE)
+                .input(Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModBlocks.FROSITE_PRESSURE_PLATE), conditionsFromItem(ModBlocks.FROSITE_PRESSURE_PLATE))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.DARKEN_FROSITE_BUTTON)
+                .input(ModBlocks.FROSITE_BUTTON)
+                .input(Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModBlocks.FROSITE_BUTTON), conditionsFromItem(ModBlocks.FROSITE_BUTTON))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_FROSITE_BUTTON)));
     }
 }

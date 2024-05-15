@@ -26,5 +26,13 @@ public class ModEntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPro
                 .add(ModEntities.FROSITE_GOLEM)
                 .add(ModEntities.FROSTBITEN)
                 .add(ModEntities.ICE_CUBE);
+
+        getOrCreateTagBuilder(EntityTypeTags.IMPACT_PROJECTILES)
+                .add(ModEntities.ICE_PROJECTILE)
+                .add(ModEntities.BOMB_PROJECTILE)
+                .add(ModEntities.ICE_BOMB_PROJECTILE);
+
+        getOrCreateTagBuilder(EntityTypeTags.FALL_DAMAGE_IMMUNE)
+                .add(ModEntities.FROSITE_GOLEM);
     }
 }

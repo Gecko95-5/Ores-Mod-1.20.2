@@ -251,6 +251,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ICE_PILLAR);
         addDrop(ModBlocks.ICE_BRICK_STAIRS);
         addDrop(ModBlocks.ICE_BRICK_WALL);
+        addDrop(ModBlocks.FROSITE_BUTTON);
+        addDrop(ModBlocks.FROSITE_PRESSURE_PLATE);
+        addDrop(ModBlocks.LIGHT_FROSITE_BUTTON);
+        addDrop(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE);
+        addDrop(ModBlocks.DARKEN_FROSITE_BUTTON);
+        addDrop(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 

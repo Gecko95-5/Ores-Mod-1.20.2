@@ -41,6 +41,8 @@ public enum ModToolMaterial implements ToolMaterial {
             () -> Ingredient.ofItems(ModItems.SILVER_SCALE)),
     MANDIBLE(2, 720, 2.0f, 1.0f, 10,
             () -> Ingredient.ofItems(ModItems.SILVER_SCALE)),
+    ICY_DAGGER(0, 352, 2.0f, 3.0f, 15,
+            () -> Ingredient.ofItems(Items.PACKED_ICE)),
     MANDIBLE_HATCHET(2, 1440, 5.0f, 3.0f, 10,
             () -> Ingredient.ofItems(ModItems.SILVER_SCALE)),
     POWER_IRON (2, 500, 12f, 1.0f, 7,

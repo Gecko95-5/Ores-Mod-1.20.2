@@ -22,7 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_SALT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_FROSITE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSITE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool frostPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FROSITE_BLOCK);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_FROSITE, TexturedModel.CUBE_BOTTOM_TOP);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_WHITE_SANDSTONE, TexturedModel.CUBE_BOTTOM_TOP);
         BlockStateModelGenerator.BlockTexturePool smoothwhitesandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_WHITE_SANDSTONE);
@@ -143,8 +143,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_END_ITE, TexturedModel.CUBE_BOTTOM_TOP);
         BlockStateModelGenerator.BlockTexturePool enditebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_ITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool enditetilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_ITE_TILES);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_FROSITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKEN_FROSITE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool lightfrostPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_FROSITE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool darkfrostPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DARKEN_FROSITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_SANDITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKEN_SANDITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_LEAFITE_BLOCK);
@@ -198,6 +198,9 @@ public class ModModelProvider extends FabricModelProvider {
         frosttilePool.stairs(ModBlocks.FROSITE_TILE_STAIRS);
         frosttilePool.slab(ModBlocks.FROSITE_TILE_SLAB);
         frosttilePool.wall(ModBlocks.FROSITE_TILE_WALL);
+
+        frostPool.button(ModBlocks.FROSITE_BUTTON);
+        frostPool.pressurePlate(ModBlocks.FROSITE_PRESSURE_PLATE);
 
         polibedrockPool.stairs(ModBlocks.POLISHED_BEDROCK_STAIRS);
         polibedrockPool.slab(ModBlocks.POLISHED_BEDROCK_SLAB);
@@ -312,6 +315,9 @@ public class ModModelProvider extends FabricModelProvider {
         lightfrosttilePool.slab(ModBlocks.LIGHT_FROSITE_TILE_SLAB);
         lightfrosttilePool.wall(ModBlocks.LIGHT_FROSITE_TILE_WALL);
 
+        lightfrostPool.button(ModBlocks.LIGHT_FROSITE_BUTTON);
+        lightfrostPool.pressurePlate(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE);
+
         darkenfrostbrickPool.stairs(ModBlocks.DARKEN_FROSITE_BRICK_STAIRS);
         darkenfrostbrickPool.slab(ModBlocks.DARKEN_FROSITE_BRICK_SLAB);
         darkenfrostbrickPool.wall(ModBlocks.DARKEN_FROSITE_BRICK_WALL);
@@ -319,6 +325,9 @@ public class ModModelProvider extends FabricModelProvider {
         darkenfrosttilePool.stairs(ModBlocks.DARKEN_FROSITE_TILE_STAIRS);
         darkenfrosttilePool.slab(ModBlocks.DARKEN_FROSITE_TILE_SLAB);
         darkenfrosttilePool.wall(ModBlocks.DARKEN_FROSITE_TILE_WALL);
+
+        darkfrostPool.button(ModBlocks.DARKEN_FROSITE_BUTTON);
+        darkfrostPool.pressurePlate(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE);
 
         lightsandbrickPool.stairs(ModBlocks.LIGHT_SANDITE_BRICK_STAIRS);
         lightsandbrickPool.slab(ModBlocks.LIGHT_SANDITE_BRICK_SLAB);
@@ -758,6 +767,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BOMB, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_BOMB, Models.GENERATED);
         itemModelGenerator.register(ModItems.FROZEN_FLESH, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ICY_DAGGER, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
