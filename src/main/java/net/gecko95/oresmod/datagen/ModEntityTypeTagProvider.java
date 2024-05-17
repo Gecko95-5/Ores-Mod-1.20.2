@@ -34,5 +34,8 @@ public class ModEntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPro
 
         getOrCreateTagBuilder(EntityTypeTags.FALL_DAMAGE_IMMUNE)
                 .add(ModEntities.FROSITE_GOLEM);
+
+        getOrCreateTagBuilder(EntityTypeTags.FROG_FOOD)
+                .add(ModEntities.ICE_CUBE);
     }
 }

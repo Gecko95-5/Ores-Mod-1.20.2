@@ -3,6 +3,7 @@ package net.gecko95.oresmod.world.gen;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.gecko95.oresmod.entity.ModEntities;
+import net.gecko95.oresmod.world.biome.ModBiomes;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.SpawnRestriction;
 import net.minecraft.entity.mob.HostileEntity;
@@ -22,6 +23,9 @@ public class ModEntitySpawn {
         BiomeModifications.addSpawn(BiomeSelectors.tag(BiomeTags.SPAWNS_SNOW_FOXES),
                 SpawnGroup.MONSTER, ModEntities.FROSTBITEN,25,1,3);
 
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(ModBiomes.QUARRY_BIOME),
+                SpawnGroup.MONSTER, ModEntities.SILVERPEDE,75,2,5);
+
         SpawnRestriction.register(ModEntities.JUNGLE_SPIDER, SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnIgnoreLightLevel);
 
@@ -30,5 +34,8 @@ public class ModEntitySpawn {
 
         SpawnRestriction.register(ModEntities.FROSTBITEN, SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnInDark);
+
+        SpawnRestriction.register(ModEntities.SILVERPEDE, SpawnRestriction.Location.ON_GROUND,
+                Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnIgnoreLightLevel);
     }
 }

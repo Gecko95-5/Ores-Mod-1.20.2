@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "oresmod:salt_ore",
-    "oresmod:raw_salt_block",
     "oresmod:frosite_ore",
     "oresmod:ice_frosite_ore",
     "oresmod:aluminum_block",
@@ -120,9 +119,7 @@
     "oresmod:polished_granite_brick_wall",
     "oresmod:silver_scales",
     "oresmod:silver_scale_core",
-    "oresmod:fossilized_silver_scale_core",
     "oresmod:silver_scale_face",
-    "oresmod:fossilized_silver_scale_face",
     "oresmod:lighty_rusted_steel_block",
     "oresmod:lighty_rusted_steel_slab",
     "oresmod:lighty_rusted_cut_steel",

@@ -371,9 +371,10 @@
 
   "item.oresmod.ice_chunk": "Ice Chunks",
   "item.oresmod.bomb": "Bomb",
-  "item.oresmod.ice_bomb": "Icy Bomb",
+  "item.oresmod.ice_bomb": "Ice Bomb",
   "item.oresmod.frozen_flesh": "Frozen Flesh",
   "item.oresmod.icy_dagger": "Icy Dagger",
+  "item.oresmod.silver_carver": "Silver Carver",
 
   "item.oresmod.silverpede_spawn_egg": "Silverpede Spawn Egg",
   "item.oresmod.jungle_spider_spawn_egg": "Jungle Spider Spawn Egg",
@@ -384,7 +385,6 @@
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
-  "block.oresmod.raw_salt_block": "Block of Raw Salt",
 
   "block.oresmod.frosite_ore": "Frosite Ore",
   "block.oresmod.ice_frosite_ore": "Icy Frosite Ore",

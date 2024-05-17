@@ -10,7 +10,6 @@ import net.gecko95.oresmod.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -636,6 +635,8 @@ public class ModItems {
             new Item(new FabricItemSettings().maxCount(2)));
     public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
             new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings()));
+    public static final Item SILVER_CARVER = registerItem("silver_carver",
+            new CarverItem(ModToolMaterial.SILVER_DAGGER, 0, -1.8f, new FabricItemSettings()));
     public static final Item ICY_DAGGER = registerItem("icy_dagger",
             new IcyDaggerItem(ModToolMaterial.ICY_DAGGER, 0, -1.8f, new FabricItemSettings()));
 

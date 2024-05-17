@@ -51,5 +51,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:entities/jungle_spider"
+  "random_sequence": "oresmod:entities/frosite_golem"
 }

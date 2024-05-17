@@ -31,9 +31,6 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create()
                     .strength(1.0f, 3.0f).sounds(BlockSoundGroup.PACKED_MUD)
                     .mapColor(MapColor.IRON_GRAY)));
-    public static final Block RAW_SALT_BLOCK = registerBlock("raw_salt_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE)
-                    .mapColor(MapColor.RAW_IRON_PINK).sounds(BlockSoundGroup.PACKED_MUD)));
     public static final Block FROSITE_ORE = registerBlock("frosite_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
     public static final Block ICE_FROSITE_ORE = registerBlock("ice_frosite_ore",
@@ -673,9 +670,10 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.COPPER)
                     .mapColor(MapColor.WHITE_GRAY).requiresTool().strength(1.5f, 6.0f)));
     public static final Block FOSSILIZED_SILVER_SCALES = registerBlock("fossilized_silver_scales",
-            new Block(FabricBlockSettings.create()
+            new Block(FabricBlockSettings.copyOf(ModBlocks.SILVER_SCALES)
                     .sounds(BlockSoundGroup.BONE)
                     .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
+
     public static final Block SILVER_SCALE_CORE = registerBlock("silver_scale_core",
             new PillarBlock(FabricBlockSettings.create()
                     .sounds(BlockSoundGroup.COPPER)
@@ -689,7 +687,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.COPPER)
                     .mapColor(MapColor.WHITE_GRAY).requiresTool().strength(1.5f, 6.0f)));
     public static final Block FOSSILIZED_SILVER_SCALE_FACE = registerBlock("fossilized_silver_scale_face",
-            new PillarBlock(FabricBlockSettings.create()
+            new PillarBlock(FabricBlockSettings.copyOf(ModBlocks.SILVER_SCALE_FACE)
                     .sounds(BlockSoundGroup.BONE)
                     .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
 

@@ -1,22 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "F": {
-      "item": "oresmod:frosite"
-    },
-    "I": {
-      "item": "minecraft:ice"
+  "ingredients": [
+    {
+      "item": "minecraft:packed_ice"
     }
-  },
-  "pattern": [
-    "III",
-    "IFI",
-    "III"
   ],
   "result": {
-    "count": 8,
+    "count": 9,
     "item": "oresmod:ice_chunk"
-  },
-  "show_notification": true
+  }
 }

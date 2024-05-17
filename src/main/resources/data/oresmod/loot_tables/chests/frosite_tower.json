@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:chest",
   "pools": [
@@ -18,7 +19,7 @@
             }
           ],
           "name": "oresmod:frosite",
-          "weight": 1
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -444,6 +445,22 @@
               "damage": {
                 "type": "minecraft:uniform",
                 "max": 0.9,
+                "min": 0.7
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "oresmod:icy_dagger",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
                 "min": 0.1
               },
               "function": "minecraft:set_damage"
@@ -492,6 +509,26 @@
           ],
           "name": "minecraft:tipped_arrow",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "oresmod:frostbite_potion"
+            }
+          ],
+          "name": "minecraft:tipped_arrow",
+          "weight": 5
         },
         {
           "type": "minecraft:item",

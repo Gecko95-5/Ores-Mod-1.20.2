@@ -1,0 +1,38 @@
+{
+  "parent": "oresmod:kill_a_silverpede",
+  "criteria": {
+    "fossil": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "oresmod:silverwyrm_fossil"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "You found a Fossil",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oresmod:fossilized_silver_scales"
+    },
+    "show_toast": true,
+    "title": "A Silver Fossil"
+  },
+  "requirements": [
+    [
+      "fossil"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

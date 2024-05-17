@@ -1,15 +1,7 @@
 {
   "structures": [
     {
-      "structure": "oresmod:void_stone_deposit_1",
-      "weight": 1
-    },
-    {
-      "structure": "oresmod:void_stone_deposit_2",
-      "weight": 1
-    },
-    {
-      "structure": "oresmod:small_void_stone_deposit",
+      "structure": "oresmod:void_stone_deposit",
       "weight": 1
     }
   ],

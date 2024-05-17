@@ -172,8 +172,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.POWDERED_SALT,
                 RecipeCategory.BUILDING_BLOCKS, ModBlocks.SALT_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RAW_SALT,
-                RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SALT_BLOCK);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POWDERED_SALT,20)
                 .input(ModBlocks.SALT_ORE)
@@ -3858,26 +3856,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SILVER_SCALE,
                 RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_SCALES);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_SCALES,1)
-                .input(ModBlocks.FOSSILIZED_SILVER_SCALES)
-                .input(Items.WATER_BUCKET)
-                .criterion(hasItem(ModBlocks.FOSSILIZED_SILVER_SCALES), conditionsFromItem(ModBlocks.FOSSILIZED_SILVER_SCALES))
-                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
-                .offerTo(exporter, new Identifier("silver_scales_from_fossilized_silver_scales"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_SCALE_CORE,4)
+                .pattern("SBS")
+                .pattern("BCB")
+                .pattern("SBS")
+                .input('S', ModItems.SILVER_SCALE)
+                .input('B', Items.BLACKSTONE)
+                .input('C', ModBlocks.SILVER_SCALE_CORE)
+                .criterion(hasItem(ModItems.SILVER_SCALE), conditionsFromItem(ModItems.SILVER_SCALE))
+                .criterion(hasItem(Items.BLACKSTONE), conditionsFromItem(Items.BLACKSTONE))
+                .criterion(hasItem(ModBlocks.SILVER_SCALE_CORE), conditionsFromItem(ModBlocks.SILVER_SCALE_CORE))
+                .offerTo(exporter, new Identifier("silver_scale_core_duplicate"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_SCALE_CORE,1)
-                .input(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE)
-                .input(Items.WATER_BUCKET)
-                .criterion(hasItem(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE), conditionsFromItem(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE))
-                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
-                .offerTo(exporter, new Identifier("silver_scale_core_from_fossilized_silver_scale_core"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_SCALE_FACE,1)
-                .input(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE)
-                .input(Items.WATER_BUCKET)
-                .criterion(hasItem(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE), conditionsFromItem(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE))
-                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
-                .offerTo(exporter, new Identifier("silver_scale_face_from_fossilized_silver_scale_face"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_SCALE_FACE,2)
+                .pattern("SAS")
+                .pattern("ACA")
+                .pattern("SAS")
+                .input('S', ModItems.SILVER_SCALE)
+                .input('A', Items.SOUL_SAND)
+                .input('C', ModBlocks.SILVER_SCALE_FACE)
+                .criterion(hasItem(ModItems.SILVER_SCALE), conditionsFromItem(ModItems.SILVER_SCALE))
+                .criterion(hasItem(Items.SOUL_SAND), conditionsFromItem(Items.SOUL_SAND))
+                .criterion(hasItem(ModBlocks.SILVER_SCALE_FACE), conditionsFromItem(ModBlocks.SILVER_SCALE_FACE))
+                .offerTo(exporter, new Identifier("silver_scale_face_duplicate"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SILVER_CROWN)
                 .pattern("S S")
@@ -5312,6 +5313,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.LIGHT_END_ITE_BLOCK), conditionsFromItem(ModBlocks.LIGHT_END_ITE_BLOCK))
                 .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
                 .offerTo(exporter, new Identifier("light_end_ite_bricks"));
+
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS, ModBlocks.END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS, ModBlocks.END_ITE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_END_ITE_BRICKS, ModBlocks.LIGHT_END_ITE_BLOCK);
@@ -5418,20 +5420,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_TILE_WALL, ModBlocks.DARKEN_END_ITE_TILES);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.LIGHT_BLUE_DYE,20)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.LIGHT_BLUE_DYE)
                 .input(ModBlocks.ICY_CROCUS)
                 .criterion(hasItem(ModBlocks.ICY_CROCUS), conditionsFromItem(ModBlocks.ICY_CROCUS))
                 .offerTo(exporter, new Identifier("light_blue_dye_from_icy_crocus"));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ICE_CHUNK,8)
-                .pattern("III")
-                .pattern("IFI")
-                .pattern("III")
-                .input('F', ModItems.FROSITE)
-                .input('I', Blocks.ICE)
-                .criterion(hasItem(ModItems.FROSITE), conditionsFromItem(ModItems.FROSITE))
-                .criterion(hasItem(Blocks.ICE), conditionsFromItem(Blocks.ICE))
-                .offerTo(exporter, new Identifier("ice_chunk"));
 
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
                         (ModItems.FROZEN_FLESH), RecipeCategory.MISC, Items.ROTTEN_FLESH,0.35f, 200)
@@ -5568,5 +5560,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.FROSITE_BUTTON), conditionsFromItem(ModBlocks.FROSITE_BUTTON))
                 .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_FROSITE_BUTTON)));
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.ICE_CHUNK,
+                RecipeCategory.BUILDING_BLOCKS, Items.PACKED_ICE);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SILVER_CARVER)
+                .input(ModItems.SILVER_SCALE)
+                .input(ModItems.SILVER_SCALE)
+                .input(Items.STICK)
+                .criterion(hasItem(ModItems.SILVER_SCALE), conditionsFromItem(ModItems.SILVER_SCALE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("silver_carver"));
     }
 }

@@ -164,7 +164,6 @@ public class ModItemGroups {
                         entries.add(Items.DIAMOND_BLOCK);
                         entries.add(Items.NETHERITE_BLOCK);
                         entries.add(ModBlocks.SALT_BLOCK);
-                        entries.add(ModBlocks.RAW_SALT_BLOCK);
                         entries.add(ModBlocks.FROSITE_BLOCK);
                         entries.add(ModBlocks.SANDITE_BLOCK);
                         entries.add(ModBlocks.LEAFITE_BLOCK);
@@ -295,6 +294,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PLATINUM_SHOVEL);
                         entries.add(ModItems.PLATINUM_HOE);
                         entries.add(ModItems.PLATINUM_MULTI_TOOL);
+                        entries.add(ModItems.SILVER_CARVER);
                     }).build());
     public static final ItemGroup ORES_MOD_WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OresMod.MOD_ID, "ores_mod_weapons"),
@@ -826,6 +826,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE);
                         entries.add(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
                         entries.add(ModItems.SILVER_MANDIBLE);
+                        entries.add(ModBlocks.SILVER_CROWN);
                         entries.add(ModItems.FROZEN_FLESH);
                         entries.add(ModItems.ICE_CHUNK);
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);

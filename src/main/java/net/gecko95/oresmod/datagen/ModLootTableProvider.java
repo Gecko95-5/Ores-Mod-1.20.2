@@ -24,7 +24,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.RAW_SALT_BLOCK);
         addDrop(ModBlocks.FROSITE_BLOCK);
         addDrop(ModBlocks.FROSITE_BRICKS);
         addDrop(ModBlocks.FROSITE_BRICK_STAIRS);
@@ -140,9 +139,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SILVER_SCALES);
         addDrop(ModBlocks.SILVER_SCALE_CORE);
         addDrop(ModBlocks.SILVER_SCALE_FACE);
-        addDrop(ModBlocks.FOSSILIZED_SILVER_SCALES);
-        addDrop(ModBlocks.FOSSILIZED_SILVER_SCALE_CORE);
-        addDrop(ModBlocks.FOSSILIZED_SILVER_SCALE_FACE);
         addDrop(ModBlocks.ENDER_DRAGON_TROPHY);
         addDrop(ModBlocks.WITHER_TROPHY);
         addDrop(ModBlocks.ELDER_GUARDIAN_TROPHY);

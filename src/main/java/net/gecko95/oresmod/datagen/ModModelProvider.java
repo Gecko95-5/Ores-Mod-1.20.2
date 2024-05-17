@@ -19,7 +19,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SALT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SALT_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_SALT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_FROSITE_ORE);
         BlockStateModelGenerator.BlockTexturePool frostPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FROSITE_BLOCK);
@@ -769,6 +768,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FROZEN_FLESH, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ICY_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SILVER_CARVER, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.SILVERPEDE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
