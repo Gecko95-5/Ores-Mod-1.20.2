@@ -102,22 +102,40 @@ public class FrositeGolemEntity extends HostileEntity {
     protected int getNextAirUnderwater(int air) {
         return air;
     }
+    private float getAttackDamage() {
+        return (float)this.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
+    }
 
     @Override
     public boolean tryAttack(Entity target) {
-        if (super.tryAttack(target)) {
+        this.getWorld().sendEntityStatus(this, EntityStatuses.PLAY_ATTACK_SOUND);
+        float f = this.getAttackDamage();
+        float g = (int)f > 0 ? f / 2.0f + (float)this.random.nextInt((int)f) : f;
+        boolean bl = target.damage(this.getDamageSources().mobAttack(this), g);
+        if (bl) {
+            double d;
             if (target instanceof LivingEntity) {
-                int i = 1;
-                if (this.getWorld().getDifficulty() == Difficulty.NORMAL) {
-                    i = 2;
-                } else if (this.getWorld().getDifficulty() == Difficulty.HARD) {
-                    i = 4;
+                LivingEntity livingEntity = (LivingEntity)target;
+                d = livingEntity.getAttributeValue(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE);
+                if (target instanceof LivingEntity) {
+                    int i = 1;
+                    if (this.getWorld().getDifficulty() == Difficulty.NORMAL) {
+                        i = 2;
+                    } else if (this.getWorld().getDifficulty() == Difficulty.HARD) {
+                        i = 4;
+                    }
+                    ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, i * 100, 0), this);
                 }
-                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, i * 100, 0), this);
+            } else {
+                d = 0.0;
             }
-            return true;
+            double d2 = d;
+            double e = Math.max(0.0, 1.0 - d2);
+            target.setVelocity(target.getVelocity().add(0.0, (double)0.2f * e, 0.0));
+            this.applyDamageEffects(this, target);
         }
-        return false;
+        this.playSound(SoundEvents.ENTITY_IRON_GOLEM_ATTACK, 1.0f, 1.0f);
+        return bl;
     }
 
     @Override
@@ -145,5 +163,13 @@ public class FrositeGolemEntity extends HostileEntity {
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {
         this.playSound(SoundEvents.ENTITY_IRON_GOLEM_STEP, 1.0f, 1.0f);
+    }
+
+    @Override
+    public boolean canHaveStatusEffect(StatusEffectInstance effect) {
+        if (effect.getEffectType() == ModEffects.FROSTBITE) {
+            return false;
+        }
+        return super.canHaveStatusEffect(effect);
     }
 }

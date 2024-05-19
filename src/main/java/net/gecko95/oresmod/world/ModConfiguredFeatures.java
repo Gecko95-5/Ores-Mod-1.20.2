@@ -24,10 +24,7 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.treedecorator.LeavesVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
-import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
-import net.minecraft.world.gen.trunk.MegaJungleTrunkPlacer;
-import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import net.minecraft.world.gen.trunk.*;
 
 import java.util.List;
 
@@ -349,7 +346,7 @@ public class ModConfiguredFeatures {
 
         register(context, BIG_LEAFITE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
                 (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
-                        new MegaJungleTrunkPlacer(10,4,0),
+                        new GiantTrunkPlacer(10,4,0),
                         BlockStateProvider.of(ModBlocks.LEAFITE_LEAVES),
                         new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2),3),
 
@@ -359,7 +356,7 @@ public class ModConfiguredFeatures {
 
         register(context, BIG_LEAFITE_ORE_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder
                 (BlockStateProvider.of(ModBlocks.LEAFITE_LOG),
-                        new MegaJungleTrunkPlacer(10,4,0),
+                        new GiantTrunkPlacer(10,4,0),
                         new WeightedBlockStateProvider(DataPool.<BlockState>builder()
                                 .add(ModBlocks.LEAFITE_LEAVES.getDefaultState(),5)
                                 .add(ModBlocks.LEAFITE_LEAVES_ORE.getDefaultState(),1)),

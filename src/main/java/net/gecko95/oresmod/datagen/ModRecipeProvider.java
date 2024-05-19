@@ -2922,6 +2922,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.CLAY_BOOTS), conditionsFromItem(ModItems.CLAY_BOOTS))
                 .offerTo(exporter, new Identifier("terracotta_boots_from_smelting"));
 
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLACK_TERRACOTTA_HELMET)
                 .pattern("DDD")
                 .pattern("DTD")
@@ -5571,5 +5572,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SILVER_SCALE), conditionsFromItem(ModItems.SILVER_SCALE))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier("silver_carver"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModItems.LEAFITE,2)
+                .input(ModBlocks.LEAFITE_LEAVES_ORE)
+                .criterion(hasItem(ModBlocks.LEAFITE_LEAVES_ORE), conditionsFromItem(ModBlocks.LEAFITE_LEAVES_ORE))
+                .offerTo(exporter, new Identifier("leafite_from_leafite_ore"));
     }
 }

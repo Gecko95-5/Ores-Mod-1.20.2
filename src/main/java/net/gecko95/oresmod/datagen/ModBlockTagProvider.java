@@ -590,6 +590,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARKEN_END_ITE_TILE_SLAB)
                 .add(ModBlocks.DARKEN_END_ITE_TILE_WALL);
 
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.STONEBARK_LOG)
+                .add(ModBlocks.DEEPSLATE_LOG)
+                .add(ModBlocks.LEAFITE_LOG)
+                .add(ModBlocks.STONEBARK_WOOD)
+                .add(ModBlocks.DEEPSLATE_WOOD)
+                .add(ModBlocks.LEAFITE_WOOD)
+                .add(ModBlocks.STRIPPED_STONEBARK_LOG)
+                .add(ModBlocks.STRIPPED_DEEPSLATE_LOG)
+                .add(ModBlocks.STRIPPED_LEAFITE_LOG)
+                .add(ModBlocks.STRIPPED_STONEBARK_WOOD)
+                .add(ModBlocks.STRIPPED_DEEPSLATE_WOOD)
+                .add(ModBlocks.STRIPPED_LEAFITE_WOOD);
+
         getOrCreateTagBuilder(BlockTags.SIGNS)
                 .add(ModBlocks.WALL_STONEBARK_SIGN)
                 .add(ModBlocks.WALL_DEEPBARK_SIGN)

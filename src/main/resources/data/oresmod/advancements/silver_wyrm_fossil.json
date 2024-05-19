@@ -20,14 +20,14 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "You found a Fossil",
+    "description": "You found a Gravel Dig Spot",
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "oresmod:fossilized_silver_scales"
+      "item": "minecraft:suspicious_gravel"
     },
     "show_toast": true,
-    "title": "A Silver Fossil"
+    "title": "Silver Excavation"
   },
   "requirements": [
     [

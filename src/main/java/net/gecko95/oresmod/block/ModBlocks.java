@@ -169,7 +169,7 @@ public class ModBlocks {
                     .instrument(Instrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block STONEBARK_LEAVES = registerBlock("stonebark_leaves",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.LIGHT_BLUE_GRAY)));
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.LIGHT_BLUE_GRAY)));
 
 
 
@@ -195,7 +195,7 @@ public class ModBlocks {
                     .instrument(Instrument.BASEDRUM).requiresTool().strength(1.5f, 6.0f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block DEEPSLATE_LEAVES = registerBlock("deepslate_leaves",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.DARK_RED)));
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.DARK_RED)));
 
     public static final Block STONEBARK_STAIRS = registerBlock("stonebark_stairs",
             new StairsBlock(ModBlocks.STONEBARK_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.STONEBARK_PLANKS)));
@@ -412,9 +412,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).mapColor(MapColor.PALE_GREEN)
                     .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
     public static final Block LEAFITE_LEAVES = registerBlock("leafite_leaves",
-            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.GREEN)));
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.GREEN)));
     public static final Block LEAFITE_LEAVES_ORE = registerBlock("leafite_leaves_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.GREEN)));
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.GREEN)));
 
     public static final Block LEAFITE_PLANKS_STAIRS = registerBlock("leafite_planks_stairs",
             new StairsBlock(ModBlocks.LEAFITE_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LEAFITE_PLANKS)));

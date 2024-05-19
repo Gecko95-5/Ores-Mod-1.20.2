@@ -12,6 +12,6 @@ public class ModTerrablenderAPI implements TerraBlenderApi {
     public void onTerraBlenderInitialized() {
         Regions.register(new ModOverworldRegion(new Identifier(OresMod.MOD_ID, "overworld"), 4));
 
-        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, OresMod.MOD_ID, ModMaterialRules.makeRules());
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, OresMod.MOD_ID, ModMaterialRules.createModSurfaceRule());
     }
 }

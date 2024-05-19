@@ -53,4 +53,5 @@ public class IceCubeEntity extends HostileEntity {
     protected SoundEvent getDeathSound() {
         return SoundEvents.BLOCK_GLASS_BREAK;
     }
+
 }

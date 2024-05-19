@@ -27,13 +27,23 @@
       "entries": [
         {
           "data": {
-            "Name": "oresmod:leafite_leaves"
+            "Name": "oresmod:leafite_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           },
           "weight": 5
         },
         {
           "data": {
-            "Name": "oresmod:leafite_leaves_ore"
+            "Name": "oresmod:leafite_leaves_ore",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           },
           "weight": 1
         }

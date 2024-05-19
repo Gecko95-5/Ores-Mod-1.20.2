@@ -3,9 +3,11 @@ package net.gecko95.oresmod.util;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.gecko95.oresmod.block.ModBlocks;
 import net.gecko95.oresmod.item.ModItems;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 
 public class ModCustomTrades {
@@ -98,7 +100,6 @@ public class ModCustomTrades {
                     new ItemStack(Items.EMERALD, 1),
                     12, 20, 0.05f));
                 });
-
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER,3,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
@@ -237,6 +238,11 @@ public class ModCustomTrades {
                             new ItemStack(ModItems.TITANIUM_INGOT, 1),
                             new ItemStack(Items.EMERALD, 1),
                             12, 30, 0.05f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 16),
+                            new ItemStack(Items.EMERALD, 2),
+                            3, 30, 0.2f));
                 });
 
         TradeOfferHelper.registerWanderingTraderOffers(1,
@@ -245,11 +251,10 @@ public class ModCustomTrades {
                             new ItemStack(Items.EMERALD, 1),
                             new ItemStack(ModBlocks.WHITE_SAND, 4),
                             6, 0, 0.0f));
-
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(ModBlocks.BLACK_SAND, 2),
-                            4, 0, 0.0f));
+                            new ItemStack(ModBlocks.BLACK_SAND, 4),
+                            6, 0, 0.0f));
 
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 5),
@@ -260,6 +265,16 @@ public class ModCustomTrades {
                             new ItemStack(Items.EMERALD, 10),
                             new ItemStack(ModBlocks.DEEPBARK_SAPLING, 1),
                             8, 0, 0.0f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 10),
+                            new ItemStack(ModBlocks.LEAFITE_SAPLING, 1),
+                            8, 0, 0.0f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModBlocks.ICY_CROCUS, 1),
+                            8, 0, 0.0f));
                 });
 
         TradeOfferHelper.registerWanderingTraderOffers(2,
@@ -268,6 +283,11 @@ public class ModCustomTrades {
                             new ItemStack(Items.EMERALD, 1),
                             new ItemStack(ModItems.POWDERED_SALT, 16),
                             8, 0, 0.0f));
+
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 3),
+                            new ItemStack(ModItems.ICE_CHUNK, 8),
+                            6, 0, 0.0f));
 
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 64),

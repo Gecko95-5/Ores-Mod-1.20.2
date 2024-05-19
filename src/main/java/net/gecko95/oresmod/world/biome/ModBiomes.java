@@ -37,7 +37,6 @@ public class ModBiomes {
     public static Biome qurrayBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.SILVERFISH, 95, 2, 5));
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.SILVERPEDE, 75, 1, 3));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 
@@ -49,12 +48,8 @@ public class ModBiomes {
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addEmeraldOre(biomeBuilder);
         DefaultBiomeFeatures.addInfestedStone(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
-        DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-        DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
-
         DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
         DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 

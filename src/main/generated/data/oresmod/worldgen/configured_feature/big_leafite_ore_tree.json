@@ -27,13 +27,23 @@
       "entries": [
         {
           "data": {
-            "Name": "oresmod:leafite_leaves"
+            "Name": "oresmod:leafite_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           },
           "weight": 5
         },
         {
           "data": {
-            "Name": "oresmod:leafite_leaves_ore"
+            "Name": "oresmod:leafite_leaves_ore",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           },
           "weight": 1
         }
@@ -48,7 +58,7 @@
       "upper_size": 1
     },
     "trunk_placer": {
-      "type": "minecraft:mega_jungle_trunk_placer",
+      "type": "minecraft:giant_trunk_placer",
       "base_height": 10,
       "height_rand_a": 4,
       "height_rand_b": 0

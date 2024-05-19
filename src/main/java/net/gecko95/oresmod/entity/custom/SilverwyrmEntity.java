@@ -17,14 +17,16 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldEvents;
 import org.jetbrains.annotations.Nullable;
 
 public class SilverwyrmEntity extends HostileEntity {
     private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.WHITE, BossBar.Style.PROGRESS).setThickenFog(false);
     public final AnimationState idleAnimtionState = new AnimationState();
     private int idleAnimtionTimeout = 0;
-
+    protected int despawnCounter;
     private void setupAnimationStates(){
         if (this.idleAnimtionTimeout <= 0) {
             this.idleAnimtionTimeout = this.random.nextInt(40) + 80;
@@ -49,6 +51,8 @@ public class SilverwyrmEntity extends HostileEntity {
 
     public SilverwyrmEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
+        this.setHealth(this.getMaxHealth());
+        this.experiencePoints = 50;
     }
     @Override
     public void readCustomDataFromNbt(NbtCompound nbt) {
@@ -67,15 +71,17 @@ public class SilverwyrmEntity extends HostileEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
+        this.goalSelector.add(3, new PounceAtTargetGoal(this, 0.6f));
         this.goalSelector.add(4, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0));
-        this.goalSelector.add(6, new LookAroundGoal(this));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new RevengeGoal(this).setGroupRevenge());
     }
 
     @Override
     protected void mobTick() {
+        if (this.getHealth() <= this.getMaxHealth() / 2.0f)
+            addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,-1,0));
         super.mobTick();
         this.bossBar.setPercent(this.getHealth() / this.getMaxHealth());
     }
@@ -114,14 +120,27 @@ public class SilverwyrmEntity extends HostileEntity {
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_STRAY_DEATH;
+        return SoundEvents.ENTITY_VEX_DEATH;
     }
     @Override
     public EntityGroup getGroup() {
         return EntityGroup.ARTHROPOD;
     }
+
+
     @Override
-    public void damageShield(float amount) {
-        super.damageShield(168);
+    public boolean canHaveStatusEffect(StatusEffectInstance effect) {
+        if (effect.getEffectType() == StatusEffects.POISON) {
+            return false;
+        }
+        return super.canHaveStatusEffect(effect);
+    }
+    @Override
+    public void checkDespawn() {
+        if (this.getWorld().getDifficulty() == Difficulty.PEACEFUL && this.isDisallowedInPeaceful()) {
+            this.discard();
+            return;
+        }
+        this.despawnCounter = 0;
     }
 }

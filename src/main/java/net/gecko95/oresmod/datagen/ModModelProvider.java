@@ -710,7 +710,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.LEAFITE, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.SILVER_SCALE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SILVER_SCALE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SILVER_MANDIBLE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.RUSTED_STEEL_APPLE, Models.GENERATED);

@@ -9,6 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.CaveSpiderEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.item.ItemStack;
@@ -56,5 +57,12 @@ public class FrostbitenEntity extends ZombieEntity {
                 this.equipStack(EquipmentSlot.MAINHAND, new ItemStack(ModItems.FROSITE_SHOVEL));
             }
         }
+    }
+    @Override
+    public boolean canHaveStatusEffect(StatusEffectInstance effect) {
+        if (effect.getEffectType() == ModEffects.FROSTBITE) {
+            return false;
+        }
+        return super.canHaveStatusEffect(effect);
     }
 }
