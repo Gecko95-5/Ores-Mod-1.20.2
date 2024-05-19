@@ -327,6 +327,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.COBBLESTONE_NICKEL_ORE,oreDrops(ModBlocks.COBBLESTONE_NICKEL_ORE, ModItems.RAW_NICKEL));
         addDrop(ModBlocks.COBBLESTONE_TITANIUM_ORE,oreDrops(ModBlocks.COBBLESTONE_TITANIUM_ORE, ModItems.RAW_TITANIUM));
 
+        addDrop(ModBlocks.SCULK_DIAMOND_ORE,oreDrops(ModBlocks.SCULK_DIAMOND_ORE, Items.DIAMOND));
+        addDrop(ModBlocks.CLAY_LAPIS_ORE,lapisOreDrops(ModBlocks.CLAY_LAPIS_ORE));
+
         addDrop(ModBlocks.SUSPICIOUS_WHITE_SAND,saltBlockDrops(ModBlocks.SUSPICIOUS_WHITE_SAND));
 
         addDrop(ModBlocks.PLATINUM_ORE,oreDrops(ModBlocks.PLATINUM_ORE, ModItems.PLATINUM_CLUSTER));

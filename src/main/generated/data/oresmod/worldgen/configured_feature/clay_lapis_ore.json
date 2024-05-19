@@ -2,15 +2,15 @@
   "type": "minecraft:ore",
   "config": {
     "discard_chance_on_air_exposure": 0.0,
-    "size": 16,
+    "size": 7,
     "targets": [
       {
         "state": {
-          "Name": "oresmod:white_sand"
+          "Name": "oresmod:clay_lapis_ore"
         },
         "target": {
-          "block": "minecraft:sand",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       }
     ]

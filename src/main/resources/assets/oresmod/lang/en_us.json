@@ -363,6 +363,8 @@
   "item.oresmod.end_ite_axe": "End-ite Axe",
   "item.oresmod.end_ite_shovel": "End-ite Shovel",
   "item.oresmod.end_ite_hoe": "End-ite Hoe",
+  "item.oresmod.end_ite_drill": "End-ite Drill",
+  "item.oresmod.end_ite_chainsaw": "End-ite Chainsaw",
 
   "item.oresmod.end_ite_helmet": "End-ite Helmet",
   "item.oresmod.end_ite_chestplate": "End-ite Chestplate",
@@ -606,6 +608,8 @@
   "block.oresmod.gravel_coal_ore": "Gravel Coal Ore",
   "block.oresmod.dripstone_copper_ore": "Dripstone Copper Ore",
   "block.oresmod.tuff_iron_ore": "Tuff Iron Ore",
+  "block.oresmod.clay_lapis_ore": "Clay Lapis Ore",
+  "block.oresmod.sculk_diamond_ore": "Sculk Diamond Ore",
 
   "block.oresmod.cobblestone_coal_ore": "Cobblestone Coal Ore",
   "block.oresmod.cobblestone_iron_ore": "Cobblestone Iron Ore",
@@ -909,15 +913,15 @@
 
   "effect.oresmod.decrease_health": "Health Decrease",
 
-  "itemgroup.ores_mod_ores": "Ores & Materials",
-  "itemgroup.ores_mod_compounds": "Compounds of Materials",
-  "itemgroup.ores_mod_blocks": "Block of Materials",
-  "itemgroup.ores_mod_tools": "Tools of Materials",
-  "itemgroup.ores_mod_weapons": "Weapons & Armor of Materials",
-  "itemgroup.ores_mod_other_blocks": "Other Blocks",
-  "itemgroup.ores_mod_other": "Other",
-  "itemgroup.ores_mod_liquids": "Liquids Tank",
-  "itemgroup.ores_mod_mobs": "Mobs and Mobs Drops",
+  "biome.oresmod.quarry": "The Quarry",
+  "biome.oresmod.white_dunes": "White Sand Dunes",
+  "biome.oresmod.black_sand_beach": "Black Sand Beach",
+
+  "itemgroup.ores_mod_ores": "OOM Ores & Materials",
+  "itemgroup.ores_mod_tools": "OOM Tools & Weapons",
+  "itemgroup.ores_mod_other_blocks": "OOM Other Blocks",
+  "itemgroup.ores_mod_other": "OOM Other Stuff",
+  "itemgroup.ores_mod_mobs": "OOM Mobs & Trophies",
 
   "tooltip.oresmod.modded_upgrade_smithing_template_1": "Ingredients:",
   "tooltip.oresmod.modded_upgrade_smithing_template_2": "Applies to:",

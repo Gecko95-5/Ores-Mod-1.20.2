@@ -40,12 +40,13 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BEDROCK_ORE_KEY = registerKey("bedrock_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TUNGSTEN_ORE_KEY = registerKey("tungsten_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBALT_ORE_KEY = registerKey("cobalt_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_SAND_KEY = registerKey("white_sand");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SUSPICIOUS_WHITE_SAND_KEY = registerKey("suspicious_white_sand");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TERRACOTTA_GOLD_ORE_KEY = registerKey("terracotta_gold_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> GRAVEL_COAL_ORE_KEY = registerKey("gravel_coal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIPSTONE_COPPER_ORE_KEY = registerKey("dripstone_copper_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TUFF_IRON_ORE_KEY = registerKey("tuff_iron_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CLAY_LAPIS_ORE_KEY = registerKey("clay_lapis_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SCULK_DIAMOND_ORE_KEY = registerKey("sculk_diamond_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SANNITE_ORE_KEY = registerKey("sannite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> RED_SANNITE_ORE_KEY = registerKey("red_sannite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_COAL_ORE_KEY = registerKey("cobblestone_coal_ore");
@@ -81,9 +82,9 @@ public class ModConfiguredFeatures {
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacebles = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        RuleTest netherReplacebles = new TagMatchRuleTest(BlockTags.NETHER_CARVER_REPLACEABLES);
+        RuleTest netherReplacebles = new BlockMatchRuleTest(Blocks.NETHERRACK);
         RuleTest packediceReplacebles = new BlockMatchRuleTest(Blocks.PACKED_ICE);
-        RuleTest sandReplacebles = new BlockMatchRuleTest(Blocks.SAND);
+        RuleTest whitesandReplacebles = new BlockMatchRuleTest(ModBlocks.WHITE_SAND);
         RuleTest terracottaReplacebles = new BlockMatchRuleTest(Blocks.TERRACOTTA);
         RuleTest sandstoneReplacebles = new BlockMatchRuleTest(Blocks.SANDSTONE);
         RuleTest redsandstoneReplacebles = new BlockMatchRuleTest(Blocks.RED_SANDSTONE);
@@ -128,11 +129,8 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldBedrockOres =
                 List.of(OreFeatureConfig.createTarget(deepslateReplacebles, ModBlocks.CRACKED_BEDROCK.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldWhiteSand =
-                List.of(OreFeatureConfig.createTarget(sandReplacebles, ModBlocks.WHITE_SAND.getDefaultState()));
-
         List<OreFeatureConfig.Target> overworldSuspiciousWhiteSand =
-                List.of(OreFeatureConfig.createTarget(sandReplacebles, ModBlocks.SUSPICIOUS_WHITE_SAND.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(whitesandReplacebles, ModBlocks.SUSPICIOUS_WHITE_SAND.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldTerracottaGoldOres =
                 List.of(OreFeatureConfig.createTarget(terracottaReplacebles, ModBlocks.TERRACOTTA_GOLD_ORE.getDefaultState()));
@@ -145,6 +143,12 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> overworldTuffIronOres =
                 List.of(OreFeatureConfig.createTarget(deepslateReplacebles, ModBlocks.TUFF_IRON_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldClayLapisOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.CLAY_LAPIS_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldSculkDiamondOres =
+                List.of(OreFeatureConfig.createTarget(deepslateReplacebles, ModBlocks.SCULK_DIAMOND_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldSanniteOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.SANDITE_ORE.getDefaultState()),
@@ -243,9 +247,7 @@ public class ModConfiguredFeatures {
 
         register(context, BEDROCK_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBedrockOres, 4));
 
-        register(context, WHITE_SAND_KEY, Feature.ORE, new OreFeatureConfig(overworldWhiteSand, 16));
-
-        register(context, SUSPICIOUS_WHITE_SAND_KEY, Feature.ORE, new OreFeatureConfig(overworldSuspiciousWhiteSand, 4));
+        register(context, SUSPICIOUS_WHITE_SAND_KEY, Feature.ORE, new OreFeatureConfig(overworldSuspiciousWhiteSand, 8));
 
         register(context, TERRACOTTA_GOLD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTerracottaGoldOres, 9));
 
@@ -254,6 +256,10 @@ public class ModConfiguredFeatures {
         register(context, DRIPSTONE_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldDripstoneCopperOres, 7));
 
         register(context, TUFF_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTuffIronOres, 4));
+
+        register(context, CLAY_LAPIS_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldClayLapisOres, 7));
+
+        register(context, SCULK_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSculkDiamondOres, 4));
 
         register(context, SANNITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSanniteOres, 4));
 

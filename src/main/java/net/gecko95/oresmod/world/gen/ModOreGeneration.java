@@ -45,10 +45,7 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BEDROCK_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.WHITE_SAND_PLACED_KEY);
-
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.WHITE_DUNES_BIOME),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SUSPICIOUS_WHITE_SAND_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_BADLANDS),
@@ -62,6 +59,12 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.TUFF_IRON_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUSH_CAVES),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.CLAY_LAPIS_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SCULK_DIAMOND_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SANNITE_ORE_PLACED_KEY);

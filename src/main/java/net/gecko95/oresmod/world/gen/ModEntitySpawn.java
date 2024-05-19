@@ -23,9 +23,6 @@ public class ModEntitySpawn {
         BiomeModifications.addSpawn(BiomeSelectors.tag(BiomeTags.SPAWNS_SNOW_FOXES),
                 SpawnGroup.MONSTER, ModEntities.FROSTBITEN,25,1,3);
 
-        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(ModBiomes.QUARRY_BIOME),
-                SpawnGroup.MONSTER, ModEntities.SILVERPEDE,75,2,5);
-
         SpawnRestriction.register(ModEntities.JUNGLE_SPIDER, SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnIgnoreLightLevel);
 
@@ -36,6 +33,6 @@ public class ModEntitySpawn {
                 Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnInDark);
 
         SpawnRestriction.register(ModEntities.SILVERPEDE, SpawnRestriction.Location.ON_GROUND,
-                Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnIgnoreLightLevel);
+                Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnInDark);
     }
 }

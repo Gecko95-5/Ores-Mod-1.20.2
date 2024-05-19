@@ -625,6 +625,10 @@ public class ModItems {
             new DrillItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings()));
     public static final Item LEAFITE_CHAINSAW = registerItem("leafite_chainsaw",
             new ChainsawItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings()));
+    public static final Item END_ITE_DRILL = registerItem("end_ite_drill",
+            new DrillItem(ModToolMaterial.POWER_END_ITE, 0, -2.8f, new FabricItemSettings()));
+    public static final Item END_ITE_CHAINSAW = registerItem("end_ite_chainsaw",
+            new ChainsawItem(ModToolMaterial.POWER_END_ITE, 0, -2.8f, new FabricItemSettings()));
 
     public static final Item SILVER_SCALE = registerItem("silver_scale", new Item(new FabricItemSettings()));
 

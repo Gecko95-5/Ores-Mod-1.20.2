@@ -526,6 +526,10 @@ public class ModBlocks {
     public static final Block TUFF_IRON_ORE = registerBlock("tuff_iron_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).mapColor(MapColor.TERRACOTTA_GRAY)
                     .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f).sounds(BlockSoundGroup.TUFF)));
+    public static final Block SCULK_DIAMOND_ORE = registerBlock("sculk_diamond_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.SCULK).strength(0.2f).requiresTool()));
+    public static final Block CLAY_LAPIS_ORE = registerBlock("clay_lapis_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(0.6f).requiresTool()));
 
     public static final Block LAVA_TANK = registerBlock("lava_tank",
             new LavaTankBlock(FabricBlockSettings.copyOf(ModBlocks.TUNGSTEN_BLOCK).luminance(state -> 15).solidBlock(Blocks::never).sounds(BlockSoundGroup.GLASS)));

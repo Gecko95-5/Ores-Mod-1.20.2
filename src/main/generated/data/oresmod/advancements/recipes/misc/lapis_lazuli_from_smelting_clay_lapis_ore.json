@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta_gold_ore": {
+    "has_clay_lapis_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:terracotta_gold_ore"
+              "oresmod:clay_lapis_ore"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:iron_ingot_from_blasting_terracotta_gold_ore"
+        "recipe": "minecraft:lapis_lazuli_from_smelting_clay_lapis_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_terracotta_gold_ore"
+      "has_clay_lapis_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:iron_ingot_from_blasting_terracotta_gold_ore"
+      "minecraft:lapis_lazuli_from_smelting_clay_lapis_ore"
     ]
   },
   "sends_telemetry_event": false

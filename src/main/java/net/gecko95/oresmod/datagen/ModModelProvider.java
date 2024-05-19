@@ -42,6 +42,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_STEEL_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVA_TANK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCULK_DIAMOND_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CLAY_LAPIS_ORE);
         BlockStateModelGenerator.BlockTexturePool watertankPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WATER_TANK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MILK_TANK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FIRE_RESISTANCE_POTION_TANK);

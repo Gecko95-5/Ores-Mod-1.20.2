@@ -174,9 +174,8 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [8, 130, 0],
-			"translation": [0, -1, 0],
-			"scale": [0.7, 0.7, 0.7]
+			"rotation": [22.5, 135, 0],
+			"scale": [0.6, 0.6, 0.6]
 		},
 		"head": {
 			"translation": [0, 14.25, 0]

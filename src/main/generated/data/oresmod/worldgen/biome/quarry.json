@@ -106,6 +106,12 @@
         "weight": 95
       },
       {
+        "type": "oresmod:silverpede",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 75
+      },
+      {
         "type": "minecraft:spider",
         "maxCount": 4,
         "minCount": 4,

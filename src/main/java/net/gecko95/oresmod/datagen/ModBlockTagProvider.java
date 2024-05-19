@@ -211,7 +211,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STONEBARK_LEAVES)
                 .add(ModBlocks.DEEPSLATE_LEAVES)
                 .add(ModBlocks.LEAFITE_LEAVES)
-                .add(ModBlocks.LEAFITE_LEAVES_ORE);
+                .add(ModBlocks.LEAFITE_LEAVES_ORE)
+                .add(ModBlocks.SCULK_DIAMOND_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.STONEBARK_PLANKS)
@@ -271,7 +272,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WHITE_SAND)
                 .add(ModBlocks.GRAVEL_COAL_ORE)
                 .add(ModBlocks.SUSPICIOUS_WHITE_SAND)
-                .add(ModBlocks.BLACK_SAND);
+                .add(ModBlocks.BLACK_SAND)
+                .add(ModBlocks.CLAY_LAPIS_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.ALUMINUM_BLOCK)
@@ -295,7 +297,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBBLESTONE_COPPER_ORE)
                 .add(ModBlocks.COBBLESTONE_LAPIS_ORE)
                 .add(ModBlocks.COBBLESTONE_ALUMINUM_ORE)
-                .add(ModBlocks.COBBLESTONE_NICKEL_ORE);
+                .add(ModBlocks.COBBLESTONE_NICKEL_ORE)
+                .add(ModBlocks.CLAY_LAPIS_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.FROSITE_ORE)
@@ -326,7 +329,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GILDED_MARBLE_BRICKS)
                 .add(ModBlocks.SILVER_SCALES)
                 .add(ModBlocks.SILVER_SCALE_CORE)
-                .add(ModBlocks.END_ITE_ORE);
+                .add(ModBlocks.END_ITE_ORE)
+                .add(ModBlocks.SCULK_DIAMOND_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.STEEL_BLOCK)

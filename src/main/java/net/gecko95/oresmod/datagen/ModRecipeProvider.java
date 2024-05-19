@@ -40,19 +40,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     private static final List<ItemConvertible> COBALT_SMELTABLES = List.of(ModBlocks.NETHER_COBALT_ORE);
 
-    private static final List<ItemConvertible> COAL_SMELTABLES = List.of(ModBlocks.COBBLESTONE_COAL_ORE);
+    private static final List<ItemConvertible> COAL_SMELTABLES = List.of(ModBlocks.COBBLESTONE_COAL_ORE,ModBlocks.GRAVEL_COAL_ORE);
 
-    private static final List<ItemConvertible> IRON_SMELTABLES = List.of(ModBlocks.COBBLESTONE_IRON_ORE);
+    private static final List<ItemConvertible> IRON_SMELTABLES = List.of(ModBlocks.COBBLESTONE_IRON_ORE, ModBlocks.TUFF_IRON_ORE);
 
-    private static final List<ItemConvertible> COPPER_SMELTABLES = List.of(ModBlocks.COBBLESTONE_COPPER_ORE);
+    private static final List<ItemConvertible> COPPER_SMELTABLES = List.of(ModBlocks.COBBLESTONE_COPPER_ORE, ModBlocks.DRIPSTONE_COPPER_ORE);
 
-    private static final List<ItemConvertible> GOLD_SMELTABLES = List.of(ModBlocks.COBBLESTONE_GOLD_ORE);
+    private static final List<ItemConvertible> GOLD_SMELTABLES = List.of(ModBlocks.COBBLESTONE_GOLD_ORE, ModBlocks.TERRACOTTA_GOLD_ORE);
 
     private static final List<ItemConvertible> REDSTONE_SMELTABLES = List.of(ModBlocks.COBBLESTONE_REDSTONE_ORE);
 
-    private static final List<ItemConvertible> LAPIS_SMELTABLES = List.of(ModBlocks.COBBLESTONE_LAPIS_ORE);
+    private static final List<ItemConvertible> LAPIS_SMELTABLES = List.of(ModBlocks.COBBLESTONE_LAPIS_ORE,ModBlocks.CLAY_LAPIS_ORE);
 
-    private static final List<ItemConvertible> DIAMOND_SMELTABLES = List.of(ModBlocks.COBBLESTONE_DIAMOND_ORE);
+    private static final List<ItemConvertible> DIAMOND_SMELTABLES = List.of(ModBlocks.COBBLESTONE_DIAMOND_ORE, ModBlocks.SCULK_DIAMOND_ORE);
 
     private static final List<ItemConvertible> EMERALD_SMELTABLES = List.of(ModBlocks.COBBLESTONE_EMERALD_ORE);
 
@@ -2400,42 +2400,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BLACK_SANDSTONE_STAIRS, ModBlocks.SMOOTH_BLACK_SANDSTONE);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB, ModBlocks.SMOOTH_BLACK_SANDSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB, ModBlocks.SMOOTH_BLACK_SANDSTONE,2);
-
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
-                        (ModBlocks.TERRACOTTA_GOLD_ORE), RecipeCategory.MISC, Items.GOLD_INGOT,0.7f, 200)
-                .criterion(hasItem(ModBlocks.TERRACOTTA_GOLD_ORE), conditionsFromItem(ModBlocks.TERRACOTTA_GOLD_ORE))
-                .offerTo(exporter, new Identifier("iron_ingot_from_smelting_terracotta_gold_ore"));
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems
-                        (ModBlocks.TERRACOTTA_GOLD_ORE), RecipeCategory.MISC, Items.GOLD_INGOT,0.7f, 100)
-                .criterion(hasItem(ModBlocks.TERRACOTTA_GOLD_ORE), conditionsFromItem(ModBlocks.TERRACOTTA_GOLD_ORE))
-                .offerTo(exporter, new Identifier("iron_ingot_from_blasting_terracotta_gold_ore"));
-
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
-                        (ModBlocks.GRAVEL_COAL_ORE), RecipeCategory.MISC, Items.COAL,0.7f, 200)
-                .criterion(hasItem(ModBlocks.GRAVEL_COAL_ORE), conditionsFromItem(ModBlocks.GRAVEL_COAL_ORE))
-                .offerTo(exporter, new Identifier("coal_from_smelting_gravel_coal_ore"));
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems
-                        (ModBlocks.GRAVEL_COAL_ORE), RecipeCategory.MISC, Items.COAL,0.7f, 100)
-                .criterion(hasItem(ModBlocks.GRAVEL_COAL_ORE), conditionsFromItem(ModBlocks.GRAVEL_COAL_ORE))
-                .offerTo(exporter, new Identifier("coal_from_blasting_gravel_coal_ore"));
-
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
-                        (ModBlocks.DRIPSTONE_COPPER_ORE), RecipeCategory.MISC, Items.COPPER_INGOT,0.7f, 200)
-                .criterion(hasItem(ModBlocks.DRIPSTONE_COPPER_ORE), conditionsFromItem(ModBlocks.DRIPSTONE_COPPER_ORE))
-                .offerTo(exporter, new Identifier("copper_ingot_from_smelting_dripstone_copper_ore"));
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems
-                        (ModBlocks.DRIPSTONE_COPPER_ORE), RecipeCategory.MISC, Items.COPPER_INGOT,0.7f, 100)
-                .criterion(hasItem(ModBlocks.DRIPSTONE_COPPER_ORE), conditionsFromItem(ModBlocks.DRIPSTONE_COPPER_ORE))
-                .offerTo(exporter, new Identifier("copper_ingot_from_blasting_dripstone_copper_ore"));
-
-        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
-                        (ModBlocks.TUFF_IRON_ORE), RecipeCategory.MISC, Items.IRON_INGOT,0.7f, 200)
-                .criterion(hasItem(ModBlocks.TUFF_IRON_ORE), conditionsFromItem(ModBlocks.TUFF_IRON_ORE))
-                .offerTo(exporter, new Identifier("iron_ingot_from_smelting_tuff_iron_ore"));
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems
-                        (ModBlocks.TUFF_IRON_ORE), RecipeCategory.MISC, Items.IRON_INGOT,0.7f, 100)
-                .criterion(hasItem(ModBlocks.TUFF_IRON_ORE), conditionsFromItem(ModBlocks.TUFF_IRON_ORE))
-                .offerTo(exporter, new Identifier("iron_ingot_from_blasting_tuff_iron_ore"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModBlocks.LAVA_TANK)
                 .pattern("TGT")
@@ -5573,9 +5537,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier("silver_carver"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModItems.LEAFITE,2)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LEAFITE,2)
                 .input(ModBlocks.LEAFITE_LEAVES_ORE)
                 .criterion(hasItem(ModBlocks.LEAFITE_LEAVES_ORE), conditionsFromItem(ModBlocks.LEAFITE_LEAVES_ORE))
                 .offerTo(exporter, new Identifier("leafite_from_leafite_ore"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_DRILL)
+                .pattern(" E ")
+                .pattern("EBP")
+                .pattern(" E ")
+                .input('E', ModItems.END_ITE)
+                .input('B', ModBlocks.END_ITE_BLOCK)
+                .input('P', ModItems.HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("end_ite_drill"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_CHAINSAW)
+                .pattern("  P")
+                .pattern("EEB")
+                .input('E', ModItems.END_ITE)
+                .input('B', ModBlocks.END_ITE_BLOCK)
+                .input('P', ModItems.HANDLED_POWER_DRIVE)
+                .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
+                .criterion(hasItem(ModBlocks.END_ITE_BLOCK), conditionsFromItem(ModBlocks.END_ITE_BLOCK))
+                .criterion(hasItem(ModItems.HANDLED_POWER_DRIVE), conditionsFromItem(ModItems.HANDLED_POWER_DRIVE))
+                .offerTo(exporter, new Identifier("end_ite_chainsaw"));
     }
 }

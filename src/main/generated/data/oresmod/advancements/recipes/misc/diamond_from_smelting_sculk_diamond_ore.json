@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta_gold_ore": {
+    "has_sculk_diamond_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:terracotta_gold_ore"
+              "oresmod:sculk_diamond_ore"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:iron_ingot_from_smelting_terracotta_gold_ore"
+        "recipe": "minecraft:diamond_from_smelting_sculk_diamond_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_terracotta_gold_ore"
+      "has_sculk_diamond_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:iron_ingot_from_smelting_terracotta_gold_ore"
+      "minecraft:diamond_from_smelting_sculk_diamond_ore"
     ]
   },
   "sends_telemetry_event": false

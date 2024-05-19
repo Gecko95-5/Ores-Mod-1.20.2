@@ -5,10 +5,6 @@
       "weight": 1
     },
     {
-      "structure": "oresmod:steel_cage_glowing",
-      "weight": 1
-    },
-    {
       "structure": "oresmod:steel_cage_drowned",
       "weight": 3
     },

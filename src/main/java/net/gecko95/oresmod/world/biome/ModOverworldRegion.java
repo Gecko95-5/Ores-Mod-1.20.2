@@ -25,6 +25,8 @@ public class ModOverworldRegion extends Region {
             RegistryKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
             modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.WINDSWEPT_HILLS, ModBiomes.QUARRY_BIOME);
+            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.DESERT, ModBiomes.WHITE_DUNES_BIOME);
+            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.STONY_SHORE, ModBiomes.BLACK_SAND_BEACH);
         });
     }
 }
