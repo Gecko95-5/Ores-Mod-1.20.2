@@ -35,27 +35,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.AXE_MINEABLE)
                 .forceAddTag(BlockTags.HOE_MINEABLE);
 
-        getOrCreateTagBuilder(ModTags.Blocks.MANDIBLE_MINEABLE)
-                .forceAddTag(BlockTags.SHOVEL_MINEABLE)
-                .add(Blocks.COBBLESTONE)
-                .add(Blocks.COBBLED_DEEPSLATE)
-                .add(Blocks.BLACKSTONE)
-                .add(Blocks.BASALT)
-                .add(Blocks.NETHERRACK)
-                .add(Blocks.COBBLED_DEEPSLATE)
-                .add(ModBlocks.COBBLESTONE_COAL_ORE)
-                .add(ModBlocks.COBBLESTONE_IRON_ORE)
-                .add(ModBlocks.COBBLESTONE_COPPER_ORE)
-                .add(ModBlocks.COBBLESTONE_LAPIS_ORE)
-                .add(ModBlocks.COBBLESTONE_GOLD_ORE)
-                .add(ModBlocks.COBBLESTONE_REDSTONE_ORE)
-                .add(ModBlocks.COBBLESTONE_DIAMOND_ORE)
-                .add(ModBlocks.COBBLESTONE_EMERALD_ORE)
-                .add(ModBlocks.COBBLESTONE_ALUMINUM_ORE)
-                .add(ModBlocks.COBBLESTONE_NICKEL_ORE)
-                .add(ModBlocks.COBBLESTONE_TITANIUM_ORE)
-                .add(ModBlocks.COBBLESTONE_QUARTZ_ORE);
-
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SALT_ORE)
                 .add(ModBlocks.FROSITE_ORE)

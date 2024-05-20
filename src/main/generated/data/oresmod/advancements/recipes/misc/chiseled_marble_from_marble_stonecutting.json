@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_granite_bricks": {
+    "has_marble": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:polished_granite_bricks"
+              "oresmod:marble"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "oresmod:polished_granite_brick_wall"
+        "recipe": "minecraft:chiseled_marble_from_marble_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_granite_bricks"
+      "has_marble"
     ]
   ],
   "rewards": {
     "recipes": [
-      "oresmod:polished_granite_brick_wall"
+      "minecraft:chiseled_marble_from_marble_stonecutting"
     ]
   },
   "sends_telemetry_event": false

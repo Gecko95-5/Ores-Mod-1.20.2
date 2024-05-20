@@ -37,7 +37,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0f, 0.1f, () -> Ingredient.ofItems(ModItems.COBALT_INGOT)),
     PLATINUM("platinum", 26, new int[] { 3, 8, 6, 3}, 8,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3f, 0.0f, () -> Ingredient.ofItems(ModItems.PLATINUM_INGOT)),
-    BEDROCK("bedrock", 2, new int[] { 3, 8, 6, 3}, 1,
+    BEDROCK("bedrock", 2, new int[] { 3, 5, 5, 3}, 1,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 0f, 0.5f, () -> Ingredient.ofItems(ModItems.BEDROCK_SHARD)),
     CLAY("clay", 7, new int[] { 1, 2, 2, 1}, 6,
     SoundEvents.BLOCK_GRAVEL_PLACE, 0f, 0f, () -> Ingredient.ofItems(Items.CLAY)),

@@ -11,6 +11,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item POWDERED_SALT = registerItem("powdered_salt", new Item(new FabricItemSettings()));
@@ -56,7 +57,7 @@ public class ModItems {
     public static final Item ALUMINUM_SHOVEL = registerItem("aluminum_shovel",
             new ShovelItem(ModToolMaterial.ALUMINUM, 1.5f, -2.8f, new FabricItemSettings()));
     public static final Item ALUMINUM_HOE = registerItem("aluminum_hoe",
-            new HoeItem(ModToolMaterial.ALUMINUM, -2, -0.8f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.ALUMINUM, -1, -0.8f, new FabricItemSettings()));
     public static final Item FLINT_AND_ALUMINUM = registerItem("flint_and_aluminum",
             new FlintAndSteelItem(new FabricItemSettings().maxDamage(32)));
 
@@ -233,7 +234,7 @@ public class ModItems {
     public static final Item TUNGSTEN_SHOVEL = registerItem("tungsten_shovel",
             new ShovelItem(ModToolMaterial.TUNGSTEN, 1.5f, -3.0f, new FabricItemSettings().fireproof()));
     public static final Item TUNGSTEN_HOE = registerItem("tungsten_hoe",
-            new HoeItem(ModToolMaterial.TUNGSTEN, -2, 0.0f, new FabricItemSettings().fireproof()));
+            new HoeItem(ModToolMaterial.TUNGSTEN, -1, 0.0f, new FabricItemSettings().fireproof()));
 
     public static final Item TITANIUM_ALLOY_INGOT = registerItem("titanium_alloy_ingot", new Item(new FabricItemSettings().fireproof()));
     public static final Item TITANIUM_ALLOY_SCRAP = registerItem("titanium_alloy_scrap", new Item(new FabricItemSettings().fireproof()));
@@ -268,11 +269,11 @@ public class ModItems {
     public static final Item COBALT_PICKAXE = registerItem("cobalt_pickaxe",
             new PickaxeItem(ModToolMaterial.COBALT, 1, -2.8f, new FabricItemSettings()));
     public static final Item COBALT_AXE = registerItem("cobalt_axe",
-            new AxeItem(ModToolMaterial.COBALT, 5.0f, -3.0f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.COBALT, 5.0f, -3.1f, new FabricItemSettings()));
     public static final Item COBALT_SHOVEL = registerItem("cobalt_shovel",
             new ShovelItem(ModToolMaterial.COBALT, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item COBALT_HOE = registerItem("cobalt_hoe",
-            new HoeItem(ModToolMaterial.COBALT, -2, 0.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.COBALT, -1, -1.0f, new FabricItemSettings()));
 
     public static final Item COBALT_HELMET = registerItem("cobalt_helmet",
             new ArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -314,7 +315,7 @@ public class ModItems {
     public static final Item FLINT_SHOVEL = registerItem("flint_shovel",
             new ShovelItem(ModToolMaterial.FLINT, 1.5f, -2.2f, new FabricItemSettings()));
     public static final Item FLINT_HOE = registerItem("flint_hoe",
-            new HoeItem(ModToolMaterial.FLINT, -1, -2.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.FLINT, 0, -2.0f, new FabricItemSettings()));
 
     public static final Item CLAY_HELMET = registerItem("clay_helmet",
             new ArmorItem(ModArmorMaterials.CLAY, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -489,7 +490,7 @@ public class ModItems {
     public static final Item SANDITE_SHOVEL = registerItem("sandite_shovel",
             new ShovelItem(ModToolMaterial.SANDITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item SANDITE_HOE = registerItem("sandite_hoe",
-            new HoeItem(ModToolMaterial.SANDITE, -2, -1.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.SANDITE, -3, -1.0f, new FabricItemSettings()));
     public static final Item SANDITE_HELMET = registerItem("sandite_helmet",
             new ArmorItem(ModArmorMaterials.SANDITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item SANDITE_CHESTPLATE = registerItem("sandite_chestplate",
@@ -510,7 +511,7 @@ public class ModItems {
     public static final Item LEAFITE_SHOVEL = registerItem("leafite_shovel",
             new ShovelItem(ModToolMaterial.LEAFITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item LEAFITE_HOE = registerItem("leafite_hoe",
-            new HoeItem(ModToolMaterial.LEAFITE, -2, -1.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.LEAFITE, -1, -1.0f, new FabricItemSettings()));
 
     public static final Item LEAFITE_HELMET = registerItem("leafite_helmet",
             new ArmorItem(ModArmorMaterials.LEAFITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -532,7 +533,7 @@ public class ModItems {
     public static final Item END_ITE_SHOVEL = registerItem("end_ite_shovel",
             new ShovelItem(ModToolMaterial.END_ITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item END_ITE_HOE = registerItem("end_ite_hoe",
-            new HoeItem(ModToolMaterial.END_ITE, -3, -1.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.END_ITE, -4, -1.0f, new FabricItemSettings()));
 
     public static final Item END_ITE_HELMET = registerItem("end_ite_helmet",
             new ArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
@@ -542,7 +543,54 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item END_ITE_BOOTS = registerItem("end_ite_boots",
             new ArmorItem(ModArmorMaterials.END_ITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item SILVER_SCALE = registerItem("silver_scale", new Item(new FabricItemSettings()));
 
+    public static final Item SPIKED_CLUB = registerItem("spiked_club",
+            new ClubItem(ModToolMaterial.CLUB, 0, -3.6f, new FabricItemSettings()));
+
+    public static final Item SILVER_MANDIBLE = registerItem("silver_mandible",
+            new Item(new FabricItemSettings().maxCount(2).rarity(Rarity.UNCOMMON)));
+    public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
+            new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item SILVER_CARVER = registerItem("silver_carver",
+            new CarverItem(ModToolMaterial.SILVER_DAGGER, 0, -1.8f, new FabricItemSettings()));
+    public static final Item ICY_DAGGER = registerItem("icy_dagger",
+            new IcyDaggerItem(ModToolMaterial.ICY_DAGGER, 0, -1.8f, new FabricItemSettings().rarity(Rarity.RARE)));
+
+    public static final Item PLATINUM_CLUSTER = registerItem("platinum_cluster", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_SCRAP = registerItem("platinum_scrap", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item PLATINUM_SWORD = registerItem("platinum_sword",
+            new SwordItem(ModToolMaterial.PLATINUM, 3, -2.4f, new FabricItemSettings()));
+    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
+            new PickaxeItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings()));
+    public static final Item PLATINUM_AXE = registerItem("platinum_axe",
+            new AxeItem(ModToolMaterial.PLATINUM, 5.0f, -3.0f, new FabricItemSettings()));
+    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
+            new ShovelItem(ModToolMaterial.PLATINUM, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
+            new HoeItem(ModToolMaterial.PLATINUM, -3, 0.0f, new FabricItemSettings()));
+
+    public static final Item PLATINUM_MULTI_TOOL = registerItem("platinum_multi_tool",
+            new MultiToolItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings().rarity(Rarity.EPIC)));
+
+    public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item ICE_CHUNK = registerItem("ice_chunk", new IceChunkItem(new FabricItemSettings().maxCount(16)));
+
+    public static final Item BOMB = registerItem("bomb", new BombItem(new FabricItemSettings().maxCount(16)));
+    public static final Item ICE_BOMB = registerItem("ice_bomb", new IceBombItem(new FabricItemSettings().maxCount(16)));
+
+    public static final Item FROZEN_FLESH = registerItem("frozen_flesh",
+            new Item(new FabricItemSettings().food(ModFoodComponents.FROZEN_FLESH)));
     public static final Item SILVERPEDE_SPAWN_EGG = registerItem("silverpede_spawn_egg",
             new SpawnEggItem(ModEntities.SILVERPEDE, 0xc0c0c0,0x868686, new FabricItemSettings()));
     public static final Item JUNGLE_SPIDER_SPAWN_EGG = registerItem("jungle_spider_spawn_egg",
@@ -566,118 +614,69 @@ public class ModItems {
     public static final Item DUEL_HANDLED_POWER_DRIVE = registerItem("duel_handled_power_drive",
             new Item(new FabricItemSettings().maxCount(1)));
     public static final Item IRON_DRILL = registerItem("iron_drill",
-            new DrillItem(ModToolMaterial.POWER_IRON, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_IRON, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item IRON_CHAINSAW = registerItem("iron_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_IRON, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_IRON, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item DIAMOND_DRILL = registerItem("diamond_drill",
-            new DrillItem(ModToolMaterial.POWER_DIAMOND, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_DIAMOND, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item DIAMOND_CHAINSAW = registerItem("diamond_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_DIAMOND, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_DIAMOND, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item GOLDEN_DRILL = registerItem("golden_drill",
-            new DrillItem(ModToolMaterial.POWER_GOLD, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_GOLD, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item GOLDEN_CHAINSAW = registerItem("golden_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_GOLD, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_GOLD, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item FROSITE_DRILL = registerItem("frosite_drill",
-            new DrillItem(ModToolMaterial.POWER_FROSITE, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_FROSITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item FROSITE_CHAINSAW = registerItem("frosite_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_FROSITE, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_FROSITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item ALUMINUM_DRILL = registerItem("aluminum_drill",
-            new DrillItem(ModToolMaterial.POWER_ALUMINUM, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_ALUMINUM, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item ALUMINUM_CHAINSAW = registerItem("aluminum_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_ALUMINUM, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_ALUMINUM, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item NICKEL_DRILL = registerItem("nickel_drill",
-            new DrillItem(ModToolMaterial.POWER_NICKEL, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_NICKEL, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item NICKEL_CHAINSAW = registerItem("nickel_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_NICKEL, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_NICKEL, 0, -2.0f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item COPPER_DRILL = registerItem("copper_drill",
-            new DrillItem(ModToolMaterial.POWER_COPPER, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_COPPER, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item COPPER_CHAINSAW = registerItem("copper_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_COPPER, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_COPPER, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item COBALT_DRILL = registerItem("cobalt_drill",
-            new DrillItem(ModToolMaterial.POWER_COBALT, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_COBALT, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item COBALT_CHAINSAW = registerItem("cobalt_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_COBALT, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_COBALT, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item STEEL_DRILL = registerItem("steel_drill",
-            new DrillItem(ModToolMaterial.POWER_STEEL, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_STEEL, 0, -2.8f, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item STEEL_CHAINSAW = registerItem("steel_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_STEEL, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_STEEL, 0, -2.8f, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item NETHERITE_DRILL = registerItem("netherite_drill",
-            new DrillItem(ModToolMaterial.POWER_NETHERITE, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_NETHERITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item NETHERITE_CHAINSAW = registerItem("netherite_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_NETHERITE, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_NETHERITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item TUNGSTEN_DRILL = registerItem("tungsten_drill",
-            new DrillItem(ModToolMaterial.POWER_TUNGSTEN, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_TUNGSTEN, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item TUNGSTEN_CHAINSAW = registerItem("tungsten_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_TUNGSTEN, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_TUNGSTEN, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item TITANIUM_DRILL = registerItem("titanium_drill",
-            new DrillItem(ModToolMaterial.POWER_TITANIUM, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_TITANIUM, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item TITANIUM_CHAINSAW = registerItem("titanium_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_TITANIUM, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_TITANIUM, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item TITANIUM_ALLOY_DRILL = registerItem("titanium_alloy_drill",
-            new DrillItem(ModToolMaterial.POWER_TITANIUM_ALLOY, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_TITANIUM_ALLOY, 0, -2.8f, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item TITANIUM_ALLOY_CHAINSAW = registerItem("titanium_alloy_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_TITANIUM_ALLOY, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_TITANIUM_ALLOY, 0, -2.8f, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item SANDITE_DRILL = registerItem("sandite_drill",
-            new DrillItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item SANDITE_CHAINSAW = registerItem("sandite_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_SANDITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item LEAFITE_DRILL = registerItem("leafite_drill",
-            new DrillItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item LEAFITE_CHAINSAW = registerItem("leafite_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings()));
+            new ChainsawItem(ModToolMaterial.POWER_LEAFITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item END_ITE_DRILL = registerItem("end_ite_drill",
-            new DrillItem(ModToolMaterial.POWER_END_ITE, 0, -2.8f, new FabricItemSettings()));
+            new DrillItem(ModToolMaterial.POWER_END_ITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item END_ITE_CHAINSAW = registerItem("end_ite_chainsaw",
-            new ChainsawItem(ModToolMaterial.POWER_END_ITE, 0, -2.8f, new FabricItemSettings()));
-
-    public static final Item SILVER_SCALE = registerItem("silver_scale", new Item(new FabricItemSettings()));
-
-    public static final Item SPIKED_CLUB = registerItem("spiked_club",
-            new ClubItem(ModToolMaterial.CLUB, 0, -3.6f, new FabricItemSettings()));
-
-    public static final Item SILVER_MANDIBLE = registerItem("silver_mandible",
-            new Item(new FabricItemSettings().maxCount(2)));
-    public static final Item MANDIBLE_HATCHET = registerItem("mandible_hatchet",
-            new MandibleAxeItem(ModToolMaterial.MANDIBLE_HATCHET, 0, -2.2f, new FabricItemSettings()));
-    public static final Item SILVER_CARVER = registerItem("silver_carver",
-            new CarverItem(ModToolMaterial.SILVER_DAGGER, 0, -1.8f, new FabricItemSettings()));
-    public static final Item ICY_DAGGER = registerItem("icy_dagger",
-            new IcyDaggerItem(ModToolMaterial.ICY_DAGGER, 0, -1.8f, new FabricItemSettings()));
-
-    public static final Item PLATINUM_CLUSTER = registerItem("platinum_cluster", new Item(new FabricItemSettings()));
-    public static final Item PLATINUM_SCRAP = registerItem("platinum_scrap", new Item(new FabricItemSettings()));
-    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new FabricItemSettings()));
-
-    public static final Item PLATINUM_SWORD = registerItem("platinum_sword",
-            new SwordItem(ModToolMaterial.PLATINUM, 3, -2.4f, new FabricItemSettings()));
-    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
-            new PickaxeItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings()));
-    public static final Item PLATINUM_AXE = registerItem("platinum_axe",
-            new AxeItem(ModToolMaterial.PLATINUM, 5.0f, -3.0f, new FabricItemSettings()));
-    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
-            new ShovelItem(ModToolMaterial.PLATINUM, 1.5f, -3.0f, new FabricItemSettings()));
-    public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
-            new HoeItem(ModToolMaterial.PLATINUM, -3, 0.0f, new FabricItemSettings()));
-
-    public static final Item PLATINUM_MULTI_TOOL = registerItem("platinum_multi_tool",
-            new MultiToolItem(ModToolMaterial.PLATINUM, 1, -2.8f, new FabricItemSettings()));
-
-    public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
-            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
-            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
-            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
-            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-
-    public static final Item ICE_CHUNK = registerItem("ice_chunk", new IceChunkItem(new FabricItemSettings().maxCount(16)));
-
-    public static final Item BOMB = registerItem("bomb", new BombItem(new FabricItemSettings().maxCount(16)));
-    public static final Item ICE_BOMB = registerItem("ice_bomb", new IceBombItem(new FabricItemSettings().maxCount(16)));
-
-    public static final Item FROZEN_FLESH = registerItem("frozen_flesh",
-            new Item(new FabricItemSettings().food(ModFoodComponents.FROZEN_FLESH)));
+            new ChainsawItem(ModToolMaterial.POWER_END_ITE, 0, -2.8f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
 
     public static final Item STONEBARK_SIGN = registerItem("stonebark_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_STONEBARK_SIGN, ModBlocks.WALL_STONEBARK_SIGN));

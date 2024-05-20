@@ -31,8 +31,5 @@ public class ModEntitySpawn {
 
         SpawnRestriction.register(ModEntities.FROSTBITEN, SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnInDark);
-
-        SpawnRestriction.register(ModEntities.SILVERPEDE, SpawnRestriction.Location.ON_GROUND,
-                Heightmap.Type.MOTION_BLOCKING, HostileEntity::canSpawnInDark);
     }
 }

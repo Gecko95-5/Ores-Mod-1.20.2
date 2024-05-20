@@ -3,16 +3,15 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "oresmod:marble"
+      "item": "oresmod:marble_slab"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "#",
+    "#"
   ],
   "result": {
-    "count": 6,
-    "item": "oresmod:marble_wall"
+    "item": "oresmod:chiseled_marble"
   },
   "show_notification": true
 }

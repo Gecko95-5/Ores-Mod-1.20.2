@@ -18,7 +18,7 @@ public class DoubleModArmorItem extends ArmorItem {
             new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance[]>()
                     .put(ModArmorMaterials.BEDROCK, new StatusEffectInstance[]{
                             new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3, false, false, false),
-                            new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 0, false, false, false)
+                            new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 2, false, false, false)
                     })
                     .build();
 

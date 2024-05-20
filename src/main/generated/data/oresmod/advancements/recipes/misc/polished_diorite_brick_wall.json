@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_bedrock_bricks": {
+    "has_polished_diorite_bricks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresmod:polished_bedrock_bricks"
+              "oresmod:polished_diorite_bricks"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_bedrock_bricks"
+      "has_polished_diorite_bricks"
     ]
   ],
   "rewards": {

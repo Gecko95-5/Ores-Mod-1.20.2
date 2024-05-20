@@ -3637,7 +3637,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_BRICK_SLAB, Blocks.ANDESITE,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_BRICK_SLAB, Blocks.POLISHED_ANDESITE,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_BRICK_SLAB, ModBlocks.POLISHED_ANDESITE_BRICKS,2);
-        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_BRICK_WALL, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_BRICK_WALL, ModBlocks.POLISHED_ANDESITE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_BRICK_WALL, Blocks.ANDESITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_BRICK_WALL, Blocks.POLISHED_ANDESITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_BRICK_WALL, ModBlocks.POLISHED_ANDESITE_BRICKS);
@@ -3661,7 +3661,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_BRICK_SLAB, Blocks.DIORITE,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_BRICK_SLAB, Blocks.POLISHED_DIORITE,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_BRICK_SLAB, ModBlocks.POLISHED_DIORITE_BRICKS,2);
-        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_BRICK_WALL, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_BRICK_WALL, ModBlocks.POLISHED_DIORITE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_BRICK_WALL, Blocks.DIORITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_BRICK_WALL, Blocks.POLISHED_DIORITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_BRICK_WALL, ModBlocks.POLISHED_DIORITE_BRICKS);
@@ -3685,7 +3685,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_BRICK_SLAB, Blocks.GRANITE,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_BRICK_SLAB, Blocks.POLISHED_GRANITE,2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_BRICK_SLAB, ModBlocks.POLISHED_GRANITE_BRICKS,2);
-        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_BRICK_WALL, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_BRICK_WALL, ModBlocks.POLISHED_GRANITE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_BRICK_WALL, Blocks.GRANITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_BRICK_WALL, Blocks.POLISHED_GRANITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_BRICK_WALL, ModBlocks.POLISHED_GRANITE_BRICKS);
@@ -3696,8 +3696,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_STAIRS, ModBlocks.MARBLE);
         offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_SLAB, ModBlocks.MARBLE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_SLAB, ModBlocks.MARBLE,2);
-        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.MARBLE_WALL, ModBlocks.POLISHED_BEDROCK_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.MARBLE_WALL, ModBlocks.MARBLE);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.MARBLE_WALL, ModBlocks.MARBLE);
+
+        offerChiseledBlockRecipe(exporter, RecipeCategory.MISC, ModBlocks.CHISELED_MARBLE, ModBlocks.MARBLE_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.CHISELED_MARBLE, ModBlocks.MARBLE);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_BRICKS,4)
                 .pattern("PP")
@@ -4133,6 +4136,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
                 .offerTo(exporter, new Identifier("rusted_steel_bars_from_lighty_rusted_steel_bars"));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_BARS,1)
+                .input(ModBlocks.STEEL_BARS)
+                .input(Items.BLUE_ICE)
+                .criterion(hasItem(ModBlocks.STEEL_BARS), conditionsFromItem(ModBlocks.STEEL_BARS))
+                .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
+                .offerTo(exporter, new Identifier("rusted_steel_bars_from_steel_bars"));
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_BARS,1)
                 .input(ModBlocks.RUSTED_STEEL_BARS)
                 .input(ModItems.POWDERED_SALT)
@@ -4169,6 +4179,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.RUSTED_STEEL_BARS), conditionsFromItem(ModBlocks.RUSTED_STEEL_BARS))
                 .criterion(hasItem(Blocks.GLOWSTONE), conditionsFromItem(Blocks.GLOWSTONE))
                 .offerTo(exporter, new Identifier("rusted_steel_lamp_from_rusted_steel_block"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUSTED_STEEL_LAMP,1)
+                .input(ModBlocks.STEEL_LAMP)
+                .input(Items.BLUE_ICE)
+                .criterion(hasItem(ModBlocks.STEEL_LAMP), conditionsFromItem(ModBlocks.STEEL_LAMP))
+                .criterion(hasItem(Items.BLUE_ICE), conditionsFromItem(Items.BLUE_ICE))
+                .offerTo(exporter, new Identifier("rusted_steel_lamp_from_steel_lamp"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHTY_RUSTED_STEEL_LAMP,1)
                 .input(ModBlocks.STEEL_LAMP)
@@ -4323,7 +4340,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerHangingSignRecipe(exporter, ModItems.LEAFITE_HANGING_SIGN, ModBlocks.STRIPPED_LEAFITE_WOOD);
 
         offerBoatRecipe(exporter, ModItems.LEAFITE_BOAT, ModBlocks.LEAFITE_PLANKS);
-        offerChestBoatRecipe(exporter, ModItems.LEAFITE_CHEST_BOAT, ModBlocks.LEAFITE_PLANKS);
+        offerChestBoatRecipe(exporter, ModItems.LEAFITE_CHEST_BOAT, ModItems.LEAFITE_BOAT);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAFITE_BRICKS,4)
                 .pattern("IL")
@@ -4677,21 +4694,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', ModItems.PLATINUM_INGOT)
                 .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
                 .offerTo(exporter, new Identifier("platinum_helmet"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_CHESTPLATE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLATINUM_CHESTPLATE)
                 .pattern("P P")
                 .pattern("PPP")
                 .pattern("PPP")
                 .input('P', ModItems.PLATINUM_INGOT)
                 .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
                 .offerTo(exporter, new Identifier("platinum_chestplate"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_LEGGINGS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLATINUM_LEGGINGS)
                 .pattern("PPP")
                 .pattern("P P")
                 .pattern("P P")
                 .input('P', ModItems.PLATINUM_INGOT)
                 .criterion(hasItem(ModItems.PLATINUM_INGOT), conditionsFromItem(ModItems.PLATINUM_INGOT))
                 .offerTo(exporter, new Identifier("platinum_leggings"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_BOOTS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PLATINUM_BOOTS)
                 .pattern("P P")
                 .pattern("P P")
                 .input('P', ModItems.PLATINUM_INGOT)
@@ -4764,7 +4781,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
                 .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
                 .offerTo(exporter, new Identifier("end_ite_chestplate"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_LEGGINGS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_LEGGINGS)
                 .pattern("CCC")
                 .pattern("E E")
                 .pattern("E E")
@@ -4773,7 +4790,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.END_ITE), conditionsFromItem(ModItems.END_ITE))
                 .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
                 .offerTo(exporter, new Identifier("end_ite_leggings"));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_BOOTS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.END_ITE_BOOTS)
                 .pattern("E E")
                 .pattern("C C")
                 .input('E', ModItems.END_ITE)
@@ -4782,7 +4799,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.POPPED_CHORUS_FRUIT), conditionsFromItem(Items.POPPED_CHORUS_FRUIT))
                 .offerTo(exporter, new Identifier("end_ite_boots"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ENDER_PEARL,4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ENDER_PEARL,8)
                 .pattern(" E ")
                 .pattern("EPE")
                 .pattern(" E ")
@@ -5438,6 +5455,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier("reinforced_frosite_block"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REINFORCED_FROSITE_BLOCK)
+                .pattern("TIT")
+                .pattern("IFI")
+                .pattern("TIT")
+                .input('F', ModBlocks.FROSITE_BLOCK)
+                .input('I', ModItems.ALUMINUM_INGOT)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
+                .criterion(hasItem(ModItems.ALUMINUM_INGOT), conditionsFromItem(ModItems.ALUMINUM_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("reinforced_frosite_block_from_aluminum_ingot"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK)
                 .pattern("TIT")
                 .pattern("IFI")
@@ -5450,6 +5479,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier("light_reinforced_frosite_block"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK)
+                .pattern("TIT")
+                .pattern("IFI")
+                .pattern("TIT")
+                .input('F', ModBlocks.LIGHT_FROSITE_BLOCK)
+                .input('I', ModItems.ALUMINUM_INGOT)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
+                .criterion(hasItem(ModItems.ALUMINUM_INGOT), conditionsFromItem(ModItems.ALUMINUM_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("light_reinforced_frosite_block_from_aluminum_ingot"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK)
                 .pattern("TIT")
                 .pattern("IFI")
@@ -5461,6 +5502,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier("darken_reinforced_frosite_block"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK)
+                .pattern("TIT")
+                .pattern("IFI")
+                .pattern("TIT")
+                .input('F', ModBlocks.DARKEN_FROSITE_BLOCK)
+                .input('I', ModItems.ALUMINUM_INGOT)
+                .input('T', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModBlocks.FROSITE_BLOCK), conditionsFromItem(ModBlocks.FROSITE_BLOCK))
+                .criterion(hasItem(ModItems.ALUMINUM_INGOT), conditionsFromItem(ModItems.ALUMINUM_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("darken_reinforced_frosite_block_from_aluminum_ingot"));
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_REINFORCED_FROSITE_BLOCK, ModBlocks.REINFORCED_FROSITE_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_REINFORCED_FROSITE_BLOCK, ModBlocks.REINFORCED_FROSITE_BLOCK);
