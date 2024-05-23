@@ -1,0 +1,11 @@
+// 1.20.2	2024-05-23T01:01:16.1344403	Overwhelming Ores Mod/Tags for minecraft:worldgen/biome
+18c9fcb17ee7b450ff603ac8257e2e8d39c7c27a data\minecraft\tags\worldgen\biome\is_hill.json
+9564cfb3eb75f53b7a2d68c0ee3368344f7a17e8 data\minecraft\tags\worldgen\biome\is_beach.json
+a22448f62bda9a0d23dbdb10fcfb15999fc88ab1 data\oresmod\tags\worldgen\biome\has_icy_frosite.json
+9a4d55f86858b681746daacca86f2ab7a2868faa data\minecraft\tags\worldgen\biome\snow_golem_melts.json
+9a4d55f86858b681746daacca86f2ab7a2868faa data\minecraft\tags\worldgen\biome\spawns_warm_variant_frogs.json
+48093d453145b5b1d29e6c5a66817796a8cc2f74 data\oresmod\tags\worldgen\biome\is_end_islands.json
+615d3e444d6c3bb4142ff39931589722882e09b9 data\oresmod\tags\worldgen\biome\frostbiten_spawn.json
+e72415257ed5d93a84493aea217eab08d450ea55 data\minecraft\tags\worldgen\biome\is_overworld.json
+f60d9c5d050f931a40d2dd8dfc491579ba7d63b6 data\oresmod\tags\worldgen\biome\has_frosite.json
+9a4d55f86858b681746daacca86f2ab7a2868faa data\minecraft\tags\worldgen\biome\has_structure\ruined_portal_desert.json

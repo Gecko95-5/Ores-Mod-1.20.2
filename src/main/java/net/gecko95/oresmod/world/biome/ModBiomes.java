@@ -10,20 +10,18 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.*;
-import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
-import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class ModBiomes {
-    public static final RegistryKey<Biome> QUARRY_BIOME = RegistryKey.of(RegistryKeys.BIOME,
+    public static final RegistryKey<Biome> QUARRY = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(OresMod.MOD_ID, "quarry"));
-    public static final RegistryKey<Biome> WHITE_DUNES_BIOME = RegistryKey.of(RegistryKeys.BIOME,
+    public static final RegistryKey<Biome> WHITE_DUNES = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(OresMod.MOD_ID, "white_dunes"));
     public static final RegistryKey<Biome> BLACK_SAND_BEACH = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(OresMod.MOD_ID, "black_sand_beach"));
     public static void boostrap(Registerable<Biome> context) {
-        context.register(QUARRY_BIOME, qurrayBiome(context));
-        context.register(WHITE_DUNES_BIOME, whiteduneBiome(context));
+        context.register(QUARRY, qurrayBiome(context));
+        context.register(WHITE_DUNES, whiteduneBiome(context));
         context.register(BLACK_SAND_BEACH, blacksandBiome(context));
     }
 

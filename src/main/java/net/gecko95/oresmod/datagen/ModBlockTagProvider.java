@@ -413,10 +413,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.DIORITE)
                 .add(Blocks.ANDESITE)
                 .add(Blocks.GRANITE)
+                .add(Blocks.GRAVEL)
                 .add(Blocks.COBBLESTONE)
                 .add(Blocks.MOSSY_COBBLESTONE)
-                .add(Blocks.MOSS_BLOCK)
-                .add(Blocks.DRIPSTONE_BLOCK);
+                .add(Blocks.DRIPSTONE_BLOCK)
+                .add(ModBlocks.MARBLE);
 
         getOrCreateTagBuilder(ModTags.Blocks.DEEPBARK_PLACEABLE)
                 .add(Blocks.DEEPSLATE)
@@ -424,6 +425,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.TUFF)
                 .add(Blocks.SCULK)
                 .add(Blocks.DRIPSTONE_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.SILVER_FLOWER_PLACEABLE)
+                .forceAddTag(ModTags.Blocks.STONEBARK_PLACEABLE)
+                .forceAddTag(ModTags.Blocks.DEEPBARK_PLACEABLE)
+                .forceAddTag(BlockTags.DIRT)
+                .add(Blocks.FARMLAND);
 
         getOrCreateTagBuilder(ModTags.Blocks.POTION_TANKS)
                 .add(ModBlocks.FIRE_RESISTANCE_POTION_TANK)

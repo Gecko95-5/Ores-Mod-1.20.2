@@ -79,6 +79,9 @@ public class ModConfiguredFeatures {
     public static final  RegistryKey<ConfiguredFeature<?, ?>> BIG_LEAFITE_TREE_KEY = registerKey("big_leafite_tree");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> BIG_LEAFITE_ORE_TREE_KEY = registerKey("big_leafite_ore_tree");
 
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> ICY_CROCUS_FLOWER_KEY = registerKey("icy_crocus_flower");
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> SILVER_ROSE_FLOWER_KEY = registerKey("silver_rose_flower");
+
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacebles = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacebles = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -95,8 +98,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.SALT_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldFrositeOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.FROSITE_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(packediceReplacebles, ModBlocks.ICE_FROSITE_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(stoneReplacebles, ModBlocks.FROSITE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldFrositeOresIcy =
                 List.of(OreFeatureConfig.createTarget(packediceReplacebles, ModBlocks.ICE_FROSITE_ORE.getDefaultState()));
@@ -371,6 +373,16 @@ public class ModConfiguredFeatures {
                         new TwoLayersFeatureSize(1, 0, 1))
                 .decorators(ImmutableList.of(TrunkVineTreeDecorator.INSTANCE, new LeavesVineTreeDecorator(0.25f)))
                 .build());
+
+        register(context, ICY_CROCUS_FLOWER_KEY, Feature.FLOWER,
+                new RandomPatchFeatureConfig(20, 4, 0,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ICY_CROCUS)))));
+
+        register(context, SILVER_ROSE_FLOWER_KEY, Feature.FLOWER,
+                new RandomPatchFeatureConfig(64, 6, 2,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.SILVER_ROSE)))));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

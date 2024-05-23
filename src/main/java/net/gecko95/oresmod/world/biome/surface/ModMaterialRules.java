@@ -9,8 +9,6 @@ import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.noise.NoiseParametersKeys;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 
-import static net.minecraft.world.gen.surfacebuilder.MaterialRules.STONE_DEPTH_FLOOR;
-
 public class ModMaterialRules {
     private static final MaterialRules.MaterialRule COBBLESTONE = makeStateRule(Blocks.COBBLESTONE);
     private static final MaterialRules.MaterialRule WHITE_SAND = makeStateRule(ModBlocks.WHITE_SAND);
@@ -25,9 +23,9 @@ public class ModMaterialRules {
     public static MaterialRules.MaterialRule makeRules(boolean surface, boolean bedrockRoof, boolean bedrockFloor) {
         MaterialRules.MaterialRule whitesand = MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, WHITE_SANDSTONE), WHITE_SAND);
         MaterialRules.MaterialRule blacksand = MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, BLACK_SANDSTONE), BLACK_SAND);
-        MaterialRules.MaterialCondition whitedunes = MaterialRules.biome(ModBiomes.WHITE_DUNES_BIOME);
+        MaterialRules.MaterialCondition whitedunes = MaterialRules.biome(ModBiomes.WHITE_DUNES);
         MaterialRules.MaterialCondition blacksandbeach = MaterialRules.biome(ModBiomes.BLACK_SAND_BEACH);
-        MaterialRules.MaterialRule biomeFloor = MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.QUARRY_BIOME),
+        MaterialRules.MaterialRule biomeFloor = MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.QUARRY),
                 MaterialRules.condition(ModMaterialRules.surfaceNoiseThreshold(2.0), COBBLESTONE)),
                 MaterialRules.condition(blacksandbeach, blacksand),
                 MaterialRules.condition(whitedunes, whitesand));

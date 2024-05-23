@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:grove",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks",
+    "minecraft:snowy_slopes"
+  ]
+}
