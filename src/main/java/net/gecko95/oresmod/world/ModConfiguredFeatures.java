@@ -61,6 +61,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_NICKEL_ORE_KEY = registerKey("cobblestone_nickel_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_TITANIUM_ORE_KEY = registerKey("cobblestone_titanium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_QUARTZ_ORE_KEY = registerKey("cobblestone_quartz_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COBBLESTONE_FROSITE_ORE_KEY = registerKey("cobblestone_frosite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> INFESTED_COBBLESTONE_KEY = registerKey("infested_cobblestone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_MARBLE_ORE_KEY = registerKey("quarry_marble_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARRY_GRANITE_ORE_KEY = registerKey("quarry_granite_ore");
@@ -196,6 +197,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldCobbleQuartzOres =
                 List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_QUARTZ_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldCobbleFrositeOres =
+                List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, ModBlocks.COBBLESTONE_FROSITE_ORE.getDefaultState()));
+
         List<OreFeatureConfig.Target> overworldInfestedCobblestoneOres =
                 List.of(OreFeatureConfig.createTarget(cobblestoneReplacebles, Blocks.INFESTED_COBBLESTONE.getDefaultState()));
 
@@ -280,6 +284,8 @@ public class ModConfiguredFeatures {
         register(context, COBBLESTONE_LAPIS_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleLapisOres, 7));
 
         register(context, COBBLESTONE_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleDiamondOres, 4));
+
+        register(context, COBBLESTONE_FROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleFrositeOres, 4));
 
         register(context, COBBLESTONE_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobbleEmeraldOres, 3));
 

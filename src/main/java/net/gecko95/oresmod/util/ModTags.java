@@ -54,9 +54,17 @@ public class ModTags {
         public static final TagKey<Biome> HAS_ICY_FROSITE =
                 createTag("has_icy_frosite");
         public static final TagKey<Biome> FROSITE_COLD =
-                createTag("frostbiten_spawn");
+                createTag("frosite_cold");
         public static final TagKey<Biome> IS_END_ISLANDS =
                 createTag("is_end_islands");
+        public static final TagKey<Biome> IS_QUARRY =
+                createTag("is_quarry");
+        public static final TagKey<Biome> IS_QUARRY_FLAT =
+                createTag("is_quarry_flat");
+        public static final TagKey<Biome> IS_QUARRY_MOUNTAIN =
+                createTag("is_quarry_mountain");
+        public static final TagKey<Biome> STONEBARK_SAFE =
+                createTag("stonebark_safe");
         private static TagKey<Biome> createTag(String name) {
             return TagKey.of(RegistryKeys.BIOME, new Identifier(OresMod.MOD_ID, name));
         }

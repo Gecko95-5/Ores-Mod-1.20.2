@@ -72,65 +72,68 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_BADLANDS),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.RED_SANNITE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_COAL_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_COPPER_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_IRON_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_GOLD_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_REDSTONE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_LAPIS_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_DIAMOND_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_EMERALD_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_ALUMINUM_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_NICKEL_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_TITANIUM_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_QUARTZ_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INFESTED_COBBLESTONE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY_FLAT),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_MARBLE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_ANDESITE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_DIORITE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_GRANITE_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_DIRT_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_GRAVEL_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARRY_BLACKSTONE_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.SNOWY_QUARRY, ModBiomes.FROZEN_QUARRY_PEAKS),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.COBBLESTONE_FROSITE_ORE_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_END_ISLANDS),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY);

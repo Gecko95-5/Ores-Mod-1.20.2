@@ -126,6 +126,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FROSITE);
                         entries.add(ModBlocks.FROSITE_ORE);
                         entries.add(ModBlocks.ICE_FROSITE_ORE);
+                        entries.add(ModBlocks.COBBLESTONE_FROSITE_ORE);
                         entries.add(ModBlocks.FROSITE_BLOCK);
                         entries.add(ModItems.SANDITE);
                         entries.add(ModBlocks.SANDITE_ORE);

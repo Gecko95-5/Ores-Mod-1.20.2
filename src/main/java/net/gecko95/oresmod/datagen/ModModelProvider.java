@@ -107,6 +107,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_NICKEL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_TITANIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_QUARTZ_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLESTONE_FROSITE_ORE);
         BlockStateModelGenerator.BlockTexturePool marblePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MARBLE);
         BlockStateModelGenerator.BlockTexturePool marblebrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MARBLE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDED_MARBLE);

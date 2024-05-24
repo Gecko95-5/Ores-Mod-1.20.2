@@ -1,6 +1,6 @@
-// 1.20.2	2024-05-23T01:01:16.1324444	Overwhelming Ores Mod/Tags for minecraft:block
+// 1.20.2	2024-05-24T17:38:45.7046084	Overwhelming Ores Mod/Tags for minecraft:block
 197ef0cdddb7ab4a6314b828dfb3e05c99a851cf data\minecraft\tags\blocks\fences.json
-e2be839d58c341974e0e7bd3a3081d8ef67a0205 data\minecraft\tags\blocks\mineable\pickaxe.json
+b8b6097f759ab475f49ed1946c0a5431f93ba8f5 data\minecraft\tags\blocks\mineable\pickaxe.json
 0abee4e8c156427f52d0e1475f21cccde2f9fcb2 data\oresmod\tags\blocks\chainsaw_mineable.json
 19963baf33c848aa393b8158a2230825df9b4016 data\minecraft\tags\blocks\buttons.json
 8c6b720d33aad540144edc1aee7d501ccefdeb1c data\minecraft\tags\blocks\wooden_pressure_plates.json
@@ -22,7 +22,7 @@ fa98bd5a906f2d4d798de14db103d699b1b43269 data\minecraft\tags\blocks\fence_gates.
 04c55cc64922cf4c6c33bf6fbb3a2b74feb55b4b data\minecraft\tags\blocks\walls.json
 4b72f7d9ab1c9c96614b96040b175538618f6c51 data\minecraft\tags\blocks\standing_signs.json
 d09fd133daae41057f5bf566c87bde38e3535327 data\minecraft\tags\blocks\sand.json
-d635ab775a6ca438bf983b587354058dcaaf3f72 data\minecraft\tags\blocks\needs_iron_tool.json
+4aa5ee24a99954f27fe758f5991722cb2330f725 data\minecraft\tags\blocks\needs_iron_tool.json
 487df43c8e51a2dd436478c4b17875073875958f data\minecraft\tags\blocks\mineable\shovel.json
 5def7eb2f995d0254680a9853c1eecaca8154174 data\minecraft\tags\blocks\mineable\axe.json
 b417b22e57d2dc330c2aaebe3d1cd8f105908413 data\minecraft\tags\blocks\needs_stone_tool.json

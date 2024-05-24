@@ -4,6 +4,8 @@
     "minecraft:frozen_ocean",
     "minecraft:deep_frozen_ocean",
     "minecraft:ice_spikes",
-    "minecraft:frozen_peaks"
+    "minecraft:frozen_peaks",
+    "oresmod:snowy_quarry",
+    "oresmod:frozen_quarry_peaks"
   ]
 }

@@ -607,6 +607,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(ModBlocks.NICKEL_ORE)));
     public static final Block COBBLESTONE_TITANIUM_ORE = registerBlock("cobblestone_titanium_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block COBBLESTONE_FROSITE_ORE = registerBlock("cobblestone_frosite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE), UniformIntProvider.create(3, 7)));
     public static final Block COBBLESTONE_QUARTZ_ORE = registerBlock("cobblestone_quartz_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.COAL_ORE), UniformIntProvider.create(2, 5)));
 

@@ -19,7 +19,8 @@ import java.util.List;
 
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    private static final List<ItemConvertible> FROSITE_SMELTABLES = List.of(ModBlocks.FROSITE_ORE, ModBlocks.ICE_FROSITE_ORE);
+    private static final List<ItemConvertible> FROSITE_SMELTABLES = List.of(ModBlocks.FROSITE_ORE, ModBlocks.ICE_FROSITE_ORE,
+            ModBlocks.COBBLESTONE_FROSITE_ORE);
 
     private static final List<ItemConvertible> ALUMINUM_SMELTABLES = List.of(ModItems.RAW_ALUMINUM,ModBlocks.ALUMINUM_ORE,
             ModBlocks.DEEPSLATE_ALUMINUM_ORE,ModBlocks.COBBLESTONE_ALUMINUM_ORE);

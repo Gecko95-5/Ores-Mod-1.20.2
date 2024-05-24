@@ -12,7 +12,7 @@ public class ModFlowerGeneration {
         BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.FROSITE_COLD),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ICY_CROCUS_FLOWER_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.QUARRY),
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_QUARRY),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SILVER_ROSE_FLOWER_PLACED_KEY);
     }
 }
