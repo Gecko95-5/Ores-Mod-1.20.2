@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-24T17:38:45.6956333	Overwhelming Ores Mod/Block Loot Tables
+// 1.20.2	2024-05-24T23:56:33.5480764	Overwhelming Ores Mod/Block Loot Tables
 09ee1cc01b2b476a859026bb3b02fe4f88622d59 data\oresmod\loot_tables\blocks\cobblestone_emerald_ore.json
 762ec1b68d91ac9538078811a92d80986ad9daf5 data\oresmod\loot_tables\blocks\stonebark_stairs.json
 afa718338eb974cc0067428164905834e692ede9 data\oresmod\loot_tables\blocks\smooth_white_sandstone_stairs.json
@@ -82,8 +82,8 @@ cbbdf5ebee9424d5a69ed5b3bfaf93a5c7d82d60 data\oresmod\loot_tables\blocks\leafite
 902cff9203fd492ece0072709db09dab6234bde9 data\oresmod\loot_tables\blocks\darken_frosite_tile_wall.json
 7a5815abdcfec046c70b7dcb6d37ea1e5e9ecde4 data\oresmod\loot_tables\blocks\darken_frosite_brick_stairs.json
 fb6fed91b356cfbf8dd22e5fcd2ba50714d8a17a data\oresmod\loot_tables\blocks\tungsten_block.json
-7632391f16b47fc8a48ca53b5755a4dfe8e970ca data\oresmod\loot_tables\blocks\deepbark_fence.json
 71ce2b416ec79ae3e2b3130b2d46c97523b467c3 data\oresmod\loot_tables\blocks\frosite_brick_stairs.json
+7632391f16b47fc8a48ca53b5755a4dfe8e970ca data\oresmod\loot_tables\blocks\deepbark_fence.json
 2d9f03ea238f0bc84602bc821c3ed0bc94bdef47 data\oresmod\loot_tables\blocks\darken_leafite_tiles.json
 a3fbe8d8cad830116a957129347eee24224f3c34 data\oresmod\loot_tables\blocks\darken_end_ite_block.json
 4827ab1b88b3303a3eaf090c8be2659358692160 data\oresmod\loot_tables\blocks\polished_andesite_brick_slab.json
