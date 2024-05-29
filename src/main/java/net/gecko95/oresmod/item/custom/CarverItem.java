@@ -6,9 +6,9 @@ import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
 import com.mojang.datafixers.util.Pair;
 import net.gecko95.oresmod.block.ModBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
+import net.gecko95.oresmod.item.ModItems;
+import net.minecraft.advancement.criterion.Criteria;
+import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -17,22 +17,32 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldEvents;
 import net.minecraft.world.event.GameEvent;
 
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class CarverItem extends ToolItem implements Vanishable  {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
-    protected static final Map<Block, Pair<Predicate<ItemUsageContext>, Consumer<ItemUsageContext>>> CARVING = Maps.newHashMap(ImmutableMap.of(ModBlocks.FOSSILIZED_SILVER_SCALES, Pair.of(CarverItem::canCarve, CarverItem.createCarveAction(ModBlocks.SILVER_SCALES.getDefaultState())), ModBlocks.FOSSILIZED_SILVER_SCALE_CORE, Pair.of(CarverItem::canCarve, CarverItem.createCarveAction(ModBlocks.SILVER_SCALE_CORE.getDefaultState())), ModBlocks.FOSSILIZED_SILVER_SCALE_FACE, Pair.of(CarverItem::canCarve, CarverItem.createCarveAction(ModBlocks.SILVER_SCALE_FACE.getDefaultState())),Blocks.PUMPKIN, Pair.of(itemUsageContext -> true, CarverItem.createCarvingAndDropAction(Blocks.CARVED_PUMPKIN.getDefaultState(), Items.PUMPKIN_SEEDS))));
+    protected static final Map<Block, Pair<Predicate<ItemUsageContext>, Consumer<ItemUsageContext>>> CARVING = Maps.newHashMap(ImmutableMap.of
+            (ModBlocks.FOSSILIZED_SILVER_SCALES, Pair.of(CarverItem::canCarve, CarverItem.createCarveAction(ModBlocks.SILVER_SCALES.getDefaultState())),
+                    ModBlocks.FOSSILIZED_SILVER_SCALE_CORE, Pair.of(CarverItem::canCarve, CarverItem.createCarveAction(ModBlocks.SILVER_SCALE_CORE.getDefaultState())),
+                    ModBlocks.FOSSILIZED_SILVER_SCALE_FACE, Pair.of(CarverItem::canCarve, CarverItem.createCarveAction(ModBlocks.SILVER_SCALE_FACE.getDefaultState())),
+                    Blocks.PUMPKIN, Pair.of(itemUsageContext -> true, CarverItem.createCarvingAndDropAction(Blocks.CARVED_PUMPKIN.getDefaultState(), Items.PUMPKIN_SEEDS)),
+                    Blocks.MOSSY_COBBLESTONE, Pair.of(itemUsageContext -> true, CarverItem.createCarvingAndDropAction(Blocks.COBBLESTONE.getDefaultState(), Items.MOSS_CARPET)),
+                    Blocks.MOSSY_STONE_BRICKS, Pair.of(itemUsageContext -> true, CarverItem.createCarvingAndDropAction(Blocks.STONE_BRICKS.getDefaultState(), Items.MOSS_CARPET))));
+
 
     public CarverItem(ToolMaterial material, int attackDamage, float attackSpeed, Item.Settings settings) {
         super(material, settings);
