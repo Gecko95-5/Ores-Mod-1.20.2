@@ -80,5 +80,6 @@ public class OresModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.BOMB_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.ICE_BOMB_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.ICE_CUBE, IceCubeRenderer::new);
+        EntityRendererRegistry.register(ModEntities.FROSTED_STRAY, FrostedStrayRenderer::new);
     }
 }

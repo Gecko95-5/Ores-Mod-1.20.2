@@ -766,6 +766,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem)ModItems.END_ITE_BOOTS));
 
+        itemModelGenerator.registerArmor(((ArmorItem)ModItems.FROSITE_HELMET_VISOR));
+
         itemModelGenerator.register(ModItems.ICE_CHUNK, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOMB, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_BOMB, Models.GENERATED);
@@ -790,6 +792,9 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
         itemModelGenerator.register(ModItems.ICE_CUBE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+        itemModelGenerator.register(ModItems.FROSTED_STRAY_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
     }
 }

@@ -25,7 +25,36 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "minecraft:string"
+          "name": "minecraft:arrow"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:looting_enchant"
+            }
+          ],
+          "name": "minecraft:bone"
         }
       ],
       "rolls": 1.0
@@ -46,7 +75,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 1.0,
-                "min": -1.0
+                "min": 0.0
               },
               "function": "minecraft:set_count"
             },
@@ -56,10 +85,15 @@
                 "max": 1.0,
                 "min": 0.0
               },
-              "function": "minecraft:looting_enchant"
+              "function": "minecraft:looting_enchant",
+              "limit": 1
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_slowness"
             }
           ],
-          "name": "minecraft:spider_eye"
+          "name": "minecraft:tipped_arrow"
         }
       ],
       "rolls": 1.0
@@ -79,11 +113,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oresmod:leafite"
+          "name": "oresmod:frosite"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "oresmod:entities/jungle_spider"
+  "random_sequence": "oresmod:entities/frosted_stray"
 }

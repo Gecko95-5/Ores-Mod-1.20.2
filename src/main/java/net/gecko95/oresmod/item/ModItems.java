@@ -44,6 +44,9 @@ public class ModItems {
     public static final Item FROSITE_BOOTS = registerItem("frosite_boots",
             new ArmorItem(ModArmorMaterials.FROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    public static final Item FROSITE_HELMET_VISOR = registerItem("frosite_helmet_visor",
+            new ArmorItem(ModArmorMaterials.FROSITE_VIS, ArmorItem.Type.HELMET, new FabricItemSettings()));
+
     public static final Item ALUMINUM_INGOT = registerItem("aluminum_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_ALUMINUM = registerItem("raw_aluminum", new Item(new FabricItemSettings()));
     public static final Item ALUMINUM_NUGGET = registerItem("aluminum_nugget", new Item(new FabricItemSettings()));
@@ -603,6 +606,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.FROSTBITEN, 0x2d6849,0x839dc9, new FabricItemSettings()));
     public static final Item ICE_CUBE_SPAWN_EGG = registerItem("ice_cube_spawn_egg",
             new SpawnEggItem(ModEntities.ICE_CUBE, 0x6ca3fd,0x5682ca, new FabricItemSettings()));
+    public static final Item FROSTED_STRAY_SPAWN_EGG = registerItem("frosted_stray_spawn_egg",
+            new SpawnEggItem(ModEntities.FROSTED_STRAY, 0x5b6f70,0xc0d0f7, new FabricItemSettings()));
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));

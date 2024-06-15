@@ -305,6 +305,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FROSITE_DRILL);
                         entries.add(ModItems.FROSITE_CHAINSAW);
                         entries.add(ModItems.FROSITE_HELMET);
+                        entries.add(ModItems.FROSITE_HELMET_VISOR);
                         entries.add(ModItems.FROSITE_CHESTPLATE);
                         entries.add(ModItems.FROSITE_LEGGINGS);
                         entries.add(ModItems.FROSITE_BOOTS);
@@ -792,6 +793,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVERPEDE_SPAWN_EGG);
                         entries.add(ModItems.FROSTBITEN_SPAWN_EGG);
                         entries.add(ModItems.ICE_CUBE_SPAWN_EGG);
+                        entries.add(ModItems.FROSTED_STRAY_SPAWN_EGG);
                         entries.add(ModItems.JUNGLE_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.ENDER_SPIDER_SPAWN_EGG);
                         entries.add(ModItems.FROSITE_GOLEM_SPAWN_EGG);

@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-24T23:56:33.5620452	Overwhelming Ores Mod/Tags for minecraft:block
+// 1.20.2	2024-06-14T17:42:42.5157058	Overwhelming Ores Mod/Tags for minecraft:block
 197ef0cdddb7ab4a6314b828dfb3e05c99a851cf data\minecraft\tags\blocks\fences.json
 b8b6097f759ab475f49ed1946c0a5431f93ba8f5 data\minecraft\tags\blocks\mineable\pickaxe.json
 0abee4e8c156427f52d0e1475f21cccde2f9fcb2 data\oresmod\tags\blocks\chainsaw_mineable.json
@@ -13,8 +13,8 @@ a694784651a203727059fc81adfffc8a378be284 data\minecraft\tags\blocks\ceiling_hang
 c4e9587fadc056397aef4e5c989ce60d2de7a022 data\oresmod\tags\blocks\multi_tool_mineable.json
 82fe4206606a62fd1e39a20c1acedd0c422160a2 data\oresmod\tags\blocks\silver_flower_placeable.json
 5ba732b96edefab298d05c1ef71393c540fe8f01 data\oresmod\tags\blocks\stonebark_placeable.json
-a488a66e05313aeae49c9ade32da0dd2e33c297a data\oresmod\tags\blocks\ite_blocks.json
 72c0f82793b8749d04eee1094943b7751c2cf715 data\minecraft\tags\blocks\wall_hanging_signs.json
+a488a66e05313aeae49c9ade32da0dd2e33c297a data\oresmod\tags\blocks\ite_blocks.json
 3068541aa596070acae8380af196d91b1270dafa data\minecraft\tags\blocks\logs.json
 e54f1cddd4003b9116fc080f345096c137e883a0 data\minecraft\tags\blocks\signs.json
 fa98bd5a906f2d4d798de14db103d699b1b43269 data\minecraft\tags\blocks\fence_gates.json

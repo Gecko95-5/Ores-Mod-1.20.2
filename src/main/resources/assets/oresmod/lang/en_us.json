@@ -74,6 +74,8 @@
   "item.oresmod.frosite_leggings": "Frosite Leggings",
   "item.oresmod.frosite_boots": "Frosite Boots",
 
+  "item.oresmod.frosite_helmet_visor": "Frosite Helmet",
+
   "item.oresmod.aluminum_helmet": "Aluminum Helmet",
   "item.oresmod.aluminum_chestplate": "Aluminum Chestplate",
   "item.oresmod.aluminum_leggings": "Aluminum Leggings",
@@ -384,6 +386,7 @@
   "item.oresmod.frosite_golem_spawn_egg": "Frosite Golem Spawn Egg",
   "item.oresmod.frostbiten_spawn_egg": "Frostbiten Spawn Egg",
   "item.oresmod.ice_cube_spawn_egg": "Ice Cube Spawn Egg",
+  "item.oresmod.frosted_stray_spawn_egg": "Frosted Stray Spawn Egg",
 
   "block.oresmod.salt_ore": "Salt Ore",
   "block.oresmod.salt_block": "Block of Salt",
@@ -854,6 +857,7 @@
   "entity.oresmod.jungle_spider": "Jungle Spider",
   "entity.oresmod.ender_spider": "Enderspider",
   "entity.oresmod.frosite_golem": "Frosite Golem",
+  "entity.oresmod.frosted_stray": "Frosted Stray",
   "entity.oresmod.frostbiten": "Frostbiten",
   "entity.oresmod.ice_cube": "Ice Cube",
 
