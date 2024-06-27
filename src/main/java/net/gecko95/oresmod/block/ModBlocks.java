@@ -634,6 +634,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE).instrument(Instrument.CHIME)));
     public static final Block GILDED_MARBLE_BRICKS = registerBlock("gilded_marble_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS).instrument(Instrument.CHIME)));
+    public static final Block SMOOTH_MARBLE = registerBlock("smooth_marble",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.WHITE_GRAY)));
+    public static final Block SMOOTH_MARBLE_SLAB = registerBlock("smooth_marble_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.SMOOTH_MARBLE)));
 
     public static final Block POLISHED_ANDESITE_BRICKS = registerBlock("polished_andesite_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.POLISHED_ANDESITE)));

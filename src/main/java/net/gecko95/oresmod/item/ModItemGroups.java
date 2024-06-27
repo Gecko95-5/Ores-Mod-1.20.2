@@ -587,6 +587,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MARBLE_STAIRS);
                         entries.add(ModBlocks.MARBLE_SLAB);
                         entries.add(ModBlocks.MARBLE_WALL);
+                        entries.add(ModBlocks.SMOOTH_MARBLE);
+                        entries.add(ModBlocks.SMOOTH_MARBLE_SLAB);
                         entries.add(ModBlocks.MARBLE_BRICKS);
                         entries.add(ModBlocks.GILDED_MARBLE_BRICKS);
                         entries.add(ModBlocks.MARBLE_BRICK_STAIRS);

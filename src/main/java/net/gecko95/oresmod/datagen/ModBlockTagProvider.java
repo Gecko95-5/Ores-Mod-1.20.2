@@ -141,6 +141,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CHISELED_MARBLE)
                 .add(ModBlocks.GILDED_MARBLE)
                 .add(ModBlocks.GILDED_MARBLE_BRICKS)
+                .add(ModBlocks.SMOOTH_MARBLE)
+                .add(ModBlocks.SMOOTH_MARBLE_SLAB)
                 .add(ModBlocks.POLISHED_ANDESITE_BRICKS)
                 .add(ModBlocks.POLISHED_ANDESITE_BRICK_STAIRS)
                 .add(ModBlocks.POLISHED_ANDESITE_BRICK_SLAB)

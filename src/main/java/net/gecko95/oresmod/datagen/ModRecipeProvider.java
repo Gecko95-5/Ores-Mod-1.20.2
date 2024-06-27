@@ -3741,6 +3741,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("gilded_marble_bricks"));
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GILDED_MARBLE_BRICKS, ModBlocks.GILDED_MARBLE);
 
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems
+                        (ModBlocks.MARBLE), RecipeCategory.MISC, ModBlocks.SMOOTH_MARBLE,0.7f, 200)
+                .criterion(hasItem(ModBlocks.MARBLE), conditionsFromItem(ModBlocks.MARBLE))
+                .offerTo(exporter, new Identifier("smooth_marble_from_smelting"));
+
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_MARBLE_SLAB, ModBlocks.SMOOTH_MARBLE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_MARBLE_SLAB, ModBlocks.SMOOTH_MARBLE,2);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.SANDITE_SWORD)
                 .pattern("D")
                 .pattern("D")

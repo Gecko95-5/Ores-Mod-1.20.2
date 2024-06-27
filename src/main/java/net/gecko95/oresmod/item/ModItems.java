@@ -29,7 +29,7 @@ public class ModItems {
     public static final Item FROSITE_SWORD = registerItem("frosite_sword",
             new FrositeSwordItem(ModToolMaterial.FROSITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item FROSITE_AXE = registerItem("frosite_axe",
-            new AxeItem(ModToolMaterial.FROSITE, 6.0f, -3.1f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.FROSITE, 5.0f, -3.1f, new FabricItemSettings()));
     public static final Item FROSITE_SHOVEL = registerItem("frosite_shovel",
             new ShovelItem(ModToolMaterial.FROSITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item FROSITE_HOE = registerItem("frosite_hoe",
@@ -489,7 +489,7 @@ public class ModItems {
     public static final Item SANDITE_SWORD = registerItem("sandite_sword",
             new SanditeSwordItem(ModToolMaterial.SANDITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item SANDITE_AXE = registerItem("sandite_axe",
-            new AxeItem(ModToolMaterial.SANDITE, 6.0f, -3.1f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.SANDITE, 5.0f, -3.1f, new FabricItemSettings()));
     public static final Item SANDITE_SHOVEL = registerItem("sandite_shovel",
             new ShovelItem(ModToolMaterial.SANDITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item SANDITE_HOE = registerItem("sandite_hoe",
@@ -510,7 +510,7 @@ public class ModItems {
     public static final Item LEAFITE_SWORD = registerItem("leafite_sword",
             new LeafiteSwordItem(ModToolMaterial.LEAFITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item LEAFITE_AXE = registerItem("leafite_axe",
-            new AxeItem(ModToolMaterial.LEAFITE, 6.0f, -3.1f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.LEAFITE, 5.0f, -3.1f, new FabricItemSettings()));
     public static final Item LEAFITE_SHOVEL = registerItem("leafite_shovel",
             new ShovelItem(ModToolMaterial.LEAFITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item LEAFITE_HOE = registerItem("leafite_hoe",
@@ -532,7 +532,7 @@ public class ModItems {
     public static final Item END_ITE_SWORD = registerItem("end_ite_sword",
             new EndIteSwordItem(ModToolMaterial.END_ITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item END_ITE_AXE = registerItem("end_ite_axe",
-            new AxeItem(ModToolMaterial.END_ITE, 6.0f, -3.1f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.END_ITE, 5.0f, -3.1f, new FabricItemSettings()));
     public static final Item END_ITE_SHOVEL = registerItem("end_ite_shovel",
             new ShovelItem(ModToolMaterial.END_ITE, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item END_ITE_HOE = registerItem("end_ite_hoe",

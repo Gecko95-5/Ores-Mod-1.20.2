@@ -254,6 +254,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LIGHT_FROSITE_PRESSURE_PLATE);
         addDrop(ModBlocks.DARKEN_FROSITE_BUTTON);
         addDrop(ModBlocks.DARKEN_FROSITE_PRESSURE_PLATE);
+        addDrop(ModBlocks.SMOOTH_MARBLE);
 
         addDrop(ModBlocks.SALT_ORE,copperLikeOreDrops(ModBlocks.SALT_ORE, ModItems.RAW_SALT));
 
@@ -374,6 +375,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.MARBLE_SLAB, slabDrops(ModBlocks.MARBLE_SLAB));
         addDrop(ModBlocks.MARBLE_BRICK_SLAB, slabDrops(ModBlocks.MARBLE_BRICK_SLAB));
+        addDrop(ModBlocks.SMOOTH_MARBLE_SLAB, slabDrops(ModBlocks.SMOOTH_MARBLE_SLAB));
 
         addDrop(ModBlocks.END_ITE_BRICK_SLAB, slabDrops(ModBlocks.END_ITE_BRICK_SLAB));
         addDrop(ModBlocks.END_ITE_TILE_SLAB, slabDrops(ModBlocks.END_ITE_TILE_SLAB));

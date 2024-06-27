@@ -53,6 +53,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.YELLOW_TERRACOTTA_HELMET, ModItems.YELLOW_TERRACOTTA_CHESTPLATE, ModItems.YELLOW_TERRACOTTA_LEGGINGS, ModItems.YELLOW_TERRACOTTA_BOOTS);
 
 
+        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
+                .add(ModBlocks.MARBLE.asItem());
+
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.STONEBARK_PLANKS.asItem())
                 .add(ModBlocks.DEEPSLATE_PLANKS.asItem())
