@@ -59,6 +59,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> END_ITE_ORE_PLACED_KEY = registerKey("end_ite_ore_placed");
 
     public static final RegistryKey<PlacedFeature> STONEBARK_PLACED_KEY = registerKey("stonebark_placed");
+    public static final RegistryKey<PlacedFeature> WOODED_STONEBARK_PLACED_KEY = registerKey("wooded_stonebark_placed");
 
     public static final RegistryKey<PlacedFeature> LEAFITE_ORE_TREE_PLACED_KEY = registerKey("leafite_ore_tree_placed");
     public static final RegistryKey<PlacedFeature> LEAFITE_TREE_PLACED_KEY = registerKey("leafite_tree_placed");
@@ -246,6 +247,10 @@ public class ModPlacedFeatures {
 
         register(context, STONEBARK_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.STONEBARK_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2,0.1f,2),
+                        ModBlocks.STONEBARK_SAPLING));
+
+        register(context, WOODED_STONEBARK_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WOODED_STONEBARK_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,1),
                         ModBlocks.STONEBARK_SAPLING));
 
         register(context, LEAFITE_ORE_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LEAFITE_ORE_TREE_KEY),

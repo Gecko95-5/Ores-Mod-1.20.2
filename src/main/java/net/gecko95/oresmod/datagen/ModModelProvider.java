@@ -195,6 +195,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ICY_CROCUS, ModBlocks.POTTED_ICY_CROCUS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SILVER_ROSE, ModBlocks.POTTED_SILVER_ROSE, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerTintableCross(ModBlocks.SILVER_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         frostbrickPool.stairs(ModBlocks.FROSITE_BRICK_STAIRS);
         frostbrickPool.slab(ModBlocks.FROSITE_BRICK_SLAB);
         frostbrickPool.wall(ModBlocks.FROSITE_BRICK_WALL);

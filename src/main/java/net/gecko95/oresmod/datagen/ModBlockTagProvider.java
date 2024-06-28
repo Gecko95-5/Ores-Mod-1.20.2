@@ -640,5 +640,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STONEBARK_PRESSURE_PLATE)
                 .add(ModBlocks.DEEPBARK_PRESSURE_PLATE)
                 .add(ModBlocks.LEAFITE_PLANKS_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.ICE)
+                .add(ModBlocks.ICE_FROSITE_ORE)
+                .add(ModBlocks.ICE_BRICKS)
+                .add(ModBlocks.ICE_PILLAR);
     }
 }

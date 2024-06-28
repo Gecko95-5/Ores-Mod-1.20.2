@@ -15,6 +15,7 @@ import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
@@ -74,6 +75,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_ITE_ORE_KEY = registerKey("end_ite_ore");
 
     public static final  RegistryKey<ConfiguredFeature<?, ?>> STONEBARK_KEY = registerKey("stonebark");
+    public static final  RegistryKey<ConfiguredFeature<?, ?>> WOODED_STONEBARK_KEY = registerKey("wooded_stonebark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> DEEPBARK_KEY = registerKey("deepbark");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> LEAFITE_ORE_TREE_KEY = registerKey("leafite_ore_tree");
     public static final  RegistryKey<ConfiguredFeature<?, ?>> LEAFITE_TREE_KEY = registerKey("leafite_tree");
@@ -319,9 +321,18 @@ public class ModConfiguredFeatures {
 
         register(context, STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.STONEBARK_LOG),
-                new StraightTrunkPlacer(3,2,1),
+                new StraightTrunkPlacer(4,2,1),
                 BlockStateProvider.of(ModBlocks.STONEBARK_LEAVES),
-                new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1)),
+                new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0)),
+
+                new TwoLayersFeatureSize(1, 0, 2))
+                .dirtProvider(BlockStateProvider.of(Blocks.COBBLESTONE)).forceDirt().build());
+
+        register(context, WOODED_STONEBARK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.STONEBARK_LOG),
+                new LargeOakTrunkPlacer(8, 1, 1),
+                BlockStateProvider.of(ModBlocks.STONEBARK_LEAVES),
+                new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2)),
 
                 new TwoLayersFeatureSize(1, 0, 2))
                 .dirtProvider(BlockStateProvider.of(Blocks.COBBLESTONE)).forceDirt().build());

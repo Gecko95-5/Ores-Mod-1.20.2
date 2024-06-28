@@ -1,4 +1,4 @@
-// 1.20.2	2024-06-26T22:41:45.6168962	Overwhelming Ores Mod/Block Loot Tables
+// 1.20.2	2024-06-27T23:34:33.7691311	Overwhelming Ores Mod/Block Loot Tables
 09ee1cc01b2b476a859026bb3b02fe4f88622d59 data\oresmod\loot_tables\blocks\cobblestone_emerald_ore.json
 762ec1b68d91ac9538078811a92d80986ad9daf5 data\oresmod\loot_tables\blocks\stonebark_stairs.json
 afa718338eb974cc0067428164905834e692ede9 data\oresmod\loot_tables\blocks\smooth_white_sandstone_stairs.json
@@ -9,6 +9,7 @@ afa718338eb974cc0067428164905834e692ede9 data\oresmod\loot_tables\blocks\smooth_
 4408d9003d2786b2b3ded5287b17c896d8b69595 data\oresmod\loot_tables\blocks\darken_leafite_brick_wall.json
 9aa595ac5f01f48e654167938416498c31226115 data\oresmod\loot_tables\blocks\rusted_cut_steel_stairs.json
 ae1c7e9ff4ae263e81efee2ae14ff02f12cd7480 data\oresmod\loot_tables\blocks\sandite_tiles.json
+2a7c8acc170e7e21c35662741a9a22f49e5ccad5 data\oresmod\loot_tables\blocks\silver_grass.json
 1fdca883a60db8239c6c79225802c5a7cf485d77 data\oresmod\loot_tables\blocks\raw_aluminum_block.json
 778b68f46ac60b3820798094c9a461a2397dcfaa data\oresmod\loot_tables\blocks\stonebark_wood.json
 905098b4b2e1edde34a10d05a2fef80383a5dd82 data\oresmod\loot_tables\blocks\darken_frosite_button.json
@@ -180,8 +181,8 @@ ff9adc5de86dea514a018b1560033d3df284fc53 data\oresmod\loot_tables\blocks\white_s
 49fef0300978ae6309ba898e7628f12d548a0601 data\oresmod\loot_tables\blocks\lighty_rusted_cut_steel_stairs.json
 380b0590eb63ddc657839bc6b0d81b58947017ec data\oresmod\loot_tables\blocks\light_leafite_tiles.json
 4d44e7618094ad5403413dae182ae940a0a5bb25 data\oresmod\loot_tables\blocks\end_ite_tiles.json
-edc67d3ab4c5adc6286006f9f5d60d4d8ad9417b data\oresmod\loot_tables\blocks\cut_steel.json
 5992e25a0dc2279d4842cfadb3cf13458466beea data\oresmod\loot_tables\blocks\darken_leafite_brick_slab.json
+edc67d3ab4c5adc6286006f9f5d60d4d8ad9417b data\oresmod\loot_tables\blocks\cut_steel.json
 8558c9f3b42dac79c4893efee4750c8ee3bd8448 data\oresmod\loot_tables\blocks\frosite_ore.json
 054993e91ec51dde77dc628d08882372efcf98f1 data\oresmod\loot_tables\blocks\stripped_leafite_log.json
 53e3d58d52de3d5bb4330d3bc553c5a31618364d data\oresmod\loot_tables\blocks\light_end_ite_block.json
@@ -330,8 +331,8 @@ b53d12dcc8a247e0fa32594c9fa42777cbe97739 data\oresmod\loot_tables\blocks\chisele
 5aacf5e6b179540522e7a8d573949e8c48a748a5 data\oresmod\loot_tables\blocks\darken_end_ite_bricks.json
 08a03afe21f3aee747a4abefa85e54012d66b792 data\oresmod\loot_tables\blocks\fatal_poison_potion_tank.json
 636ae0b64540ab92cd0a1bd253f6a7ffdefbb649 data\oresmod\loot_tables\blocks\darken_sandite_brick_slab.json
-37b0e767aa502d67e28dd9034913c70090496722 data\oresmod\loot_tables\blocks\darken_reinforced_frosite_block.json
 c9e5e70520d1e7e36457bbbd2e9410a5d9a001d4 data\oresmod\loot_tables\blocks\stonebark_fence.json
+37b0e767aa502d67e28dd9034913c70090496722 data\oresmod\loot_tables\blocks\darken_reinforced_frosite_block.json
 2b16fbbc5e7d398dc6254dd0759ba7013baaffbc data\oresmod\loot_tables\blocks\white_sandstone_stairs.json
 8777197fb82081243ead944d81b23e90bba5ba2a data\oresmod\loot_tables\blocks\steel_bars.json
 8d8f9e98396b305389e26bc2ae3a5b410c00a1dd data\oresmod\loot_tables\blocks\leafite_log.json

@@ -751,6 +751,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_STONE_BRICK_STAIRS);
                         entries.add(ModBlocks.VOID_STONE_BRICK_SLAB);
                         entries.add(ModBlocks.VOID_STONE_BRICK_WALL);
+                        entries.add(ModBlocks.SILVER_GRASS);
                         entries.add(ModBlocks.ICY_CROCUS);
                         entries.add(ModBlocks.SILVER_ROSE);
                         entries.add(ModBlocks.WATER_TANK);

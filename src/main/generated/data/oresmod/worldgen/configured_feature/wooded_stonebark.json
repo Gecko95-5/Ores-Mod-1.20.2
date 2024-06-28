@@ -10,7 +10,7 @@
     },
     "foliage_placer": {
       "type": "minecraft:acacia_foliage_placer",
-      "offset": 0,
+      "offset": 2,
       "radius": 2
     },
     "foliage_provider": {
@@ -33,9 +33,9 @@
       "upper_size": 2
     },
     "trunk_placer": {
-      "type": "minecraft:straight_trunk_placer",
-      "base_height": 4,
-      "height_rand_a": 2,
+      "type": "minecraft:fancy_trunk_placer",
+      "base_height": 8,
+      "height_rand_a": 1,
       "height_rand_b": 1
     },
     "trunk_provider": {

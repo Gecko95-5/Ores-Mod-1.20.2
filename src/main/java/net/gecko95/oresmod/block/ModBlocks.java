@@ -35,9 +35,9 @@ public class ModBlocks {
     public static final Block FROSITE_ORE = registerBlock("frosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE), UniformIntProvider.create(3, 7)));
     public static final Block ICE_FROSITE_ORE = registerBlock("ice_frosite_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)
-                    .mapColor(MapColor.PALE_PURPLE).instrument(Instrument.CHIME).slipperiness(0.98f)
-                    .sounds(BlockSoundGroup.GLASS), UniformIntProvider.create(2, 5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)
+                    .requiresTool().strength(3.0f, 3.0f),
+                    UniformIntProvider.create(2, 5)));
     public static final Block FROSITE_BLOCK = registerBlock("frosite_block",
             new Block(FabricBlockSettings.create()
                     .strength(5.0f, 6.0f).sounds(BlockSoundGroup.GLASS)
@@ -1022,6 +1022,11 @@ public class ModBlocks {
     public static final Block POTTED_SILVER_ROSE = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
             "potted_silver_rose"), new FlowerPotBlock(SILVER_ROSE,
             FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block SILVER_GRASS = registerBlock("silver_grass",
+            new StonePlantBlock(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY)
+                    .replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)
+                    .offset(AbstractBlock.OffsetType.XYZ).burnable().pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block REINFORCED_FROSITE_BLOCK = registerBlock("reinforced_frosite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).strength(50.0f, 1200.0f)));

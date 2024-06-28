@@ -426,6 +426,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_LEAFITE_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_ICY_CROCUS);
         addPottedPlantDrops(ModBlocks.POTTED_SILVER_ROSE);
+
+        addDrop(ModBlocks.SILVER_GRASS,grassDrops(ModBlocks.SILVER_GRASS));
     }
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
