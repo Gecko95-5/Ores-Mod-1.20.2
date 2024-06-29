@@ -2,6 +2,7 @@ package net.gecko95.oresmod.entity.custom;
 
 import net.gecko95.oresmod.effect.ModEffects;
 import net.gecko95.oresmod.item.ModItems;
+import net.gecko95.oresmod.util.ModTags;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -13,6 +14,7 @@ import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.World;
@@ -58,5 +60,14 @@ public class FrostedStrayEntity extends StrayEntity {
     }
     @Override
     protected void updateEnchantments(Random random, LocalDifficulty localDifficulty) {
+    }
+    @Override
+    public void tickMovement() {
+        super.tickMovement();
+        if (!this.getWorld().isClient) {
+            if (this.getWorld().getBiome(this.getBlockPos()).isIn(ModTags.Biomes.FROSITE_COLD)) {
+                this.heal(1.0f);
+            }
+        }
     }
 }

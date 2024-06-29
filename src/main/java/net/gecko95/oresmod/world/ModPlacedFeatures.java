@@ -67,7 +67,9 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> BIG_LEAFITE_ORE_TREE_PLACED_KEY = registerKey("big_leafite_ore_tree_placed");
 
     public static final RegistryKey<PlacedFeature> ICY_CROCUS_FLOWER_PLACED_KEY = registerKey("icy_crocus_flower_placed");
-    public static final RegistryKey<PlacedFeature> SILVER_ROSE_FLOWER_PLACED_KEY = registerKey("silver_rose_flower_placed");
+    public static final RegistryKey<PlacedFeature> FLOWER_QUARRY_PLACED_KEY = registerKey("flower_quarry_placed");
+    public static final RegistryKey<PlacedFeature> FLOWER_WINDSWEPT_PLACED_KEY = registerKey("flower_windswept_placed");
+    public static final RegistryKey<PlacedFeature> PATCH_SILVER_GRASS_PLACED_KEY = registerKey("silver_grass_patch_placed");
 
     public static void boostrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -272,8 +274,14 @@ public class ModPlacedFeatures {
         register(context, ICY_CROCUS_FLOWER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ICY_CROCUS_FLOWER_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(32), ModBlocks.ICY_CROCUS));
 
-        register(context, SILVER_ROSE_FLOWER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SILVER_ROSE_FLOWER_KEY),
+        register(context, FLOWER_QUARRY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FLOWER_QUARRY_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(32), ModBlocks.SILVER_ROSE));
+
+        register(context, PATCH_SILVER_GRASS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_SILVER_GRASS),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(128), ModBlocks.SILVER_GRASS));
+
+        register(context, FLOWER_WINDSWEPT_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FLOWER_WINDSWEPT_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(32), ModBlocks.ALPINE_SPEEDWELL));
     }
 
 

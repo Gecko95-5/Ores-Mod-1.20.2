@@ -5630,5 +5630,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.SILVER_ROSE)
                 .criterion(hasItem(ModBlocks.SILVER_ROSE), conditionsFromItem(ModBlocks.SILVER_ROSE))
                 .offerTo(exporter, new Identifier("light_gray_dye_from_silver_rose"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WHITE_DYE)
+                .input(ModBlocks.SUBALPINE_DAISY)
+                .criterion(hasItem(ModBlocks.SUBALPINE_DAISY), conditionsFromItem(ModBlocks.SUBALPINE_DAISY))
+                .offerTo(exporter, new Identifier("white_dye_from_subalpine_daisy"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BLUE_DYE)
+                .input(ModBlocks.ALPINE_SPEEDWELL)
+                .criterion(hasItem(ModBlocks.ALPINE_SPEEDWELL), conditionsFromItem(ModBlocks.ALPINE_SPEEDWELL))
+                .offerTo(exporter, new Identifier("blue_dye_from_alpine_speedwell"));
     }
 }

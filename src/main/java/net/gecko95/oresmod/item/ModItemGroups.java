@@ -753,6 +753,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_STONE_BRICK_WALL);
                         entries.add(ModBlocks.SILVER_GRASS);
                         entries.add(ModBlocks.ICY_CROCUS);
+                        entries.add(ModBlocks.SUBALPINE_DAISY);
+                        entries.add(ModBlocks.ALPINE_SPEEDWELL);
                         entries.add(ModBlocks.SILVER_ROSE);
                         entries.add(ModBlocks.WATER_TANK);
                         entries.add(ModBlocks.LAVA_TANK);

@@ -11,6 +11,9 @@ public class StonebarkSaplingGenerator extends SaplingGenerator {
     @Nullable
     @Override
     protected RegistryKey<ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
+        if (random.nextInt(10) == 0) {
+        return ModConfiguredFeatures.WOODED_STONEBARK_KEY;
+        }
         return ModConfiguredFeatures.STONEBARK_KEY;
     }
 }

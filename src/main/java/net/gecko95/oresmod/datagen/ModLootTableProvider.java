@@ -243,6 +243,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DARKEN_END_ITE_TILE_STAIRS);
         addDrop(ModBlocks.DARKEN_END_ITE_TILE_WALL);
         addDrop(ModBlocks.ICY_CROCUS);
+        addDrop(ModBlocks.ALPINE_SPEEDWELL);
+        addDrop(ModBlocks.SUBALPINE_DAISY);
+        addDrop(ModBlocks.ICY_CROCUS);
         addDrop(ModBlocks.SILVER_ROSE);
         addDrop(ModBlocks.ICE_BRICKS);
         addDrop(ModBlocks.ICE_PILLAR);
@@ -426,6 +429,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_LEAFITE_SAPLING);
         addPottedPlantDrops(ModBlocks.POTTED_ICY_CROCUS);
         addPottedPlantDrops(ModBlocks.POTTED_SILVER_ROSE);
+        addPottedPlantDrops(ModBlocks.POTTED_SUBALPINE_DAISY);
+        addPottedPlantDrops(ModBlocks.POTTED_ALPINE_SPEEDWELL);
 
         addDrop(ModBlocks.SILVER_GRASS,grassDrops(ModBlocks.SILVER_GRASS));
     }

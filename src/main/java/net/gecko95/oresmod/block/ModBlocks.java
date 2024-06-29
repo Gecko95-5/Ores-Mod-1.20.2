@@ -1012,15 +1012,27 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
 
     public static final Block ICY_CROCUS = registerBlock("icy_crocus",
-            new FlowerBlock(StatusEffects.SPEED,20, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+            new FlowerBlock(StatusEffects.SLOWNESS,12, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
     public static final Block POTTED_ICY_CROCUS = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
             "potted_icy_crocus"), new FlowerPotBlock(ICY_CROCUS,
             FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block SILVER_ROSE = registerBlock("silver_rose",
-            new SilverFlowerBlock(StatusEffects.STRENGTH,20, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+            new SilverFlowerBlock(StatusEffects.STRENGTH,9, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
     public static final Block POTTED_SILVER_ROSE = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
             "potted_silver_rose"), new FlowerPotBlock(SILVER_ROSE,
+            FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block SUBALPINE_DAISY = registerBlock("subalpine_daisy",
+            new FlowerBlock(StatusEffects.REGENERATION,12, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_SUBALPINE_DAISY = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "potted_subalpine_daisy"), new FlowerPotBlock(SUBALPINE_DAISY,
+            FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block ALPINE_SPEEDWELL = registerBlock("alpine_speedwell",
+            new FlowerBlock(StatusEffects.SPEED,9, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_ALPINE_SPEEDWELL = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "potted_alpine_speedwell"), new FlowerPotBlock(ALPINE_SPEEDWELL,
             FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block SILVER_GRASS = registerBlock("silver_grass",
