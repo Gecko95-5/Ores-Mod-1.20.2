@@ -980,11 +980,11 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_BRICKS)));
     public static final Block LIGHT_END_ITE_BRICK_WALL = registerBlock("light_end_ite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_BRICKS)));
-    public static final Block DARKEN_END_ITE_BRICK_STAIRS = registerBlock("darken_end_ite_brick_stairs",
+    public static final Block DARK_END_ITE_BRICK_STAIRS = registerBlock("dark_end_ite_brick_stairs",
             new StairsBlock(ModBlocks.DARK_END_ITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BRICKS)));
-    public static final Block DARKEN_END_ITE_BRICK_SLAB = registerBlock("darken_end_ite_brick_slab",
+    public static final Block DARK_END_ITE_BRICK_SLAB = registerBlock("dark_end_ite_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BRICKS)));
-    public static final Block DARKEN_END_ITE_BRICK_WALL = registerBlock("darken_end_ite_brick_wall",
+    public static final Block DARK_END_ITE_BRICK_WALL = registerBlock("dark_end_ite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BRICKS)));
 
     public static final Block LIGHT_CUT_END_ITE_STAIRS = registerBlock("light_cut_end_ite_stairs",

@@ -817,9 +817,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LIGHT_CUT_END_ITE_WALL);
                         entries.add(ModBlocks.DARK_END_ITE_BLOCK);
                         entries.add(ModBlocks.DARK_END_ITE_BRICKS);
-                        entries.add(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS);
-                        entries.add(ModBlocks.DARKEN_END_ITE_BRICK_SLAB);
-                        entries.add(ModBlocks.DARKEN_END_ITE_BRICK_WALL);
+                        entries.add(ModBlocks.DARK_END_ITE_BRICK_STAIRS);
+                        entries.add(ModBlocks.DARK_END_ITE_BRICK_SLAB);
+                        entries.add(ModBlocks.DARK_END_ITE_BRICK_WALL);
                         entries.add(ModBlocks.DARK_CUT_END_ITE);
                         entries.add(ModBlocks.DARK_CUT_END_ITE_STAIRS);
                         entries.add(ModBlocks.DARK_CUT_END_ITE_SLAB);

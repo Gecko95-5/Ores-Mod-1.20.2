@@ -237,8 +237,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LIGHT_CUT_END_ITE_STAIRS);
         addDrop(ModBlocks.LIGHT_CUT_END_ITE_WALL);
         addDrop(ModBlocks.DARK_END_ITE_BRICKS);
-        addDrop(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS);
-        addDrop(ModBlocks.DARKEN_END_ITE_BRICK_WALL);
+        addDrop(ModBlocks.DARK_END_ITE_BRICK_STAIRS);
+        addDrop(ModBlocks.DARK_END_ITE_BRICK_WALL);
         addDrop(ModBlocks.DARK_CUT_END_ITE);
         addDrop(ModBlocks.DARK_CUT_END_ITE_STAIRS);
         addDrop(ModBlocks.DARK_CUT_END_ITE_WALL);
@@ -474,7 +474,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.LIGHT_END_ITE_BRICK_SLAB, slabDrops(ModBlocks.LIGHT_END_ITE_BRICK_SLAB));
         addDrop(ModBlocks.LIGHT_CUT_END_ITE_SLAB, slabDrops(ModBlocks.LIGHT_CUT_END_ITE_SLAB));
-        addDrop(ModBlocks.DARKEN_END_ITE_BRICK_SLAB, slabDrops(ModBlocks.DARKEN_END_ITE_BRICK_SLAB));
+        addDrop(ModBlocks.DARK_END_ITE_BRICK_SLAB, slabDrops(ModBlocks.DARK_END_ITE_BRICK_SLAB));
         addDrop(ModBlocks.DARK_CUT_END_ITE_SLAB, slabDrops(ModBlocks.DARK_CUT_END_ITE_SLAB));
 
         addDrop(ModBlocks.ICE_BRICK_SLAB, slabDrops(ModBlocks.ICE_BRICK_SLAB));

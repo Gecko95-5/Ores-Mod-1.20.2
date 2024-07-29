@@ -5398,23 +5398,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_CUT_END_ITE, ModBlocks.CUT_END_ITE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_CUT_END_ITE, ModBlocks.DARK_END_ITE_BLOCK);
 
-        createStairsRecipe(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DARK_END_ITE_BRICKS))
+        createStairsRecipe(ModBlocks.DARK_END_ITE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DARK_END_ITE_BRICKS))
                 .criterion(hasItem(ModBlocks.DARK_END_ITE_BRICKS),conditionsFromItem(ModBlocks.DARK_END_ITE_BRICKS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS)));
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BLOCK);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.DARK_END_ITE_BLOCK);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_STAIRS, ModBlocks.DARK_END_ITE_BRICKS);
-        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.DARK_END_ITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BLOCK,2);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS,2);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.DARK_END_ITE_BLOCK,2);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKEN_END_ITE_BRICK_SLAB, ModBlocks.DARK_END_ITE_BRICKS,2);
-        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.DARK_END_ITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BLOCK);
-        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.DARK_END_ITE_BLOCK);
-        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARKEN_END_ITE_BRICK_WALL, ModBlocks.DARK_END_ITE_BRICKS);
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DARK_END_ITE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_STAIRS, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_STAIRS, ModBlocks.DARK_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_STAIRS, ModBlocks.DARK_END_ITE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_SLAB, ModBlocks.DARK_END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_SLAB, ModBlocks.END_ITE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_SLAB, ModBlocks.DARK_END_ITE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_END_ITE_BRICK_SLAB, ModBlocks.DARK_END_ITE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARK_END_ITE_BRICK_WALL, ModBlocks.DARK_END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARK_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARK_END_ITE_BRICK_WALL, ModBlocks.END_ITE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARK_END_ITE_BRICK_WALL, ModBlocks.DARK_END_ITE_BLOCK);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DARK_END_ITE_BRICK_WALL, ModBlocks.DARK_END_ITE_BRICKS);
 
         createStairsRecipe(ModBlocks.DARK_CUT_END_ITE_STAIRS, Ingredient.ofItems(ModBlocks.DARK_CUT_END_ITE))
                 .criterion(hasItem(ModBlocks.DARK_CUT_END_ITE),conditionsFromItem(ModBlocks.DARK_CUT_END_ITE))

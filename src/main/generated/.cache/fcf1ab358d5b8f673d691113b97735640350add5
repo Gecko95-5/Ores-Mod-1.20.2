@@ -1,4 +1,4 @@
-// 1.20.2	2024-07-29T12:11:34.8093171	Overwhelming Ores Mod/World Gen
+// 1.20.2	2024-07-29T14:16:02.8392192	Overwhelming Ores Mod/World Gen
 2f1b43345a7a5a3f53808b7a8648df95b1c9481f data\oresmod\worldgen\configured_feature\platinum_ore.json
 80821579ddb1d9eae3e547c50ba8dc03cf565aa4 data\oresmod\worldgen\biome\frozen_quarry_peaks.json
 de0dff88344afcba13f25f012a204a1c3997545e data\oresmod\worldgen\configured_feature\big_leafite_ore_tree.json
@@ -65,8 +65,8 @@ aa05967f3d06621d74df35b1c41c1c5fd4438492 data\oresmod\worldgen\placed_feature\co
 a23fa3317b4cb8c5cd5bbb4232701ce1d1c89162 data\oresmod\worldgen\configured_feature\cobblestone_quartz_ore.json
 9eeefcd39879ecd5886962911143b56448780f97 data\oresmod\worldgen\configured_feature\cobblestone_redstone_ore.json
 d3647907e0f413c046fb88124bea624759a62f9c data\oresmod\worldgen\configured_feature\clay_lapis_ore.json
-5c953dea433e89d193032c3074bc81f894a95b74 data\oresmod\worldgen\configured_feature\silver_grass_patch.json
 da27e76deb2d663b4961b698e646732209c31ca6 data\oresmod\worldgen\configured_feature\tungsten_ore.json
+5c953dea433e89d193032c3074bc81f894a95b74 data\oresmod\worldgen\configured_feature\silver_grass_patch.json
 e0399020f8baabcab5ae12f1afe7a21c0dd4ed47 data\oresmod\worldgen\placed_feature\cobblestone_emerald_ore_placed.json
 e7bc4fed9af3b28a7d3ce9fdb80c6a2fcc7b8f63 data\oresmod\worldgen\biome\quarry.json
 a88b0ea249fe651100dfef55ea3df9979143b96e data\oresmod\worldgen\configured_feature\stonebark.json

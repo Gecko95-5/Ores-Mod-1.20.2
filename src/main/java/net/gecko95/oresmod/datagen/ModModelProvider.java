@@ -401,9 +401,9 @@ public class ModModelProvider extends FabricModelProvider {
         lightendtilePool.slab(ModBlocks.LIGHT_CUT_END_ITE_SLAB);
         lightendtilePool.wall(ModBlocks.LIGHT_CUT_END_ITE_WALL);
 
-        darkenendbrickPool.stairs(ModBlocks.DARKEN_END_ITE_BRICK_STAIRS);
-        darkenendbrickPool.slab(ModBlocks.DARKEN_END_ITE_BRICK_SLAB);
-        darkenendbrickPool.wall(ModBlocks.DARKEN_END_ITE_BRICK_WALL);
+        darkenendbrickPool.stairs(ModBlocks.DARK_END_ITE_BRICK_STAIRS);
+        darkenendbrickPool.slab(ModBlocks.DARK_END_ITE_BRICK_SLAB);
+        darkenendbrickPool.wall(ModBlocks.DARK_END_ITE_BRICK_WALL);
 
         darkenendtilePool.stairs(ModBlocks.DARK_CUT_END_ITE_STAIRS);
         darkenendtilePool.slab(ModBlocks.DARK_CUT_END_ITE_SLAB);
