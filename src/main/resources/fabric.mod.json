@@ -26,6 +26,9 @@
 		],
 		"terrablender": [
 			"net.gecko95.oresmod.world.biome.ModTerrablenderAPI"
+		],
+		"rei_client": [
+			"net.gecko95.oresmod.compat.OresModREIClientPlugin"
 		]
 	},
 	"mixins": [

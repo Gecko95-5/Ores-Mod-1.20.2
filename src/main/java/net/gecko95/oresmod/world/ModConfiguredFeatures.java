@@ -415,7 +415,7 @@ public class ModConfiguredFeatures {
                                 List.of(ModBlocks.SUBALPINE_DAISY.getDefaultState(), Blocks.OXEYE_DAISY.getDefaultState()))))));
 
         register(context, PATCH_SILVER_GRASS, Feature.RANDOM_PATCH,
-                new RandomPatchFeatureConfig(64, 10, 2,
+                new RandomPatchFeatureConfig(32, 10, 2,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.SILVER_GRASS)))));
     }

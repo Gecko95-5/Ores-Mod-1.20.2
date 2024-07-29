@@ -46,7 +46,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create()
                     .strength(5.0f, 6.0f).sounds(BlockSoundGroup.GLASS)
                     .mapColor(MapColor.PALE_PURPLE).instrument(Instrument.CHIME)));
-    public static final Block FROSITE_TILES = registerBlock("frosite_tiles",
+    public static final Block CUT_FROSITE = registerBlock("cut_frosite",
             new Block(FabricBlockSettings.create()
                     .strength(5.0f, 6.0f).sounds(BlockSoundGroup.GLASS)
                     .mapColor(MapColor.PALE_PURPLE).instrument(Instrument.CHIME)));
@@ -61,12 +61,12 @@ public class ModBlocks {
     public static final Block FROSITE_BRICK_WALL = registerBlock("frosite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BRICKS)));
 
-    public static final Block FROSITE_TILE_STAIRS = registerBlock("frosite_tile_stairs",
-            new StairsBlock(ModBlocks.FROSITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.FROSITE_TILES)));
-    public static final Block FROSITE_TILE_SLAB = registerBlock("frosite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.FROSITE_TILES)));
-    public static final Block FROSITE_TILE_WALL = registerBlock("frosite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.FROSITE_TILES)));
+    public static final Block CUT_FROSITE_STAIRS = registerBlock("cut_frosite_stairs",
+            new StairsBlock(ModBlocks.CUT_FROSITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.CUT_FROSITE)));
+    public static final Block CUT_FROSITE_SLAB = registerBlock("cut_frosite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_FROSITE)));
+    public static final Block CUT_FROSITE_WALL = registerBlock("cut_frosite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_FROSITE)));
 
     public static final Block FROSITE_PRESSURE_PLATE = registerBlock("frosite_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
@@ -353,7 +353,7 @@ public class ModBlocks {
 
     public static final Block SANDITE_BRICKS = registerBlock("sandite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BLOCK)));
-    public static final Block SANDITE_TILES = registerBlock("sandite_tiles",
+    public static final Block CUT_SANDITE = registerBlock("cut_sandite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BLOCK)));
     public static final Block CHISELED_SANDITE = registerBlock("chiseled_sandite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BLOCK)));
@@ -365,12 +365,12 @@ public class ModBlocks {
     public static final Block SANDITE_BRICK_WALL = registerBlock("sandite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_BRICKS)));
 
-    public static final Block SANDITE_TILE_STAIRS = registerBlock("sandite_tile_stairs",
-            new StairsBlock(ModBlocks.SANDITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
-    public static final Block SANDITE_TILE_SLAB = registerBlock("sandite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
-    public static final Block SANDITE_TILE_WALL = registerBlock("sandite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.SANDITE_TILES)));
+    public static final Block CUT_SANDITE_STAIRS = registerBlock("cut_sandite_stairs",
+            new StairsBlock(ModBlocks.CUT_SANDITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.CUT_SANDITE)));
+    public static final Block CUT_SANDITE_SLAB = registerBlock("cut_sandite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_SANDITE)));
+    public static final Block CUT_SANDITE_WALL = registerBlock("cut_sandite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_SANDITE)));
 
     public static final Block LEAFITE_BLOCK = registerBlock("leafite_block",
             new Block(FabricBlockSettings.create()
@@ -379,7 +379,7 @@ public class ModBlocks {
 
     public static final Block LEAFITE_BRICKS = registerBlock("leafite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK)));
-    public static final Block LEAFITE_TILES = registerBlock("leafite_tiles",
+    public static final Block CUT_LEAFITE = registerBlock("cut_leafite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK)));
     public static final Block CHISELED_LEAFITE = registerBlock("chiseled_leafite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK)));
@@ -391,12 +391,12 @@ public class ModBlocks {
     public static final Block LEAFITE_BRICK_WALL = registerBlock("leafite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BRICKS)));
 
-    public static final Block LEAFITE_TILE_STAIRS = registerBlock("leafite_tile_stairs",
-            new StairsBlock(ModBlocks.LEAFITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES)));
-    public static final Block LEAFITE_TILE_SLAB = registerBlock("leafite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES)));
-    public static final Block LEAFITE_TILE_WALL = registerBlock("leafite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES)));
+    public static final Block CUT_LEAFITE_STAIRS = registerBlock("cut_leafite_stairs",
+            new StairsBlock(ModBlocks.CUT_LEAFITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.CUT_LEAFITE)));
+    public static final Block CUT_LEAFITE_SLAB = registerBlock("cut_leafite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_LEAFITE)));
+    public static final Block CUT_LEAFITE_WALL = registerBlock("cut_leafite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_LEAFITE)));
     public static final Block LEAFITE_LOG = registerBlock("leafite_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.ORANGE)
                     .instrument(Instrument.BASEDRUM).strength(1.5f, 6.0f)));
@@ -809,7 +809,7 @@ public class ModBlocks {
 
     public static final Block END_ITE_BRICKS = registerBlock("end_ite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK)));
-    public static final Block END_ITE_TILES = registerBlock("end_ite_tiles",
+    public static final Block CUT_END_ITE = registerBlock("cut_end_ite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK)));
     public static final Block CHISELED_END_ITE = registerBlock("chiseled_end_ite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK)));
@@ -821,39 +821,39 @@ public class ModBlocks {
     public static final Block END_ITE_BRICK_WALL = registerBlock("end_ite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BRICKS)));
 
-    public static final Block END_ITE_TILE_STAIRS = registerBlock("end_ite_tile_stairs",
-            new StairsBlock(ModBlocks.END_ITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.END_ITE_TILES)));
-    public static final Block END_ITE_TILE_SLAB = registerBlock("end_ite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_TILES)));
-    public static final Block END_ITE_TILE_WALL = registerBlock("end_ite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_ITE_TILES)));
+    public static final Block CUT_END_ITE_STAIRS = registerBlock("cut_end_ite_stairs",
+            new StairsBlock(ModBlocks.CUT_END_ITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.CUT_END_ITE)));
+    public static final Block CUT_END_ITE_SLAB = registerBlock("cut_end_ite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_END_ITE)));
+    public static final Block CUT_END_ITE_WALL = registerBlock("cut_end_ite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.CUT_END_ITE)));
 
     public static final Block LIGHT_FROSITE_BLOCK = registerBlock("light_frosite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block DARKEN_FROSITE_BLOCK = registerBlock("darken_frosite_block",
+    public static final Block DARK_FROSITE_BLOCK = registerBlock("dark_frosite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block LIGHT_SANDITE_BLOCK = registerBlock("light_sandite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).mapColor(MapColor.PALE_YELLOW)));
-    public static final Block DARKEN_SANDITE_BLOCK = registerBlock("darken_sandite_block",
+    public static final Block DARK_SANDITE_BLOCK = registerBlock("dark_sandite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block LIGHT_LEAFITE_BLOCK = registerBlock("light_leafite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK).mapColor(MapColor.TERRACOTTA_ORANGE)));
-    public static final Block DARKEN_LEAFITE_BLOCK = registerBlock("darken_leafite_block",
+    public static final Block DARK_LEAFITE_BLOCK = registerBlock("dark_leafite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BLOCK).mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block LIGHT_END_ITE_BLOCK = registerBlock("light_end_ite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK).mapColor(MapColor.PALE_PURPLE)));
-    public static final Block DARKEN_END_ITE_BLOCK = registerBlock("darken_end_ite_block",
+    public static final Block DARK_END_ITE_BLOCK = registerBlock("dark_end_ite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.END_ITE_BLOCK).mapColor(MapColor.TERRACOTTA_PURPLE)));
 
     public static final Block LIGHT_FROSITE_BRICKS = registerBlock("light_frosite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BRICKS).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block DARKEN_FROSITE_BRICKS = registerBlock("darken_frosite_bricks",
+    public static final Block DARK_FROSITE_BRICKS = registerBlock("dark_frosite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BRICKS).mapColor(MapColor.TERRACOTTA_BLUE)));
 
-    public static final Block LIGHT_FROSITE_TILES = registerBlock("light_frosite_tiles",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_TILES).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block DARKEN_FROSITE_TILES = registerBlock("darken_frosite_tiles",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_TILES).mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block LIGHT_CUT_FROSITE = registerBlock("light_cut_frosite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.CUT_FROSITE).mapColor(MapColor.LIGHT_BLUE)));
+    public static final Block DARK_CUT_FROSITE = registerBlock("dark_cut_frosite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.CUT_FROSITE).mapColor(MapColor.TERRACOTTA_BLUE)));
 
     public static final Block LIGHT_FROSITE_BRICK_STAIRS = registerBlock("light_frosite_brick_stairs",
             new StairsBlock(ModBlocks.LIGHT_FROSITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BRICKS)));
@@ -861,46 +861,46 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BRICKS)));
     public static final Block LIGHT_FROSITE_BRICK_WALL = registerBlock("light_frosite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BRICKS)));
-    public static final Block DARKEN_FROSITE_BRICK_STAIRS = registerBlock("darken_frosite_brick_stairs",
-            new StairsBlock(ModBlocks.DARKEN_FROSITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BRICKS)));
-    public static final Block DARKEN_FROSITE_BRICK_SLAB = registerBlock("darken_frosite_brick_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BRICKS)));
-    public static final Block DARKEN_FROSITE_BRICK_WALL = registerBlock("darken_frosite_brick_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BRICKS)));
+    public static final Block DARK_FROSITE_BRICK_STAIRS = registerBlock("dark_frosite_brick_stairs",
+            new StairsBlock(ModBlocks.DARK_FROSITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_FROSITE_BRICKS)));
+    public static final Block DARK_FROSITE_BRICK_SLAB = registerBlock("dark_frosite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_FROSITE_BRICKS)));
+    public static final Block DARK_FROSITE_BRICK_WALL = registerBlock("dark_frosite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_FROSITE_BRICKS)));
 
-    public static final Block LIGHT_FROSITE_TILE_STAIRS = registerBlock("light_frosite_tile_stairs",
-            new StairsBlock(ModBlocks.LIGHT_FROSITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_TILES)));
-    public static final Block LIGHT_FROSITE_TILE_SLAB = registerBlock("light_frosite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_TILES)));
-    public static final Block LIGHT_FROSITE_TILE_WALL = registerBlock("light_frosite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_TILES)));
-    public static final Block DARKEN_FROSITE_TILE_STAIRS = registerBlock("darken_frosite_tile_stairs",
-            new StairsBlock(ModBlocks.DARKEN_FROSITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_TILES)));
-    public static final Block DARKEN_FROSITE_TILE_SLAB = registerBlock("darken_frosite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_TILES)));
-    public static final Block DARKEN_FROSITE_TILE_WALL = registerBlock("darken_frosite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_TILES)));
+    public static final Block LIGHT_CUT_FROSITE_STAIRS = registerBlock("light_cut_frosite_stairs",
+            new StairsBlock(ModBlocks.LIGHT_CUT_FROSITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_FROSITE)));
+    public static final Block LIGHT_CUT_FROSITE_SLAB = registerBlock("light_cut_frosite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_FROSITE)));
+    public static final Block LIGHT_CUT_FROSITE_WALL = registerBlock("light_cut_frosite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_FROSITE)));
+    public static final Block DARK_CUT_FROSITE_STAIRS = registerBlock("dark_cut_frosite_stairs",
+            new StairsBlock(ModBlocks.DARK_CUT_FROSITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_FROSITE)));
+    public static final Block DARK_CUT_FROSITE_SLAB = registerBlock("dark_cut_frosite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_FROSITE)));
+    public static final Block DARK_CUT_FROSITE_WALL = registerBlock("dark_cut_frosite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_FROSITE)));
 
     public static final Block LIGHT_FROSITE_PRESSURE_PLATE = registerBlock("light_frosite_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BLOCK), BlockSetType.GOLD));
     public static final Block LIGHT_FROSITE_BUTTON = registerBlock("light_frosite_button",
             new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BLOCK), BlockSetType.GOLD, 20,false));
-    public static final Block DARKEN_FROSITE_PRESSURE_PLATE = registerBlock("darken_frosite_pressure_plate",
+    public static final Block DARK_FROSITE_PRESSURE_PLATE = registerBlock("dark_frosite_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BLOCK), BlockSetType.GOLD));
-    public static final Block DARKEN_FROSITE_BUTTON = registerBlock("darken_frosite_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BLOCK), BlockSetType.GOLD, 20,false));
+                    FabricBlockSettings.copyOf(ModBlocks.DARK_FROSITE_BLOCK), BlockSetType.GOLD));
+    public static final Block DARK_FROSITE_BUTTON = registerBlock("dark_frosite_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_FROSITE_BLOCK), BlockSetType.GOLD, 20,false));
 
     public static final Block LIGHT_SANDITE_BRICKS = registerBlock("light_sandite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_BLOCK)));
-    public static final Block DARKEN_SANDITE_BRICKS = registerBlock("darken_sandite_bricks",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_BLOCK)));
+    public static final Block DARK_SANDITE_BRICKS = registerBlock("dark_sandite_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DARK_SANDITE_BLOCK)));
 
-    public static final Block LIGHT_SANDITE_TILES = registerBlock("light_sandite_tiles",
+    public static final Block LIGHT_CUT_SANDITE = registerBlock("light_cut_sandite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_BLOCK)));
-    public static final Block DARKEN_SANDITE_TILES = registerBlock("darken_sandite_tiles",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_BLOCK)));
+    public static final Block DARK_CUT_SANDITE = registerBlock("dark_cut_sandite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DARK_SANDITE_BLOCK)));
 
     public static final Block LIGHT_SANDITE_BRICK_STAIRS = registerBlock("light_sandite_brick_stairs",
             new StairsBlock(ModBlocks.LIGHT_SANDITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_BRICKS)));
@@ -908,35 +908,35 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_BRICKS)));
     public static final Block LIGHT_SANDITE_BRICK_WALL = registerBlock("light_sandite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_BRICKS)));
-    public static final Block DARKEN_SANDITE_BRICK_STAIRS = registerBlock("darken_sandite_brick_stairs",
-            new StairsBlock(ModBlocks.DARKEN_SANDITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_BRICKS)));
-    public static final Block DARKEN_SANDITE_BRICK_SLAB = registerBlock("darken_sandite_brick_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_BRICKS)));
-    public static final Block DARKEN_SANDITE_BRICK_WALL = registerBlock("darken_sandite_brick_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_BRICKS)));
+    public static final Block DARK_SANDITE_BRICK_STAIRS = registerBlock("dark_sandite_brick_stairs",
+            new StairsBlock(ModBlocks.DARK_SANDITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_SANDITE_BRICKS)));
+    public static final Block DARK_SANDITE_BRICK_SLAB = registerBlock("dark_sandite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_SANDITE_BRICKS)));
+    public static final Block DARK_SANDITE_BRICK_WALL = registerBlock("dark_sandite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_SANDITE_BRICKS)));
 
-    public static final Block LIGHT_SANDITE_TILE_STAIRS = registerBlock("light_sandite_tile_stairs",
-            new StairsBlock(ModBlocks.LIGHT_SANDITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_TILES)));
-    public static final Block LIGHT_SANDITE_TILE_SLAB = registerBlock("light_sandite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_TILES)));
-    public static final Block LIGHT_SANDITE_TILE_WALL = registerBlock("light_sandite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_SANDITE_TILES)));
-    public static final Block DARKEN_SANDITE_TILE_STAIRS = registerBlock("darken_sandite_tile_stairs",
-            new StairsBlock(ModBlocks.DARKEN_SANDITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_TILES)));
-    public static final Block DARKEN_SANDITE_TILE_SLAB = registerBlock("darken_sandite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_TILES)));
-    public static final Block DARKEN_SANDITE_TILE_WALL = registerBlock("darken_sandite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_SANDITE_TILES)));
+    public static final Block LIGHT_CUT_SANDITE_STAIRS = registerBlock("light_cut_sandite_stairs",
+            new StairsBlock(ModBlocks.LIGHT_CUT_SANDITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_SANDITE)));
+    public static final Block LIGHT_CUT_SANDITE_SLAB = registerBlock("light_cut_sandite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_SANDITE)));
+    public static final Block LIGHT_CUT_SANDITE_WALL = registerBlock("light_cut_sandite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_SANDITE)));
+    public static final Block DARK_CUT_SANDITE_STAIRS = registerBlock("dark_cut_sandite_stairs",
+            new StairsBlock(ModBlocks.DARK_CUT_SANDITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_SANDITE)));
+    public static final Block DARK_CUT_SANDITE_SLAB = registerBlock("dark_cut_sandite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_SANDITE)));
+    public static final Block DARK_CUT_SANDITE_WALL = registerBlock("dark_cut_sandite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_SANDITE)));
 
     public static final Block LIGHT_LEAFITE_BRICKS = registerBlock("light_leafite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BRICKS).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block DARKEN_LEAFITE_BRICKS = registerBlock("darken_leafite_bricks",
+    public static final Block DARK_LEAFITE_BRICKS = registerBlock("dark_leafite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_BRICKS).mapColor(MapColor.TERRACOTTA_BLUE)));
 
-    public static final Block LIGHT_LEAFITE_TILES = registerBlock("light_leafite_tiles",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES).mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block DARKEN_LEAFITE_TILES = registerBlock("darken_leafite_tiles",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.LEAFITE_TILES).mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block LIGHT_CUT_LEAFITE = registerBlock("light_cut_leafite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.CUT_LEAFITE).mapColor(MapColor.LIGHT_BLUE)));
+    public static final Block DARK_CUT_LEAFITE = registerBlock("dark_cut_leafite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.CUT_LEAFITE).mapColor(MapColor.TERRACOTTA_BLUE)));
 
     public static final Block LIGHT_LEAFITE_BRICK_STAIRS = registerBlock("light_leafite_brick_stairs",
             new StairsBlock(ModBlocks.LIGHT_LEAFITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_LEAFITE_BRICKS)));
@@ -944,35 +944,35 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_LEAFITE_BRICKS)));
     public static final Block LIGHT_LEAFITE_BRICK_WALL = registerBlock("light_leafite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_LEAFITE_BRICKS)));
-    public static final Block DARKEN_LEAFITE_BRICK_STAIRS = registerBlock("darken_leafite_brick_stairs",
-            new StairsBlock(ModBlocks.DARKEN_LEAFITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_LEAFITE_BRICKS)));
-    public static final Block DARKEN_LEAFITE_BRICK_SLAB = registerBlock("darken_leafite_brick_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_LEAFITE_BRICKS)));
-    public static final Block DARKEN_LEAFITE_BRICK_WALL = registerBlock("darken_leafite_brick_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_LEAFITE_BRICKS)));
+    public static final Block DARK_LEAFITE_BRICK_STAIRS = registerBlock("dark_leafite_brick_stairs",
+            new StairsBlock(ModBlocks.DARK_LEAFITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_LEAFITE_BRICKS)));
+    public static final Block DARK_LEAFITE_BRICK_SLAB = registerBlock("dark_leafite_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_LEAFITE_BRICKS)));
+    public static final Block DARK_LEAFITE_BRICK_WALL = registerBlock("dark_leafite_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_LEAFITE_BRICKS)));
 
-    public static final Block LIGHT_LEAFITE_TILE_STAIRS = registerBlock("light_leafite_tile_stairs",
-            new StairsBlock(ModBlocks.LIGHT_LEAFITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_LEAFITE_TILES)));
-    public static final Block LIGHT_LEAFITE_TILE_SLAB = registerBlock("light_leafite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_LEAFITE_TILES)));
-    public static final Block LIGHT_LEAFITE_TILE_WALL = registerBlock("light_leafite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_LEAFITE_TILES)));
-    public static final Block DARKEN_LEAFITE_TILE_STAIRS = registerBlock("darken_leafite_tile_stairs",
-            new StairsBlock(ModBlocks.DARKEN_LEAFITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_LEAFITE_TILES)));
-    public static final Block DARKEN_LEAFITE_TILE_SLAB = registerBlock("darken_leafite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_LEAFITE_TILES)));
-    public static final Block DARKEN_LEAFITE_TILE_WALL = registerBlock("darken_leafite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_LEAFITE_TILES)));
+    public static final Block LIGHT_CUT_LEAFITE_STAIRS = registerBlock("light_cut_leafite_stairs",
+            new StairsBlock(ModBlocks.LIGHT_CUT_LEAFITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_LEAFITE)));
+    public static final Block LIGHT_CUT_LEAFITE_SLAB = registerBlock("light_cut_leafite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_LEAFITE)));
+    public static final Block LIGHT_CUT_LEAFITE_WALL = registerBlock("light_cut_leafite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_LEAFITE)));
+    public static final Block DARK_CUT_LEAFITE_STAIRS = registerBlock("dark_cut_leafite_stairs",
+            new StairsBlock(ModBlocks.DARK_CUT_LEAFITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_LEAFITE)));
+    public static final Block DARK_CUT_LEAFITE_SLAB = registerBlock("dark_cut_leafite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_LEAFITE)));
+    public static final Block DARK_CUT_LEAFITE_WALL = registerBlock("dark_cut_leafite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_LEAFITE)));
 
     public static final Block LIGHT_END_ITE_BRICKS = registerBlock("light_end_ite_bricks",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_BLOCK)));
-    public static final Block DARKEN_END_ITE_BRICKS = registerBlock("darken_end_ite_bricks",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_BLOCK)));
+    public static final Block DARK_END_ITE_BRICKS = registerBlock("dark_end_ite_bricks",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BLOCK)));
 
-    public static final Block LIGHT_END_ITE_TILES = registerBlock("light_end_ite_tiles",
+    public static final Block LIGHT_CUT_END_ITE = registerBlock("light_cut_end_ite",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_BLOCK)));
-    public static final Block DARKEN_END_ITE_TILES = registerBlock("darken_end_ite_tiles",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_BLOCK)));
+    public static final Block DARK_CUT_END_ITE = registerBlock("dark_cut_end_ite",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BLOCK)));
 
     public static final Block LIGHT_END_ITE_BRICK_STAIRS = registerBlock("light_end_ite_brick_stairs",
             new StairsBlock(ModBlocks.LIGHT_END_ITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_BRICKS)));
@@ -981,24 +981,24 @@ public class ModBlocks {
     public static final Block LIGHT_END_ITE_BRICK_WALL = registerBlock("light_end_ite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_BRICKS)));
     public static final Block DARKEN_END_ITE_BRICK_STAIRS = registerBlock("darken_end_ite_brick_stairs",
-            new StairsBlock(ModBlocks.DARKEN_END_ITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_BRICKS)));
+            new StairsBlock(ModBlocks.DARK_END_ITE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BRICKS)));
     public static final Block DARKEN_END_ITE_BRICK_SLAB = registerBlock("darken_end_ite_brick_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_BRICKS)));
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BRICKS)));
     public static final Block DARKEN_END_ITE_BRICK_WALL = registerBlock("darken_end_ite_brick_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_BRICKS)));
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_END_ITE_BRICKS)));
 
-    public static final Block LIGHT_END_ITE_TILE_STAIRS = registerBlock("light_end_ite_tile_stairs",
-            new StairsBlock(ModBlocks.LIGHT_END_ITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_TILES)));
-    public static final Block LIGHT_END_ITE_TILE_SLAB = registerBlock("light_end_ite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_TILES)));
-    public static final Block LIGHT_END_ITE_TILE_WALL = registerBlock("light_end_ite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_END_ITE_TILES)));
-    public static final Block DARKEN_END_ITE_TILE_STAIRS = registerBlock("darken_end_ite_tile_stairs",
-            new StairsBlock(ModBlocks.DARKEN_END_ITE_TILES.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_TILES)));
-    public static final Block DARKEN_END_ITE_TILE_SLAB = registerBlock("darken_end_ite_tile_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_TILES)));
-    public static final Block DARKEN_END_ITE_TILE_WALL = registerBlock("darken_end_ite_tile_wall",
-            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARKEN_END_ITE_TILES)));
+    public static final Block LIGHT_CUT_END_ITE_STAIRS = registerBlock("light_cut_end_ite_stairs",
+            new StairsBlock(ModBlocks.LIGHT_CUT_END_ITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_END_ITE)));
+    public static final Block LIGHT_CUT_END_ITE_SLAB = registerBlock("light_cut_end_ite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_END_ITE)));
+    public static final Block LIGHT_CUT_END_ITE_WALL = registerBlock("light_cut_end_ite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LIGHT_CUT_END_ITE)));
+    public static final Block DARK_CUT_END_ITE_STAIRS = registerBlock("dark_cut_end_ite_stairs",
+            new StairsBlock(ModBlocks.DARK_CUT_END_ITE.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_END_ITE)));
+    public static final Block DARK_CUT_END_ITE_SLAB = registerBlock("dark_cut_end_ite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_END_ITE)));
+    public static final Block DARK_CUT_END_ITE_WALL = registerBlock("dark_cut_end_ite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DARK_CUT_END_ITE)));
 
     public static final Block ICE_BRICKS = registerBlock("ice_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE)));
@@ -1044,8 +1044,218 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(ModBlocks.FROSITE_BLOCK).strength(50.0f, 1200.0f)));
     public static final Block LIGHT_REINFORCED_FROSITE_BLOCK = registerBlock("light_reinforced_frosite_block",
             new Block(FabricBlockSettings.copyOf(ModBlocks.LIGHT_FROSITE_BLOCK).strength(50.0f, 1200.0f)));
-    public static final Block DARKEN_REINFORCED_FROSITE_BLOCK = registerBlock("darken_reinforced_frosite_block",
-            new Block(FabricBlockSettings.copyOf(ModBlocks.DARKEN_FROSITE_BLOCK).strength(50.0f, 1200.0f)));
+    public static final Block DARK_REINFORCED_FROSITE_BLOCK = registerBlock("dark_reinforced_frosite_block",
+            new Block(FabricBlockSettings.copyOf(ModBlocks.DARK_FROSITE_BLOCK).strength(50.0f, 1200.0f)));
+
+    public static final Block CARVING_STATION = registerBlock("carving_station",
+            new CarvingStationBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block STONE_MASONRY_BRICKS = registerBlock("stone_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block STONE_MASONRY_BRICK_STAIRS = registerBlock("stone_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.STONE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.STONE_MASONRY_BRICKS)));
+    public static final Block STONE_MASONRY_BRICK_SLAB = registerBlock("stone_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.STONE_MASONRY_BRICKS)));
+    public static final Block STONE_MASONRY_BRICK_WALL = registerBlock("stone_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.STONE_MASONRY_BRICKS)));
+
+    public static final Block NETHER_MASONRY_BRICKS = registerBlock("nether_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)));
+    public static final Block NETHER_MASONRY_BRICK_STAIRS = registerBlock("nether_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.NETHER_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.NETHER_MASONRY_BRICKS)));
+    public static final Block NETHER_MASONRY_BRICK_SLAB = registerBlock("nether_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.NETHER_MASONRY_BRICKS)));
+    public static final Block NETHER_MASONRY_BRICK_WALL = registerBlock("nether_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.NETHER_MASONRY_BRICKS)));
+
+    public static final Block PRISMARINE_MASONRY_BRICKS = registerBlock("prismarine_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE_BRICKS)));
+    public static final Block PRISMARINE_MASONRY_BRICK_STAIRS = registerBlock("prismarine_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.PRISMARINE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_MASONRY_BRICKS)));
+    public static final Block PRISMARINE_MASONRY_BRICK_SLAB = registerBlock("prismarine_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_MASONRY_BRICKS)));
+    public static final Block PRISMARINE_MASONRY_BRICK_WALL = registerBlock("prismarine_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_MASONRY_BRICKS)));
+
+    public static final Block END_STONE_MASONRY_BRICKS = registerBlock("end_stone_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.END_STONE_BRICKS)));
+    public static final Block END_STONE_MASONRY_BRICK_STAIRS = registerBlock("end_stone_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.END_STONE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.END_STONE_MASONRY_BRICKS)));
+    public static final Block END_STONE_MASONRY_BRICK_SLAB = registerBlock("end_stone_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.END_STONE_MASONRY_BRICKS)));
+    public static final Block END_STONE_MASONRY_BRICK_WALL = registerBlock("end_stone_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_STONE_MASONRY_BRICKS)));
+
+    public static final Block RED_NETHER_MASONRY_BRICKS = registerBlock("red_nether_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)));
+    public static final Block RED_NETHER_MASONRY_BRICK_STAIRS = registerBlock("red_nether_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.RED_NETHER_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.RED_NETHER_MASONRY_BRICKS)));
+    public static final Block RED_NETHER_MASONRY_BRICK_SLAB = registerBlock("red_nether_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.RED_NETHER_MASONRY_BRICKS)));
+    public static final Block RED_NETHER_MASONRY_BRICK_WALL = registerBlock("red_nether_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.RED_NETHER_MASONRY_BRICKS)));
+
+    public static final Block POLISHED_BLACKSTONE_MASONRY_BRICKS = registerBlock("polished_blackstone_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_BLACKSTONE_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_MASONRY_BRICK_STAIRS = registerBlock("polished_blackstone_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BLACKSTONE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_BLACKSTONE_MASONRY_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_MASONRY_BRICK_SLAB = registerBlock("polished_blackstone_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BLACKSTONE_MASONRY_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_MASONRY_BRICK_WALL = registerBlock("polished_blackstone_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BLACKSTONE_MASONRY_BRICKS)));
+
+    public static final Block QUARTZ_MASONRY_BRICKS = registerBlock("quartz_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
+    public static final Block QUARTZ_MASONRY_BRICK_STAIRS = registerBlock("quartz_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.QUARTZ_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.QUARTZ_MASONRY_BRICKS)));
+    public static final Block QUARTZ_MASONRY_BRICK_SLAB = registerBlock("quartz_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.QUARTZ_MASONRY_BRICKS)));
+    public static final Block QUARTZ_MASONRY_BRICK_WALL = registerBlock("quartz_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.QUARTZ_MASONRY_BRICKS)));
+
+    public static final Block DEEPSLATE_MASONRY_BRICKS = registerBlock("deepslate_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS)));
+    public static final Block DEEPSLATE_MASONRY_BRICK_STAIRS = registerBlock("deepslate_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.DEEPSLATE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DEEPSLATE_MASONRY_BRICKS)));
+    public static final Block DEEPSLATE_MASONRY_BRICK_SLAB = registerBlock("deepslate_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DEEPSLATE_MASONRY_BRICKS)));
+    public static final Block DEEPSLATE_MASONRY_BRICK_WALL = registerBlock("deepslate_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DEEPSLATE_MASONRY_BRICKS)));
+
+    public static final Block MUD_MASONRY_BRICKS = registerBlock("mud_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+    public static final Block MUD_MASONRY_BRICK_STAIRS = registerBlock("mud_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.MUD_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MUD_MASONRY_BRICKS)));
+    public static final Block MUD_MASONRY_BRICK_SLAB = registerBlock("mud_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MUD_MASONRY_BRICKS)));
+    public static final Block MUD_MASONRY_BRICK_WALL = registerBlock("mud_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MUD_MASONRY_BRICKS)));
+
+    public static final Block MARBLE_MASONRY_BRICKS = registerBlock("marble_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block MARBLE_MASONRY_BRICK_STAIRS = registerBlock("marble_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.MARBLE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MARBLE_MASONRY_BRICKS)));
+    public static final Block MARBLE_MASONRY_BRICK_SLAB = registerBlock("marble_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_MASONRY_BRICKS)));
+    public static final Block MARBLE_MASONRY_BRICK_WALL = registerBlock("marble_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_MASONRY_BRICKS)));
+
+    public static final Block POLISHED_ANDESITE_MASONRY_BRICKS = registerBlock("polished_andesite_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_BRICKS)));
+    public static final Block POLISHED_ANDESITE_MASONRY_BRICK_STAIRS = registerBlock("polished_andesite_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_ANDESITE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_MASONRY_BRICKS)));
+    public static final Block POLISHED_ANDESITE_MASONRY_BRICK_SLAB = registerBlock("polished_andesite_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_MASONRY_BRICKS)));
+    public static final Block POLISHED_ANDESITE_MASONRY_BRICK_WALL = registerBlock("polished_andesite_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_MASONRY_BRICKS)));
+
+    public static final Block POLISHED_DIORITE_MASONRY_BRICKS = registerBlock("polished_diorite_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_BRICKS)));
+    public static final Block POLISHED_DIORITE_MASONRY_BRICK_STAIRS = registerBlock("polished_diorite_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DIORITE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_MASONRY_BRICKS)));
+    public static final Block POLISHED_DIORITE_MASONRY_BRICK_SLAB = registerBlock("polished_diorite_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_MASONRY_BRICKS)));
+    public static final Block POLISHED_DIORITE_MASONRY_BRICK_WALL = registerBlock("polished_diorite_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_MASONRY_BRICKS)));
+
+    public static final Block POLISHED_GRANITE_MASONRY_BRICKS = registerBlock("polished_granite_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_BRICKS)));
+    public static final Block POLISHED_GRANITE_MASONRY_BRICK_STAIRS = registerBlock("polished_granite_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_GRANITE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_MASONRY_BRICKS)));
+    public static final Block POLISHED_GRANITE_MASONRY_BRICK_SLAB = registerBlock("polished_granite_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_MASONRY_BRICKS)));
+    public static final Block POLISHED_GRANITE_MASONRY_BRICK_WALL = registerBlock("polished_granite_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_MASONRY_BRICKS)));
+
+    public static final Block POLISHED_BEDROCK_MASONRY_BRICKS = registerBlock("polished_bedrock_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_BRICKS)));
+    public static final Block POLISHED_BEDROCK_MASONRY_BRICK_STAIRS = registerBlock("polished_bedrock_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BEDROCK_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_MASONRY_BRICKS)));
+    public static final Block POLISHED_BEDROCK_MASONRY_BRICK_SLAB = registerBlock("polished_bedrock_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_MASONRY_BRICKS)));
+    public static final Block POLISHED_BEDROCK_MASONRY_BRICK_WALL = registerBlock("polished_bedrock_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_MASONRY_BRICKS)));
+
+    public static final Block VOID_STONE_MASONRY_BRICKS = registerBlock("void_stone_masonry_bricks",
+            new MasonryBrickBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_BRICKS)));
+    public static final Block VOID_STONE_MASONRY_BRICK_STAIRS = registerBlock("void_stone_masonry_brick_stairs",
+            new StairsBlock(ModBlocks.VOID_STONE_MASONRY_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_MASONRY_BRICKS)));
+    public static final Block VOID_STONE_MASONRY_BRICK_SLAB = registerBlock("void_stone_masonry_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_MASONRY_BRICKS)));
+    public static final Block VOID_STONE_MASONRY_BRICK_WALL = registerBlock("void_stone_masonry_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_MASONRY_BRICKS)));
+
+    public static final Block UNIFORM_BRICKS = registerBlock("uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.BRICKS)));
+    public static final Block UNIFORM_BRICK_STAIRS = registerBlock("uniform_brick_stairs",
+            new StairsBlock(ModBlocks.UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.UNIFORM_BRICKS)));
+    public static final Block UNIFORM_BRICK_SLAB = registerBlock("uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.UNIFORM_BRICKS)));
+    public static final Block UNIFORM_BRICK_WALL = registerBlock("uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.UNIFORM_BRICKS)));
+
+    public static final Block NETHER_UNIFORM_BRICKS = registerBlock("nether_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)));
+    public static final Block NETHER_UNIFORM_BRICK_STAIRS = registerBlock("nether_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.NETHER_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.NETHER_UNIFORM_BRICKS)));
+    public static final Block NETHER_UNIFORM_BRICK_SLAB = registerBlock("nether_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.NETHER_UNIFORM_BRICKS)));
+    public static final Block NETHER_UNIFORM_BRICK_WALL = registerBlock("nether_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.NETHER_UNIFORM_BRICKS)));
+
+    public static final Block PRISMARINE_UNIFORM_BRICKS = registerBlock("prismarine_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE_BRICKS)));
+    public static final Block PRISMARINE_UNIFORM_BRICK_STAIRS = registerBlock("prismarine_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.PRISMARINE_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_UNIFORM_BRICKS)));
+    public static final Block PRISMARINE_UNIFORM_BRICK_SLAB = registerBlock("prismarine_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_UNIFORM_BRICKS)));
+    public static final Block PRISMARINE_UNIFORM_BRICK_WALL = registerBlock("prismarine_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_UNIFORM_BRICKS)));
+
+    public static final Block END_STONE_UNIFORM_BRICKS = registerBlock("end_stone_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.END_STONE_BRICKS)));
+    public static final Block END_STONE_UNIFORM_BRICK_STAIRS = registerBlock("end_stone_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.END_STONE_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.END_STONE_UNIFORM_BRICKS)));
+    public static final Block END_STONE_UNIFORM_BRICK_SLAB = registerBlock("end_stone_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.END_STONE_UNIFORM_BRICKS)));
+    public static final Block END_STONE_UNIFORM_BRICK_WALL = registerBlock("end_stone_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_STONE_UNIFORM_BRICKS)));
+
+    public static final Block RED_NETHER_UNIFORM_BRICKS = registerBlock("red_nether_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.RED_NETHER_BRICKS)));
+    public static final Block RED_NETHER_UNIFORM_BRICK_STAIRS = registerBlock("red_nether_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.RED_NETHER_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.RED_NETHER_UNIFORM_BRICKS)));
+    public static final Block RED_NETHER_UNIFORM_BRICK_SLAB = registerBlock("red_nether_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.RED_NETHER_UNIFORM_BRICKS)));
+    public static final Block RED_NETHER_UNIFORM_BRICK_WALL = registerBlock("red_nether_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.RED_NETHER_UNIFORM_BRICKS)));
+
+    public static final Block QUARTZ_UNIFORM_BRICKS = registerBlock("quartz_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
+    public static final Block QUARTZ_UNIFORM_BRICK_STAIRS = registerBlock("quartz_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.QUARTZ_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.QUARTZ_UNIFORM_BRICKS)));
+    public static final Block QUARTZ_UNIFORM_BRICK_SLAB = registerBlock("quartz_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.QUARTZ_UNIFORM_BRICKS)));
+    public static final Block QUARTZ_UNIFORM_BRICK_WALL = registerBlock("quartz_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.QUARTZ_UNIFORM_BRICKS)));
+
+    public static final Block MUD_UNIFORM_BRICKS = registerBlock("mud_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+    public static final Block MUD_UNIFORM_BRICK_STAIRS = registerBlock("mud_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.MUD_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MUD_UNIFORM_BRICKS)));
+    public static final Block MUD_UNIFORM_BRICK_SLAB = registerBlock("mud_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MUD_UNIFORM_BRICKS)));
+    public static final Block MUD_UNIFORM_BRICK_WALL = registerBlock("mud_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MUD_UNIFORM_BRICKS)));
+
+    public static final Block VOID_STONE_UNIFORM_BRICKS = registerBlock("void_stone_uniform_bricks",
+            new UniformBrickBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_BRICKS)));
+    public static final Block VOID_STONE_UNIFORM_BRICK_STAIRS = registerBlock("void_stone_uniform_brick_stairs",
+            new StairsBlock(ModBlocks.VOID_STONE_UNIFORM_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_UNIFORM_BRICKS)));
+    public static final Block VOID_STONE_UNIFORM_BRICK_SLAB = registerBlock("void_stone_uniform_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_UNIFORM_BRICKS)));
+    public static final Block VOID_STONE_UNIFORM_BRICK_WALL = registerBlock("void_stone_uniform_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_UNIFORM_BRICKS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

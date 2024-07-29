@@ -2,8 +2,10 @@
   "feature": "oresmod:silver_grass_patch",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 128
+      "type": "minecraft:noise_based_count",
+      "noise_factor": 5.0,
+      "noise_offset": -0.8,
+      "noise_to_count_ratio": 10
     },
     {
       "type": "minecraft:in_square"

@@ -146,5 +146,24 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.DEEPSLATE_LEAVES.asItem())
                 .add(ModBlocks.LEAFITE_LEAVES.asItem())
                 .add(ModBlocks.LEAFITE_LEAVES_ORE.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.BLUEPRINTS)
+                .add(ModItems.MASONRY_BLUEPRINT)
+                .add(ModItems.UNIFORM_BLUEPRINT);
+
+        getOrCreateTagBuilder(ModTags.Items.CARVING_TOOLS)
+                .add(ModItems.NICKEL_CARVER)
+                .add(ModItems.SILVER_CARVER)
+                .add(ModItems.TITANIUM_CARVER)
+                .add(ModItems.TITANIUM_ALLOY_CARVER);
+
+        getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
+                .add(ModItems.ALUMINUM_INGOT)
+                .add(ModItems.STEEL_INGOT)
+                .add(ModItems.TITANIUM_INGOT)
+                .add(ModItems.TUNGSTEN_INGOT)
+                .add(ModItems.TITANIUM_ALLOY_INGOT)
+                .add(ModItems.COBALT_INGOT)
+                .add(ModItems.PLATINUM_INGOT);
     }
 }

@@ -15,6 +15,9 @@ import net.gecko95.oresmod.entity.client.models.SilverpedeModel;
 import net.gecko95.oresmod.entity.client.models.SilverwyrmModel;
 import net.gecko95.oresmod.entity.client.models.golem.FrositeGolemModel;
 import net.gecko95.oresmod.entity.client.renderers.*;
+import net.gecko95.oresmod.screen.CarvingScreen;
+import net.gecko95.oresmod.screen.ModScreenHandlers;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
@@ -86,5 +89,7 @@ public class OresModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.ICE_BOMB_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.ICE_CUBE, IceCubeRenderer::new);
         EntityRendererRegistry.register(ModEntities.FROSTED_STRAY, FrostedStrayRenderer::new);
+
+        HandledScreens.register(ModScreenHandlers.CARVING_SCREEN_HANDLER, CarvingScreen::new);
     }
 }

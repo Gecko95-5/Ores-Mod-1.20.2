@@ -151,6 +151,8 @@
     "oresmod:ice_brick_slab",
     "oresmod:ice_brick_wall",
     "oresmod:end_ite_ore",
-    "#oresmod:ite_blocks"
+    "oresmod:carving_station",
+    "#oresmod:ite_blocks",
+    "#oresmod:carved_blocks"
   ]
 }

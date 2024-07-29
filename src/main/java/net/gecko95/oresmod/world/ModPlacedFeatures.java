@@ -12,7 +12,8 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
-//The flowers code come form the Many Flowers Mod Source Code
+// Done with the help:
+// https://github.com/GalievDev/many-flowers/tree/1.20/src/main (MIT License)
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> SALT_ORE_PLACED_KEY = registerKey("salt_ore_placed");
     public static final RegistryKey<PlacedFeature> FROSITE_ORE_PLACED_KEY = registerKey("frosite_ore_placed");
@@ -278,7 +279,7 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(32), ModBlocks.SILVER_ROSE));
 
         register(context, PATCH_SILVER_GRASS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_SILVER_GRASS),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(128), ModBlocks.SILVER_GRASS));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(NoiseBasedCountPlacementModifier.of(10,5,-0.8), ModBlocks.SILVER_GRASS));
 
         register(context, FLOWER_WINDSWEPT_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FLOWER_WINDSWEPT_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(RarityFilterPlacementModifier.of(32), ModBlocks.ALPINE_SPEEDWELL));
