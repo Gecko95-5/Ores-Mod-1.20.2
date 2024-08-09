@@ -314,6 +314,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.BLUE).instrument(Instrument.XYLOPHONE)
                     .requiresTool().sounds(BlockSoundGroup.METAL)));
 
+    public static final Block FLINT_BLOCK = registerBlock("flint_block",
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.BLACK).instrument(Instrument.SNARE)
+                    .requiresTool().strength(4.0f, 5.0f).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
+
     public static final Block FAKE_BEDROCK = registerBlock("fake_bedrock",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).requiresTool()
                     .strength(75.0f, 600.0f).sounds(BlockSoundGroup.STONE)));
@@ -704,23 +708,28 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.BONE)
                     .mapColor(MapColor.STONE_GRAY).requiresTool().strength(1.5f, 6.0f)));
 
-    public static final Block ENDER_DRAGON_TROPHY = registerBlock("ender_dragon_trophy",
+    public static final Block ENDER_DRAGON_TROPHY = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "ender_dragon_trophy"),
             new TrophyBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
-    public static final Block WITHER_TROPHY = registerBlock("wither_trophy",
+    public static final Block WITHER_TROPHY = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "wither_trophy"),
             new TrophyBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
-    public static final Block ELDER_GUARDIAN_TROPHY = registerBlock("elder_guardian_trophy",
+    public static final Block ELDER_GUARDIAN_TROPHY  = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "elder_guardian_trophy"),
             new TrophyBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
-    public static final Block WARDEN_TROPHY = registerBlock("warden_trophy",
+    public static final Block WARDEN_TROPHY  = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "warden_trophy"),
             new TrophyBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
-    public static final Block SILVERWYRM_TROPHY = registerBlock("silverwyrm_trophy",
+    public static final Block SILVERWYRM_TROPHY  = Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID,
+            "silverwyrm_trophy"),
             new TrophyBlock(FabricBlockSettings.create()
                     .breakInstantly().sounds(BlockSoundGroup.METAL)
                     .mapColor(MapColor.CLEAR).nonOpaque()));
