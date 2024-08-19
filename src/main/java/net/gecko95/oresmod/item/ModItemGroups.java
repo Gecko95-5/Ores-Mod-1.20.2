@@ -634,6 +634,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_BLACK_SANDSTONE_SLAB);
                         entries.add(ModBlocks.CHISELED_BLACK_SANDSTONE);
                         entries.add(ModBlocks.CARVING_STATION);
+                        entries.add(ModBlocks.UNIFORM_BRICKS);
+                        entries.add(ModBlocks.UNIFORM_BRICK_STAIRS);
+                        entries.add(ModBlocks.UNIFORM_BRICK_SLAB);
+                        entries.add(ModBlocks.UNIFORM_BRICK_WALL);
                         entries.add(ModBlocks.STONE_MASONRY_BRICKS);
                         entries.add(ModBlocks.STONE_MASONRY_BRICK_STAIRS);
                         entries.add(ModBlocks.STONE_MASONRY_BRICK_SLAB);
