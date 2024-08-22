@@ -61,6 +61,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.DEEPSLATE_PLANKS.asItem())
                 .add(ModBlocks.LEAFITE_PLANKS.asItem());
 
+        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.STONEBARK_SLAB.asItem())
+                .add(ModBlocks.DEEPBARK_SLAB.asItem())
+                .add(ModBlocks.LEAFITE_PLANKS_SLAB.asItem());
+
         getOrCreateTagBuilder(ItemTags.SAND)
                 .add(ModBlocks.WHITE_SAND.asItem())
                 .add(ModBlocks.BLACK_SAND.asItem());
@@ -149,7 +154,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ModTags.Items.BLUEPRINTS)
                 .add(ModItems.MASONRY_BLUEPRINT)
-                .add(ModItems.UNIFORM_BLUEPRINT);
+                .add(ModItems.UNIFORM_BLUEPRINT)
+                .add(ModItems.NETHER_BLUEPRINT);
 
         getOrCreateTagBuilder(ModTags.Items.CARVING_TOOLS)
                 .add(ModItems.NICKEL_CARVER)

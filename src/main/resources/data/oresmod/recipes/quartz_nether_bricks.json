@@ -1,0 +1,17 @@
+{
+  "type": "oresmod:carving",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_block"
+    },
+    {
+      "item": "oresmod:nether_blueprint"
+    },
+    {
+      "tag": "oresmod:carving_tools"
+    }
+  ],
+  "output": {
+    "item": "oresmod:quartz_nether_bricks"
+  }
+}

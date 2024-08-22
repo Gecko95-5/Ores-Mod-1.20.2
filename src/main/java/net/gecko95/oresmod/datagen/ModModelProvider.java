@@ -198,6 +198,21 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool quartzuniformPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.QUARTZ_UNIFORM_BRICKS);
         BlockStateModelGenerator.BlockTexturePool voiduniformPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_STONE_UNIFORM_BRICKS);
 
+        BlockStateModelGenerator.BlockTexturePool stonenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STONE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool deepnetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool endnetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_STONE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool netherstylePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHER_STYLE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mudnetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MUD_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool prismarinenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PRISMARINE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool blackstonenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool quartznetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.QUARTZ_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool marblenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MARBLE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool voidnetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_STONE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool andesitenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool dioritenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool granitenetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool bedrocknetherPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS);
+
         blockStateModelGenerator.registerLog(ModBlocks.STONEBARK_LOG).log(ModBlocks.STONEBARK_LOG).wood(ModBlocks.STONEBARK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_STONEBARK_LOG).log(ModBlocks.STRIPPED_STONEBARK_LOG).wood(ModBlocks.STRIPPED_STONEBARK_WOOD);
         BlockStateModelGenerator.BlockTexturePool stonebarkPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STONEBARK_PLANKS);
@@ -505,6 +520,62 @@ public class ModModelProvider extends FabricModelProvider {
         voiduniformPool.stairs(ModBlocks.VOID_STONE_UNIFORM_BRICK_STAIRS);
         voiduniformPool.slab(ModBlocks.VOID_STONE_UNIFORM_BRICK_SLAB);
         voiduniformPool.wall(ModBlocks.VOID_STONE_UNIFORM_BRICK_WALL);
+
+        stonenetherPool.stairs(ModBlocks.STONE_NETHER_BRICK_STAIRS);
+        stonenetherPool.slab(ModBlocks.STONE_NETHER_BRICK_SLAB);
+        stonenetherPool.wall(ModBlocks.STONE_NETHER_BRICK_WALL);
+
+        netherstylePool.stairs(ModBlocks.NETHER_STYLE_BRICK_STAIRS);
+        netherstylePool.slab(ModBlocks.NETHER_STYLE_BRICK_SLAB);
+        netherstylePool.wall(ModBlocks.NETHER_STYLE_BRICK_WALL);
+
+        deepnetherPool.stairs(ModBlocks.DEEPSLATE_NETHER_BRICK_STAIRS);
+        deepnetherPool.slab(ModBlocks.DEEPSLATE_NETHER_BRICK_SLAB);
+        deepnetherPool.wall(ModBlocks.DEEPSLATE_NETHER_BRICK_WALL);
+
+        endnetherPool.stairs(ModBlocks.END_STONE_NETHER_BRICK_STAIRS);
+        endnetherPool.slab(ModBlocks.END_STONE_NETHER_BRICK_SLAB);
+        endnetherPool.wall(ModBlocks.END_STONE_NETHER_BRICK_WALL);
+
+        mudnetherPool.stairs(ModBlocks.MUD_NETHER_BRICK_STAIRS);
+        mudnetherPool.slab(ModBlocks.MUD_NETHER_BRICK_SLAB);
+        mudnetherPool.wall(ModBlocks.MUD_NETHER_BRICK_WALL);
+
+        prismarinenetherPool.stairs(ModBlocks.PRISMARINE_NETHER_BRICK_STAIRS);
+        prismarinenetherPool.slab(ModBlocks.PRISMARINE_NETHER_BRICK_SLAB);
+        prismarinenetherPool.wall(ModBlocks.PRISMARINE_NETHER_BRICK_WALL);
+
+        blackstonenetherPool.stairs(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_STAIRS);
+        blackstonenetherPool.slab(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_SLAB);
+        blackstonenetherPool.wall(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_WALL);
+
+        quartznetherPool.stairs(ModBlocks.QUARTZ_NETHER_BRICK_STAIRS);
+        quartznetherPool.slab(ModBlocks.QUARTZ_NETHER_BRICK_SLAB);
+        quartznetherPool.wall(ModBlocks.QUARTZ_NETHER_BRICK_WALL);
+
+        marblenetherPool.stairs(ModBlocks.MARBLE_NETHER_BRICK_STAIRS);
+        marblenetherPool.slab(ModBlocks.MARBLE_NETHER_BRICK_SLAB);
+        marblenetherPool.wall(ModBlocks.MARBLE_NETHER_BRICK_WALL);
+
+        voidnetherPool.stairs(ModBlocks.VOID_STONE_NETHER_BRICK_STAIRS);
+        voidnetherPool.slab(ModBlocks.VOID_STONE_NETHER_BRICK_SLAB);
+        voidnetherPool.wall(ModBlocks.VOID_STONE_NETHER_BRICK_WALL);
+
+        bedrocknetherPool.stairs(ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_STAIRS);
+        bedrocknetherPool.slab(ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_SLAB);
+        bedrocknetherPool.wall(ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_WALL);
+
+        andesitenetherPool.stairs(ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_STAIRS);
+        andesitenetherPool.slab(ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_SLAB);
+        andesitenetherPool.wall(ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_WALL);
+
+        dioritenetherPool.stairs(ModBlocks.POLISHED_DIORITE_NETHER_BRICK_STAIRS);
+        dioritenetherPool.slab(ModBlocks.POLISHED_DIORITE_NETHER_BRICK_SLAB);
+        dioritenetherPool.wall(ModBlocks.POLISHED_DIORITE_NETHER_BRICK_WALL);
+
+        granitenetherPool.stairs(ModBlocks.POLISHED_GRANITE_NETHER_BRICK_STAIRS);
+        granitenetherPool.slab(ModBlocks.POLISHED_GRANITE_NETHER_BRICK_SLAB);
+        granitenetherPool.wall(ModBlocks.POLISHED_GRANITE_NETHER_BRICK_WALL);
 
         blockStateModelGenerator.registerDoor(ModBlocks.ALUMINUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ALUMINUM_TRAPDOOR);
@@ -897,6 +968,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MASONRY_BLUEPRINT, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNIFORM_BLUEPRINT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHER_BLUEPRINT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVER_STEW, Models.GENERATED);
 

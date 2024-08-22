@@ -38,6 +38,6 @@ public class ModEntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPro
                 .add(ModEntities.FROSITE_GOLEM);
 
         getOrCreateTagBuilder(EntityTypeTags.SKELETONS)
-                .add(ModEntities.FROSITE_GOLEM);
+                .add(ModEntities.FROSTED_STRAY);
     }
 }

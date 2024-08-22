@@ -58,6 +58,19 @@
     "oresmod:red_nether_uniform_brick_wall",
     "oresmod:mud_uniform_brick_wall",
     "oresmod:void_stone_uniform_brick_wall",
-    "oresmod:quartz_uniform_brick_wall"
+    "oresmod:quartz_uniform_brick_wall",
+    "oresmod:stone_masonry_brick_wall",
+    "oresmod:nether_style_brick_wall",
+    "oresmod:deepslate_masonry_brick_wall",
+    "oresmod:end_stone_nether_brick_wall",
+    "oresmod:mud_nether_brick_wall",
+    "oresmod:prismarine_nether_brick_wall",
+    "oresmod:polished_blackstone_nether_brick_wall",
+    "oresmod:quartz_nether_brick_wall",
+    "oresmod:marble_nether_brick_wall",
+    "oresmod:void_stone_nether_brick_wall",
+    "oresmod:polished_diorite_nether_brick_wall",
+    "oresmod:polished_granite_nether_brick_wall",
+    "oresmod:polished_andesite_nether_brick_wall"
   ]
 }

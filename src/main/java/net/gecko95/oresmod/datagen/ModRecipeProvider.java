@@ -5891,6 +5891,133 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_UNIFORM_BRICK_WALL, ModBlocks.VOID_STONE_UNIFORM_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_UNIFORM_BRICK_WALL, ModBlocks.VOID_STONE_UNIFORM_BRICKS);
 
+        createStairsRecipe(ModBlocks.STONE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.STONE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.STONE_NETHER_BRICKS),conditionsFromItem(ModBlocks.STONE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STONE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_NETHER_BRICK_STAIRS, ModBlocks.STONE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_NETHER_BRICK_SLAB, ModBlocks.STONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_NETHER_BRICK_SLAB, ModBlocks.STONE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.STONE_NETHER_BRICK_WALL, ModBlocks.STONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.STONE_NETHER_BRICK_WALL, ModBlocks.STONE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.NETHER_STYLE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.NETHER_STYLE_BRICKS))
+                .criterion(hasItem(ModBlocks.NETHER_STYLE_BRICKS),conditionsFromItem(ModBlocks.NETHER_STYLE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.NETHER_STYLE_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_STYLE_BRICK_STAIRS, ModBlocks.NETHER_STYLE_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_STYLE_BRICK_SLAB, ModBlocks.NETHER_STYLE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_STYLE_BRICK_SLAB, ModBlocks.NETHER_STYLE_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.NETHER_STYLE_BRICK_WALL, ModBlocks.NETHER_STYLE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.NETHER_STYLE_BRICK_WALL, ModBlocks.NETHER_STYLE_BRICKS);
+
+        createStairsRecipe(ModBlocks.DEEPSLATE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.DEEPSLATE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.DEEPSLATE_NETHER_BRICKS),conditionsFromItem(ModBlocks.DEEPSLATE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DEEPSLATE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_NETHER_BRICK_STAIRS, ModBlocks.DEEPSLATE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_NETHER_BRICK_SLAB, ModBlocks.DEEPSLATE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPSLATE_NETHER_BRICK_SLAB, ModBlocks.DEEPSLATE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.DEEPSLATE_NETHER_BRICK_WALL, ModBlocks.DEEPSLATE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.DEEPSLATE_NETHER_BRICK_WALL, ModBlocks.DEEPSLATE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.END_STONE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.END_STONE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.END_STONE_NETHER_BRICKS),conditionsFromItem(ModBlocks.END_STONE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.END_STONE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_NETHER_BRICK_STAIRS, ModBlocks.END_STONE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_NETHER_BRICK_SLAB, ModBlocks.END_STONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_NETHER_BRICK_SLAB, ModBlocks.END_STONE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_STONE_NETHER_BRICK_WALL, ModBlocks.END_STONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.END_STONE_NETHER_BRICK_WALL, ModBlocks.END_STONE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.MUD_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.MUD_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.MUD_NETHER_BRICKS),conditionsFromItem(ModBlocks.MUD_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MUD_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUD_NETHER_BRICK_STAIRS, ModBlocks.MUD_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUD_NETHER_BRICK_SLAB, ModBlocks.MUD_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MUD_NETHER_BRICK_SLAB, ModBlocks.MUD_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.MUD_NETHER_BRICK_WALL, ModBlocks.MUD_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.MUD_NETHER_BRICK_WALL, ModBlocks.MUD_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.PRISMARINE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.PRISMARINE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.PRISMARINE_NETHER_BRICKS),conditionsFromItem(ModBlocks.PRISMARINE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PRISMARINE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_NETHER_BRICK_STAIRS, ModBlocks.PRISMARINE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_NETHER_BRICK_SLAB, ModBlocks.PRISMARINE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_NETHER_BRICK_SLAB, ModBlocks.PRISMARINE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.PRISMARINE_NETHER_BRICK_WALL, ModBlocks.PRISMARINE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.PRISMARINE_NETHER_BRICK_WALL, ModBlocks.PRISMARINE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS),conditionsFromItem(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_STAIRS, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_WALL, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICK_WALL, ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.QUARTZ_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.QUARTZ_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.QUARTZ_NETHER_BRICKS),conditionsFromItem(ModBlocks.QUARTZ_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.QUARTZ_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_NETHER_BRICK_STAIRS, ModBlocks.QUARTZ_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_NETHER_BRICK_SLAB, ModBlocks.QUARTZ_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_NETHER_BRICK_SLAB, ModBlocks.QUARTZ_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.QUARTZ_NETHER_BRICK_WALL, ModBlocks.QUARTZ_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.QUARTZ_NETHER_BRICK_WALL, ModBlocks.QUARTZ_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.MARBLE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.MARBLE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.MARBLE_NETHER_BRICKS),conditionsFromItem(ModBlocks.MARBLE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MARBLE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_NETHER_BRICK_STAIRS, ModBlocks.MARBLE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_NETHER_BRICK_SLAB, ModBlocks.MARBLE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MARBLE_NETHER_BRICK_SLAB, ModBlocks.MARBLE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.MARBLE_NETHER_BRICK_WALL, ModBlocks.MARBLE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.MARBLE_NETHER_BRICK_WALL, ModBlocks.MARBLE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.VOID_STONE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.VOID_STONE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.VOID_STONE_NETHER_BRICKS),conditionsFromItem(ModBlocks.VOID_STONE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VOID_STONE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_NETHER_BRICK_STAIRS, ModBlocks.VOID_STONE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_NETHER_BRICK_SLAB, ModBlocks.VOID_STONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VOID_STONE_NETHER_BRICK_SLAB, ModBlocks.VOID_STONE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_NETHER_BRICK_WALL, ModBlocks.VOID_STONE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.VOID_STONE_NETHER_BRICK_WALL, ModBlocks.VOID_STONE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS),conditionsFromItem(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_STAIRS, ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_WALL, ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_NETHER_BRICK_WALL, ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.POLISHED_DIORITE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS),conditionsFromItem(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_DIORITE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_NETHER_BRICK_STAIRS, ModBlocks.POLISHED_DIORITE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_DIORITE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_DIORITE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_NETHER_BRICK_WALL, ModBlocks.POLISHED_DIORITE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_NETHER_BRICK_WALL, ModBlocks.POLISHED_DIORITE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.POLISHED_GRANITE_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS),conditionsFromItem(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_GRANITE_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_NETHER_BRICK_STAIRS, ModBlocks.POLISHED_GRANITE_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_GRANITE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_NETHER_BRICK_SLAB, ModBlocks.POLISHED_GRANITE_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_NETHER_BRICK_WALL, ModBlocks.POLISHED_GRANITE_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_NETHER_BRICK_WALL, ModBlocks.POLISHED_GRANITE_NETHER_BRICKS);
+
+        createStairsRecipe(ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS))
+                .criterion(hasItem(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS),conditionsFromItem(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_STAIRS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_STAIRS, ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS);
+        offerSlabRecipe(exporter,RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_SLAB, ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_SLAB, ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS,2);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_WALL, ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModBlocks.POLISHED_BEDROCK_NETHER_BRICK_WALL, ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS);
+
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COBBLENUT,4)
                 .input(ModItems.SHELLED_COBBLENUT)
                 .criterion(hasItem(ModItems.SHELLED_COBBLENUT), conditionsFromItem(ModItems.SHELLED_COBBLENUT))

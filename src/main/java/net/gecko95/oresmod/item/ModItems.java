@@ -627,6 +627,7 @@ public class ModItems {
             new SpawnEggItem(ModEntities.FROSTED_STRAY, 0x5b6f70,0xc0d0f7, new FabricItemSettings()));
     public static final Item MASONRY_BLUEPRINT = registerItem("masonry_blueprint", BlueprintItem.createMasonryBlueprint());
     public static final Item UNIFORM_BLUEPRINT = registerItem("uniform_blueprint", BlueprintItem.createUniformBlueprint());
+    public static final Item NETHER_BLUEPRINT = registerItem("nether_blueprint", BlueprintItem.createNetherBlueprint());
 
     public static final Item COPPER_HANDLE = registerItem("copper_handle", new Item(new FabricItemSettings()));
     public static final Item COBALT_HANDLE = registerItem("cobalt_handle", new Item(new FabricItemSettings()));

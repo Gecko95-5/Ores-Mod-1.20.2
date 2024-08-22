@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "oresmod:polished_blackstone_nether_bricks"
+  },
+  "result": "oresmod:deepslate_nether_brick_slab"
+}

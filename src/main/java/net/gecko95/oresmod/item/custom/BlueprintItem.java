@@ -18,6 +18,7 @@ public class BlueprintItem extends Item {
     private static final Formatting DESCRIPTION_FORMATTING = Formatting.GRAY;
     private static final Text MASONRY_STYLE_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier("blueprint.masonry.style"))).formatted(DESCRIPTION_FORMATTING);
     private static final Text UNIFORM_STYLE_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier("blueprint.uniform.style"))).formatted(DESCRIPTION_FORMATTING);
+    private static final Text NETHER_STYLE_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier("blueprint.nether.style"))).formatted(DESCRIPTION_FORMATTING);
     public BlueprintItem(Text styleText) {
         super(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON));
         this.styleText = styleText;
@@ -28,6 +29,10 @@ public class BlueprintItem extends Item {
     public static BlueprintItem createUniformBlueprint() {
         return new BlueprintItem(UNIFORM_STYLE_TEXT);
     }
+    public static BlueprintItem createNetherBlueprint() {
+        return new BlueprintItem(NETHER_STYLE_TEXT);
+    }
+
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(this.styleText);

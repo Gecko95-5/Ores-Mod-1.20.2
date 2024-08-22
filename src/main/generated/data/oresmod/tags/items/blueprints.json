@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "oresmod:masonry_blueprint",
-    "oresmod:uniform_blueprint"
+    "oresmod:uniform_blueprint",
+    "oresmod:nether_blueprint"
   ]
 }

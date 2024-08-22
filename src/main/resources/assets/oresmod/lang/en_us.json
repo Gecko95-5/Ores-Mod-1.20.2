@@ -879,8 +879,10 @@
 
   "item.oresmod.masonry_blueprint": "Carving Blueprint",
   "item.oresmod.uniform_blueprint": "Carving Blueprint",
+  "item.oresmod.nether_blueprint": "Carving Blueprint",
   "item.minecraft.blueprint.masonry.style": "Masonry Style",
   "item.minecraft.blueprint.uniform.style": "Uniform Style",
+  "item.minecraft.blueprint.nether.style": "Nether Style",
 
   "block.oresmod.stone_masonry_bricks": "Stone Bricks",
   "block.oresmod.stone_masonry_brick_stairs": "Stone Brick Stairs",
@@ -996,6 +998,77 @@
   "block.oresmod.void_stone_uniform_brick_stairs": "Void Stone Brick Stairs",
   "block.oresmod.void_stone_uniform_brick_slab": "Void Stone Brick Slab",
   "block.oresmod.void_stone_uniform_brick_wall": "Void Stone Brick Wall",
+
+  "block.oresmod.stone_nether_bricks": "Stone Bricks",
+  "block.oresmod.stone_nether_brick_stairs": "Stone Brick Stairs",
+  "block.oresmod.stone_nether_brick_slab": "Stone Brick Slab",
+  "block.oresmod.stone_nether_brick_wall": "Stone Brick Wall",
+
+  "block.oresmod.nether_style_bricks": "Bricks",
+  "block.oresmod.nether_style_brick_stairs": "Brick Stairs",
+  "block.oresmod.nether_style_brick_slab": "Brick Slab",
+  "block.oresmod.nether_style_brick_wall": "Brick Wall",
+
+  "block.oresmod.deepslate_nether_bricks": "Deepslate Bricks",
+  "block.oresmod.deepslate_nether_brick_stairs": "Deepslate Brick Stairs",
+  "block.oresmod.deepslate_nether_brick_slab": "Deepslate Brick Slab",
+  "block.oresmod.deepslate_nether_brick_wall": "Deepslate Brick Wall",
+
+  "block.oresmod.end_stone_nether_bricks": "End Stone Bricks",
+  "block.oresmod.end_stone_nether_brick_stairs": "End Stone Brick Stairs",
+  "block.oresmod.end_stone_nether_brick_slab": "End Stone Brick Slab",
+  "block.oresmod.end_stone_nether_brick_wall": "End Stone Brick Wall",
+
+  "block.oresmod.mud_nether_bricks": "Mud Bricks",
+  "block.oresmod.mud_nether_brick_stairs": "Mud Brick Stairs",
+  "block.oresmod.mud_nether_brick_slab": "Mud Brick Slab",
+  "block.oresmod.mud_nether_brick_wall": "Mud Brick Wall",
+
+  "block.oresmod.prismarine_nether_bricks": "Prismarine Bricks",
+  "block.oresmod.prismarine_nether_brick_stairs": "Prismarine Brick Stairs",
+  "block.oresmod.prismarine_nether_brick_slab": "Prismarine Brick Slab",
+  "block.oresmod.prismarine_nether_brick_wall": "Prismarine Brick Wall",
+
+  "block.oresmod.polished_blackstone_nether_bricks": "Polished Blackstone Bricks",
+  "block.oresmod.polished_blackstone_nether_brick_stairs": "Polished Blackstone Brick Stairs",
+  "block.oresmod.polished_blackstone_nether_brick_slab": "Polished Blackstone Brick Slab",
+  "block.oresmod.polished_blackstone_nether_brick_wall": "Polished Blackstone Brick Wall",
+
+  "block.oresmod.quartz_nether_bricks": "Quartz Bricks",
+  "block.oresmod.quartz_nether_brick_stairs": "Quartz Brick Stairs",
+  "block.oresmod.quartz_nether_brick_slab": "Quartz Brick Slab",
+  "block.oresmod.quartz_nether_brick_wall": "Quartz Brick Wall",
+
+  "block.oresmod.marble_nether_bricks": "Marble Bricks",
+  "block.oresmod.marble_nether_brick_stairs": "Marble Brick Stairs",
+  "block.oresmod.marble_nether_brick_slab": "Marble Brick Slab",
+  "block.oresmod.marble_nether_brick_wall": "Marble Brick Wall",
+
+  "block.oresmod.polished_andesite_nether_bricks": "Polished Andesite Bricks",
+  "block.oresmod.polished_andesite_nether_brick_stairs": "Polished Andesite Brick Stairs",
+  "block.oresmod.polished_andesite_nether_brick_slab": "Polished Andesite Brick Slab",
+  "block.oresmod.polished_andesite_nether_brick_wall": "Polished Andesite Brick Wall",
+
+  "block.oresmod.polished_diorite_nether_bricks": "Polished Diorite Bricks",
+  "block.oresmod.polished_diorite_nether_brick_stairs": "Polished Diorite Brick Stairs",
+  "block.oresmod.polished_diorite_nether_brick_slab": "Polished Diorite Brick Slab",
+  "block.oresmod.polished_diorite_nether_brick_wall": "Polished Diorite Brick Wall",
+
+  "block.oresmod.polished_granite_nether_bricks": "Polished Granite Bricks",
+  "block.oresmod.polished_granite_nether_brick_stairs": "Polished Granite Brick Stairs",
+  "block.oresmod.polished_granite_nether_brick_slab": "Polished Granite Brick Slab",
+  "block.oresmod.polished_granite_nether_brick_wall": "Polished Granite Brick Wall",
+
+  "block.oresmod.polished_bedrock_nether_bricks": "Polished Bedrock Bricks",
+  "block.oresmod.polished_bedrock_nether_brick_stairs": "Polished Bedrock Brick Stairs",
+  "block.oresmod.polished_bedrock_nether_brick_slab": "Polished Bedrock Brick Slab",
+  "block.oresmod.polished_bedrock_nether_brick_wall": "Polished Bedrock Brick Wall",
+
+  "block.oresmod.void_stone_nether_bricks": "Void Stone Bricks",
+  "block.oresmod.void_stone_nether_brick_stairs": "Void Stone Brick Stairs",
+  "block.oresmod.void_stone_nether_brick_slab": "Void Stone Brick Slab",
+  "block.oresmod.void_stone_nether_brick_wall": "Void Stone Brick Wall",
+
 
   "entity.oresmod.silverpede": "Silverpede",
   "entity.oresmod.silverwyrm": "Silverwyrm",

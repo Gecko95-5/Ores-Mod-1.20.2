@@ -1266,6 +1266,120 @@ public class ModBlocks {
     public static final Block VOID_STONE_UNIFORM_BRICK_WALL = registerBlock("void_stone_uniform_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_UNIFORM_BRICKS)));
 
+    public static final Block STONE_NETHER_BRICKS = registerBlock("stone_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block STONE_NETHER_BRICK_STAIRS = registerBlock("stone_nether_brick_stairs",
+            new StairsBlock(ModBlocks.STONE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.STONE_NETHER_BRICKS)));
+    public static final Block STONE_NETHER_BRICK_SLAB = registerBlock("stone_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.STONE_NETHER_BRICKS)));
+    public static final Block STONE_NETHER_BRICK_WALL = registerBlock("stone_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.STONE_NETHER_BRICKS)));
+
+    public static final Block NETHER_STYLE_BRICKS = registerBlock("nether_style_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.BRICKS)));
+    public static final Block NETHER_STYLE_BRICK_STAIRS = registerBlock("nether_style_brick_stairs",
+            new StairsBlock(ModBlocks.NETHER_STYLE_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.NETHER_STYLE_BRICKS)));
+    public static final Block NETHER_STYLE_BRICK_SLAB = registerBlock("nether_style_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.NETHER_STYLE_BRICKS)));
+    public static final Block NETHER_STYLE_BRICK_WALL = registerBlock("nether_style_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.NETHER_STYLE_BRICKS)));
+    public static final Block DEEPSLATE_NETHER_BRICKS = registerBlock("deepslate_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS)));
+    public static final Block DEEPSLATE_NETHER_BRICK_STAIRS = registerBlock("deepslate_nether_brick_stairs",
+            new StairsBlock(ModBlocks.DEEPSLATE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.DEEPSLATE_NETHER_BRICKS)));
+    public static final Block DEEPSLATE_NETHER_BRICK_SLAB = registerBlock("deepslate_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.DEEPSLATE_NETHER_BRICKS)));
+    public static final Block DEEPSLATE_NETHER_BRICK_WALL = registerBlock("deepslate_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.DEEPSLATE_NETHER_BRICKS)));
+    public static final Block END_STONE_NETHER_BRICKS = registerBlock("end_stone_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.END_STONE_BRICKS)));
+    public static final Block END_STONE_NETHER_BRICK_STAIRS = registerBlock("end_stone_nether_brick_stairs",
+            new StairsBlock(ModBlocks.END_STONE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.END_STONE_NETHER_BRICKS)));
+    public static final Block END_STONE_NETHER_BRICK_SLAB = registerBlock("end_stone_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.END_STONE_NETHER_BRICKS)));
+    public static final Block END_STONE_NETHER_BRICK_WALL = registerBlock("end_stone_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.END_STONE_NETHER_BRICKS)));
+    public static final Block MUD_NETHER_BRICKS = registerBlock("mud_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS)));
+    public static final Block MUD_NETHER_BRICK_STAIRS = registerBlock("mud_nether_brick_stairs",
+            new StairsBlock(ModBlocks.MUD_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MUD_NETHER_BRICKS)));
+    public static final Block MUD_NETHER_BRICK_SLAB = registerBlock("mud_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MUD_NETHER_BRICKS)));
+    public static final Block MUD_NETHER_BRICK_WALL = registerBlock("mud_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MUD_NETHER_BRICKS)));
+    public static final Block PRISMARINE_NETHER_BRICKS = registerBlock("prismarine_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.PRISMARINE_BRICKS)));
+    public static final Block PRISMARINE_NETHER_BRICK_STAIRS = registerBlock("prismarine_nether_brick_stairs",
+            new StairsBlock(ModBlocks.PRISMARINE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_NETHER_BRICKS)));
+    public static final Block PRISMARINE_NETHER_BRICK_SLAB = registerBlock("prismarine_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_NETHER_BRICKS)));
+    public static final Block PRISMARINE_NETHER_BRICK_WALL = registerBlock("prismarine_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.PRISMARINE_NETHER_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_NETHER_BRICKS = registerBlock("polished_blackstone_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_BLACKSTONE_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_NETHER_BRICK_STAIRS = registerBlock("polished_blackstone_nether_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_NETHER_BRICK_SLAB = registerBlock("polished_blackstone_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS)));
+    public static final Block POLISHED_BLACKSTONE_NETHER_BRICK_WALL = registerBlock("polished_blackstone_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BLACKSTONE_NETHER_BRICKS)));
+    public static final Block QUARTZ_NETHER_BRICKS = registerBlock("quartz_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
+    public static final Block QUARTZ_NETHER_BRICK_STAIRS = registerBlock("quartz_nether_brick_stairs",
+            new StairsBlock(ModBlocks.QUARTZ_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.QUARTZ_NETHER_BRICKS)));
+    public static final Block QUARTZ_NETHER_BRICK_SLAB = registerBlock("quartz_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.QUARTZ_NETHER_BRICKS)));
+    public static final Block QUARTZ_NETHER_BRICK_WALL = registerBlock("quartz_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.QUARTZ_NETHER_BRICKS)));
+    public static final Block VOID_STONE_NETHER_BRICKS = registerBlock("void_stone_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_BRICKS)));
+    public static final Block VOID_STONE_NETHER_BRICK_STAIRS = registerBlock("void_stone_nether_brick_stairs",
+            new StairsBlock(ModBlocks.VOID_STONE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_NETHER_BRICKS)));
+    public static final Block VOID_STONE_NETHER_BRICK_SLAB = registerBlock("void_stone_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_NETHER_BRICKS)));
+    public static final Block VOID_STONE_NETHER_BRICK_WALL = registerBlock("void_stone_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.VOID_STONE_NETHER_BRICKS)));
+    public static final Block POLISHED_BEDROCK_NETHER_BRICKS = registerBlock("polished_bedrock_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_BRICKS)));
+    public static final Block POLISHED_BEDROCK_NETHER_BRICK_STAIRS = registerBlock("polished_bedrock_nether_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS)));
+    public static final Block POLISHED_BEDROCK_NETHER_BRICK_SLAB = registerBlock("polished_bedrock_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS)));
+    public static final Block POLISHED_BEDROCK_NETHER_BRICK_WALL = registerBlock("polished_bedrock_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_BEDROCK_NETHER_BRICKS)));
+    public static final Block POLISHED_DIORITE_NETHER_BRICKS = registerBlock("polished_diorite_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_BRICKS)));
+    public static final Block POLISHED_DIORITE_NETHER_BRICK_STAIRS = registerBlock("polished_diorite_nether_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS)));
+    public static final Block POLISHED_DIORITE_NETHER_BRICK_SLAB = registerBlock("polished_diorite_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS)));
+    public static final Block POLISHED_DIORITE_NETHER_BRICK_WALL = registerBlock("polished_diorite_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_DIORITE_NETHER_BRICKS)));
+    public static final Block POLISHED_GRANITE_NETHER_BRICKS = registerBlock("polished_granite_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_BRICKS)));
+    public static final Block POLISHED_GRANITE_NETHER_BRICK_STAIRS = registerBlock("polished_granite_nether_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS)));
+    public static final Block POLISHED_GRANITE_NETHER_BRICK_SLAB = registerBlock("polished_granite_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS)));
+    public static final Block POLISHED_GRANITE_NETHER_BRICK_WALL = registerBlock("polished_granite_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_GRANITE_NETHER_BRICKS)));
+    public static final Block POLISHED_ANDESITE_NETHER_BRICKS = registerBlock("polished_andesite_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_BRICKS)));
+    public static final Block POLISHED_ANDESITE_NETHER_BRICK_STAIRS = registerBlock("polished_andesite_nether_brick_stairs",
+            new StairsBlock(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS)));
+    public static final Block POLISHED_ANDESITE_NETHER_BRICK_SLAB = registerBlock("polished_andesite_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS)));
+    public static final Block POLISHED_ANDESITE_NETHER_BRICK_WALL = registerBlock("polished_andesite_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.POLISHED_ANDESITE_NETHER_BRICKS)));
+    public static final Block MARBLE_NETHER_BRICKS = registerBlock("marble_nether_bricks",
+            new NetherStyleBrickBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_BRICKS)));
+    public static final Block MARBLE_NETHER_BRICK_STAIRS = registerBlock("marble_nether_brick_stairs",
+            new StairsBlock(ModBlocks.MARBLE_NETHER_BRICKS.getDefaultState(),FabricBlockSettings.copyOf(ModBlocks.MARBLE_NETHER_BRICKS)));
+    public static final Block MARBLE_NETHER_BRICK_SLAB = registerBlock("marble_nether_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_NETHER_BRICKS)));
+    public static final Block MARBLE_NETHER_BRICK_WALL = registerBlock("marble_nether_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.MARBLE_NETHER_BRICKS)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OresMod.MOD_ID, name), block);
